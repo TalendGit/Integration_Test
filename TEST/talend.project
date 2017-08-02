@@ -253,6 +253,9 @@
       <relatedItems xmi:id="_7owtkHdcEee4GIRRTKENyw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_7owtkXdcEee4GIRRTKENyw" id="Department" version="Latest" type="routine"/>
     </ItemsRelations>
+    <deletedFolders>code/routines/BT/Billing</deletedFolders>
+    <deletedFolders>code/routines/BT/DNAsset</deletedFolders>
+    <deletedFolders>code/routines/BT</deletedFolders>
     <migrationTask xmi:id="_mtXWQHdKEeeYsY5LKSa0yA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_mtXWQXdKEeeYsY5LKSa0yA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_mtXWQndKEeeYsY5LKSa0yA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
