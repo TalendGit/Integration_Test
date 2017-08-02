@@ -1,0 +1,275 @@
+/**
+ * StockAssetAllocation.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class StockAssetAllocation  implements java.io.Serializable {
+    private double USStockNetAllocation;
+
+    private double USStockLongAllocation;
+
+    private double USStockShortAllocation;
+
+    private double nonUSStockNetAllocation;
+
+    private double nonUSStockLongAllocation;
+
+    private double nonUSStockShortAllocation;
+
+    public StockAssetAllocation() {
+    }
+
+    public StockAssetAllocation(
+           double USStockNetAllocation,
+           double USStockLongAllocation,
+           double USStockShortAllocation,
+           double nonUSStockNetAllocation,
+           double nonUSStockLongAllocation,
+           double nonUSStockShortAllocation) {
+           this.USStockNetAllocation = USStockNetAllocation;
+           this.USStockLongAllocation = USStockLongAllocation;
+           this.USStockShortAllocation = USStockShortAllocation;
+           this.nonUSStockNetAllocation = nonUSStockNetAllocation;
+           this.nonUSStockLongAllocation = nonUSStockLongAllocation;
+           this.nonUSStockShortAllocation = nonUSStockShortAllocation;
+    }
+
+
+    /**
+     * Gets the USStockNetAllocation value for this StockAssetAllocation.
+     * 
+     * @return USStockNetAllocation
+     */
+    public double getUSStockNetAllocation() {
+        return USStockNetAllocation;
+    }
+
+
+    /**
+     * Sets the USStockNetAllocation value for this StockAssetAllocation.
+     * 
+     * @param USStockNetAllocation
+     */
+    public void setUSStockNetAllocation(double USStockNetAllocation) {
+        this.USStockNetAllocation = USStockNetAllocation;
+    }
+
+
+    /**
+     * Gets the USStockLongAllocation value for this StockAssetAllocation.
+     * 
+     * @return USStockLongAllocation
+     */
+    public double getUSStockLongAllocation() {
+        return USStockLongAllocation;
+    }
+
+
+    /**
+     * Sets the USStockLongAllocation value for this StockAssetAllocation.
+     * 
+     * @param USStockLongAllocation
+     */
+    public void setUSStockLongAllocation(double USStockLongAllocation) {
+        this.USStockLongAllocation = USStockLongAllocation;
+    }
+
+
+    /**
+     * Gets the USStockShortAllocation value for this StockAssetAllocation.
+     * 
+     * @return USStockShortAllocation
+     */
+    public double getUSStockShortAllocation() {
+        return USStockShortAllocation;
+    }
+
+
+    /**
+     * Sets the USStockShortAllocation value for this StockAssetAllocation.
+     * 
+     * @param USStockShortAllocation
+     */
+    public void setUSStockShortAllocation(double USStockShortAllocation) {
+        this.USStockShortAllocation = USStockShortAllocation;
+    }
+
+
+    /**
+     * Gets the nonUSStockNetAllocation value for this StockAssetAllocation.
+     * 
+     * @return nonUSStockNetAllocation
+     */
+    public double getNonUSStockNetAllocation() {
+        return nonUSStockNetAllocation;
+    }
+
+
+    /**
+     * Sets the nonUSStockNetAllocation value for this StockAssetAllocation.
+     * 
+     * @param nonUSStockNetAllocation
+     */
+    public void setNonUSStockNetAllocation(double nonUSStockNetAllocation) {
+        this.nonUSStockNetAllocation = nonUSStockNetAllocation;
+    }
+
+
+    /**
+     * Gets the nonUSStockLongAllocation value for this StockAssetAllocation.
+     * 
+     * @return nonUSStockLongAllocation
+     */
+    public double getNonUSStockLongAllocation() {
+        return nonUSStockLongAllocation;
+    }
+
+
+    /**
+     * Sets the nonUSStockLongAllocation value for this StockAssetAllocation.
+     * 
+     * @param nonUSStockLongAllocation
+     */
+    public void setNonUSStockLongAllocation(double nonUSStockLongAllocation) {
+        this.nonUSStockLongAllocation = nonUSStockLongAllocation;
+    }
+
+
+    /**
+     * Gets the nonUSStockShortAllocation value for this StockAssetAllocation.
+     * 
+     * @return nonUSStockShortAllocation
+     */
+    public double getNonUSStockShortAllocation() {
+        return nonUSStockShortAllocation;
+    }
+
+
+    /**
+     * Sets the nonUSStockShortAllocation value for this StockAssetAllocation.
+     * 
+     * @param nonUSStockShortAllocation
+     */
+    public void setNonUSStockShortAllocation(double nonUSStockShortAllocation) {
+        this.nonUSStockShortAllocation = nonUSStockShortAllocation;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof StockAssetAllocation)) return false;
+        StockAssetAllocation other = (StockAssetAllocation) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.USStockNetAllocation == other.getUSStockNetAllocation() &&
+            this.USStockLongAllocation == other.getUSStockLongAllocation() &&
+            this.USStockShortAllocation == other.getUSStockShortAllocation() &&
+            this.nonUSStockNetAllocation == other.getNonUSStockNetAllocation() &&
+            this.nonUSStockLongAllocation == other.getNonUSStockLongAllocation() &&
+            this.nonUSStockShortAllocation == other.getNonUSStockShortAllocation();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += new Double(getUSStockNetAllocation()).hashCode();
+        _hashCode += new Double(getUSStockLongAllocation()).hashCode();
+        _hashCode += new Double(getUSStockShortAllocation()).hashCode();
+        _hashCode += new Double(getNonUSStockNetAllocation()).hashCode();
+        _hashCode += new Double(getNonUSStockLongAllocation()).hashCode();
+        _hashCode += new Double(getNonUSStockShortAllocation()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(StockAssetAllocation.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockAssetAllocation"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("USStockNetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "USStockNetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("USStockLongAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "USStockLongAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("USStockShortAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "USStockShortAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nonUSStockNetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NonUSStockNetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nonUSStockLongAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NonUSStockLongAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nonUSStockShortAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NonUSStockShortAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

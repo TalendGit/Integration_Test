@@ -1,0 +1,63 @@
+package routines;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
+
+import net.spy.memcached.MemcachedClient;
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class MemCached {
+
+    public static void set(String key, Object value, int period){
+    	if(value == null || value.equals("")){
+    		System.out.println("Value cannot be NULL or empty. Memcache is not set.");
+    		return;
+    	}
+    	MemcachedClient mc = getMemcachedClient();
+    	mc.set(key, period, value);
+    }
+    
+    public static Object get(String key){
+    	MemcachedClient mc = getMemcachedClient();
+    	return mc.get(key);
+    }
+    
+    private static MemcachedClient oMemcachedClient = null;
+    
+    public static MemcachedClient getMemcachedClient(){
+    	if(oMemcachedClient == null){
+    		synchronized (MemcachedClient.class) {
+    			try {
+    				if(oMemcachedClient == null){
+    					//oMemcachedClient = new MemcachedClient(new InetSocketAddress("10.13.32.47", 11211));
+    					oMemcachedClient = new MemcachedClient(new InetSocketAddress("localhost", 11211));
+    				}
+    			} 
+        		catch (IOException e) {
+    				System.out.println("Memcached client instance cannot be created. Exception : "+e);
+    			}
+    			catch(Exception e){
+    				System.out.println("Exception occured while creating memcached instance. Exception : "+e);
+    			}
+			}
+    		
+    	}
+		return oMemcachedClient; 	
+    }
+}

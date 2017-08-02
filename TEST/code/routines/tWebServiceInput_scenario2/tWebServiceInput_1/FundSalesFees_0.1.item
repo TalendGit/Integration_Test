@@ -1,0 +1,166 @@
+/**
+ * FundSalesFees.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class FundSalesFees  extends routines.Common  implements java.io.Serializable {
+    private routines.Fund fund;
+
+    private routines.SalesFees salesFees;
+
+    public FundSalesFees() {
+    }
+
+    public FundSalesFees(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           routines.Fund fund,
+           routines.SalesFees salesFees) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.fund = fund;
+        this.salesFees = salesFees;
+    }
+
+
+    /**
+     * Gets the fund value for this FundSalesFees.
+     * 
+     * @return fund
+     */
+    public routines.Fund getFund() {
+        return fund;
+    }
+
+
+    /**
+     * Sets the fund value for this FundSalesFees.
+     * 
+     * @param fund
+     */
+    public void setFund(routines.Fund fund) {
+        this.fund = fund;
+    }
+
+
+    /**
+     * Gets the salesFees value for this FundSalesFees.
+     * 
+     * @return salesFees
+     */
+    public routines.SalesFees getSalesFees() {
+        return salesFees;
+    }
+
+
+    /**
+     * Sets the salesFees value for this FundSalesFees.
+     * 
+     * @param salesFees
+     */
+    public void setSalesFees(routines.SalesFees salesFees) {
+        this.salesFees = salesFees;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof FundSalesFees)) return false;
+        FundSalesFees other = (FundSalesFees) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.fund==null && other.getFund()==null) || 
+             (this.fund!=null &&
+              this.fund.equals(other.getFund()))) &&
+            ((this.salesFees==null && other.getSalesFees()==null) || 
+             (this.salesFees!=null &&
+              this.salesFees.equals(other.getSalesFees())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getFund() != null) {
+            _hashCode += getFund().hashCode();
+        }
+        if (getSalesFees() != null) {
+            _hashCode += getSalesFees().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(FundSalesFees.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSalesFees"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("salesFees");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SalesFees"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SalesFees"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

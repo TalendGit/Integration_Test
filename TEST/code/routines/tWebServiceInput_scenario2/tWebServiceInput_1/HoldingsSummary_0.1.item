@@ -1,0 +1,376 @@
+/**
+ * HoldingsSummary.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class HoldingsSummary  implements java.io.Serializable {
+    private double assetsInTopTenHoldings;
+
+    private double weightingTopTenHoldings;
+
+    private long numberOfLongHoldings;
+
+    private long numberOfShortHoldings;
+
+    private long numberOfNetHoldings;
+
+    private double totalMarketValueLong;
+
+    private double totalMarketValueShort;
+
+    private double totalMarketValueNet;
+
+    private java.lang.String holdingsAsOfDate;
+
+    public HoldingsSummary() {
+    }
+
+    public HoldingsSummary(
+           double assetsInTopTenHoldings,
+           double weightingTopTenHoldings,
+           long numberOfLongHoldings,
+           long numberOfShortHoldings,
+           long numberOfNetHoldings,
+           double totalMarketValueLong,
+           double totalMarketValueShort,
+           double totalMarketValueNet,
+           java.lang.String holdingsAsOfDate) {
+           this.assetsInTopTenHoldings = assetsInTopTenHoldings;
+           this.weightingTopTenHoldings = weightingTopTenHoldings;
+           this.numberOfLongHoldings = numberOfLongHoldings;
+           this.numberOfShortHoldings = numberOfShortHoldings;
+           this.numberOfNetHoldings = numberOfNetHoldings;
+           this.totalMarketValueLong = totalMarketValueLong;
+           this.totalMarketValueShort = totalMarketValueShort;
+           this.totalMarketValueNet = totalMarketValueNet;
+           this.holdingsAsOfDate = holdingsAsOfDate;
+    }
+
+
+    /**
+     * Gets the assetsInTopTenHoldings value for this HoldingsSummary.
+     * 
+     * @return assetsInTopTenHoldings
+     */
+    public double getAssetsInTopTenHoldings() {
+        return assetsInTopTenHoldings;
+    }
+
+
+    /**
+     * Sets the assetsInTopTenHoldings value for this HoldingsSummary.
+     * 
+     * @param assetsInTopTenHoldings
+     */
+    public void setAssetsInTopTenHoldings(double assetsInTopTenHoldings) {
+        this.assetsInTopTenHoldings = assetsInTopTenHoldings;
+    }
+
+
+    /**
+     * Gets the weightingTopTenHoldings value for this HoldingsSummary.
+     * 
+     * @return weightingTopTenHoldings
+     */
+    public double getWeightingTopTenHoldings() {
+        return weightingTopTenHoldings;
+    }
+
+
+    /**
+     * Sets the weightingTopTenHoldings value for this HoldingsSummary.
+     * 
+     * @param weightingTopTenHoldings
+     */
+    public void setWeightingTopTenHoldings(double weightingTopTenHoldings) {
+        this.weightingTopTenHoldings = weightingTopTenHoldings;
+    }
+
+
+    /**
+     * Gets the numberOfLongHoldings value for this HoldingsSummary.
+     * 
+     * @return numberOfLongHoldings
+     */
+    public long getNumberOfLongHoldings() {
+        return numberOfLongHoldings;
+    }
+
+
+    /**
+     * Sets the numberOfLongHoldings value for this HoldingsSummary.
+     * 
+     * @param numberOfLongHoldings
+     */
+    public void setNumberOfLongHoldings(long numberOfLongHoldings) {
+        this.numberOfLongHoldings = numberOfLongHoldings;
+    }
+
+
+    /**
+     * Gets the numberOfShortHoldings value for this HoldingsSummary.
+     * 
+     * @return numberOfShortHoldings
+     */
+    public long getNumberOfShortHoldings() {
+        return numberOfShortHoldings;
+    }
+
+
+    /**
+     * Sets the numberOfShortHoldings value for this HoldingsSummary.
+     * 
+     * @param numberOfShortHoldings
+     */
+    public void setNumberOfShortHoldings(long numberOfShortHoldings) {
+        this.numberOfShortHoldings = numberOfShortHoldings;
+    }
+
+
+    /**
+     * Gets the numberOfNetHoldings value for this HoldingsSummary.
+     * 
+     * @return numberOfNetHoldings
+     */
+    public long getNumberOfNetHoldings() {
+        return numberOfNetHoldings;
+    }
+
+
+    /**
+     * Sets the numberOfNetHoldings value for this HoldingsSummary.
+     * 
+     * @param numberOfNetHoldings
+     */
+    public void setNumberOfNetHoldings(long numberOfNetHoldings) {
+        this.numberOfNetHoldings = numberOfNetHoldings;
+    }
+
+
+    /**
+     * Gets the totalMarketValueLong value for this HoldingsSummary.
+     * 
+     * @return totalMarketValueLong
+     */
+    public double getTotalMarketValueLong() {
+        return totalMarketValueLong;
+    }
+
+
+    /**
+     * Sets the totalMarketValueLong value for this HoldingsSummary.
+     * 
+     * @param totalMarketValueLong
+     */
+    public void setTotalMarketValueLong(double totalMarketValueLong) {
+        this.totalMarketValueLong = totalMarketValueLong;
+    }
+
+
+    /**
+     * Gets the totalMarketValueShort value for this HoldingsSummary.
+     * 
+     * @return totalMarketValueShort
+     */
+    public double getTotalMarketValueShort() {
+        return totalMarketValueShort;
+    }
+
+
+    /**
+     * Sets the totalMarketValueShort value for this HoldingsSummary.
+     * 
+     * @param totalMarketValueShort
+     */
+    public void setTotalMarketValueShort(double totalMarketValueShort) {
+        this.totalMarketValueShort = totalMarketValueShort;
+    }
+
+
+    /**
+     * Gets the totalMarketValueNet value for this HoldingsSummary.
+     * 
+     * @return totalMarketValueNet
+     */
+    public double getTotalMarketValueNet() {
+        return totalMarketValueNet;
+    }
+
+
+    /**
+     * Sets the totalMarketValueNet value for this HoldingsSummary.
+     * 
+     * @param totalMarketValueNet
+     */
+    public void setTotalMarketValueNet(double totalMarketValueNet) {
+        this.totalMarketValueNet = totalMarketValueNet;
+    }
+
+
+    /**
+     * Gets the holdingsAsOfDate value for this HoldingsSummary.
+     * 
+     * @return holdingsAsOfDate
+     */
+    public java.lang.String getHoldingsAsOfDate() {
+        return holdingsAsOfDate;
+    }
+
+
+    /**
+     * Sets the holdingsAsOfDate value for this HoldingsSummary.
+     * 
+     * @param holdingsAsOfDate
+     */
+    public void setHoldingsAsOfDate(java.lang.String holdingsAsOfDate) {
+        this.holdingsAsOfDate = holdingsAsOfDate;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof HoldingsSummary)) return false;
+        HoldingsSummary other = (HoldingsSummary) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.assetsInTopTenHoldings == other.getAssetsInTopTenHoldings() &&
+            this.weightingTopTenHoldings == other.getWeightingTopTenHoldings() &&
+            this.numberOfLongHoldings == other.getNumberOfLongHoldings() &&
+            this.numberOfShortHoldings == other.getNumberOfShortHoldings() &&
+            this.numberOfNetHoldings == other.getNumberOfNetHoldings() &&
+            this.totalMarketValueLong == other.getTotalMarketValueLong() &&
+            this.totalMarketValueShort == other.getTotalMarketValueShort() &&
+            this.totalMarketValueNet == other.getTotalMarketValueNet() &&
+            ((this.holdingsAsOfDate==null && other.getHoldingsAsOfDate()==null) || 
+             (this.holdingsAsOfDate!=null &&
+              this.holdingsAsOfDate.equals(other.getHoldingsAsOfDate())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += new Double(getAssetsInTopTenHoldings()).hashCode();
+        _hashCode += new Double(getWeightingTopTenHoldings()).hashCode();
+        _hashCode += new Long(getNumberOfLongHoldings()).hashCode();
+        _hashCode += new Long(getNumberOfShortHoldings()).hashCode();
+        _hashCode += new Long(getNumberOfNetHoldings()).hashCode();
+        _hashCode += new Double(getTotalMarketValueLong()).hashCode();
+        _hashCode += new Double(getTotalMarketValueShort()).hashCode();
+        _hashCode += new Double(getTotalMarketValueNet()).hashCode();
+        if (getHoldingsAsOfDate() != null) {
+            _hashCode += getHoldingsAsOfDate().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(HoldingsSummary.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "HoldingsSummary"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("assetsInTopTenHoldings");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AssetsInTopTenHoldings"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("weightingTopTenHoldings");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "WeightingTopTenHoldings"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("numberOfLongHoldings");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NumberOfLongHoldings"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("numberOfShortHoldings");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NumberOfShortHoldings"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("numberOfNetHoldings");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NumberOfNetHoldings"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("totalMarketValueLong");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TotalMarketValueLong"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("totalMarketValueShort");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TotalMarketValueShort"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("totalMarketValueNet");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TotalMarketValueNet"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("holdingsAsOfDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "HoldingsAsOfDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

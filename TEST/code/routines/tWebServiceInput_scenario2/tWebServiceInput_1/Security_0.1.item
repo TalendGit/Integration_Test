@@ -1,0 +1,388 @@
+/**
+ * Security.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class Security  extends routines.Common  implements java.io.Serializable {
+    private java.lang.String CIK;
+
+    private java.lang.String cusip;
+
+    private java.lang.String symbol;
+
+    private java.lang.String ISIN;
+
+    private java.lang.String valoren;
+
+    private java.lang.String name;
+
+    private java.lang.String market;
+
+    private java.lang.String categoryOrIndustry;
+
+    public Security() {
+    }
+
+    public Security(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           java.lang.String CIK,
+           java.lang.String cusip,
+           java.lang.String symbol,
+           java.lang.String ISIN,
+           java.lang.String valoren,
+           java.lang.String name,
+           java.lang.String market,
+           java.lang.String categoryOrIndustry) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.CIK = CIK;
+        this.cusip = cusip;
+        this.symbol = symbol;
+        this.ISIN = ISIN;
+        this.valoren = valoren;
+        this.name = name;
+        this.market = market;
+        this.categoryOrIndustry = categoryOrIndustry;
+    }
+
+
+    /**
+     * Gets the CIK value for this Security.
+     * 
+     * @return CIK
+     */
+    public java.lang.String getCIK() {
+        return CIK;
+    }
+
+
+    /**
+     * Sets the CIK value for this Security.
+     * 
+     * @param CIK
+     */
+    public void setCIK(java.lang.String CIK) {
+        this.CIK = CIK;
+    }
+
+
+    /**
+     * Gets the cusip value for this Security.
+     * 
+     * @return cusip
+     */
+    public java.lang.String getCusip() {
+        return cusip;
+    }
+
+
+    /**
+     * Sets the cusip value for this Security.
+     * 
+     * @param cusip
+     */
+    public void setCusip(java.lang.String cusip) {
+        this.cusip = cusip;
+    }
+
+
+    /**
+     * Gets the symbol value for this Security.
+     * 
+     * @return symbol
+     */
+    public java.lang.String getSymbol() {
+        return symbol;
+    }
+
+
+    /**
+     * Sets the symbol value for this Security.
+     * 
+     * @param symbol
+     */
+    public void setSymbol(java.lang.String symbol) {
+        this.symbol = symbol;
+    }
+
+
+    /**
+     * Gets the ISIN value for this Security.
+     * 
+     * @return ISIN
+     */
+    public java.lang.String getISIN() {
+        return ISIN;
+    }
+
+
+    /**
+     * Sets the ISIN value for this Security.
+     * 
+     * @param ISIN
+     */
+    public void setISIN(java.lang.String ISIN) {
+        this.ISIN = ISIN;
+    }
+
+
+    /**
+     * Gets the valoren value for this Security.
+     * 
+     * @return valoren
+     */
+    public java.lang.String getValoren() {
+        return valoren;
+    }
+
+
+    /**
+     * Sets the valoren value for this Security.
+     * 
+     * @param valoren
+     */
+    public void setValoren(java.lang.String valoren) {
+        this.valoren = valoren;
+    }
+
+
+    /**
+     * Gets the name value for this Security.
+     * 
+     * @return name
+     */
+    public java.lang.String getName() {
+        return name;
+    }
+
+
+    /**
+     * Sets the name value for this Security.
+     * 
+     * @param name
+     */
+    public void setName(java.lang.String name) {
+        this.name = name;
+    }
+
+
+    /**
+     * Gets the market value for this Security.
+     * 
+     * @return market
+     */
+    public java.lang.String getMarket() {
+        return market;
+    }
+
+
+    /**
+     * Sets the market value for this Security.
+     * 
+     * @param market
+     */
+    public void setMarket(java.lang.String market) {
+        this.market = market;
+    }
+
+
+    /**
+     * Gets the categoryOrIndustry value for this Security.
+     * 
+     * @return categoryOrIndustry
+     */
+    public java.lang.String getCategoryOrIndustry() {
+        return categoryOrIndustry;
+    }
+
+
+    /**
+     * Sets the categoryOrIndustry value for this Security.
+     * 
+     * @param categoryOrIndustry
+     */
+    public void setCategoryOrIndustry(java.lang.String categoryOrIndustry) {
+        this.categoryOrIndustry = categoryOrIndustry;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof Security)) return false;
+        Security other = (Security) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.CIK==null && other.getCIK()==null) || 
+             (this.CIK!=null &&
+              this.CIK.equals(other.getCIK()))) &&
+            ((this.cusip==null && other.getCusip()==null) || 
+             (this.cusip!=null &&
+              this.cusip.equals(other.getCusip()))) &&
+            ((this.symbol==null && other.getSymbol()==null) || 
+             (this.symbol!=null &&
+              this.symbol.equals(other.getSymbol()))) &&
+            ((this.ISIN==null && other.getISIN()==null) || 
+             (this.ISIN!=null &&
+              this.ISIN.equals(other.getISIN()))) &&
+            ((this.valoren==null && other.getValoren()==null) || 
+             (this.valoren!=null &&
+              this.valoren.equals(other.getValoren()))) &&
+            ((this.name==null && other.getName()==null) || 
+             (this.name!=null &&
+              this.name.equals(other.getName()))) &&
+            ((this.market==null && other.getMarket()==null) || 
+             (this.market!=null &&
+              this.market.equals(other.getMarket()))) &&
+            ((this.categoryOrIndustry==null && other.getCategoryOrIndustry()==null) || 
+             (this.categoryOrIndustry!=null &&
+              this.categoryOrIndustry.equals(other.getCategoryOrIndustry())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getCIK() != null) {
+            _hashCode += getCIK().hashCode();
+        }
+        if (getCusip() != null) {
+            _hashCode += getCusip().hashCode();
+        }
+        if (getSymbol() != null) {
+            _hashCode += getSymbol().hashCode();
+        }
+        if (getISIN() != null) {
+            _hashCode += getISIN().hashCode();
+        }
+        if (getValoren() != null) {
+            _hashCode += getValoren().hashCode();
+        }
+        if (getName() != null) {
+            _hashCode += getName().hashCode();
+        }
+        if (getMarket() != null) {
+            _hashCode += getMarket().hashCode();
+        }
+        if (getCategoryOrIndustry() != null) {
+            _hashCode += getCategoryOrIndustry().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(Security.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Security"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("CIK");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CIK"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("cusip");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Cusip"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("symbol");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Symbol"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("ISIN");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ISIN"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("valoren");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Valoren"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("name");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Name"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("market");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Market"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("categoryOrIndustry");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CategoryOrIndustry"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

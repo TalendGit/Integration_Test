@@ -1,0 +1,309 @@
+package routines;
+
+import java.io.StringWriter;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+
+import rcbsdwh.billing_feed_0_3.Billing_Feed.BillingRecordStruct;
+import routines.system.StringUtils;
+import sun.font.CreatedFontTracker;
+import bt.client.xsd.billing.AdjustmentType;
+import bt.client.xsd.billing.Charge;
+import bt.client.xsd.billing.Document;
+import bt.client.xsd.billing.Document.Accountfeed;
+import bt.client.xsd.billing.Document.Accountfeed.Correction;
+import bt.client.xsd.billing.Document.Accountfeed.Invoice;
+import bt.client.xsd.billing.EarlyTerminationChargeType;
+import bt.client.xsd.billing.InstallationChargeType;
+import bt.client.xsd.billing.NonUsageCharge;
+import bt.client.xsd.billing.OneOffChargeType;
+import bt.client.xsd.billing.RentalChargeType;
+import bt.client.xsd.billing.SaleOfGoodsChargeType;
+import bt.client.xsd.billing.UsageChargeType;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class BillingMapper {
+	
+	private static Document billingDoc = new Document();
+	private static BigDecimal rcUserId = new BigDecimal(0);
+	private static Accountfeed currentAcctFeedCharge = null;
+	private static Accountfeed currentAcctFeedAdj = null;
+    
+    public static Document getBillingDoc() {
+		return billingDoc;
+	}
+
+ 
+    private static Accountfeed createAccountFeed(Accountfeed accountFeed) {
+    	Accountfeed acctFeed = new Accountfeed();
+		acctFeed.setBTOPReferenceNumber(accountFeed.getBTOPReferenceNumber());
+		acctFeed.setCompanyName(accountFeed.getCompanyName());
+		acctFeed.setBTCRMAccount(accountFeed.getBTCRMAccount());			
+		acctFeed.setBTBAC(accountFeed.getBTBAC());
+		acctFeed.setBTOPAccount(accountFeed.getBTOPAccount());	
+		return acctFeed;
+    }
+    
+	public static void buildDocument(BillingRecordStruct bms) {
+		if ( bms.getRC_USERID() == null ) {
+			return;
+		}
+		if ( ! rcUserId.equals(bms.getRC_USERID()) ) {
+			currentAcctFeedCharge = null;
+			currentAcctFeedAdj = null;
+			System.out.println("  RC_USERID: " + bms.getRC_USERID());
+			rcUserId = bms.getRC_USERID();
+			Accountfeed acctFeed = new Accountfeed();
+			acctFeed.setBTOPReferenceNumber(bms.getBTOP_REFERENCE_NUM());
+			acctFeed.setCompanyName(bms.getCOMPANY());
+			acctFeed.setBTCRMAccount(bms.getBT_CRM_ACCOUNT());			
+			acctFeed.setBTBAC(bms.getBT_BAC());
+			acctFeed.setBTOPAccount(bms.getBTOP_ACCOUNT());
+			if (bms.getCHARGE_CATEGORY() != null && !bms.getCHARGE_CATEGORY().isEmpty() &&
+					bms.getCHARGE_CATEGORY().equals("AdjustmentType")) {
+				currentAcctFeedAdj = acctFeed;
+			}
+			else {
+				currentAcctFeedCharge = acctFeed;
+			}
+			billingDoc.getAccountfeed().add(acctFeed);
+		}
+		
+		if (bms.getCHARGE_CATEGORY() != null && !bms.getCHARGE_CATEGORY().isEmpty() &&
+				bms.getCHARGE_CATEGORY().equals("AdjustmentType")) {
+			if (currentAcctFeedAdj == null ) {
+				currentAcctFeedAdj = createAccountFeed(currentAcctFeedCharge);
+				billingDoc.getAccountfeed().add(currentAcctFeedAdj);
+			}			
+			if ( currentAcctFeedAdj.getCorrection() == null) {
+				Correction correction = new Correction();
+				currentAcctFeedAdj.setCorrection(correction);
+			}
+			List<AdjustmentType> adjTypeList = currentAcctFeedAdj.getCorrection().getAdjustment();
+			AdjustmentType adjType = new AdjustmentType();
+			setNonUsageChargeDetails(adjType, bms);
+			adjType.setPeriodStart(getXMLGregorianFormatedDate(bms.getPERIOD_START()));
+			adjType.setPeriodEnd(getXMLGregorianFormatedDate(bms.getPERIOD_END()));
+			adjType.setAdjustmentCategory(bms.getADJ_CATEGORY());
+			adjType.setAdjustmentReason(bms.getADJ_REASON());
+			adjType.setDescription(bms.getADJ_DESCRIPTION());
+			adjType.setBTOPInvoiceRef(bms.getADJ_BTOP_INVOICE_REF());
+			adjType.setBTInvoiceRef(bms.getADJ_BT_INVOICE_REF());
+			adjType.setDateOfSupply(getXMLGregorianFormatedDate(bms.getDATE_OF_SUPPLY()));			
+			if (bms.getROAMEDBOO() != null ) {
+				adjType.setRoamedBoo(bms.getROAMEDBOO().equals("true") ? Boolean.TRUE : Boolean.FALSE);
+			}
+			adjTypeList.add(adjType);
+		}
+		else {
+			if (currentAcctFeedCharge == null ) {
+				currentAcctFeedCharge = createAccountFeed(currentAcctFeedAdj);
+				billingDoc.getAccountfeed().add(currentAcctFeedCharge);
+			}			
+
+			if (currentAcctFeedCharge.getInvoice() == null) {
+				Invoice invoice = new Invoice();
+				invoice.setInvoicePeriodStart(getXMLGregorianFormatedDate(bms.getINVOICE_PERIOD_START()));
+				invoice.setInvoicePeriodEnd(getXMLGregorianFormatedDate(bms.getINVOICE_PERIOD_END()));
+				currentAcctFeedCharge.setInvoice(invoice);
+			}
+			Invoice currentInvoice = currentAcctFeedCharge.getInvoice();
+
+			if (bms.getCHARGE_CATEGORY() != null
+					&& !bms.getCHARGE_CATEGORY().isEmpty()
+					&& bms.getCHARGE_CATEGORY().equals("RentalChargeType")) {
+				List<RentalChargeType> rentalChargeList = currentInvoice
+						.getRentalCharge();
+				RentalChargeType rentalCharge = new RentalChargeType();
+				setNonUsageChargeDetails(rentalCharge, bms);
+				rentalCharge.setDescription(bms.getCHARGE_DESCRIPTION());
+				rentalCharge.setPeriodStart(getXMLGregorianFormatedDate(bms
+						.getPERIOD_START()));
+				rentalCharge.setPeriodEnd(getXMLGregorianFormatedDate(bms
+						.getPERIOD_END()));
+				rentalChargeList.add(rentalCharge);
+			}
+
+			if (bms.getCHARGE_CATEGORY() != null
+					&& !bms.getCHARGE_CATEGORY().isEmpty()
+					&& bms.getCHARGE_CATEGORY()
+							.equals("InstallationChargeType")) {
+				List<InstallationChargeType> installationChargeList = currentInvoice
+						.getInstallationCharge();
+				InstallationChargeType installationChargeType = new InstallationChargeType();
+				setNonUsageChargeDetails(installationChargeType, bms);
+				installationChargeType.setDescription(bms
+						.getCHARGE_DESCRIPTION());
+				installationChargeType
+						.setDateOfSupply(getXMLGregorianFormatedDate(bms
+								.getDATE_OF_SUPPLY()));
+				installationChargeList.add(installationChargeType);
+			}
+
+			if (bms.getCHARGE_CATEGORY() != null
+					&& !bms.getCHARGE_CATEGORY().isEmpty()
+					&& bms.getCHARGE_CATEGORY().equals("OneOffChargeType")) {
+				List<OneOffChargeType> oneOffChargeList = currentInvoice
+						.getOneOffCharge();
+				OneOffChargeType oneOffChargeType = new OneOffChargeType();
+				setNonUsageChargeDetails(oneOffChargeType, bms);
+				oneOffChargeType.setDescription(bms.getCHARGE_DESCRIPTION());
+				oneOffChargeType
+						.setDateOfSupply(getXMLGregorianFormatedDate(bms
+								.getDATE_OF_SUPPLY()));
+				oneOffChargeList.add(oneOffChargeType);
+			}
+
+			if (bms.getCHARGE_CATEGORY() != null
+					&& !bms.getCHARGE_CATEGORY().isEmpty()
+					&& bms.getCHARGE_CATEGORY().equals("SaleOfGoodsChargeType")) {
+				List<SaleOfGoodsChargeType> saleOfGoodsChargeList = currentInvoice
+						.getSaleOfGoodsCharge();
+				SaleOfGoodsChargeType saleOfGoodsChargeType = new SaleOfGoodsChargeType();
+				setNonUsageChargeDetails(saleOfGoodsChargeType, bms);
+				saleOfGoodsChargeType.setDescription(bms
+						.getCHARGE_DESCRIPTION());
+				saleOfGoodsChargeType
+						.setDateOfSupply(getXMLGregorianFormatedDate(bms
+								.getDATE_OF_SUPPLY()));
+				saleOfGoodsChargeType.setTaxExempt(bms.getVAT_EXEMPT().equals(
+						"true") ? Boolean.TRUE : Boolean.FALSE);
+				saleOfGoodsChargeType.setDeliveryAddress(bms.getDELIVERY_ADDRESS());
+				saleOfGoodsChargeList.add(saleOfGoodsChargeType);
+			}
+
+			if (bms.getCHARGE_CATEGORY() != null
+					&& !bms.getCHARGE_CATEGORY().isEmpty()
+					&& bms.getCHARGE_CATEGORY().equals(
+							"EarlyTerminationChargeType")) {
+				List<EarlyTerminationChargeType> earlyTerminationChargeList = currentInvoice
+						.getEarlyTerminationCharge();
+				EarlyTerminationChargeType earlyTerminationChargeType = new EarlyTerminationChargeType();
+				setNonUsageChargeDetails(earlyTerminationChargeType, bms);
+				earlyTerminationChargeType.setDescription(bms
+						.getCHARGE_DESCRIPTION());
+				earlyTerminationChargeType
+						.setDateOfSupply(getXMLGregorianFormatedDate(bms
+								.getDATE_OF_SUPPLY()));
+				earlyTerminationChargeList.add(earlyTerminationChargeType);
+			}
+
+			if (bms.getCHARGE_CATEGORY() != null
+					&& !bms.getCHARGE_CATEGORY().isEmpty()
+					&& bms.getCHARGE_CATEGORY().equals("UsageChargeType")) {
+				List<UsageChargeType> usageChargeList = currentInvoice
+						.getUsageCharge();
+				UsageChargeType usageChargeType = new UsageChargeType();
+				usageChargeType.setDescription(bms.getCHARGE_DESCRIPTION());
+				setChargeDetails(usageChargeType, bms);
+				if (bms.getROAMING() != null) {
+					usageChargeType
+							.setRoaming(bms.getROAMING().equals("true") ? Boolean.TRUE
+									: Boolean.FALSE);
+				}
+				usageChargeType.setPeriodStart(getXMLGregorianFormatedDate(bms
+						.getPERIOD_START()));
+				usageChargeType.setPeriodEnd(getXMLGregorianFormatedDate(bms
+						.getPERIOD_END()));				
+			
+				if (bms.getUSAGE_VOLUME() != null) {
+					usageChargeType.setUsageVolume(bms.getUSAGE_VOLUME().toBigInteger());
+				}
+				
+				usageChargeType.setUsageType(bms.getUSAGE_TYPE());
+				usageChargeType.setCallDuration(bms.getCALL_DURATION());
+				usageChargeList.add(usageChargeType);
+			}
+		}
+		
+	}
+
+	
+	private static void setNonUsageChargeDetails(NonUsageCharge charge, BillingRecordStruct bms) {
+		charge.setChargeType(bms.getCHARGE_TYPE());
+		setChargeDetails(charge, bms);
+	}
+	
+	private static void setChargeDetails(Charge charge, BillingRecordStruct bms) {
+		charge.setNetAmount(bms.getNET_AMOUNT());
+		charge.setTaxRate(bms.getTAX_RATE());
+		charge.setTaxAmount(bms.getTAX_AMOUNT());
+	}
+	
+	private static XMLGregorianCalendar getXMLGregorianCalendarDate(Date datePeriod) {		
+		XMLGregorianCalendar invoicePeriodDate = null;		
+		if ( datePeriod != null ) {
+			try {
+				GregorianCalendar gregorianCalendar = new GregorianCalendar();
+				gregorianCalendar.setTime(datePeriod);
+				DatatypeFactory datatypeFactory = DatatypeFactory.newInstance();
+				invoicePeriodDate = datatypeFactory.newXMLGregorianCalendar(gregorianCalendar);
+			}
+			catch (DatatypeConfigurationException e) {
+				// TODO: handle exception
+			}
+		}
+		return invoicePeriodDate;
+	}
+	
+	private static XMLGregorianCalendar getXMLGregorianFormatedDate(Date datePeriod) {
+		XMLGregorianCalendar invoicePeriodDate = null;		
+		if ( datePeriod != null ) {
+			try {
+				DateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd");
+				String strDate=dateFormat.format(datePeriod);
+				invoicePeriodDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(strDate);
+			}
+			catch (DatatypeConfigurationException e) {
+				// TODO: handle exception
+			}
+		}
+		return invoicePeriodDate;
+	}	
+	
+	public static String buildXMLDocument() throws JAXBException {
+		String billingXML = null;
+		try {
+			JAXBContext context = JAXBContext.newInstance(Document.class);
+			Marshaller marshaller = context.createMarshaller();
+			StringWriter stringWriter = new StringWriter();
+			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+			marshaller.marshal(billingDoc, stringWriter);
+			billingXML = stringWriter.toString();
+		}
+		catch (JAXBException e) {
+			// TODO: handle exception
+		}
+		return billingXML;
+	}
+}

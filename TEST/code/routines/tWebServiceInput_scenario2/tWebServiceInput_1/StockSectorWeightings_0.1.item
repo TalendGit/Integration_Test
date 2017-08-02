@@ -1,0 +1,435 @@
+/**
+ * StockSectorWeightings.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class StockSectorWeightings  implements java.io.Serializable {
+    private double basicMaterials;
+
+    private double consumerCyclical;
+
+    private double financialServices;
+
+    private double realEstate;
+
+    private double consumerDefensive;
+
+    private double healthcare;
+
+    private double utilities;
+
+    private double communicationServices;
+
+    private double energy;
+
+    private double industrials;
+
+    private double technology;
+
+    public StockSectorWeightings() {
+    }
+
+    public StockSectorWeightings(
+           double basicMaterials,
+           double consumerCyclical,
+           double financialServices,
+           double realEstate,
+           double consumerDefensive,
+           double healthcare,
+           double utilities,
+           double communicationServices,
+           double energy,
+           double industrials,
+           double technology) {
+           this.basicMaterials = basicMaterials;
+           this.consumerCyclical = consumerCyclical;
+           this.financialServices = financialServices;
+           this.realEstate = realEstate;
+           this.consumerDefensive = consumerDefensive;
+           this.healthcare = healthcare;
+           this.utilities = utilities;
+           this.communicationServices = communicationServices;
+           this.energy = energy;
+           this.industrials = industrials;
+           this.technology = technology;
+    }
+
+
+    /**
+     * Gets the basicMaterials value for this StockSectorWeightings.
+     * 
+     * @return basicMaterials
+     */
+    public double getBasicMaterials() {
+        return basicMaterials;
+    }
+
+
+    /**
+     * Sets the basicMaterials value for this StockSectorWeightings.
+     * 
+     * @param basicMaterials
+     */
+    public void setBasicMaterials(double basicMaterials) {
+        this.basicMaterials = basicMaterials;
+    }
+
+
+    /**
+     * Gets the consumerCyclical value for this StockSectorWeightings.
+     * 
+     * @return consumerCyclical
+     */
+    public double getConsumerCyclical() {
+        return consumerCyclical;
+    }
+
+
+    /**
+     * Sets the consumerCyclical value for this StockSectorWeightings.
+     * 
+     * @param consumerCyclical
+     */
+    public void setConsumerCyclical(double consumerCyclical) {
+        this.consumerCyclical = consumerCyclical;
+    }
+
+
+    /**
+     * Gets the financialServices value for this StockSectorWeightings.
+     * 
+     * @return financialServices
+     */
+    public double getFinancialServices() {
+        return financialServices;
+    }
+
+
+    /**
+     * Sets the financialServices value for this StockSectorWeightings.
+     * 
+     * @param financialServices
+     */
+    public void setFinancialServices(double financialServices) {
+        this.financialServices = financialServices;
+    }
+
+
+    /**
+     * Gets the realEstate value for this StockSectorWeightings.
+     * 
+     * @return realEstate
+     */
+    public double getRealEstate() {
+        return realEstate;
+    }
+
+
+    /**
+     * Sets the realEstate value for this StockSectorWeightings.
+     * 
+     * @param realEstate
+     */
+    public void setRealEstate(double realEstate) {
+        this.realEstate = realEstate;
+    }
+
+
+    /**
+     * Gets the consumerDefensive value for this StockSectorWeightings.
+     * 
+     * @return consumerDefensive
+     */
+    public double getConsumerDefensive() {
+        return consumerDefensive;
+    }
+
+
+    /**
+     * Sets the consumerDefensive value for this StockSectorWeightings.
+     * 
+     * @param consumerDefensive
+     */
+    public void setConsumerDefensive(double consumerDefensive) {
+        this.consumerDefensive = consumerDefensive;
+    }
+
+
+    /**
+     * Gets the healthcare value for this StockSectorWeightings.
+     * 
+     * @return healthcare
+     */
+    public double getHealthcare() {
+        return healthcare;
+    }
+
+
+    /**
+     * Sets the healthcare value for this StockSectorWeightings.
+     * 
+     * @param healthcare
+     */
+    public void setHealthcare(double healthcare) {
+        this.healthcare = healthcare;
+    }
+
+
+    /**
+     * Gets the utilities value for this StockSectorWeightings.
+     * 
+     * @return utilities
+     */
+    public double getUtilities() {
+        return utilities;
+    }
+
+
+    /**
+     * Sets the utilities value for this StockSectorWeightings.
+     * 
+     * @param utilities
+     */
+    public void setUtilities(double utilities) {
+        this.utilities = utilities;
+    }
+
+
+    /**
+     * Gets the communicationServices value for this StockSectorWeightings.
+     * 
+     * @return communicationServices
+     */
+    public double getCommunicationServices() {
+        return communicationServices;
+    }
+
+
+    /**
+     * Sets the communicationServices value for this StockSectorWeightings.
+     * 
+     * @param communicationServices
+     */
+    public void setCommunicationServices(double communicationServices) {
+        this.communicationServices = communicationServices;
+    }
+
+
+    /**
+     * Gets the energy value for this StockSectorWeightings.
+     * 
+     * @return energy
+     */
+    public double getEnergy() {
+        return energy;
+    }
+
+
+    /**
+     * Sets the energy value for this StockSectorWeightings.
+     * 
+     * @param energy
+     */
+    public void setEnergy(double energy) {
+        this.energy = energy;
+    }
+
+
+    /**
+     * Gets the industrials value for this StockSectorWeightings.
+     * 
+     * @return industrials
+     */
+    public double getIndustrials() {
+        return industrials;
+    }
+
+
+    /**
+     * Sets the industrials value for this StockSectorWeightings.
+     * 
+     * @param industrials
+     */
+    public void setIndustrials(double industrials) {
+        this.industrials = industrials;
+    }
+
+
+    /**
+     * Gets the technology value for this StockSectorWeightings.
+     * 
+     * @return technology
+     */
+    public double getTechnology() {
+        return technology;
+    }
+
+
+    /**
+     * Sets the technology value for this StockSectorWeightings.
+     * 
+     * @param technology
+     */
+    public void setTechnology(double technology) {
+        this.technology = technology;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof StockSectorWeightings)) return false;
+        StockSectorWeightings other = (StockSectorWeightings) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.basicMaterials == other.getBasicMaterials() &&
+            this.consumerCyclical == other.getConsumerCyclical() &&
+            this.financialServices == other.getFinancialServices() &&
+            this.realEstate == other.getRealEstate() &&
+            this.consumerDefensive == other.getConsumerDefensive() &&
+            this.healthcare == other.getHealthcare() &&
+            this.utilities == other.getUtilities() &&
+            this.communicationServices == other.getCommunicationServices() &&
+            this.energy == other.getEnergy() &&
+            this.industrials == other.getIndustrials() &&
+            this.technology == other.getTechnology();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += new Double(getBasicMaterials()).hashCode();
+        _hashCode += new Double(getConsumerCyclical()).hashCode();
+        _hashCode += new Double(getFinancialServices()).hashCode();
+        _hashCode += new Double(getRealEstate()).hashCode();
+        _hashCode += new Double(getConsumerDefensive()).hashCode();
+        _hashCode += new Double(getHealthcare()).hashCode();
+        _hashCode += new Double(getUtilities()).hashCode();
+        _hashCode += new Double(getCommunicationServices()).hashCode();
+        _hashCode += new Double(getEnergy()).hashCode();
+        _hashCode += new Double(getIndustrials()).hashCode();
+        _hashCode += new Double(getTechnology()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(StockSectorWeightings.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockSectorWeightings"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("basicMaterials");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "BasicMaterials"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("consumerCyclical");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ConsumerCyclical"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("financialServices");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FinancialServices"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("realEstate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RealEstate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("consumerDefensive");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ConsumerDefensive"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("healthcare");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Healthcare"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("utilities");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Utilities"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("communicationServices");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CommunicationServices"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("energy");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Energy"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("industrials");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Industrials"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("technology");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Technology"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

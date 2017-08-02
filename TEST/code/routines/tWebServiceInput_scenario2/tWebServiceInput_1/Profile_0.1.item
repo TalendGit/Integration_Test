@@ -1,0 +1,1109 @@
+/**
+ * Profile.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class Profile  implements java.io.Serializable {
+    private java.lang.String fundName;
+
+    private java.lang.String fundFamilyName;
+
+    private java.lang.String shareClass;
+
+    private java.lang.String fundType;
+
+    private java.lang.String legalName;
+
+    private java.lang.String domicileCountry;
+
+    private java.lang.String domicileState;
+
+    private java.lang.String currency;
+
+    private java.lang.String investmentStyle;
+
+    private double netAssets;
+
+    private java.lang.Double monthEndNAV;
+
+    private java.lang.String monthEndNAVDate;
+
+    private java.lang.String fundObjective;
+
+    private java.lang.String investmentSummary;
+
+    private java.lang.String inceptionDate;
+
+    private java.lang.Long sharesOutstanding;
+
+    private java.lang.Boolean passiveFund;
+
+    private java.lang.Boolean indexFund;
+
+    private java.lang.Boolean fundOfFunds;
+
+    private java.lang.Boolean exchangeTradedNote;
+
+    private java.lang.Boolean leveragedFund;
+
+    private java.lang.Boolean noLoadFund;
+
+    private java.lang.Boolean trueNoLoadFund;
+
+    private java.lang.Boolean requiresMinimumInvestment;
+
+    private boolean closedToNewInvestors;
+
+    private java.lang.String closedToNewInvestorsDate;
+
+    private java.lang.Boolean dividendYieldFund;
+
+    private java.lang.String redemptionDate;
+
+    public Profile() {
+    }
+
+    public Profile(
+           java.lang.String fundName,
+           java.lang.String fundFamilyName,
+           java.lang.String shareClass,
+           java.lang.String fundType,
+           java.lang.String legalName,
+           java.lang.String domicileCountry,
+           java.lang.String domicileState,
+           java.lang.String currency,
+           java.lang.String investmentStyle,
+           double netAssets,
+           java.lang.Double monthEndNAV,
+           java.lang.String monthEndNAVDate,
+           java.lang.String fundObjective,
+           java.lang.String investmentSummary,
+           java.lang.String inceptionDate,
+           java.lang.Long sharesOutstanding,
+           java.lang.Boolean passiveFund,
+           java.lang.Boolean indexFund,
+           java.lang.Boolean fundOfFunds,
+           java.lang.Boolean exchangeTradedNote,
+           java.lang.Boolean leveragedFund,
+           java.lang.Boolean noLoadFund,
+           java.lang.Boolean trueNoLoadFund,
+           java.lang.Boolean requiresMinimumInvestment,
+           boolean closedToNewInvestors,
+           java.lang.String closedToNewInvestorsDate,
+           java.lang.Boolean dividendYieldFund,
+           java.lang.String redemptionDate) {
+           this.fundName = fundName;
+           this.fundFamilyName = fundFamilyName;
+           this.shareClass = shareClass;
+           this.fundType = fundType;
+           this.legalName = legalName;
+           this.domicileCountry = domicileCountry;
+           this.domicileState = domicileState;
+           this.currency = currency;
+           this.investmentStyle = investmentStyle;
+           this.netAssets = netAssets;
+           this.monthEndNAV = monthEndNAV;
+           this.monthEndNAVDate = monthEndNAVDate;
+           this.fundObjective = fundObjective;
+           this.investmentSummary = investmentSummary;
+           this.inceptionDate = inceptionDate;
+           this.sharesOutstanding = sharesOutstanding;
+           this.passiveFund = passiveFund;
+           this.indexFund = indexFund;
+           this.fundOfFunds = fundOfFunds;
+           this.exchangeTradedNote = exchangeTradedNote;
+           this.leveragedFund = leveragedFund;
+           this.noLoadFund = noLoadFund;
+           this.trueNoLoadFund = trueNoLoadFund;
+           this.requiresMinimumInvestment = requiresMinimumInvestment;
+           this.closedToNewInvestors = closedToNewInvestors;
+           this.closedToNewInvestorsDate = closedToNewInvestorsDate;
+           this.dividendYieldFund = dividendYieldFund;
+           this.redemptionDate = redemptionDate;
+    }
+
+
+    /**
+     * Gets the fundName value for this Profile.
+     * 
+     * @return fundName
+     */
+    public java.lang.String getFundName() {
+        return fundName;
+    }
+
+
+    /**
+     * Sets the fundName value for this Profile.
+     * 
+     * @param fundName
+     */
+    public void setFundName(java.lang.String fundName) {
+        this.fundName = fundName;
+    }
+
+
+    /**
+     * Gets the fundFamilyName value for this Profile.
+     * 
+     * @return fundFamilyName
+     */
+    public java.lang.String getFundFamilyName() {
+        return fundFamilyName;
+    }
+
+
+    /**
+     * Sets the fundFamilyName value for this Profile.
+     * 
+     * @param fundFamilyName
+     */
+    public void setFundFamilyName(java.lang.String fundFamilyName) {
+        this.fundFamilyName = fundFamilyName;
+    }
+
+
+    /**
+     * Gets the shareClass value for this Profile.
+     * 
+     * @return shareClass
+     */
+    public java.lang.String getShareClass() {
+        return shareClass;
+    }
+
+
+    /**
+     * Sets the shareClass value for this Profile.
+     * 
+     * @param shareClass
+     */
+    public void setShareClass(java.lang.String shareClass) {
+        this.shareClass = shareClass;
+    }
+
+
+    /**
+     * Gets the fundType value for this Profile.
+     * 
+     * @return fundType
+     */
+    public java.lang.String getFundType() {
+        return fundType;
+    }
+
+
+    /**
+     * Sets the fundType value for this Profile.
+     * 
+     * @param fundType
+     */
+    public void setFundType(java.lang.String fundType) {
+        this.fundType = fundType;
+    }
+
+
+    /**
+     * Gets the legalName value for this Profile.
+     * 
+     * @return legalName
+     */
+    public java.lang.String getLegalName() {
+        return legalName;
+    }
+
+
+    /**
+     * Sets the legalName value for this Profile.
+     * 
+     * @param legalName
+     */
+    public void setLegalName(java.lang.String legalName) {
+        this.legalName = legalName;
+    }
+
+
+    /**
+     * Gets the domicileCountry value for this Profile.
+     * 
+     * @return domicileCountry
+     */
+    public java.lang.String getDomicileCountry() {
+        return domicileCountry;
+    }
+
+
+    /**
+     * Sets the domicileCountry value for this Profile.
+     * 
+     * @param domicileCountry
+     */
+    public void setDomicileCountry(java.lang.String domicileCountry) {
+        this.domicileCountry = domicileCountry;
+    }
+
+
+    /**
+     * Gets the domicileState value for this Profile.
+     * 
+     * @return domicileState
+     */
+    public java.lang.String getDomicileState() {
+        return domicileState;
+    }
+
+
+    /**
+     * Sets the domicileState value for this Profile.
+     * 
+     * @param domicileState
+     */
+    public void setDomicileState(java.lang.String domicileState) {
+        this.domicileState = domicileState;
+    }
+
+
+    /**
+     * Gets the currency value for this Profile.
+     * 
+     * @return currency
+     */
+    public java.lang.String getCurrency() {
+        return currency;
+    }
+
+
+    /**
+     * Sets the currency value for this Profile.
+     * 
+     * @param currency
+     */
+    public void setCurrency(java.lang.String currency) {
+        this.currency = currency;
+    }
+
+
+    /**
+     * Gets the investmentStyle value for this Profile.
+     * 
+     * @return investmentStyle
+     */
+    public java.lang.String getInvestmentStyle() {
+        return investmentStyle;
+    }
+
+
+    /**
+     * Sets the investmentStyle value for this Profile.
+     * 
+     * @param investmentStyle
+     */
+    public void setInvestmentStyle(java.lang.String investmentStyle) {
+        this.investmentStyle = investmentStyle;
+    }
+
+
+    /**
+     * Gets the netAssets value for this Profile.
+     * 
+     * @return netAssets
+     */
+    public double getNetAssets() {
+        return netAssets;
+    }
+
+
+    /**
+     * Sets the netAssets value for this Profile.
+     * 
+     * @param netAssets
+     */
+    public void setNetAssets(double netAssets) {
+        this.netAssets = netAssets;
+    }
+
+
+    /**
+     * Gets the monthEndNAV value for this Profile.
+     * 
+     * @return monthEndNAV
+     */
+    public java.lang.Double getMonthEndNAV() {
+        return monthEndNAV;
+    }
+
+
+    /**
+     * Sets the monthEndNAV value for this Profile.
+     * 
+     * @param monthEndNAV
+     */
+    public void setMonthEndNAV(java.lang.Double monthEndNAV) {
+        this.monthEndNAV = monthEndNAV;
+    }
+
+
+    /**
+     * Gets the monthEndNAVDate value for this Profile.
+     * 
+     * @return monthEndNAVDate
+     */
+    public java.lang.String getMonthEndNAVDate() {
+        return monthEndNAVDate;
+    }
+
+
+    /**
+     * Sets the monthEndNAVDate value for this Profile.
+     * 
+     * @param monthEndNAVDate
+     */
+    public void setMonthEndNAVDate(java.lang.String monthEndNAVDate) {
+        this.monthEndNAVDate = monthEndNAVDate;
+    }
+
+
+    /**
+     * Gets the fundObjective value for this Profile.
+     * 
+     * @return fundObjective
+     */
+    public java.lang.String getFundObjective() {
+        return fundObjective;
+    }
+
+
+    /**
+     * Sets the fundObjective value for this Profile.
+     * 
+     * @param fundObjective
+     */
+    public void setFundObjective(java.lang.String fundObjective) {
+        this.fundObjective = fundObjective;
+    }
+
+
+    /**
+     * Gets the investmentSummary value for this Profile.
+     * 
+     * @return investmentSummary
+     */
+    public java.lang.String getInvestmentSummary() {
+        return investmentSummary;
+    }
+
+
+    /**
+     * Sets the investmentSummary value for this Profile.
+     * 
+     * @param investmentSummary
+     */
+    public void setInvestmentSummary(java.lang.String investmentSummary) {
+        this.investmentSummary = investmentSummary;
+    }
+
+
+    /**
+     * Gets the inceptionDate value for this Profile.
+     * 
+     * @return inceptionDate
+     */
+    public java.lang.String getInceptionDate() {
+        return inceptionDate;
+    }
+
+
+    /**
+     * Sets the inceptionDate value for this Profile.
+     * 
+     * @param inceptionDate
+     */
+    public void setInceptionDate(java.lang.String inceptionDate) {
+        this.inceptionDate = inceptionDate;
+    }
+
+
+    /**
+     * Gets the sharesOutstanding value for this Profile.
+     * 
+     * @return sharesOutstanding
+     */
+    public java.lang.Long getSharesOutstanding() {
+        return sharesOutstanding;
+    }
+
+
+    /**
+     * Sets the sharesOutstanding value for this Profile.
+     * 
+     * @param sharesOutstanding
+     */
+    public void setSharesOutstanding(java.lang.Long sharesOutstanding) {
+        this.sharesOutstanding = sharesOutstanding;
+    }
+
+
+    /**
+     * Gets the passiveFund value for this Profile.
+     * 
+     * @return passiveFund
+     */
+    public java.lang.Boolean getPassiveFund() {
+        return passiveFund;
+    }
+
+
+    /**
+     * Sets the passiveFund value for this Profile.
+     * 
+     * @param passiveFund
+     */
+    public void setPassiveFund(java.lang.Boolean passiveFund) {
+        this.passiveFund = passiveFund;
+    }
+
+
+    /**
+     * Gets the indexFund value for this Profile.
+     * 
+     * @return indexFund
+     */
+    public java.lang.Boolean getIndexFund() {
+        return indexFund;
+    }
+
+
+    /**
+     * Sets the indexFund value for this Profile.
+     * 
+     * @param indexFund
+     */
+    public void setIndexFund(java.lang.Boolean indexFund) {
+        this.indexFund = indexFund;
+    }
+
+
+    /**
+     * Gets the fundOfFunds value for this Profile.
+     * 
+     * @return fundOfFunds
+     */
+    public java.lang.Boolean getFundOfFunds() {
+        return fundOfFunds;
+    }
+
+
+    /**
+     * Sets the fundOfFunds value for this Profile.
+     * 
+     * @param fundOfFunds
+     */
+    public void setFundOfFunds(java.lang.Boolean fundOfFunds) {
+        this.fundOfFunds = fundOfFunds;
+    }
+
+
+    /**
+     * Gets the exchangeTradedNote value for this Profile.
+     * 
+     * @return exchangeTradedNote
+     */
+    public java.lang.Boolean getExchangeTradedNote() {
+        return exchangeTradedNote;
+    }
+
+
+    /**
+     * Sets the exchangeTradedNote value for this Profile.
+     * 
+     * @param exchangeTradedNote
+     */
+    public void setExchangeTradedNote(java.lang.Boolean exchangeTradedNote) {
+        this.exchangeTradedNote = exchangeTradedNote;
+    }
+
+
+    /**
+     * Gets the leveragedFund value for this Profile.
+     * 
+     * @return leveragedFund
+     */
+    public java.lang.Boolean getLeveragedFund() {
+        return leveragedFund;
+    }
+
+
+    /**
+     * Sets the leveragedFund value for this Profile.
+     * 
+     * @param leveragedFund
+     */
+    public void setLeveragedFund(java.lang.Boolean leveragedFund) {
+        this.leveragedFund = leveragedFund;
+    }
+
+
+    /**
+     * Gets the noLoadFund value for this Profile.
+     * 
+     * @return noLoadFund
+     */
+    public java.lang.Boolean getNoLoadFund() {
+        return noLoadFund;
+    }
+
+
+    /**
+     * Sets the noLoadFund value for this Profile.
+     * 
+     * @param noLoadFund
+     */
+    public void setNoLoadFund(java.lang.Boolean noLoadFund) {
+        this.noLoadFund = noLoadFund;
+    }
+
+
+    /**
+     * Gets the trueNoLoadFund value for this Profile.
+     * 
+     * @return trueNoLoadFund
+     */
+    public java.lang.Boolean getTrueNoLoadFund() {
+        return trueNoLoadFund;
+    }
+
+
+    /**
+     * Sets the trueNoLoadFund value for this Profile.
+     * 
+     * @param trueNoLoadFund
+     */
+    public void setTrueNoLoadFund(java.lang.Boolean trueNoLoadFund) {
+        this.trueNoLoadFund = trueNoLoadFund;
+    }
+
+
+    /**
+     * Gets the requiresMinimumInvestment value for this Profile.
+     * 
+     * @return requiresMinimumInvestment
+     */
+    public java.lang.Boolean getRequiresMinimumInvestment() {
+        return requiresMinimumInvestment;
+    }
+
+
+    /**
+     * Sets the requiresMinimumInvestment value for this Profile.
+     * 
+     * @param requiresMinimumInvestment
+     */
+    public void setRequiresMinimumInvestment(java.lang.Boolean requiresMinimumInvestment) {
+        this.requiresMinimumInvestment = requiresMinimumInvestment;
+    }
+
+
+    /**
+     * Gets the closedToNewInvestors value for this Profile.
+     * 
+     * @return closedToNewInvestors
+     */
+    public boolean isClosedToNewInvestors() {
+        return closedToNewInvestors;
+    }
+
+
+    /**
+     * Sets the closedToNewInvestors value for this Profile.
+     * 
+     * @param closedToNewInvestors
+     */
+    public void setClosedToNewInvestors(boolean closedToNewInvestors) {
+        this.closedToNewInvestors = closedToNewInvestors;
+    }
+
+
+    /**
+     * Gets the closedToNewInvestorsDate value for this Profile.
+     * 
+     * @return closedToNewInvestorsDate
+     */
+    public java.lang.String getClosedToNewInvestorsDate() {
+        return closedToNewInvestorsDate;
+    }
+
+
+    /**
+     * Sets the closedToNewInvestorsDate value for this Profile.
+     * 
+     * @param closedToNewInvestorsDate
+     */
+    public void setClosedToNewInvestorsDate(java.lang.String closedToNewInvestorsDate) {
+        this.closedToNewInvestorsDate = closedToNewInvestorsDate;
+    }
+
+
+    /**
+     * Gets the dividendYieldFund value for this Profile.
+     * 
+     * @return dividendYieldFund
+     */
+    public java.lang.Boolean getDividendYieldFund() {
+        return dividendYieldFund;
+    }
+
+
+    /**
+     * Sets the dividendYieldFund value for this Profile.
+     * 
+     * @param dividendYieldFund
+     */
+    public void setDividendYieldFund(java.lang.Boolean dividendYieldFund) {
+        this.dividendYieldFund = dividendYieldFund;
+    }
+
+
+    /**
+     * Gets the redemptionDate value for this Profile.
+     * 
+     * @return redemptionDate
+     */
+    public java.lang.String getRedemptionDate() {
+        return redemptionDate;
+    }
+
+
+    /**
+     * Sets the redemptionDate value for this Profile.
+     * 
+     * @param redemptionDate
+     */
+    public void setRedemptionDate(java.lang.String redemptionDate) {
+        this.redemptionDate = redemptionDate;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof Profile)) return false;
+        Profile other = (Profile) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.fundName==null && other.getFundName()==null) || 
+             (this.fundName!=null &&
+              this.fundName.equals(other.getFundName()))) &&
+            ((this.fundFamilyName==null && other.getFundFamilyName()==null) || 
+             (this.fundFamilyName!=null &&
+              this.fundFamilyName.equals(other.getFundFamilyName()))) &&
+            ((this.shareClass==null && other.getShareClass()==null) || 
+             (this.shareClass!=null &&
+              this.shareClass.equals(other.getShareClass()))) &&
+            ((this.fundType==null && other.getFundType()==null) || 
+             (this.fundType!=null &&
+              this.fundType.equals(other.getFundType()))) &&
+            ((this.legalName==null && other.getLegalName()==null) || 
+             (this.legalName!=null &&
+              this.legalName.equals(other.getLegalName()))) &&
+            ((this.domicileCountry==null && other.getDomicileCountry()==null) || 
+             (this.domicileCountry!=null &&
+              this.domicileCountry.equals(other.getDomicileCountry()))) &&
+            ((this.domicileState==null && other.getDomicileState()==null) || 
+             (this.domicileState!=null &&
+              this.domicileState.equals(other.getDomicileState()))) &&
+            ((this.currency==null && other.getCurrency()==null) || 
+             (this.currency!=null &&
+              this.currency.equals(other.getCurrency()))) &&
+            ((this.investmentStyle==null && other.getInvestmentStyle()==null) || 
+             (this.investmentStyle!=null &&
+              this.investmentStyle.equals(other.getInvestmentStyle()))) &&
+            this.netAssets == other.getNetAssets() &&
+            ((this.monthEndNAV==null && other.getMonthEndNAV()==null) || 
+             (this.monthEndNAV!=null &&
+              this.monthEndNAV.equals(other.getMonthEndNAV()))) &&
+            ((this.monthEndNAVDate==null && other.getMonthEndNAVDate()==null) || 
+             (this.monthEndNAVDate!=null &&
+              this.monthEndNAVDate.equals(other.getMonthEndNAVDate()))) &&
+            ((this.fundObjective==null && other.getFundObjective()==null) || 
+             (this.fundObjective!=null &&
+              this.fundObjective.equals(other.getFundObjective()))) &&
+            ((this.investmentSummary==null && other.getInvestmentSummary()==null) || 
+             (this.investmentSummary!=null &&
+              this.investmentSummary.equals(other.getInvestmentSummary()))) &&
+            ((this.inceptionDate==null && other.getInceptionDate()==null) || 
+             (this.inceptionDate!=null &&
+              this.inceptionDate.equals(other.getInceptionDate()))) &&
+            ((this.sharesOutstanding==null && other.getSharesOutstanding()==null) || 
+             (this.sharesOutstanding!=null &&
+              this.sharesOutstanding.equals(other.getSharesOutstanding()))) &&
+            ((this.passiveFund==null && other.getPassiveFund()==null) || 
+             (this.passiveFund!=null &&
+              this.passiveFund.equals(other.getPassiveFund()))) &&
+            ((this.indexFund==null && other.getIndexFund()==null) || 
+             (this.indexFund!=null &&
+              this.indexFund.equals(other.getIndexFund()))) &&
+            ((this.fundOfFunds==null && other.getFundOfFunds()==null) || 
+             (this.fundOfFunds!=null &&
+              this.fundOfFunds.equals(other.getFundOfFunds()))) &&
+            ((this.exchangeTradedNote==null && other.getExchangeTradedNote()==null) || 
+             (this.exchangeTradedNote!=null &&
+              this.exchangeTradedNote.equals(other.getExchangeTradedNote()))) &&
+            ((this.leveragedFund==null && other.getLeveragedFund()==null) || 
+             (this.leveragedFund!=null &&
+              this.leveragedFund.equals(other.getLeveragedFund()))) &&
+            ((this.noLoadFund==null && other.getNoLoadFund()==null) || 
+             (this.noLoadFund!=null &&
+              this.noLoadFund.equals(other.getNoLoadFund()))) &&
+            ((this.trueNoLoadFund==null && other.getTrueNoLoadFund()==null) || 
+             (this.trueNoLoadFund!=null &&
+              this.trueNoLoadFund.equals(other.getTrueNoLoadFund()))) &&
+            ((this.requiresMinimumInvestment==null && other.getRequiresMinimumInvestment()==null) || 
+             (this.requiresMinimumInvestment!=null &&
+              this.requiresMinimumInvestment.equals(other.getRequiresMinimumInvestment()))) &&
+            this.closedToNewInvestors == other.isClosedToNewInvestors() &&
+            ((this.closedToNewInvestorsDate==null && other.getClosedToNewInvestorsDate()==null) || 
+             (this.closedToNewInvestorsDate!=null &&
+              this.closedToNewInvestorsDate.equals(other.getClosedToNewInvestorsDate()))) &&
+            ((this.dividendYieldFund==null && other.getDividendYieldFund()==null) || 
+             (this.dividendYieldFund!=null &&
+              this.dividendYieldFund.equals(other.getDividendYieldFund()))) &&
+            ((this.redemptionDate==null && other.getRedemptionDate()==null) || 
+             (this.redemptionDate!=null &&
+              this.redemptionDate.equals(other.getRedemptionDate())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getFundName() != null) {
+            _hashCode += getFundName().hashCode();
+        }
+        if (getFundFamilyName() != null) {
+            _hashCode += getFundFamilyName().hashCode();
+        }
+        if (getShareClass() != null) {
+            _hashCode += getShareClass().hashCode();
+        }
+        if (getFundType() != null) {
+            _hashCode += getFundType().hashCode();
+        }
+        if (getLegalName() != null) {
+            _hashCode += getLegalName().hashCode();
+        }
+        if (getDomicileCountry() != null) {
+            _hashCode += getDomicileCountry().hashCode();
+        }
+        if (getDomicileState() != null) {
+            _hashCode += getDomicileState().hashCode();
+        }
+        if (getCurrency() != null) {
+            _hashCode += getCurrency().hashCode();
+        }
+        if (getInvestmentStyle() != null) {
+            _hashCode += getInvestmentStyle().hashCode();
+        }
+        _hashCode += new Double(getNetAssets()).hashCode();
+        if (getMonthEndNAV() != null) {
+            _hashCode += getMonthEndNAV().hashCode();
+        }
+        if (getMonthEndNAVDate() != null) {
+            _hashCode += getMonthEndNAVDate().hashCode();
+        }
+        if (getFundObjective() != null) {
+            _hashCode += getFundObjective().hashCode();
+        }
+        if (getInvestmentSummary() != null) {
+            _hashCode += getInvestmentSummary().hashCode();
+        }
+        if (getInceptionDate() != null) {
+            _hashCode += getInceptionDate().hashCode();
+        }
+        if (getSharesOutstanding() != null) {
+            _hashCode += getSharesOutstanding().hashCode();
+        }
+        if (getPassiveFund() != null) {
+            _hashCode += getPassiveFund().hashCode();
+        }
+        if (getIndexFund() != null) {
+            _hashCode += getIndexFund().hashCode();
+        }
+        if (getFundOfFunds() != null) {
+            _hashCode += getFundOfFunds().hashCode();
+        }
+        if (getExchangeTradedNote() != null) {
+            _hashCode += getExchangeTradedNote().hashCode();
+        }
+        if (getLeveragedFund() != null) {
+            _hashCode += getLeveragedFund().hashCode();
+        }
+        if (getNoLoadFund() != null) {
+            _hashCode += getNoLoadFund().hashCode();
+        }
+        if (getTrueNoLoadFund() != null) {
+            _hashCode += getTrueNoLoadFund().hashCode();
+        }
+        if (getRequiresMinimumInvestment() != null) {
+            _hashCode += getRequiresMinimumInvestment().hashCode();
+        }
+        _hashCode += (isClosedToNewInvestors() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        if (getClosedToNewInvestorsDate() != null) {
+            _hashCode += getClosedToNewInvestorsDate().hashCode();
+        }
+        if (getDividendYieldFund() != null) {
+            _hashCode += getDividendYieldFund().hashCode();
+        }
+        if (getRedemptionDate() != null) {
+            _hashCode += getRedemptionDate().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(Profile.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Profile"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fundName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fundFamilyName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFamilyName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("shareClass");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShareClass"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fundType");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundType"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("legalName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LegalName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("domicileCountry");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DomicileCountry"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("domicileState");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DomicileState"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("currency");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Currency"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("investmentStyle");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "InvestmentStyle"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("netAssets");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NetAssets"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("monthEndNAV");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MonthEndNAV"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("monthEndNAVDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MonthEndNAVDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fundObjective");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundObjective"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("investmentSummary");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "InvestmentSummary"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("inceptionDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "InceptionDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("sharesOutstanding");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SharesOutstanding"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("passiveFund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PassiveFund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("indexFund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IndexFund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fundOfFunds");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundOfFunds"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("exchangeTradedNote");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ExchangeTradedNote"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("leveragedFund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LeveragedFund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("noLoadFund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NoLoadFund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("trueNoLoadFund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TrueNoLoadFund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("requiresMinimumInvestment");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RequiresMinimumInvestment"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("closedToNewInvestors");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ClosedToNewInvestors"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("closedToNewInvestorsDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ClosedToNewInvestorsDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("dividendYieldFund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DividendYieldFund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("redemptionDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RedemptionDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

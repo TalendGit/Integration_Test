@@ -1,0 +1,390 @@
+/**
+ * FundNAV.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class FundNAV  extends routines.Common  implements java.io.Serializable {
+    private routines.Security security;
+
+    private java.lang.String date;
+
+    private double last;
+
+    private double open;
+
+    private double lastClose;
+
+    private double changeFromOpen;
+
+    private double percentChangeFromOpen;
+
+    private double changeFromLastClose;
+
+    private double percentChangeFromLastClose;
+
+    public FundNAV() {
+    }
+
+    public FundNAV(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           routines.Security security,
+           java.lang.String date,
+           double last,
+           double open,
+           double lastClose,
+           double changeFromOpen,
+           double percentChangeFromOpen,
+           double changeFromLastClose,
+           double percentChangeFromLastClose) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.security = security;
+        this.date = date;
+        this.last = last;
+        this.open = open;
+        this.lastClose = lastClose;
+        this.changeFromOpen = changeFromOpen;
+        this.percentChangeFromOpen = percentChangeFromOpen;
+        this.changeFromLastClose = changeFromLastClose;
+        this.percentChangeFromLastClose = percentChangeFromLastClose;
+    }
+
+
+    /**
+     * Gets the security value for this FundNAV.
+     * 
+     * @return security
+     */
+    public routines.Security getSecurity() {
+        return security;
+    }
+
+
+    /**
+     * Sets the security value for this FundNAV.
+     * 
+     * @param security
+     */
+    public void setSecurity(routines.Security security) {
+        this.security = security;
+    }
+
+
+    /**
+     * Gets the date value for this FundNAV.
+     * 
+     * @return date
+     */
+    public java.lang.String getDate() {
+        return date;
+    }
+
+
+    /**
+     * Sets the date value for this FundNAV.
+     * 
+     * @param date
+     */
+    public void setDate(java.lang.String date) {
+        this.date = date;
+    }
+
+
+    /**
+     * Gets the last value for this FundNAV.
+     * 
+     * @return last
+     */
+    public double getLast() {
+        return last;
+    }
+
+
+    /**
+     * Sets the last value for this FundNAV.
+     * 
+     * @param last
+     */
+    public void setLast(double last) {
+        this.last = last;
+    }
+
+
+    /**
+     * Gets the open value for this FundNAV.
+     * 
+     * @return open
+     */
+    public double getOpen() {
+        return open;
+    }
+
+
+    /**
+     * Sets the open value for this FundNAV.
+     * 
+     * @param open
+     */
+    public void setOpen(double open) {
+        this.open = open;
+    }
+
+
+    /**
+     * Gets the lastClose value for this FundNAV.
+     * 
+     * @return lastClose
+     */
+    public double getLastClose() {
+        return lastClose;
+    }
+
+
+    /**
+     * Sets the lastClose value for this FundNAV.
+     * 
+     * @param lastClose
+     */
+    public void setLastClose(double lastClose) {
+        this.lastClose = lastClose;
+    }
+
+
+    /**
+     * Gets the changeFromOpen value for this FundNAV.
+     * 
+     * @return changeFromOpen
+     */
+    public double getChangeFromOpen() {
+        return changeFromOpen;
+    }
+
+
+    /**
+     * Sets the changeFromOpen value for this FundNAV.
+     * 
+     * @param changeFromOpen
+     */
+    public void setChangeFromOpen(double changeFromOpen) {
+        this.changeFromOpen = changeFromOpen;
+    }
+
+
+    /**
+     * Gets the percentChangeFromOpen value for this FundNAV.
+     * 
+     * @return percentChangeFromOpen
+     */
+    public double getPercentChangeFromOpen() {
+        return percentChangeFromOpen;
+    }
+
+
+    /**
+     * Sets the percentChangeFromOpen value for this FundNAV.
+     * 
+     * @param percentChangeFromOpen
+     */
+    public void setPercentChangeFromOpen(double percentChangeFromOpen) {
+        this.percentChangeFromOpen = percentChangeFromOpen;
+    }
+
+
+    /**
+     * Gets the changeFromLastClose value for this FundNAV.
+     * 
+     * @return changeFromLastClose
+     */
+    public double getChangeFromLastClose() {
+        return changeFromLastClose;
+    }
+
+
+    /**
+     * Sets the changeFromLastClose value for this FundNAV.
+     * 
+     * @param changeFromLastClose
+     */
+    public void setChangeFromLastClose(double changeFromLastClose) {
+        this.changeFromLastClose = changeFromLastClose;
+    }
+
+
+    /**
+     * Gets the percentChangeFromLastClose value for this FundNAV.
+     * 
+     * @return percentChangeFromLastClose
+     */
+    public double getPercentChangeFromLastClose() {
+        return percentChangeFromLastClose;
+    }
+
+
+    /**
+     * Sets the percentChangeFromLastClose value for this FundNAV.
+     * 
+     * @param percentChangeFromLastClose
+     */
+    public void setPercentChangeFromLastClose(double percentChangeFromLastClose) {
+        this.percentChangeFromLastClose = percentChangeFromLastClose;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof FundNAV)) return false;
+        FundNAV other = (FundNAV) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.security==null && other.getSecurity()==null) || 
+             (this.security!=null &&
+              this.security.equals(other.getSecurity()))) &&
+            ((this.date==null && other.getDate()==null) || 
+             (this.date!=null &&
+              this.date.equals(other.getDate()))) &&
+            this.last == other.getLast() &&
+            this.open == other.getOpen() &&
+            this.lastClose == other.getLastClose() &&
+            this.changeFromOpen == other.getChangeFromOpen() &&
+            this.percentChangeFromOpen == other.getPercentChangeFromOpen() &&
+            this.changeFromLastClose == other.getChangeFromLastClose() &&
+            this.percentChangeFromLastClose == other.getPercentChangeFromLastClose();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getSecurity() != null) {
+            _hashCode += getSecurity().hashCode();
+        }
+        if (getDate() != null) {
+            _hashCode += getDate().hashCode();
+        }
+        _hashCode += new Double(getLast()).hashCode();
+        _hashCode += new Double(getOpen()).hashCode();
+        _hashCode += new Double(getLastClose()).hashCode();
+        _hashCode += new Double(getChangeFromOpen()).hashCode();
+        _hashCode += new Double(getPercentChangeFromOpen()).hashCode();
+        _hashCode += new Double(getChangeFromLastClose()).hashCode();
+        _hashCode += new Double(getPercentChangeFromLastClose()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(FundNAV.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("security");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Security"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Security"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("date");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Date"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("last");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Last"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("open");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Open"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("lastClose");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LastClose"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("changeFromOpen");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ChangeFromOpen"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("percentChangeFromOpen");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PercentChangeFromOpen"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("changeFromLastClose");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ChangeFromLastClose"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("percentChangeFromLastClose");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PercentChangeFromLastClose"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

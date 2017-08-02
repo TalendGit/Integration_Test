@@ -1,0 +1,96 @@
+/**
+ * PredefinedProjection.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class PredefinedProjection implements java.io.Serializable {
+    private java.lang.String _value_;
+    private static java.util.HashMap _table_ = new java.util.HashMap();
+
+    // Constructor
+    protected PredefinedProjection(java.lang.String value) {
+        _value_ = value;
+        _table_.put(_value_,this);
+    }
+
+    public static final java.lang.String _Orthogonal = "Orthogonal";
+    public static final java.lang.String _OrthogonalElevated = "OrthogonalElevated";
+    public static final java.lang.String _OrthogonalHorizontalLeft = "OrthogonalHorizontalLeft";
+    public static final java.lang.String _OrthogonalHorizontalRight = "OrthogonalHorizontalRight";
+    public static final java.lang.String _OrthogonalHalf = "OrthogonalHalf";
+    public static final java.lang.String _OrthogonalHalfHorizontalLeft = "OrthogonalHalfHorizontalLeft";
+    public static final java.lang.String _OrthogonalHalfHorizontalRight = "OrthogonalHalfHorizontalRight";
+    public static final java.lang.String _OrthogonalHalfRotated = "OrthogonalHalfRotated";
+    public static final java.lang.String _OrthogonalHalfElevated = "OrthogonalHalfElevated";
+    public static final java.lang.String _Perspective = "Perspective";
+    public static final java.lang.String _PerspectiveHorizontalLeft = "PerspectiveHorizontalLeft";
+    public static final java.lang.String _PerspectiveHorizontalRight = "PerspectiveHorizontalRight";
+    public static final java.lang.String _PerspectiveRotated = "PerspectiveRotated";
+    public static final java.lang.String _PerspectiveElevated = "PerspectiveElevated";
+    public static final java.lang.String _PerspectiveTilted = "PerspectiveTilted";
+    public static final PredefinedProjection Orthogonal = new PredefinedProjection(_Orthogonal);
+    public static final PredefinedProjection OrthogonalElevated = new PredefinedProjection(_OrthogonalElevated);
+    public static final PredefinedProjection OrthogonalHorizontalLeft = new PredefinedProjection(_OrthogonalHorizontalLeft);
+    public static final PredefinedProjection OrthogonalHorizontalRight = new PredefinedProjection(_OrthogonalHorizontalRight);
+    public static final PredefinedProjection OrthogonalHalf = new PredefinedProjection(_OrthogonalHalf);
+    public static final PredefinedProjection OrthogonalHalfHorizontalLeft = new PredefinedProjection(_OrthogonalHalfHorizontalLeft);
+    public static final PredefinedProjection OrthogonalHalfHorizontalRight = new PredefinedProjection(_OrthogonalHalfHorizontalRight);
+    public static final PredefinedProjection OrthogonalHalfRotated = new PredefinedProjection(_OrthogonalHalfRotated);
+    public static final PredefinedProjection OrthogonalHalfElevated = new PredefinedProjection(_OrthogonalHalfElevated);
+    public static final PredefinedProjection Perspective = new PredefinedProjection(_Perspective);
+    public static final PredefinedProjection PerspectiveHorizontalLeft = new PredefinedProjection(_PerspectiveHorizontalLeft);
+    public static final PredefinedProjection PerspectiveHorizontalRight = new PredefinedProjection(_PerspectiveHorizontalRight);
+    public static final PredefinedProjection PerspectiveRotated = new PredefinedProjection(_PerspectiveRotated);
+    public static final PredefinedProjection PerspectiveElevated = new PredefinedProjection(_PerspectiveElevated);
+    public static final PredefinedProjection PerspectiveTilted = new PredefinedProjection(_PerspectiveTilted);
+    public java.lang.String getValue() { return _value_;}
+    public static PredefinedProjection fromValue(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
+        PredefinedProjection enumeration = (PredefinedProjection)
+            _table_.get(value);
+        if (enumeration==null) throw new java.lang.IllegalArgumentException();
+        return enumeration;
+    }
+    public static PredefinedProjection fromString(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
+        return fromValue(value);
+    }
+    public boolean equals(java.lang.Object obj) {return (obj == this);}
+    public int hashCode() { return toString().hashCode();}
+    public java.lang.String toString() { return _value_;}
+    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new org.apache.axis.encoding.ser.EnumSerializer(
+            _javaType, _xmlType);
+    }
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new org.apache.axis.encoding.ser.EnumDeserializer(
+            _javaType, _xmlType);
+    }
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(PredefinedProjection.class);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PredefinedProjection"));
+    }
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+}

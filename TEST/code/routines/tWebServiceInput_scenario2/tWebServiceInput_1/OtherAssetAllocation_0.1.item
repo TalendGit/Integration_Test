@@ -1,0 +1,467 @@
+/**
+ * OtherAssetAllocation.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class OtherAssetAllocation  implements java.io.Serializable {
+    private double preferredNetAllocation;
+
+    private double preferredLongAllocation;
+
+    private double preferredShortAllocation;
+
+    private double convertibleNetAllocation;
+
+    private double convertibleLongAllocation;
+
+    private double convertibleShortAllocation;
+
+    private double cashNetAllocation;
+
+    private double cashLongAllocation;
+
+    private double cashShortAllocation;
+
+    private double otherNetAllocation;
+
+    private double otherLongAllocation;
+
+    private double otherShortAllocation;
+
+    public OtherAssetAllocation() {
+    }
+
+    public OtherAssetAllocation(
+           double preferredNetAllocation,
+           double preferredLongAllocation,
+           double preferredShortAllocation,
+           double convertibleNetAllocation,
+           double convertibleLongAllocation,
+           double convertibleShortAllocation,
+           double cashNetAllocation,
+           double cashLongAllocation,
+           double cashShortAllocation,
+           double otherNetAllocation,
+           double otherLongAllocation,
+           double otherShortAllocation) {
+           this.preferredNetAllocation = preferredNetAllocation;
+           this.preferredLongAllocation = preferredLongAllocation;
+           this.preferredShortAllocation = preferredShortAllocation;
+           this.convertibleNetAllocation = convertibleNetAllocation;
+           this.convertibleLongAllocation = convertibleLongAllocation;
+           this.convertibleShortAllocation = convertibleShortAllocation;
+           this.cashNetAllocation = cashNetAllocation;
+           this.cashLongAllocation = cashLongAllocation;
+           this.cashShortAllocation = cashShortAllocation;
+           this.otherNetAllocation = otherNetAllocation;
+           this.otherLongAllocation = otherLongAllocation;
+           this.otherShortAllocation = otherShortAllocation;
+    }
+
+
+    /**
+     * Gets the preferredNetAllocation value for this OtherAssetAllocation.
+     * 
+     * @return preferredNetAllocation
+     */
+    public double getPreferredNetAllocation() {
+        return preferredNetAllocation;
+    }
+
+
+    /**
+     * Sets the preferredNetAllocation value for this OtherAssetAllocation.
+     * 
+     * @param preferredNetAllocation
+     */
+    public void setPreferredNetAllocation(double preferredNetAllocation) {
+        this.preferredNetAllocation = preferredNetAllocation;
+    }
+
+
+    /**
+     * Gets the preferredLongAllocation value for this OtherAssetAllocation.
+     * 
+     * @return preferredLongAllocation
+     */
+    public double getPreferredLongAllocation() {
+        return preferredLongAllocation;
+    }
+
+
+    /**
+     * Sets the preferredLongAllocation value for this OtherAssetAllocation.
+     * 
+     * @param preferredLongAllocation
+     */
+    public void setPreferredLongAllocation(double preferredLongAllocation) {
+        this.preferredLongAllocation = preferredLongAllocation;
+    }
+
+
+    /**
+     * Gets the preferredShortAllocation value for this OtherAssetAllocation.
+     * 
+     * @return preferredShortAllocation
+     */
+    public double getPreferredShortAllocation() {
+        return preferredShortAllocation;
+    }
+
+
+    /**
+     * Sets the preferredShortAllocation value for this OtherAssetAllocation.
+     * 
+     * @param preferredShortAllocation
+     */
+    public void setPreferredShortAllocation(double preferredShortAllocation) {
+        this.preferredShortAllocation = preferredShortAllocation;
+    }
+
+
+    /**
+     * Gets the convertibleNetAllocation value for this OtherAssetAllocation.
+     * 
+     * @return convertibleNetAllocation
+     */
+    public double getConvertibleNetAllocation() {
+        return convertibleNetAllocation;
+    }
+
+
+    /**
+     * Sets the convertibleNetAllocation value for this OtherAssetAllocation.
+     * 
+     * @param convertibleNetAllocation
+     */
+    public void setConvertibleNetAllocation(double convertibleNetAllocation) {
+        this.convertibleNetAllocation = convertibleNetAllocation;
+    }
+
+
+    /**
+     * Gets the convertibleLongAllocation value for this OtherAssetAllocation.
+     * 
+     * @return convertibleLongAllocation
+     */
+    public double getConvertibleLongAllocation() {
+        return convertibleLongAllocation;
+    }
+
+
+    /**
+     * Sets the convertibleLongAllocation value for this OtherAssetAllocation.
+     * 
+     * @param convertibleLongAllocation
+     */
+    public void setConvertibleLongAllocation(double convertibleLongAllocation) {
+        this.convertibleLongAllocation = convertibleLongAllocation;
+    }
+
+
+    /**
+     * Gets the convertibleShortAllocation value for this OtherAssetAllocation.
+     * 
+     * @return convertibleShortAllocation
+     */
+    public double getConvertibleShortAllocation() {
+        return convertibleShortAllocation;
+    }
+
+
+    /**
+     * Sets the convertibleShortAllocation value for this OtherAssetAllocation.
+     * 
+     * @param convertibleShortAllocation
+     */
+    public void setConvertibleShortAllocation(double convertibleShortAllocation) {
+        this.convertibleShortAllocation = convertibleShortAllocation;
+    }
+
+
+    /**
+     * Gets the cashNetAllocation value for this OtherAssetAllocation.
+     * 
+     * @return cashNetAllocation
+     */
+    public double getCashNetAllocation() {
+        return cashNetAllocation;
+    }
+
+
+    /**
+     * Sets the cashNetAllocation value for this OtherAssetAllocation.
+     * 
+     * @param cashNetAllocation
+     */
+    public void setCashNetAllocation(double cashNetAllocation) {
+        this.cashNetAllocation = cashNetAllocation;
+    }
+
+
+    /**
+     * Gets the cashLongAllocation value for this OtherAssetAllocation.
+     * 
+     * @return cashLongAllocation
+     */
+    public double getCashLongAllocation() {
+        return cashLongAllocation;
+    }
+
+
+    /**
+     * Sets the cashLongAllocation value for this OtherAssetAllocation.
+     * 
+     * @param cashLongAllocation
+     */
+    public void setCashLongAllocation(double cashLongAllocation) {
+        this.cashLongAllocation = cashLongAllocation;
+    }
+
+
+    /**
+     * Gets the cashShortAllocation value for this OtherAssetAllocation.
+     * 
+     * @return cashShortAllocation
+     */
+    public double getCashShortAllocation() {
+        return cashShortAllocation;
+    }
+
+
+    /**
+     * Sets the cashShortAllocation value for this OtherAssetAllocation.
+     * 
+     * @param cashShortAllocation
+     */
+    public void setCashShortAllocation(double cashShortAllocation) {
+        this.cashShortAllocation = cashShortAllocation;
+    }
+
+
+    /**
+     * Gets the otherNetAllocation value for this OtherAssetAllocation.
+     * 
+     * @return otherNetAllocation
+     */
+    public double getOtherNetAllocation() {
+        return otherNetAllocation;
+    }
+
+
+    /**
+     * Sets the otherNetAllocation value for this OtherAssetAllocation.
+     * 
+     * @param otherNetAllocation
+     */
+    public void setOtherNetAllocation(double otherNetAllocation) {
+        this.otherNetAllocation = otherNetAllocation;
+    }
+
+
+    /**
+     * Gets the otherLongAllocation value for this OtherAssetAllocation.
+     * 
+     * @return otherLongAllocation
+     */
+    public double getOtherLongAllocation() {
+        return otherLongAllocation;
+    }
+
+
+    /**
+     * Sets the otherLongAllocation value for this OtherAssetAllocation.
+     * 
+     * @param otherLongAllocation
+     */
+    public void setOtherLongAllocation(double otherLongAllocation) {
+        this.otherLongAllocation = otherLongAllocation;
+    }
+
+
+    /**
+     * Gets the otherShortAllocation value for this OtherAssetAllocation.
+     * 
+     * @return otherShortAllocation
+     */
+    public double getOtherShortAllocation() {
+        return otherShortAllocation;
+    }
+
+
+    /**
+     * Sets the otherShortAllocation value for this OtherAssetAllocation.
+     * 
+     * @param otherShortAllocation
+     */
+    public void setOtherShortAllocation(double otherShortAllocation) {
+        this.otherShortAllocation = otherShortAllocation;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof OtherAssetAllocation)) return false;
+        OtherAssetAllocation other = (OtherAssetAllocation) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.preferredNetAllocation == other.getPreferredNetAllocation() &&
+            this.preferredLongAllocation == other.getPreferredLongAllocation() &&
+            this.preferredShortAllocation == other.getPreferredShortAllocation() &&
+            this.convertibleNetAllocation == other.getConvertibleNetAllocation() &&
+            this.convertibleLongAllocation == other.getConvertibleLongAllocation() &&
+            this.convertibleShortAllocation == other.getConvertibleShortAllocation() &&
+            this.cashNetAllocation == other.getCashNetAllocation() &&
+            this.cashLongAllocation == other.getCashLongAllocation() &&
+            this.cashShortAllocation == other.getCashShortAllocation() &&
+            this.otherNetAllocation == other.getOtherNetAllocation() &&
+            this.otherLongAllocation == other.getOtherLongAllocation() &&
+            this.otherShortAllocation == other.getOtherShortAllocation();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += new Double(getPreferredNetAllocation()).hashCode();
+        _hashCode += new Double(getPreferredLongAllocation()).hashCode();
+        _hashCode += new Double(getPreferredShortAllocation()).hashCode();
+        _hashCode += new Double(getConvertibleNetAllocation()).hashCode();
+        _hashCode += new Double(getConvertibleLongAllocation()).hashCode();
+        _hashCode += new Double(getConvertibleShortAllocation()).hashCode();
+        _hashCode += new Double(getCashNetAllocation()).hashCode();
+        _hashCode += new Double(getCashLongAllocation()).hashCode();
+        _hashCode += new Double(getCashShortAllocation()).hashCode();
+        _hashCode += new Double(getOtherNetAllocation()).hashCode();
+        _hashCode += new Double(getOtherLongAllocation()).hashCode();
+        _hashCode += new Double(getOtherShortAllocation()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(OtherAssetAllocation.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OtherAssetAllocation"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("preferredNetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PreferredNetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("preferredLongAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PreferredLongAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("preferredShortAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PreferredShortAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("convertibleNetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ConvertibleNetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("convertibleLongAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ConvertibleLongAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("convertibleShortAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ConvertibleShortAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("cashNetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CashNetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("cashLongAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CashLongAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("cashShortAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CashShortAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("otherNetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OtherNetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("otherLongAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OtherLongAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("otherShortAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OtherShortAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

@@ -1,0 +1,52 @@
+package routines;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
+
+import net.spy.memcached.MemcachedClient;
+
+/*
+ * This class will generate a singleton object for the Memcached server
+ */
+public class MemCached {
+
+    public static void set(String key, Object value, int period){
+    	if(value == null || value.equals("")){
+    		System.out.println("Value cannot be NULL or empty. Memcache is not set.");
+    		return;
+    	}
+    	MemcachedClient mc = getMemcachedClient();
+    	mc.set(key, period, value);
+    }
+    
+    public static Object get(String key){
+    	MemcachedClient mc = getMemcachedClient();
+    	return mc.get(key);
+    }
+    
+    private static MemcachedClient oMemcachedClient = null;
+    
+    public static MemcachedClient getMemcachedClient(){
+    	if(oMemcachedClient == null){
+    		synchronized (MemcachedClient.class) {
+    			try {
+    				if(oMemcachedClient == null){
+    					oMemcachedClient = new MemcachedClient(new InetSocketAddress("10.13.32.47", 11211));
+    					
+    					//Please add additional memcache servers as below comma seperated arguments
+    					//oMemcachedClient = new MemcachedClient(new InetSocketAddress("10.13.32.47", 11211), new InetSocketAddress("10.13.32.47", 11211));
+    					//oMemcachedClient = new MemcachedClient(new InetSocketAddress("localhost", 11211));
+    				}
+    			} 
+        		catch (IOException e) {
+    				System.out.println("Memcached client instance cannot be created. Exception : "+e);
+    			}
+    			catch(Exception e){
+    				System.out.println("Exception occured while creating memcached instance. Exception : "+e);
+    			}
+			}
+    		
+    	}
+		return oMemcachedClient; 	
+    }
+}

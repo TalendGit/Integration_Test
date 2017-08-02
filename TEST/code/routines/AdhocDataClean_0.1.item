@@ -1,0 +1,38 @@
+package routines;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class AdhocDataClean {
+
+	public static String getJPG(String html){
+		String returnString = "";
+		
+		Pattern p1 = Pattern.compile("/([^/]*\\.jpg)/");
+		Matcher m1 = p1.matcher(html);
+		
+		System.out.println(m1.groupCount());
+		
+		if(m1.find()){
+			for(int i=1; i<=m1.groupCount(); i++){
+				returnString += m1.group(i) + " ";
+			}
+		}
+		
+		return returnString;
+	}
+	
+	public static String getURL(String html){
+		String returnString = "";
+		
+			
+		Pattern p1 = Pattern.compile("^<a[^>]*>([^<]*.html).*</a>$");
+		Matcher m1 = p1.matcher(html);
+		
+		if(m1.find()){
+			returnString += m1.group(1);
+		}	
+			
+		return returnString;	
+	}
+}

@@ -1,0 +1,86 @@
+/**
+ * ImageFrameType.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class ImageFrameType implements java.io.Serializable {
+    private java.lang.String _value_;
+    private static java.util.HashMap _table_ = new java.util.HashMap();
+
+    // Constructor
+    protected ImageFrameType(java.lang.String value) {
+        _value_ = value;
+        _table_.put(_value_,this);
+    }
+
+    public static final java.lang.String _None = "None";
+    public static final java.lang.String _Colonial = "Colonial";
+    public static final java.lang.String _Common = "Common";
+    public static final java.lang.String _Embed = "Embed";
+    public static final java.lang.String _Emboss = "Emboss";
+    public static final java.lang.String _FrameOpenRight = "FrameOpenRight";
+    public static final java.lang.String _FrameOpenRL = "FrameOpenRL";
+    public static final java.lang.String _OneBarGradient = "OneBarGradient";
+    public static final java.lang.String _RoundedUp = "RoundedUp";
+    public static final java.lang.String _SlimRoundedShadowed = "SlimRoundedShadowed";
+    public static final ImageFrameType None = new ImageFrameType(_None);
+    public static final ImageFrameType Colonial = new ImageFrameType(_Colonial);
+    public static final ImageFrameType Common = new ImageFrameType(_Common);
+    public static final ImageFrameType Embed = new ImageFrameType(_Embed);
+    public static final ImageFrameType Emboss = new ImageFrameType(_Emboss);
+    public static final ImageFrameType FrameOpenRight = new ImageFrameType(_FrameOpenRight);
+    public static final ImageFrameType FrameOpenRL = new ImageFrameType(_FrameOpenRL);
+    public static final ImageFrameType OneBarGradient = new ImageFrameType(_OneBarGradient);
+    public static final ImageFrameType RoundedUp = new ImageFrameType(_RoundedUp);
+    public static final ImageFrameType SlimRoundedShadowed = new ImageFrameType(_SlimRoundedShadowed);
+    public java.lang.String getValue() { return _value_;}
+    public static ImageFrameType fromValue(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
+        ImageFrameType enumeration = (ImageFrameType)
+            _table_.get(value);
+        if (enumeration==null) throw new java.lang.IllegalArgumentException();
+        return enumeration;
+    }
+    public static ImageFrameType fromString(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
+        return fromValue(value);
+    }
+    public boolean equals(java.lang.Object obj) {return (obj == this);}
+    public int hashCode() { return toString().hashCode();}
+    public java.lang.String toString() { return _value_;}
+    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new org.apache.axis.encoding.ser.EnumSerializer(
+            _javaType, _xmlType);
+    }
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new org.apache.axis.encoding.ser.EnumDeserializer(
+            _javaType, _xmlType);
+    }
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(ImageFrameType.class);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ImageFrameType"));
+    }
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+}

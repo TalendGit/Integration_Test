@@ -1,0 +1,399 @@
+/**
+ * Top.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class Top  extends routines.Common  implements java.io.Serializable {
+    private int rank;
+
+    private routines.TopTypes type;
+
+    private routines.Security security;
+
+    private double change;
+
+    private double percentChange;
+
+    private double startNAV;
+
+    private java.lang.String startDate;
+
+    private double endNAV;
+
+    private java.lang.String endDate;
+
+    public Top() {
+    }
+
+    public Top(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           int rank,
+           routines.TopTypes type,
+           routines.Security security,
+           double change,
+           double percentChange,
+           double startNAV,
+           java.lang.String startDate,
+           double endNAV,
+           java.lang.String endDate) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.rank = rank;
+        this.type = type;
+        this.security = security;
+        this.change = change;
+        this.percentChange = percentChange;
+        this.startNAV = startNAV;
+        this.startDate = startDate;
+        this.endNAV = endNAV;
+        this.endDate = endDate;
+    }
+
+
+    /**
+     * Gets the rank value for this Top.
+     * 
+     * @return rank
+     */
+    public int getRank() {
+        return rank;
+    }
+
+
+    /**
+     * Sets the rank value for this Top.
+     * 
+     * @param rank
+     */
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
+
+    /**
+     * Gets the type value for this Top.
+     * 
+     * @return type
+     */
+    public routines.TopTypes getType() {
+        return type;
+    }
+
+
+    /**
+     * Sets the type value for this Top.
+     * 
+     * @param type
+     */
+    public void setType(routines.TopTypes type) {
+        this.type = type;
+    }
+
+
+    /**
+     * Gets the security value for this Top.
+     * 
+     * @return security
+     */
+    public routines.Security getSecurity() {
+        return security;
+    }
+
+
+    /**
+     * Sets the security value for this Top.
+     * 
+     * @param security
+     */
+    public void setSecurity(routines.Security security) {
+        this.security = security;
+    }
+
+
+    /**
+     * Gets the change value for this Top.
+     * 
+     * @return change
+     */
+    public double getChange() {
+        return change;
+    }
+
+
+    /**
+     * Sets the change value for this Top.
+     * 
+     * @param change
+     */
+    public void setChange(double change) {
+        this.change = change;
+    }
+
+
+    /**
+     * Gets the percentChange value for this Top.
+     * 
+     * @return percentChange
+     */
+    public double getPercentChange() {
+        return percentChange;
+    }
+
+
+    /**
+     * Sets the percentChange value for this Top.
+     * 
+     * @param percentChange
+     */
+    public void setPercentChange(double percentChange) {
+        this.percentChange = percentChange;
+    }
+
+
+    /**
+     * Gets the startNAV value for this Top.
+     * 
+     * @return startNAV
+     */
+    public double getStartNAV() {
+        return startNAV;
+    }
+
+
+    /**
+     * Sets the startNAV value for this Top.
+     * 
+     * @param startNAV
+     */
+    public void setStartNAV(double startNAV) {
+        this.startNAV = startNAV;
+    }
+
+
+    /**
+     * Gets the startDate value for this Top.
+     * 
+     * @return startDate
+     */
+    public java.lang.String getStartDate() {
+        return startDate;
+    }
+
+
+    /**
+     * Sets the startDate value for this Top.
+     * 
+     * @param startDate
+     */
+    public void setStartDate(java.lang.String startDate) {
+        this.startDate = startDate;
+    }
+
+
+    /**
+     * Gets the endNAV value for this Top.
+     * 
+     * @return endNAV
+     */
+    public double getEndNAV() {
+        return endNAV;
+    }
+
+
+    /**
+     * Sets the endNAV value for this Top.
+     * 
+     * @param endNAV
+     */
+    public void setEndNAV(double endNAV) {
+        this.endNAV = endNAV;
+    }
+
+
+    /**
+     * Gets the endDate value for this Top.
+     * 
+     * @return endDate
+     */
+    public java.lang.String getEndDate() {
+        return endDate;
+    }
+
+
+    /**
+     * Sets the endDate value for this Top.
+     * 
+     * @param endDate
+     */
+    public void setEndDate(java.lang.String endDate) {
+        this.endDate = endDate;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof Top)) return false;
+        Top other = (Top) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            this.rank == other.getRank() &&
+            ((this.type==null && other.getType()==null) || 
+             (this.type!=null &&
+              this.type.equals(other.getType()))) &&
+            ((this.security==null && other.getSecurity()==null) || 
+             (this.security!=null &&
+              this.security.equals(other.getSecurity()))) &&
+            this.change == other.getChange() &&
+            this.percentChange == other.getPercentChange() &&
+            this.startNAV == other.getStartNAV() &&
+            ((this.startDate==null && other.getStartDate()==null) || 
+             (this.startDate!=null &&
+              this.startDate.equals(other.getStartDate()))) &&
+            this.endNAV == other.getEndNAV() &&
+            ((this.endDate==null && other.getEndDate()==null) || 
+             (this.endDate!=null &&
+              this.endDate.equals(other.getEndDate())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        _hashCode += getRank();
+        if (getType() != null) {
+            _hashCode += getType().hashCode();
+        }
+        if (getSecurity() != null) {
+            _hashCode += getSecurity().hashCode();
+        }
+        _hashCode += new Double(getChange()).hashCode();
+        _hashCode += new Double(getPercentChange()).hashCode();
+        _hashCode += new Double(getStartNAV()).hashCode();
+        if (getStartDate() != null) {
+            _hashCode += getStartDate().hashCode();
+        }
+        _hashCode += new Double(getEndNAV()).hashCode();
+        if (getEndDate() != null) {
+            _hashCode += getEndDate().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(Top.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Top"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("rank");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Rank"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("type");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Type"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TopTypes"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("security");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Security"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Security"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("change");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Change"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("percentChange");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PercentChange"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("startNAV");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StartNAV"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("startDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StartDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("endNAV");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndNAV"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("endDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

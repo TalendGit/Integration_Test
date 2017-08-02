@@ -1,0 +1,166 @@
+/**
+ * FundMinimumInvestments.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class FundMinimumInvestments  extends routines.Common  implements java.io.Serializable {
+    private routines.Fund fund;
+
+    private routines.MinimumInvestments minimumInvestments;
+
+    public FundMinimumInvestments() {
+    }
+
+    public FundMinimumInvestments(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           routines.Fund fund,
+           routines.MinimumInvestments minimumInvestments) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.fund = fund;
+        this.minimumInvestments = minimumInvestments;
+    }
+
+
+    /**
+     * Gets the fund value for this FundMinimumInvestments.
+     * 
+     * @return fund
+     */
+    public routines.Fund getFund() {
+        return fund;
+    }
+
+
+    /**
+     * Sets the fund value for this FundMinimumInvestments.
+     * 
+     * @param fund
+     */
+    public void setFund(routines.Fund fund) {
+        this.fund = fund;
+    }
+
+
+    /**
+     * Gets the minimumInvestments value for this FundMinimumInvestments.
+     * 
+     * @return minimumInvestments
+     */
+    public routines.MinimumInvestments getMinimumInvestments() {
+        return minimumInvestments;
+    }
+
+
+    /**
+     * Sets the minimumInvestments value for this FundMinimumInvestments.
+     * 
+     * @param minimumInvestments
+     */
+    public void setMinimumInvestments(routines.MinimumInvestments minimumInvestments) {
+        this.minimumInvestments = minimumInvestments;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof FundMinimumInvestments)) return false;
+        FundMinimumInvestments other = (FundMinimumInvestments) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.fund==null && other.getFund()==null) || 
+             (this.fund!=null &&
+              this.fund.equals(other.getFund()))) &&
+            ((this.minimumInvestments==null && other.getMinimumInvestments()==null) || 
+             (this.minimumInvestments!=null &&
+              this.minimumInvestments.equals(other.getMinimumInvestments())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getFund() != null) {
+            _hashCode += getFund().hashCode();
+        }
+        if (getMinimumInvestments() != null) {
+            _hashCode += getMinimumInvestments().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(FundMinimumInvestments.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundMinimumInvestments"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("minimumInvestments");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MinimumInvestments"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MinimumInvestments"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

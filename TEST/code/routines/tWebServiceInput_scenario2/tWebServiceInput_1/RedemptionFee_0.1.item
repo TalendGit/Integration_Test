@@ -1,0 +1,263 @@
+/**
+ * RedemptionFee.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class RedemptionFee  implements java.io.Serializable {
+    private double fee;
+
+    private java.lang.String feeUnit;
+
+    private java.lang.Double applicableFrom;
+
+    private java.lang.Double applicableTo;
+
+    private java.lang.String termUnit;
+
+    public RedemptionFee() {
+    }
+
+    public RedemptionFee(
+           double fee,
+           java.lang.String feeUnit,
+           java.lang.Double applicableFrom,
+           java.lang.Double applicableTo,
+           java.lang.String termUnit) {
+           this.fee = fee;
+           this.feeUnit = feeUnit;
+           this.applicableFrom = applicableFrom;
+           this.applicableTo = applicableTo;
+           this.termUnit = termUnit;
+    }
+
+
+    /**
+     * Gets the fee value for this RedemptionFee.
+     * 
+     * @return fee
+     */
+    public double getFee() {
+        return fee;
+    }
+
+
+    /**
+     * Sets the fee value for this RedemptionFee.
+     * 
+     * @param fee
+     */
+    public void setFee(double fee) {
+        this.fee = fee;
+    }
+
+
+    /**
+     * Gets the feeUnit value for this RedemptionFee.
+     * 
+     * @return feeUnit
+     */
+    public java.lang.String getFeeUnit() {
+        return feeUnit;
+    }
+
+
+    /**
+     * Sets the feeUnit value for this RedemptionFee.
+     * 
+     * @param feeUnit
+     */
+    public void setFeeUnit(java.lang.String feeUnit) {
+        this.feeUnit = feeUnit;
+    }
+
+
+    /**
+     * Gets the applicableFrom value for this RedemptionFee.
+     * 
+     * @return applicableFrom
+     */
+    public java.lang.Double getApplicableFrom() {
+        return applicableFrom;
+    }
+
+
+    /**
+     * Sets the applicableFrom value for this RedemptionFee.
+     * 
+     * @param applicableFrom
+     */
+    public void setApplicableFrom(java.lang.Double applicableFrom) {
+        this.applicableFrom = applicableFrom;
+    }
+
+
+    /**
+     * Gets the applicableTo value for this RedemptionFee.
+     * 
+     * @return applicableTo
+     */
+    public java.lang.Double getApplicableTo() {
+        return applicableTo;
+    }
+
+
+    /**
+     * Sets the applicableTo value for this RedemptionFee.
+     * 
+     * @param applicableTo
+     */
+    public void setApplicableTo(java.lang.Double applicableTo) {
+        this.applicableTo = applicableTo;
+    }
+
+
+    /**
+     * Gets the termUnit value for this RedemptionFee.
+     * 
+     * @return termUnit
+     */
+    public java.lang.String getTermUnit() {
+        return termUnit;
+    }
+
+
+    /**
+     * Sets the termUnit value for this RedemptionFee.
+     * 
+     * @param termUnit
+     */
+    public void setTermUnit(java.lang.String termUnit) {
+        this.termUnit = termUnit;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof RedemptionFee)) return false;
+        RedemptionFee other = (RedemptionFee) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.fee == other.getFee() &&
+            ((this.feeUnit==null && other.getFeeUnit()==null) || 
+             (this.feeUnit!=null &&
+              this.feeUnit.equals(other.getFeeUnit()))) &&
+            ((this.applicableFrom==null && other.getApplicableFrom()==null) || 
+             (this.applicableFrom!=null &&
+              this.applicableFrom.equals(other.getApplicableFrom()))) &&
+            ((this.applicableTo==null && other.getApplicableTo()==null) || 
+             (this.applicableTo!=null &&
+              this.applicableTo.equals(other.getApplicableTo()))) &&
+            ((this.termUnit==null && other.getTermUnit()==null) || 
+             (this.termUnit!=null &&
+              this.termUnit.equals(other.getTermUnit())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += new Double(getFee()).hashCode();
+        if (getFeeUnit() != null) {
+            _hashCode += getFeeUnit().hashCode();
+        }
+        if (getApplicableFrom() != null) {
+            _hashCode += getApplicableFrom().hashCode();
+        }
+        if (getApplicableTo() != null) {
+            _hashCode += getApplicableTo().hashCode();
+        }
+        if (getTermUnit() != null) {
+            _hashCode += getTermUnit().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(RedemptionFee.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RedemptionFee"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fee");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fee"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("feeUnit");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FeeUnit"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("applicableFrom");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ApplicableFrom"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("applicableTo");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ApplicableTo"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("termUnit");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TermUnit"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

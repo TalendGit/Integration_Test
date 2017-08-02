@@ -1,0 +1,3848 @@
+/**
+ * ChartDesign.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class ChartDesign  extends routines.Common  implements java.io.Serializable {
+    private boolean secure;
+
+    private java.lang.String textTitle;
+
+    private java.lang.String textHeader;
+
+    private java.lang.String textFooter;
+
+    private java.lang.String textPriceLine;
+
+    private java.lang.String textVolumeBar;
+
+    private java.lang.String textHighest;
+
+    private java.lang.String textLowest;
+
+    private java.lang.String textOpen;
+
+    private java.lang.String textClose;
+
+    private java.lang.String textUp;
+
+    private java.lang.String textDown;
+
+    private java.lang.String colorBackground;
+
+    private java.lang.String colorBackWall;
+
+    private java.lang.String colorVolumeBackWall;
+
+    private boolean showVolumeBackWall;
+
+    private java.lang.String colorHighlight;
+
+    private java.lang.String colorPriceLine;
+
+    private java.lang.String colorVolumeBar;
+
+    private java.lang.String colorVolumeBarFill;
+
+    private java.lang.String colorHigh;
+
+    private java.lang.String colorStickUp;
+
+    private java.lang.String colorStickLow;
+
+    private java.lang.String colorConstant;
+
+    private java.lang.String colorLow;
+
+    private java.lang.String colorPoint;
+
+    private java.lang.String colorTitle;
+
+    private java.lang.String colorFooter;
+
+    private java.lang.String colorHeader;
+
+    private java.lang.String colorAxis;
+
+    private java.lang.String colorGrid;
+
+    private java.lang.String colorFonts;
+
+    private java.lang.String colorStripe;
+
+    private java.lang.String colorOpen;
+
+    private java.lang.String colorClose;
+
+    private java.lang.String colorVerticalGrid;
+
+    private java.lang.String colorHorizontalGrid;
+
+    private java.lang.String colorUp;
+
+    private java.lang.String colorDown;
+
+    private java.lang.String colorHighLowLine;
+
+    private java.lang.String colorCollection;
+
+    private routines.LinePattern gridHorizontalStyle;
+
+    private routines.LinePattern gridVerticalStyle;
+
+    private int gridHorizontalWidth;
+
+    private int gridVerticalWidth;
+
+    private java.lang.String colorFrame;
+
+    private java.lang.String frameBorder;
+
+    private java.lang.String formatPriceLine;
+
+    private java.lang.String formatVolume;
+
+    private java.lang.String formatDate;
+
+    private boolean gradeBackground;
+
+    private boolean gradeBackwall;
+
+    private java.lang.String waterMark;
+
+    private int waterMarkTopMargin;
+
+    private int waterMarkLeftMargin;
+
+    private int waterMarkTransparency;
+
+    private float pointSize;
+
+    private boolean stackVariationLabels;
+
+    private boolean showAxisLabelInLegend;
+
+    private int lineWidth;
+
+    private int splitPercent;
+
+    private boolean showHigh;
+
+    private boolean showLow;
+
+    private boolean showOpen;
+
+    private boolean showClose;
+
+    private boolean showVolume;
+
+    private boolean showUpVariation;
+
+    private boolean showDownVariation;
+
+    private boolean showLegend;
+
+    private int variationYear;
+
+    private int volumeDivider;
+
+    private int volumeTextOffset;
+
+    private int priceTextOffset;
+
+    private routines.ImageFrameType frameType;
+
+    private routines.PredefinedProjection projection;
+
+    private int marginTop;
+
+    private int marginBottom;
+
+    private int marginLeft;
+
+    private int marginRight;
+
+    private java.lang.String fontFamily;
+
+    private int fontSizeHeader;
+
+    private int fontSizeFooter;
+
+    private double height;
+
+    private double width;
+
+    private int zoomPercent;
+
+    private boolean legendBox;
+
+    private java.lang.String colorLegendBackground;
+
+    private java.lang.String colorLegendBorder;
+
+    private int legendVerticalPosition;
+
+    private int legendHorizontalPosition;
+
+    private boolean reload;
+
+    private boolean showPriceChartLabels;
+
+    private routines.TickPeriod tickPrecision;
+
+    private int tickPeriods;
+
+    private routines.HorzAlign waterMarkHorizontalAlign;
+
+    private routines.PredefinedLightModel lightScheme;
+
+    private int fontSizeLegend;
+
+    private int fontSizeAxes;
+
+    private int fontSizeTitle;
+
+    private int daysForHourDisplay;
+
+    private int daysForDayDisplay;
+
+    private int daysForWeekDisplay;
+
+    private int daysForBiWeeklyDisplay;
+
+    private int daysForMonthDisplay;
+
+    private int daysForQuarterDisplay;
+
+    private int daysForSemiAnnualDisplay;
+
+    private int daysForAnnualDisplay;
+
+    private int daysForBiAnnualDisplay;
+
+    private int daysForPentaAnnualDisplay;
+
+    public ChartDesign() {
+    }
+
+    public ChartDesign(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           boolean secure,
+           java.lang.String textTitle,
+           java.lang.String textHeader,
+           java.lang.String textFooter,
+           java.lang.String textPriceLine,
+           java.lang.String textVolumeBar,
+           java.lang.String textHighest,
+           java.lang.String textLowest,
+           java.lang.String textOpen,
+           java.lang.String textClose,
+           java.lang.String textUp,
+           java.lang.String textDown,
+           java.lang.String colorBackground,
+           java.lang.String colorBackWall,
+           java.lang.String colorVolumeBackWall,
+           boolean showVolumeBackWall,
+           java.lang.String colorHighlight,
+           java.lang.String colorPriceLine,
+           java.lang.String colorVolumeBar,
+           java.lang.String colorVolumeBarFill,
+           java.lang.String colorHigh,
+           java.lang.String colorStickUp,
+           java.lang.String colorStickLow,
+           java.lang.String colorConstant,
+           java.lang.String colorLow,
+           java.lang.String colorPoint,
+           java.lang.String colorTitle,
+           java.lang.String colorFooter,
+           java.lang.String colorHeader,
+           java.lang.String colorAxis,
+           java.lang.String colorGrid,
+           java.lang.String colorFonts,
+           java.lang.String colorStripe,
+           java.lang.String colorOpen,
+           java.lang.String colorClose,
+           java.lang.String colorVerticalGrid,
+           java.lang.String colorHorizontalGrid,
+           java.lang.String colorUp,
+           java.lang.String colorDown,
+           java.lang.String colorHighLowLine,
+           java.lang.String colorCollection,
+           routines.LinePattern gridHorizontalStyle,
+           routines.LinePattern gridVerticalStyle,
+           int gridHorizontalWidth,
+           int gridVerticalWidth,
+           java.lang.String colorFrame,
+           java.lang.String frameBorder,
+           java.lang.String formatPriceLine,
+           java.lang.String formatVolume,
+           java.lang.String formatDate,
+           boolean gradeBackground,
+           boolean gradeBackwall,
+           java.lang.String waterMark,
+           int waterMarkTopMargin,
+           int waterMarkLeftMargin,
+           int waterMarkTransparency,
+           float pointSize,
+           boolean stackVariationLabels,
+           boolean showAxisLabelInLegend,
+           int lineWidth,
+           int splitPercent,
+           boolean showHigh,
+           boolean showLow,
+           boolean showOpen,
+           boolean showClose,
+           boolean showVolume,
+           boolean showUpVariation,
+           boolean showDownVariation,
+           boolean showLegend,
+           int variationYear,
+           int volumeDivider,
+           int volumeTextOffset,
+           int priceTextOffset,
+           routines.ImageFrameType frameType,
+           routines.PredefinedProjection projection,
+           int marginTop,
+           int marginBottom,
+           int marginLeft,
+           int marginRight,
+           java.lang.String fontFamily,
+           int fontSizeHeader,
+           int fontSizeFooter,
+           double height,
+           double width,
+           int zoomPercent,
+           boolean legendBox,
+           java.lang.String colorLegendBackground,
+           java.lang.String colorLegendBorder,
+           int legendVerticalPosition,
+           int legendHorizontalPosition,
+           boolean reload,
+           boolean showPriceChartLabels,
+           routines.TickPeriod tickPrecision,
+           int tickPeriods,
+           routines.HorzAlign waterMarkHorizontalAlign,
+           routines.PredefinedLightModel lightScheme,
+           int fontSizeLegend,
+           int fontSizeAxes,
+           int fontSizeTitle,
+           int daysForHourDisplay,
+           int daysForDayDisplay,
+           int daysForWeekDisplay,
+           int daysForBiWeeklyDisplay,
+           int daysForMonthDisplay,
+           int daysForQuarterDisplay,
+           int daysForSemiAnnualDisplay,
+           int daysForAnnualDisplay,
+           int daysForBiAnnualDisplay,
+           int daysForPentaAnnualDisplay) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.secure = secure;
+        this.textTitle = textTitle;
+        this.textHeader = textHeader;
+        this.textFooter = textFooter;
+        this.textPriceLine = textPriceLine;
+        this.textVolumeBar = textVolumeBar;
+        this.textHighest = textHighest;
+        this.textLowest = textLowest;
+        this.textOpen = textOpen;
+        this.textClose = textClose;
+        this.textUp = textUp;
+        this.textDown = textDown;
+        this.colorBackground = colorBackground;
+        this.colorBackWall = colorBackWall;
+        this.colorVolumeBackWall = colorVolumeBackWall;
+        this.showVolumeBackWall = showVolumeBackWall;
+        this.colorHighlight = colorHighlight;
+        this.colorPriceLine = colorPriceLine;
+        this.colorVolumeBar = colorVolumeBar;
+        this.colorVolumeBarFill = colorVolumeBarFill;
+        this.colorHigh = colorHigh;
+        this.colorStickUp = colorStickUp;
+        this.colorStickLow = colorStickLow;
+        this.colorConstant = colorConstant;
+        this.colorLow = colorLow;
+        this.colorPoint = colorPoint;
+        this.colorTitle = colorTitle;
+        this.colorFooter = colorFooter;
+        this.colorHeader = colorHeader;
+        this.colorAxis = colorAxis;
+        this.colorGrid = colorGrid;
+        this.colorFonts = colorFonts;
+        this.colorStripe = colorStripe;
+        this.colorOpen = colorOpen;
+        this.colorClose = colorClose;
+        this.colorVerticalGrid = colorVerticalGrid;
+        this.colorHorizontalGrid = colorHorizontalGrid;
+        this.colorUp = colorUp;
+        this.colorDown = colorDown;
+        this.colorHighLowLine = colorHighLowLine;
+        this.colorCollection = colorCollection;
+        this.gridHorizontalStyle = gridHorizontalStyle;
+        this.gridVerticalStyle = gridVerticalStyle;
+        this.gridHorizontalWidth = gridHorizontalWidth;
+        this.gridVerticalWidth = gridVerticalWidth;
+        this.colorFrame = colorFrame;
+        this.frameBorder = frameBorder;
+        this.formatPriceLine = formatPriceLine;
+        this.formatVolume = formatVolume;
+        this.formatDate = formatDate;
+        this.gradeBackground = gradeBackground;
+        this.gradeBackwall = gradeBackwall;
+        this.waterMark = waterMark;
+        this.waterMarkTopMargin = waterMarkTopMargin;
+        this.waterMarkLeftMargin = waterMarkLeftMargin;
+        this.waterMarkTransparency = waterMarkTransparency;
+        this.pointSize = pointSize;
+        this.stackVariationLabels = stackVariationLabels;
+        this.showAxisLabelInLegend = showAxisLabelInLegend;
+        this.lineWidth = lineWidth;
+        this.splitPercent = splitPercent;
+        this.showHigh = showHigh;
+        this.showLow = showLow;
+        this.showOpen = showOpen;
+        this.showClose = showClose;
+        this.showVolume = showVolume;
+        this.showUpVariation = showUpVariation;
+        this.showDownVariation = showDownVariation;
+        this.showLegend = showLegend;
+        this.variationYear = variationYear;
+        this.volumeDivider = volumeDivider;
+        this.volumeTextOffset = volumeTextOffset;
+        this.priceTextOffset = priceTextOffset;
+        this.frameType = frameType;
+        this.projection = projection;
+        this.marginTop = marginTop;
+        this.marginBottom = marginBottom;
+        this.marginLeft = marginLeft;
+        this.marginRight = marginRight;
+        this.fontFamily = fontFamily;
+        this.fontSizeHeader = fontSizeHeader;
+        this.fontSizeFooter = fontSizeFooter;
+        this.height = height;
+        this.width = width;
+        this.zoomPercent = zoomPercent;
+        this.legendBox = legendBox;
+        this.colorLegendBackground = colorLegendBackground;
+        this.colorLegendBorder = colorLegendBorder;
+        this.legendVerticalPosition = legendVerticalPosition;
+        this.legendHorizontalPosition = legendHorizontalPosition;
+        this.reload = reload;
+        this.showPriceChartLabels = showPriceChartLabels;
+        this.tickPrecision = tickPrecision;
+        this.tickPeriods = tickPeriods;
+        this.waterMarkHorizontalAlign = waterMarkHorizontalAlign;
+        this.lightScheme = lightScheme;
+        this.fontSizeLegend = fontSizeLegend;
+        this.fontSizeAxes = fontSizeAxes;
+        this.fontSizeTitle = fontSizeTitle;
+        this.daysForHourDisplay = daysForHourDisplay;
+        this.daysForDayDisplay = daysForDayDisplay;
+        this.daysForWeekDisplay = daysForWeekDisplay;
+        this.daysForBiWeeklyDisplay = daysForBiWeeklyDisplay;
+        this.daysForMonthDisplay = daysForMonthDisplay;
+        this.daysForQuarterDisplay = daysForQuarterDisplay;
+        this.daysForSemiAnnualDisplay = daysForSemiAnnualDisplay;
+        this.daysForAnnualDisplay = daysForAnnualDisplay;
+        this.daysForBiAnnualDisplay = daysForBiAnnualDisplay;
+        this.daysForPentaAnnualDisplay = daysForPentaAnnualDisplay;
+    }
+
+
+    /**
+     * Gets the secure value for this ChartDesign.
+     * 
+     * @return secure
+     */
+    public boolean isSecure() {
+        return secure;
+    }
+
+
+    /**
+     * Sets the secure value for this ChartDesign.
+     * 
+     * @param secure
+     */
+    public void setSecure(boolean secure) {
+        this.secure = secure;
+    }
+
+
+    /**
+     * Gets the textTitle value for this ChartDesign.
+     * 
+     * @return textTitle
+     */
+    public java.lang.String getTextTitle() {
+        return textTitle;
+    }
+
+
+    /**
+     * Sets the textTitle value for this ChartDesign.
+     * 
+     * @param textTitle
+     */
+    public void setTextTitle(java.lang.String textTitle) {
+        this.textTitle = textTitle;
+    }
+
+
+    /**
+     * Gets the textHeader value for this ChartDesign.
+     * 
+     * @return textHeader
+     */
+    public java.lang.String getTextHeader() {
+        return textHeader;
+    }
+
+
+    /**
+     * Sets the textHeader value for this ChartDesign.
+     * 
+     * @param textHeader
+     */
+    public void setTextHeader(java.lang.String textHeader) {
+        this.textHeader = textHeader;
+    }
+
+
+    /**
+     * Gets the textFooter value for this ChartDesign.
+     * 
+     * @return textFooter
+     */
+    public java.lang.String getTextFooter() {
+        return textFooter;
+    }
+
+
+    /**
+     * Sets the textFooter value for this ChartDesign.
+     * 
+     * @param textFooter
+     */
+    public void setTextFooter(java.lang.String textFooter) {
+        this.textFooter = textFooter;
+    }
+
+
+    /**
+     * Gets the textPriceLine value for this ChartDesign.
+     * 
+     * @return textPriceLine
+     */
+    public java.lang.String getTextPriceLine() {
+        return textPriceLine;
+    }
+
+
+    /**
+     * Sets the textPriceLine value for this ChartDesign.
+     * 
+     * @param textPriceLine
+     */
+    public void setTextPriceLine(java.lang.String textPriceLine) {
+        this.textPriceLine = textPriceLine;
+    }
+
+
+    /**
+     * Gets the textVolumeBar value for this ChartDesign.
+     * 
+     * @return textVolumeBar
+     */
+    public java.lang.String getTextVolumeBar() {
+        return textVolumeBar;
+    }
+
+
+    /**
+     * Sets the textVolumeBar value for this ChartDesign.
+     * 
+     * @param textVolumeBar
+     */
+    public void setTextVolumeBar(java.lang.String textVolumeBar) {
+        this.textVolumeBar = textVolumeBar;
+    }
+
+
+    /**
+     * Gets the textHighest value for this ChartDesign.
+     * 
+     * @return textHighest
+     */
+    public java.lang.String getTextHighest() {
+        return textHighest;
+    }
+
+
+    /**
+     * Sets the textHighest value for this ChartDesign.
+     * 
+     * @param textHighest
+     */
+    public void setTextHighest(java.lang.String textHighest) {
+        this.textHighest = textHighest;
+    }
+
+
+    /**
+     * Gets the textLowest value for this ChartDesign.
+     * 
+     * @return textLowest
+     */
+    public java.lang.String getTextLowest() {
+        return textLowest;
+    }
+
+
+    /**
+     * Sets the textLowest value for this ChartDesign.
+     * 
+     * @param textLowest
+     */
+    public void setTextLowest(java.lang.String textLowest) {
+        this.textLowest = textLowest;
+    }
+
+
+    /**
+     * Gets the textOpen value for this ChartDesign.
+     * 
+     * @return textOpen
+     */
+    public java.lang.String getTextOpen() {
+        return textOpen;
+    }
+
+
+    /**
+     * Sets the textOpen value for this ChartDesign.
+     * 
+     * @param textOpen
+     */
+    public void setTextOpen(java.lang.String textOpen) {
+        this.textOpen = textOpen;
+    }
+
+
+    /**
+     * Gets the textClose value for this ChartDesign.
+     * 
+     * @return textClose
+     */
+    public java.lang.String getTextClose() {
+        return textClose;
+    }
+
+
+    /**
+     * Sets the textClose value for this ChartDesign.
+     * 
+     * @param textClose
+     */
+    public void setTextClose(java.lang.String textClose) {
+        this.textClose = textClose;
+    }
+
+
+    /**
+     * Gets the textUp value for this ChartDesign.
+     * 
+     * @return textUp
+     */
+    public java.lang.String getTextUp() {
+        return textUp;
+    }
+
+
+    /**
+     * Sets the textUp value for this ChartDesign.
+     * 
+     * @param textUp
+     */
+    public void setTextUp(java.lang.String textUp) {
+        this.textUp = textUp;
+    }
+
+
+    /**
+     * Gets the textDown value for this ChartDesign.
+     * 
+     * @return textDown
+     */
+    public java.lang.String getTextDown() {
+        return textDown;
+    }
+
+
+    /**
+     * Sets the textDown value for this ChartDesign.
+     * 
+     * @param textDown
+     */
+    public void setTextDown(java.lang.String textDown) {
+        this.textDown = textDown;
+    }
+
+
+    /**
+     * Gets the colorBackground value for this ChartDesign.
+     * 
+     * @return colorBackground
+     */
+    public java.lang.String getColorBackground() {
+        return colorBackground;
+    }
+
+
+    /**
+     * Sets the colorBackground value for this ChartDesign.
+     * 
+     * @param colorBackground
+     */
+    public void setColorBackground(java.lang.String colorBackground) {
+        this.colorBackground = colorBackground;
+    }
+
+
+    /**
+     * Gets the colorBackWall value for this ChartDesign.
+     * 
+     * @return colorBackWall
+     */
+    public java.lang.String getColorBackWall() {
+        return colorBackWall;
+    }
+
+
+    /**
+     * Sets the colorBackWall value for this ChartDesign.
+     * 
+     * @param colorBackWall
+     */
+    public void setColorBackWall(java.lang.String colorBackWall) {
+        this.colorBackWall = colorBackWall;
+    }
+
+
+    /**
+     * Gets the colorVolumeBackWall value for this ChartDesign.
+     * 
+     * @return colorVolumeBackWall
+     */
+    public java.lang.String getColorVolumeBackWall() {
+        return colorVolumeBackWall;
+    }
+
+
+    /**
+     * Sets the colorVolumeBackWall value for this ChartDesign.
+     * 
+     * @param colorVolumeBackWall
+     */
+    public void setColorVolumeBackWall(java.lang.String colorVolumeBackWall) {
+        this.colorVolumeBackWall = colorVolumeBackWall;
+    }
+
+
+    /**
+     * Gets the showVolumeBackWall value for this ChartDesign.
+     * 
+     * @return showVolumeBackWall
+     */
+    public boolean isShowVolumeBackWall() {
+        return showVolumeBackWall;
+    }
+
+
+    /**
+     * Sets the showVolumeBackWall value for this ChartDesign.
+     * 
+     * @param showVolumeBackWall
+     */
+    public void setShowVolumeBackWall(boolean showVolumeBackWall) {
+        this.showVolumeBackWall = showVolumeBackWall;
+    }
+
+
+    /**
+     * Gets the colorHighlight value for this ChartDesign.
+     * 
+     * @return colorHighlight
+     */
+    public java.lang.String getColorHighlight() {
+        return colorHighlight;
+    }
+
+
+    /**
+     * Sets the colorHighlight value for this ChartDesign.
+     * 
+     * @param colorHighlight
+     */
+    public void setColorHighlight(java.lang.String colorHighlight) {
+        this.colorHighlight = colorHighlight;
+    }
+
+
+    /**
+     * Gets the colorPriceLine value for this ChartDesign.
+     * 
+     * @return colorPriceLine
+     */
+    public java.lang.String getColorPriceLine() {
+        return colorPriceLine;
+    }
+
+
+    /**
+     * Sets the colorPriceLine value for this ChartDesign.
+     * 
+     * @param colorPriceLine
+     */
+    public void setColorPriceLine(java.lang.String colorPriceLine) {
+        this.colorPriceLine = colorPriceLine;
+    }
+
+
+    /**
+     * Gets the colorVolumeBar value for this ChartDesign.
+     * 
+     * @return colorVolumeBar
+     */
+    public java.lang.String getColorVolumeBar() {
+        return colorVolumeBar;
+    }
+
+
+    /**
+     * Sets the colorVolumeBar value for this ChartDesign.
+     * 
+     * @param colorVolumeBar
+     */
+    public void setColorVolumeBar(java.lang.String colorVolumeBar) {
+        this.colorVolumeBar = colorVolumeBar;
+    }
+
+
+    /**
+     * Gets the colorVolumeBarFill value for this ChartDesign.
+     * 
+     * @return colorVolumeBarFill
+     */
+    public java.lang.String getColorVolumeBarFill() {
+        return colorVolumeBarFill;
+    }
+
+
+    /**
+     * Sets the colorVolumeBarFill value for this ChartDesign.
+     * 
+     * @param colorVolumeBarFill
+     */
+    public void setColorVolumeBarFill(java.lang.String colorVolumeBarFill) {
+        this.colorVolumeBarFill = colorVolumeBarFill;
+    }
+
+
+    /**
+     * Gets the colorHigh value for this ChartDesign.
+     * 
+     * @return colorHigh
+     */
+    public java.lang.String getColorHigh() {
+        return colorHigh;
+    }
+
+
+    /**
+     * Sets the colorHigh value for this ChartDesign.
+     * 
+     * @param colorHigh
+     */
+    public void setColorHigh(java.lang.String colorHigh) {
+        this.colorHigh = colorHigh;
+    }
+
+
+    /**
+     * Gets the colorStickUp value for this ChartDesign.
+     * 
+     * @return colorStickUp
+     */
+    public java.lang.String getColorStickUp() {
+        return colorStickUp;
+    }
+
+
+    /**
+     * Sets the colorStickUp value for this ChartDesign.
+     * 
+     * @param colorStickUp
+     */
+    public void setColorStickUp(java.lang.String colorStickUp) {
+        this.colorStickUp = colorStickUp;
+    }
+
+
+    /**
+     * Gets the colorStickLow value for this ChartDesign.
+     * 
+     * @return colorStickLow
+     */
+    public java.lang.String getColorStickLow() {
+        return colorStickLow;
+    }
+
+
+    /**
+     * Sets the colorStickLow value for this ChartDesign.
+     * 
+     * @param colorStickLow
+     */
+    public void setColorStickLow(java.lang.String colorStickLow) {
+        this.colorStickLow = colorStickLow;
+    }
+
+
+    /**
+     * Gets the colorConstant value for this ChartDesign.
+     * 
+     * @return colorConstant
+     */
+    public java.lang.String getColorConstant() {
+        return colorConstant;
+    }
+
+
+    /**
+     * Sets the colorConstant value for this ChartDesign.
+     * 
+     * @param colorConstant
+     */
+    public void setColorConstant(java.lang.String colorConstant) {
+        this.colorConstant = colorConstant;
+    }
+
+
+    /**
+     * Gets the colorLow value for this ChartDesign.
+     * 
+     * @return colorLow
+     */
+    public java.lang.String getColorLow() {
+        return colorLow;
+    }
+
+
+    /**
+     * Sets the colorLow value for this ChartDesign.
+     * 
+     * @param colorLow
+     */
+    public void setColorLow(java.lang.String colorLow) {
+        this.colorLow = colorLow;
+    }
+
+
+    /**
+     * Gets the colorPoint value for this ChartDesign.
+     * 
+     * @return colorPoint
+     */
+    public java.lang.String getColorPoint() {
+        return colorPoint;
+    }
+
+
+    /**
+     * Sets the colorPoint value for this ChartDesign.
+     * 
+     * @param colorPoint
+     */
+    public void setColorPoint(java.lang.String colorPoint) {
+        this.colorPoint = colorPoint;
+    }
+
+
+    /**
+     * Gets the colorTitle value for this ChartDesign.
+     * 
+     * @return colorTitle
+     */
+    public java.lang.String getColorTitle() {
+        return colorTitle;
+    }
+
+
+    /**
+     * Sets the colorTitle value for this ChartDesign.
+     * 
+     * @param colorTitle
+     */
+    public void setColorTitle(java.lang.String colorTitle) {
+        this.colorTitle = colorTitle;
+    }
+
+
+    /**
+     * Gets the colorFooter value for this ChartDesign.
+     * 
+     * @return colorFooter
+     */
+    public java.lang.String getColorFooter() {
+        return colorFooter;
+    }
+
+
+    /**
+     * Sets the colorFooter value for this ChartDesign.
+     * 
+     * @param colorFooter
+     */
+    public void setColorFooter(java.lang.String colorFooter) {
+        this.colorFooter = colorFooter;
+    }
+
+
+    /**
+     * Gets the colorHeader value for this ChartDesign.
+     * 
+     * @return colorHeader
+     */
+    public java.lang.String getColorHeader() {
+        return colorHeader;
+    }
+
+
+    /**
+     * Sets the colorHeader value for this ChartDesign.
+     * 
+     * @param colorHeader
+     */
+    public void setColorHeader(java.lang.String colorHeader) {
+        this.colorHeader = colorHeader;
+    }
+
+
+    /**
+     * Gets the colorAxis value for this ChartDesign.
+     * 
+     * @return colorAxis
+     */
+    public java.lang.String getColorAxis() {
+        return colorAxis;
+    }
+
+
+    /**
+     * Sets the colorAxis value for this ChartDesign.
+     * 
+     * @param colorAxis
+     */
+    public void setColorAxis(java.lang.String colorAxis) {
+        this.colorAxis = colorAxis;
+    }
+
+
+    /**
+     * Gets the colorGrid value for this ChartDesign.
+     * 
+     * @return colorGrid
+     */
+    public java.lang.String getColorGrid() {
+        return colorGrid;
+    }
+
+
+    /**
+     * Sets the colorGrid value for this ChartDesign.
+     * 
+     * @param colorGrid
+     */
+    public void setColorGrid(java.lang.String colorGrid) {
+        this.colorGrid = colorGrid;
+    }
+
+
+    /**
+     * Gets the colorFonts value for this ChartDesign.
+     * 
+     * @return colorFonts
+     */
+    public java.lang.String getColorFonts() {
+        return colorFonts;
+    }
+
+
+    /**
+     * Sets the colorFonts value for this ChartDesign.
+     * 
+     * @param colorFonts
+     */
+    public void setColorFonts(java.lang.String colorFonts) {
+        this.colorFonts = colorFonts;
+    }
+
+
+    /**
+     * Gets the colorStripe value for this ChartDesign.
+     * 
+     * @return colorStripe
+     */
+    public java.lang.String getColorStripe() {
+        return colorStripe;
+    }
+
+
+    /**
+     * Sets the colorStripe value for this ChartDesign.
+     * 
+     * @param colorStripe
+     */
+    public void setColorStripe(java.lang.String colorStripe) {
+        this.colorStripe = colorStripe;
+    }
+
+
+    /**
+     * Gets the colorOpen value for this ChartDesign.
+     * 
+     * @return colorOpen
+     */
+    public java.lang.String getColorOpen() {
+        return colorOpen;
+    }
+
+
+    /**
+     * Sets the colorOpen value for this ChartDesign.
+     * 
+     * @param colorOpen
+     */
+    public void setColorOpen(java.lang.String colorOpen) {
+        this.colorOpen = colorOpen;
+    }
+
+
+    /**
+     * Gets the colorClose value for this ChartDesign.
+     * 
+     * @return colorClose
+     */
+    public java.lang.String getColorClose() {
+        return colorClose;
+    }
+
+
+    /**
+     * Sets the colorClose value for this ChartDesign.
+     * 
+     * @param colorClose
+     */
+    public void setColorClose(java.lang.String colorClose) {
+        this.colorClose = colorClose;
+    }
+
+
+    /**
+     * Gets the colorVerticalGrid value for this ChartDesign.
+     * 
+     * @return colorVerticalGrid
+     */
+    public java.lang.String getColorVerticalGrid() {
+        return colorVerticalGrid;
+    }
+
+
+    /**
+     * Sets the colorVerticalGrid value for this ChartDesign.
+     * 
+     * @param colorVerticalGrid
+     */
+    public void setColorVerticalGrid(java.lang.String colorVerticalGrid) {
+        this.colorVerticalGrid = colorVerticalGrid;
+    }
+
+
+    /**
+     * Gets the colorHorizontalGrid value for this ChartDesign.
+     * 
+     * @return colorHorizontalGrid
+     */
+    public java.lang.String getColorHorizontalGrid() {
+        return colorHorizontalGrid;
+    }
+
+
+    /**
+     * Sets the colorHorizontalGrid value for this ChartDesign.
+     * 
+     * @param colorHorizontalGrid
+     */
+    public void setColorHorizontalGrid(java.lang.String colorHorizontalGrid) {
+        this.colorHorizontalGrid = colorHorizontalGrid;
+    }
+
+
+    /**
+     * Gets the colorUp value for this ChartDesign.
+     * 
+     * @return colorUp
+     */
+    public java.lang.String getColorUp() {
+        return colorUp;
+    }
+
+
+    /**
+     * Sets the colorUp value for this ChartDesign.
+     * 
+     * @param colorUp
+     */
+    public void setColorUp(java.lang.String colorUp) {
+        this.colorUp = colorUp;
+    }
+
+
+    /**
+     * Gets the colorDown value for this ChartDesign.
+     * 
+     * @return colorDown
+     */
+    public java.lang.String getColorDown() {
+        return colorDown;
+    }
+
+
+    /**
+     * Sets the colorDown value for this ChartDesign.
+     * 
+     * @param colorDown
+     */
+    public void setColorDown(java.lang.String colorDown) {
+        this.colorDown = colorDown;
+    }
+
+
+    /**
+     * Gets the colorHighLowLine value for this ChartDesign.
+     * 
+     * @return colorHighLowLine
+     */
+    public java.lang.String getColorHighLowLine() {
+        return colorHighLowLine;
+    }
+
+
+    /**
+     * Sets the colorHighLowLine value for this ChartDesign.
+     * 
+     * @param colorHighLowLine
+     */
+    public void setColorHighLowLine(java.lang.String colorHighLowLine) {
+        this.colorHighLowLine = colorHighLowLine;
+    }
+
+
+    /**
+     * Gets the colorCollection value for this ChartDesign.
+     * 
+     * @return colorCollection
+     */
+    public java.lang.String getColorCollection() {
+        return colorCollection;
+    }
+
+
+    /**
+     * Sets the colorCollection value for this ChartDesign.
+     * 
+     * @param colorCollection
+     */
+    public void setColorCollection(java.lang.String colorCollection) {
+        this.colorCollection = colorCollection;
+    }
+
+
+    /**
+     * Gets the gridHorizontalStyle value for this ChartDesign.
+     * 
+     * @return gridHorizontalStyle
+     */
+    public routines.LinePattern getGridHorizontalStyle() {
+        return gridHorizontalStyle;
+    }
+
+
+    /**
+     * Sets the gridHorizontalStyle value for this ChartDesign.
+     * 
+     * @param gridHorizontalStyle
+     */
+    public void setGridHorizontalStyle(routines.LinePattern gridHorizontalStyle) {
+        this.gridHorizontalStyle = gridHorizontalStyle;
+    }
+
+
+    /**
+     * Gets the gridVerticalStyle value for this ChartDesign.
+     * 
+     * @return gridVerticalStyle
+     */
+    public routines.LinePattern getGridVerticalStyle() {
+        return gridVerticalStyle;
+    }
+
+
+    /**
+     * Sets the gridVerticalStyle value for this ChartDesign.
+     * 
+     * @param gridVerticalStyle
+     */
+    public void setGridVerticalStyle(routines.LinePattern gridVerticalStyle) {
+        this.gridVerticalStyle = gridVerticalStyle;
+    }
+
+
+    /**
+     * Gets the gridHorizontalWidth value for this ChartDesign.
+     * 
+     * @return gridHorizontalWidth
+     */
+    public int getGridHorizontalWidth() {
+        return gridHorizontalWidth;
+    }
+
+
+    /**
+     * Sets the gridHorizontalWidth value for this ChartDesign.
+     * 
+     * @param gridHorizontalWidth
+     */
+    public void setGridHorizontalWidth(int gridHorizontalWidth) {
+        this.gridHorizontalWidth = gridHorizontalWidth;
+    }
+
+
+    /**
+     * Gets the gridVerticalWidth value for this ChartDesign.
+     * 
+     * @return gridVerticalWidth
+     */
+    public int getGridVerticalWidth() {
+        return gridVerticalWidth;
+    }
+
+
+    /**
+     * Sets the gridVerticalWidth value for this ChartDesign.
+     * 
+     * @param gridVerticalWidth
+     */
+    public void setGridVerticalWidth(int gridVerticalWidth) {
+        this.gridVerticalWidth = gridVerticalWidth;
+    }
+
+
+    /**
+     * Gets the colorFrame value for this ChartDesign.
+     * 
+     * @return colorFrame
+     */
+    public java.lang.String getColorFrame() {
+        return colorFrame;
+    }
+
+
+    /**
+     * Sets the colorFrame value for this ChartDesign.
+     * 
+     * @param colorFrame
+     */
+    public void setColorFrame(java.lang.String colorFrame) {
+        this.colorFrame = colorFrame;
+    }
+
+
+    /**
+     * Gets the frameBorder value for this ChartDesign.
+     * 
+     * @return frameBorder
+     */
+    public java.lang.String getFrameBorder() {
+        return frameBorder;
+    }
+
+
+    /**
+     * Sets the frameBorder value for this ChartDesign.
+     * 
+     * @param frameBorder
+     */
+    public void setFrameBorder(java.lang.String frameBorder) {
+        this.frameBorder = frameBorder;
+    }
+
+
+    /**
+     * Gets the formatPriceLine value for this ChartDesign.
+     * 
+     * @return formatPriceLine
+     */
+    public java.lang.String getFormatPriceLine() {
+        return formatPriceLine;
+    }
+
+
+    /**
+     * Sets the formatPriceLine value for this ChartDesign.
+     * 
+     * @param formatPriceLine
+     */
+    public void setFormatPriceLine(java.lang.String formatPriceLine) {
+        this.formatPriceLine = formatPriceLine;
+    }
+
+
+    /**
+     * Gets the formatVolume value for this ChartDesign.
+     * 
+     * @return formatVolume
+     */
+    public java.lang.String getFormatVolume() {
+        return formatVolume;
+    }
+
+
+    /**
+     * Sets the formatVolume value for this ChartDesign.
+     * 
+     * @param formatVolume
+     */
+    public void setFormatVolume(java.lang.String formatVolume) {
+        this.formatVolume = formatVolume;
+    }
+
+
+    /**
+     * Gets the formatDate value for this ChartDesign.
+     * 
+     * @return formatDate
+     */
+    public java.lang.String getFormatDate() {
+        return formatDate;
+    }
+
+
+    /**
+     * Sets the formatDate value for this ChartDesign.
+     * 
+     * @param formatDate
+     */
+    public void setFormatDate(java.lang.String formatDate) {
+        this.formatDate = formatDate;
+    }
+
+
+    /**
+     * Gets the gradeBackground value for this ChartDesign.
+     * 
+     * @return gradeBackground
+     */
+    public boolean isGradeBackground() {
+        return gradeBackground;
+    }
+
+
+    /**
+     * Sets the gradeBackground value for this ChartDesign.
+     * 
+     * @param gradeBackground
+     */
+    public void setGradeBackground(boolean gradeBackground) {
+        this.gradeBackground = gradeBackground;
+    }
+
+
+    /**
+     * Gets the gradeBackwall value for this ChartDesign.
+     * 
+     * @return gradeBackwall
+     */
+    public boolean isGradeBackwall() {
+        return gradeBackwall;
+    }
+
+
+    /**
+     * Sets the gradeBackwall value for this ChartDesign.
+     * 
+     * @param gradeBackwall
+     */
+    public void setGradeBackwall(boolean gradeBackwall) {
+        this.gradeBackwall = gradeBackwall;
+    }
+
+
+    /**
+     * Gets the waterMark value for this ChartDesign.
+     * 
+     * @return waterMark
+     */
+    public java.lang.String getWaterMark() {
+        return waterMark;
+    }
+
+
+    /**
+     * Sets the waterMark value for this ChartDesign.
+     * 
+     * @param waterMark
+     */
+    public void setWaterMark(java.lang.String waterMark) {
+        this.waterMark = waterMark;
+    }
+
+
+    /**
+     * Gets the waterMarkTopMargin value for this ChartDesign.
+     * 
+     * @return waterMarkTopMargin
+     */
+    public int getWaterMarkTopMargin() {
+        return waterMarkTopMargin;
+    }
+
+
+    /**
+     * Sets the waterMarkTopMargin value for this ChartDesign.
+     * 
+     * @param waterMarkTopMargin
+     */
+    public void setWaterMarkTopMargin(int waterMarkTopMargin) {
+        this.waterMarkTopMargin = waterMarkTopMargin;
+    }
+
+
+    /**
+     * Gets the waterMarkLeftMargin value for this ChartDesign.
+     * 
+     * @return waterMarkLeftMargin
+     */
+    public int getWaterMarkLeftMargin() {
+        return waterMarkLeftMargin;
+    }
+
+
+    /**
+     * Sets the waterMarkLeftMargin value for this ChartDesign.
+     * 
+     * @param waterMarkLeftMargin
+     */
+    public void setWaterMarkLeftMargin(int waterMarkLeftMargin) {
+        this.waterMarkLeftMargin = waterMarkLeftMargin;
+    }
+
+
+    /**
+     * Gets the waterMarkTransparency value for this ChartDesign.
+     * 
+     * @return waterMarkTransparency
+     */
+    public int getWaterMarkTransparency() {
+        return waterMarkTransparency;
+    }
+
+
+    /**
+     * Sets the waterMarkTransparency value for this ChartDesign.
+     * 
+     * @param waterMarkTransparency
+     */
+    public void setWaterMarkTransparency(int waterMarkTransparency) {
+        this.waterMarkTransparency = waterMarkTransparency;
+    }
+
+
+    /**
+     * Gets the pointSize value for this ChartDesign.
+     * 
+     * @return pointSize
+     */
+    public float getPointSize() {
+        return pointSize;
+    }
+
+
+    /**
+     * Sets the pointSize value for this ChartDesign.
+     * 
+     * @param pointSize
+     */
+    public void setPointSize(float pointSize) {
+        this.pointSize = pointSize;
+    }
+
+
+    /**
+     * Gets the stackVariationLabels value for this ChartDesign.
+     * 
+     * @return stackVariationLabels
+     */
+    public boolean isStackVariationLabels() {
+        return stackVariationLabels;
+    }
+
+
+    /**
+     * Sets the stackVariationLabels value for this ChartDesign.
+     * 
+     * @param stackVariationLabels
+     */
+    public void setStackVariationLabels(boolean stackVariationLabels) {
+        this.stackVariationLabels = stackVariationLabels;
+    }
+
+
+    /**
+     * Gets the showAxisLabelInLegend value for this ChartDesign.
+     * 
+     * @return showAxisLabelInLegend
+     */
+    public boolean isShowAxisLabelInLegend() {
+        return showAxisLabelInLegend;
+    }
+
+
+    /**
+     * Sets the showAxisLabelInLegend value for this ChartDesign.
+     * 
+     * @param showAxisLabelInLegend
+     */
+    public void setShowAxisLabelInLegend(boolean showAxisLabelInLegend) {
+        this.showAxisLabelInLegend = showAxisLabelInLegend;
+    }
+
+
+    /**
+     * Gets the lineWidth value for this ChartDesign.
+     * 
+     * @return lineWidth
+     */
+    public int getLineWidth() {
+        return lineWidth;
+    }
+
+
+    /**
+     * Sets the lineWidth value for this ChartDesign.
+     * 
+     * @param lineWidth
+     */
+    public void setLineWidth(int lineWidth) {
+        this.lineWidth = lineWidth;
+    }
+
+
+    /**
+     * Gets the splitPercent value for this ChartDesign.
+     * 
+     * @return splitPercent
+     */
+    public int getSplitPercent() {
+        return splitPercent;
+    }
+
+
+    /**
+     * Sets the splitPercent value for this ChartDesign.
+     * 
+     * @param splitPercent
+     */
+    public void setSplitPercent(int splitPercent) {
+        this.splitPercent = splitPercent;
+    }
+
+
+    /**
+     * Gets the showHigh value for this ChartDesign.
+     * 
+     * @return showHigh
+     */
+    public boolean isShowHigh() {
+        return showHigh;
+    }
+
+
+    /**
+     * Sets the showHigh value for this ChartDesign.
+     * 
+     * @param showHigh
+     */
+    public void setShowHigh(boolean showHigh) {
+        this.showHigh = showHigh;
+    }
+
+
+    /**
+     * Gets the showLow value for this ChartDesign.
+     * 
+     * @return showLow
+     */
+    public boolean isShowLow() {
+        return showLow;
+    }
+
+
+    /**
+     * Sets the showLow value for this ChartDesign.
+     * 
+     * @param showLow
+     */
+    public void setShowLow(boolean showLow) {
+        this.showLow = showLow;
+    }
+
+
+    /**
+     * Gets the showOpen value for this ChartDesign.
+     * 
+     * @return showOpen
+     */
+    public boolean isShowOpen() {
+        return showOpen;
+    }
+
+
+    /**
+     * Sets the showOpen value for this ChartDesign.
+     * 
+     * @param showOpen
+     */
+    public void setShowOpen(boolean showOpen) {
+        this.showOpen = showOpen;
+    }
+
+
+    /**
+     * Gets the showClose value for this ChartDesign.
+     * 
+     * @return showClose
+     */
+    public boolean isShowClose() {
+        return showClose;
+    }
+
+
+    /**
+     * Sets the showClose value for this ChartDesign.
+     * 
+     * @param showClose
+     */
+    public void setShowClose(boolean showClose) {
+        this.showClose = showClose;
+    }
+
+
+    /**
+     * Gets the showVolume value for this ChartDesign.
+     * 
+     * @return showVolume
+     */
+    public boolean isShowVolume() {
+        return showVolume;
+    }
+
+
+    /**
+     * Sets the showVolume value for this ChartDesign.
+     * 
+     * @param showVolume
+     */
+    public void setShowVolume(boolean showVolume) {
+        this.showVolume = showVolume;
+    }
+
+
+    /**
+     * Gets the showUpVariation value for this ChartDesign.
+     * 
+     * @return showUpVariation
+     */
+    public boolean isShowUpVariation() {
+        return showUpVariation;
+    }
+
+
+    /**
+     * Sets the showUpVariation value for this ChartDesign.
+     * 
+     * @param showUpVariation
+     */
+    public void setShowUpVariation(boolean showUpVariation) {
+        this.showUpVariation = showUpVariation;
+    }
+
+
+    /**
+     * Gets the showDownVariation value for this ChartDesign.
+     * 
+     * @return showDownVariation
+     */
+    public boolean isShowDownVariation() {
+        return showDownVariation;
+    }
+
+
+    /**
+     * Sets the showDownVariation value for this ChartDesign.
+     * 
+     * @param showDownVariation
+     */
+    public void setShowDownVariation(boolean showDownVariation) {
+        this.showDownVariation = showDownVariation;
+    }
+
+
+    /**
+     * Gets the showLegend value for this ChartDesign.
+     * 
+     * @return showLegend
+     */
+    public boolean isShowLegend() {
+        return showLegend;
+    }
+
+
+    /**
+     * Sets the showLegend value for this ChartDesign.
+     * 
+     * @param showLegend
+     */
+    public void setShowLegend(boolean showLegend) {
+        this.showLegend = showLegend;
+    }
+
+
+    /**
+     * Gets the variationYear value for this ChartDesign.
+     * 
+     * @return variationYear
+     */
+    public int getVariationYear() {
+        return variationYear;
+    }
+
+
+    /**
+     * Sets the variationYear value for this ChartDesign.
+     * 
+     * @param variationYear
+     */
+    public void setVariationYear(int variationYear) {
+        this.variationYear = variationYear;
+    }
+
+
+    /**
+     * Gets the volumeDivider value for this ChartDesign.
+     * 
+     * @return volumeDivider
+     */
+    public int getVolumeDivider() {
+        return volumeDivider;
+    }
+
+
+    /**
+     * Sets the volumeDivider value for this ChartDesign.
+     * 
+     * @param volumeDivider
+     */
+    public void setVolumeDivider(int volumeDivider) {
+        this.volumeDivider = volumeDivider;
+    }
+
+
+    /**
+     * Gets the volumeTextOffset value for this ChartDesign.
+     * 
+     * @return volumeTextOffset
+     */
+    public int getVolumeTextOffset() {
+        return volumeTextOffset;
+    }
+
+
+    /**
+     * Sets the volumeTextOffset value for this ChartDesign.
+     * 
+     * @param volumeTextOffset
+     */
+    public void setVolumeTextOffset(int volumeTextOffset) {
+        this.volumeTextOffset = volumeTextOffset;
+    }
+
+
+    /**
+     * Gets the priceTextOffset value for this ChartDesign.
+     * 
+     * @return priceTextOffset
+     */
+    public int getPriceTextOffset() {
+        return priceTextOffset;
+    }
+
+
+    /**
+     * Sets the priceTextOffset value for this ChartDesign.
+     * 
+     * @param priceTextOffset
+     */
+    public void setPriceTextOffset(int priceTextOffset) {
+        this.priceTextOffset = priceTextOffset;
+    }
+
+
+    /**
+     * Gets the frameType value for this ChartDesign.
+     * 
+     * @return frameType
+     */
+    public routines.ImageFrameType getFrameType() {
+        return frameType;
+    }
+
+
+    /**
+     * Sets the frameType value for this ChartDesign.
+     * 
+     * @param frameType
+     */
+    public void setFrameType(routines.ImageFrameType frameType) {
+        this.frameType = frameType;
+    }
+
+
+    /**
+     * Gets the projection value for this ChartDesign.
+     * 
+     * @return projection
+     */
+    public routines.PredefinedProjection getProjection() {
+        return projection;
+    }
+
+
+    /**
+     * Sets the projection value for this ChartDesign.
+     * 
+     * @param projection
+     */
+    public void setProjection(routines.PredefinedProjection projection) {
+        this.projection = projection;
+    }
+
+
+    /**
+     * Gets the marginTop value for this ChartDesign.
+     * 
+     * @return marginTop
+     */
+    public int getMarginTop() {
+        return marginTop;
+    }
+
+
+    /**
+     * Sets the marginTop value for this ChartDesign.
+     * 
+     * @param marginTop
+     */
+    public void setMarginTop(int marginTop) {
+        this.marginTop = marginTop;
+    }
+
+
+    /**
+     * Gets the marginBottom value for this ChartDesign.
+     * 
+     * @return marginBottom
+     */
+    public int getMarginBottom() {
+        return marginBottom;
+    }
+
+
+    /**
+     * Sets the marginBottom value for this ChartDesign.
+     * 
+     * @param marginBottom
+     */
+    public void setMarginBottom(int marginBottom) {
+        this.marginBottom = marginBottom;
+    }
+
+
+    /**
+     * Gets the marginLeft value for this ChartDesign.
+     * 
+     * @return marginLeft
+     */
+    public int getMarginLeft() {
+        return marginLeft;
+    }
+
+
+    /**
+     * Sets the marginLeft value for this ChartDesign.
+     * 
+     * @param marginLeft
+     */
+    public void setMarginLeft(int marginLeft) {
+        this.marginLeft = marginLeft;
+    }
+
+
+    /**
+     * Gets the marginRight value for this ChartDesign.
+     * 
+     * @return marginRight
+     */
+    public int getMarginRight() {
+        return marginRight;
+    }
+
+
+    /**
+     * Sets the marginRight value for this ChartDesign.
+     * 
+     * @param marginRight
+     */
+    public void setMarginRight(int marginRight) {
+        this.marginRight = marginRight;
+    }
+
+
+    /**
+     * Gets the fontFamily value for this ChartDesign.
+     * 
+     * @return fontFamily
+     */
+    public java.lang.String getFontFamily() {
+        return fontFamily;
+    }
+
+
+    /**
+     * Sets the fontFamily value for this ChartDesign.
+     * 
+     * @param fontFamily
+     */
+    public void setFontFamily(java.lang.String fontFamily) {
+        this.fontFamily = fontFamily;
+    }
+
+
+    /**
+     * Gets the fontSizeHeader value for this ChartDesign.
+     * 
+     * @return fontSizeHeader
+     */
+    public int getFontSizeHeader() {
+        return fontSizeHeader;
+    }
+
+
+    /**
+     * Sets the fontSizeHeader value for this ChartDesign.
+     * 
+     * @param fontSizeHeader
+     */
+    public void setFontSizeHeader(int fontSizeHeader) {
+        this.fontSizeHeader = fontSizeHeader;
+    }
+
+
+    /**
+     * Gets the fontSizeFooter value for this ChartDesign.
+     * 
+     * @return fontSizeFooter
+     */
+    public int getFontSizeFooter() {
+        return fontSizeFooter;
+    }
+
+
+    /**
+     * Sets the fontSizeFooter value for this ChartDesign.
+     * 
+     * @param fontSizeFooter
+     */
+    public void setFontSizeFooter(int fontSizeFooter) {
+        this.fontSizeFooter = fontSizeFooter;
+    }
+
+
+    /**
+     * Gets the height value for this ChartDesign.
+     * 
+     * @return height
+     */
+    public double getHeight() {
+        return height;
+    }
+
+
+    /**
+     * Sets the height value for this ChartDesign.
+     * 
+     * @param height
+     */
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+
+    /**
+     * Gets the width value for this ChartDesign.
+     * 
+     * @return width
+     */
+    public double getWidth() {
+        return width;
+    }
+
+
+    /**
+     * Sets the width value for this ChartDesign.
+     * 
+     * @param width
+     */
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+
+    /**
+     * Gets the zoomPercent value for this ChartDesign.
+     * 
+     * @return zoomPercent
+     */
+    public int getZoomPercent() {
+        return zoomPercent;
+    }
+
+
+    /**
+     * Sets the zoomPercent value for this ChartDesign.
+     * 
+     * @param zoomPercent
+     */
+    public void setZoomPercent(int zoomPercent) {
+        this.zoomPercent = zoomPercent;
+    }
+
+
+    /**
+     * Gets the legendBox value for this ChartDesign.
+     * 
+     * @return legendBox
+     */
+    public boolean isLegendBox() {
+        return legendBox;
+    }
+
+
+    /**
+     * Sets the legendBox value for this ChartDesign.
+     * 
+     * @param legendBox
+     */
+    public void setLegendBox(boolean legendBox) {
+        this.legendBox = legendBox;
+    }
+
+
+    /**
+     * Gets the colorLegendBackground value for this ChartDesign.
+     * 
+     * @return colorLegendBackground
+     */
+    public java.lang.String getColorLegendBackground() {
+        return colorLegendBackground;
+    }
+
+
+    /**
+     * Sets the colorLegendBackground value for this ChartDesign.
+     * 
+     * @param colorLegendBackground
+     */
+    public void setColorLegendBackground(java.lang.String colorLegendBackground) {
+        this.colorLegendBackground = colorLegendBackground;
+    }
+
+
+    /**
+     * Gets the colorLegendBorder value for this ChartDesign.
+     * 
+     * @return colorLegendBorder
+     */
+    public java.lang.String getColorLegendBorder() {
+        return colorLegendBorder;
+    }
+
+
+    /**
+     * Sets the colorLegendBorder value for this ChartDesign.
+     * 
+     * @param colorLegendBorder
+     */
+    public void setColorLegendBorder(java.lang.String colorLegendBorder) {
+        this.colorLegendBorder = colorLegendBorder;
+    }
+
+
+    /**
+     * Gets the legendVerticalPosition value for this ChartDesign.
+     * 
+     * @return legendVerticalPosition
+     */
+    public int getLegendVerticalPosition() {
+        return legendVerticalPosition;
+    }
+
+
+    /**
+     * Sets the legendVerticalPosition value for this ChartDesign.
+     * 
+     * @param legendVerticalPosition
+     */
+    public void setLegendVerticalPosition(int legendVerticalPosition) {
+        this.legendVerticalPosition = legendVerticalPosition;
+    }
+
+
+    /**
+     * Gets the legendHorizontalPosition value for this ChartDesign.
+     * 
+     * @return legendHorizontalPosition
+     */
+    public int getLegendHorizontalPosition() {
+        return legendHorizontalPosition;
+    }
+
+
+    /**
+     * Sets the legendHorizontalPosition value for this ChartDesign.
+     * 
+     * @param legendHorizontalPosition
+     */
+    public void setLegendHorizontalPosition(int legendHorizontalPosition) {
+        this.legendHorizontalPosition = legendHorizontalPosition;
+    }
+
+
+    /**
+     * Gets the reload value for this ChartDesign.
+     * 
+     * @return reload
+     */
+    public boolean isReload() {
+        return reload;
+    }
+
+
+    /**
+     * Sets the reload value for this ChartDesign.
+     * 
+     * @param reload
+     */
+    public void setReload(boolean reload) {
+        this.reload = reload;
+    }
+
+
+    /**
+     * Gets the showPriceChartLabels value for this ChartDesign.
+     * 
+     * @return showPriceChartLabels
+     */
+    public boolean isShowPriceChartLabels() {
+        return showPriceChartLabels;
+    }
+
+
+    /**
+     * Sets the showPriceChartLabels value for this ChartDesign.
+     * 
+     * @param showPriceChartLabels
+     */
+    public void setShowPriceChartLabels(boolean showPriceChartLabels) {
+        this.showPriceChartLabels = showPriceChartLabels;
+    }
+
+
+    /**
+     * Gets the tickPrecision value for this ChartDesign.
+     * 
+     * @return tickPrecision
+     */
+    public routines.TickPeriod getTickPrecision() {
+        return tickPrecision;
+    }
+
+
+    /**
+     * Sets the tickPrecision value for this ChartDesign.
+     * 
+     * @param tickPrecision
+     */
+    public void setTickPrecision(routines.TickPeriod tickPrecision) {
+        this.tickPrecision = tickPrecision;
+    }
+
+
+    /**
+     * Gets the tickPeriods value for this ChartDesign.
+     * 
+     * @return tickPeriods
+     */
+    public int getTickPeriods() {
+        return tickPeriods;
+    }
+
+
+    /**
+     * Sets the tickPeriods value for this ChartDesign.
+     * 
+     * @param tickPeriods
+     */
+    public void setTickPeriods(int tickPeriods) {
+        this.tickPeriods = tickPeriods;
+    }
+
+
+    /**
+     * Gets the waterMarkHorizontalAlign value for this ChartDesign.
+     * 
+     * @return waterMarkHorizontalAlign
+     */
+    public routines.HorzAlign getWaterMarkHorizontalAlign() {
+        return waterMarkHorizontalAlign;
+    }
+
+
+    /**
+     * Sets the waterMarkHorizontalAlign value for this ChartDesign.
+     * 
+     * @param waterMarkHorizontalAlign
+     */
+    public void setWaterMarkHorizontalAlign(routines.HorzAlign waterMarkHorizontalAlign) {
+        this.waterMarkHorizontalAlign = waterMarkHorizontalAlign;
+    }
+
+
+    /**
+     * Gets the lightScheme value for this ChartDesign.
+     * 
+     * @return lightScheme
+     */
+    public routines.PredefinedLightModel getLightScheme() {
+        return lightScheme;
+    }
+
+
+    /**
+     * Sets the lightScheme value for this ChartDesign.
+     * 
+     * @param lightScheme
+     */
+    public void setLightScheme(routines.PredefinedLightModel lightScheme) {
+        this.lightScheme = lightScheme;
+    }
+
+
+    /**
+     * Gets the fontSizeLegend value for this ChartDesign.
+     * 
+     * @return fontSizeLegend
+     */
+    public int getFontSizeLegend() {
+        return fontSizeLegend;
+    }
+
+
+    /**
+     * Sets the fontSizeLegend value for this ChartDesign.
+     * 
+     * @param fontSizeLegend
+     */
+    public void setFontSizeLegend(int fontSizeLegend) {
+        this.fontSizeLegend = fontSizeLegend;
+    }
+
+
+    /**
+     * Gets the fontSizeAxes value for this ChartDesign.
+     * 
+     * @return fontSizeAxes
+     */
+    public int getFontSizeAxes() {
+        return fontSizeAxes;
+    }
+
+
+    /**
+     * Sets the fontSizeAxes value for this ChartDesign.
+     * 
+     * @param fontSizeAxes
+     */
+    public void setFontSizeAxes(int fontSizeAxes) {
+        this.fontSizeAxes = fontSizeAxes;
+    }
+
+
+    /**
+     * Gets the fontSizeTitle value for this ChartDesign.
+     * 
+     * @return fontSizeTitle
+     */
+    public int getFontSizeTitle() {
+        return fontSizeTitle;
+    }
+
+
+    /**
+     * Sets the fontSizeTitle value for this ChartDesign.
+     * 
+     * @param fontSizeTitle
+     */
+    public void setFontSizeTitle(int fontSizeTitle) {
+        this.fontSizeTitle = fontSizeTitle;
+    }
+
+
+    /**
+     * Gets the daysForHourDisplay value for this ChartDesign.
+     * 
+     * @return daysForHourDisplay
+     */
+    public int getDaysForHourDisplay() {
+        return daysForHourDisplay;
+    }
+
+
+    /**
+     * Sets the daysForHourDisplay value for this ChartDesign.
+     * 
+     * @param daysForHourDisplay
+     */
+    public void setDaysForHourDisplay(int daysForHourDisplay) {
+        this.daysForHourDisplay = daysForHourDisplay;
+    }
+
+
+    /**
+     * Gets the daysForDayDisplay value for this ChartDesign.
+     * 
+     * @return daysForDayDisplay
+     */
+    public int getDaysForDayDisplay() {
+        return daysForDayDisplay;
+    }
+
+
+    /**
+     * Sets the daysForDayDisplay value for this ChartDesign.
+     * 
+     * @param daysForDayDisplay
+     */
+    public void setDaysForDayDisplay(int daysForDayDisplay) {
+        this.daysForDayDisplay = daysForDayDisplay;
+    }
+
+
+    /**
+     * Gets the daysForWeekDisplay value for this ChartDesign.
+     * 
+     * @return daysForWeekDisplay
+     */
+    public int getDaysForWeekDisplay() {
+        return daysForWeekDisplay;
+    }
+
+
+    /**
+     * Sets the daysForWeekDisplay value for this ChartDesign.
+     * 
+     * @param daysForWeekDisplay
+     */
+    public void setDaysForWeekDisplay(int daysForWeekDisplay) {
+        this.daysForWeekDisplay = daysForWeekDisplay;
+    }
+
+
+    /**
+     * Gets the daysForBiWeeklyDisplay value for this ChartDesign.
+     * 
+     * @return daysForBiWeeklyDisplay
+     */
+    public int getDaysForBiWeeklyDisplay() {
+        return daysForBiWeeklyDisplay;
+    }
+
+
+    /**
+     * Sets the daysForBiWeeklyDisplay value for this ChartDesign.
+     * 
+     * @param daysForBiWeeklyDisplay
+     */
+    public void setDaysForBiWeeklyDisplay(int daysForBiWeeklyDisplay) {
+        this.daysForBiWeeklyDisplay = daysForBiWeeklyDisplay;
+    }
+
+
+    /**
+     * Gets the daysForMonthDisplay value for this ChartDesign.
+     * 
+     * @return daysForMonthDisplay
+     */
+    public int getDaysForMonthDisplay() {
+        return daysForMonthDisplay;
+    }
+
+
+    /**
+     * Sets the daysForMonthDisplay value for this ChartDesign.
+     * 
+     * @param daysForMonthDisplay
+     */
+    public void setDaysForMonthDisplay(int daysForMonthDisplay) {
+        this.daysForMonthDisplay = daysForMonthDisplay;
+    }
+
+
+    /**
+     * Gets the daysForQuarterDisplay value for this ChartDesign.
+     * 
+     * @return daysForQuarterDisplay
+     */
+    public int getDaysForQuarterDisplay() {
+        return daysForQuarterDisplay;
+    }
+
+
+    /**
+     * Sets the daysForQuarterDisplay value for this ChartDesign.
+     * 
+     * @param daysForQuarterDisplay
+     */
+    public void setDaysForQuarterDisplay(int daysForQuarterDisplay) {
+        this.daysForQuarterDisplay = daysForQuarterDisplay;
+    }
+
+
+    /**
+     * Gets the daysForSemiAnnualDisplay value for this ChartDesign.
+     * 
+     * @return daysForSemiAnnualDisplay
+     */
+    public int getDaysForSemiAnnualDisplay() {
+        return daysForSemiAnnualDisplay;
+    }
+
+
+    /**
+     * Sets the daysForSemiAnnualDisplay value for this ChartDesign.
+     * 
+     * @param daysForSemiAnnualDisplay
+     */
+    public void setDaysForSemiAnnualDisplay(int daysForSemiAnnualDisplay) {
+        this.daysForSemiAnnualDisplay = daysForSemiAnnualDisplay;
+    }
+
+
+    /**
+     * Gets the daysForAnnualDisplay value for this ChartDesign.
+     * 
+     * @return daysForAnnualDisplay
+     */
+    public int getDaysForAnnualDisplay() {
+        return daysForAnnualDisplay;
+    }
+
+
+    /**
+     * Sets the daysForAnnualDisplay value for this ChartDesign.
+     * 
+     * @param daysForAnnualDisplay
+     */
+    public void setDaysForAnnualDisplay(int daysForAnnualDisplay) {
+        this.daysForAnnualDisplay = daysForAnnualDisplay;
+    }
+
+
+    /**
+     * Gets the daysForBiAnnualDisplay value for this ChartDesign.
+     * 
+     * @return daysForBiAnnualDisplay
+     */
+    public int getDaysForBiAnnualDisplay() {
+        return daysForBiAnnualDisplay;
+    }
+
+
+    /**
+     * Sets the daysForBiAnnualDisplay value for this ChartDesign.
+     * 
+     * @param daysForBiAnnualDisplay
+     */
+    public void setDaysForBiAnnualDisplay(int daysForBiAnnualDisplay) {
+        this.daysForBiAnnualDisplay = daysForBiAnnualDisplay;
+    }
+
+
+    /**
+     * Gets the daysForPentaAnnualDisplay value for this ChartDesign.
+     * 
+     * @return daysForPentaAnnualDisplay
+     */
+    public int getDaysForPentaAnnualDisplay() {
+        return daysForPentaAnnualDisplay;
+    }
+
+
+    /**
+     * Sets the daysForPentaAnnualDisplay value for this ChartDesign.
+     * 
+     * @param daysForPentaAnnualDisplay
+     */
+    public void setDaysForPentaAnnualDisplay(int daysForPentaAnnualDisplay) {
+        this.daysForPentaAnnualDisplay = daysForPentaAnnualDisplay;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof ChartDesign)) return false;
+        ChartDesign other = (ChartDesign) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            this.secure == other.isSecure() &&
+            ((this.textTitle==null && other.getTextTitle()==null) || 
+             (this.textTitle!=null &&
+              this.textTitle.equals(other.getTextTitle()))) &&
+            ((this.textHeader==null && other.getTextHeader()==null) || 
+             (this.textHeader!=null &&
+              this.textHeader.equals(other.getTextHeader()))) &&
+            ((this.textFooter==null && other.getTextFooter()==null) || 
+             (this.textFooter!=null &&
+              this.textFooter.equals(other.getTextFooter()))) &&
+            ((this.textPriceLine==null && other.getTextPriceLine()==null) || 
+             (this.textPriceLine!=null &&
+              this.textPriceLine.equals(other.getTextPriceLine()))) &&
+            ((this.textVolumeBar==null && other.getTextVolumeBar()==null) || 
+             (this.textVolumeBar!=null &&
+              this.textVolumeBar.equals(other.getTextVolumeBar()))) &&
+            ((this.textHighest==null && other.getTextHighest()==null) || 
+             (this.textHighest!=null &&
+              this.textHighest.equals(other.getTextHighest()))) &&
+            ((this.textLowest==null && other.getTextLowest()==null) || 
+             (this.textLowest!=null &&
+              this.textLowest.equals(other.getTextLowest()))) &&
+            ((this.textOpen==null && other.getTextOpen()==null) || 
+             (this.textOpen!=null &&
+              this.textOpen.equals(other.getTextOpen()))) &&
+            ((this.textClose==null && other.getTextClose()==null) || 
+             (this.textClose!=null &&
+              this.textClose.equals(other.getTextClose()))) &&
+            ((this.textUp==null && other.getTextUp()==null) || 
+             (this.textUp!=null &&
+              this.textUp.equals(other.getTextUp()))) &&
+            ((this.textDown==null && other.getTextDown()==null) || 
+             (this.textDown!=null &&
+              this.textDown.equals(other.getTextDown()))) &&
+            ((this.colorBackground==null && other.getColorBackground()==null) || 
+             (this.colorBackground!=null &&
+              this.colorBackground.equals(other.getColorBackground()))) &&
+            ((this.colorBackWall==null && other.getColorBackWall()==null) || 
+             (this.colorBackWall!=null &&
+              this.colorBackWall.equals(other.getColorBackWall()))) &&
+            ((this.colorVolumeBackWall==null && other.getColorVolumeBackWall()==null) || 
+             (this.colorVolumeBackWall!=null &&
+              this.colorVolumeBackWall.equals(other.getColorVolumeBackWall()))) &&
+            this.showVolumeBackWall == other.isShowVolumeBackWall() &&
+            ((this.colorHighlight==null && other.getColorHighlight()==null) || 
+             (this.colorHighlight!=null &&
+              this.colorHighlight.equals(other.getColorHighlight()))) &&
+            ((this.colorPriceLine==null && other.getColorPriceLine()==null) || 
+             (this.colorPriceLine!=null &&
+              this.colorPriceLine.equals(other.getColorPriceLine()))) &&
+            ((this.colorVolumeBar==null && other.getColorVolumeBar()==null) || 
+             (this.colorVolumeBar!=null &&
+              this.colorVolumeBar.equals(other.getColorVolumeBar()))) &&
+            ((this.colorVolumeBarFill==null && other.getColorVolumeBarFill()==null) || 
+             (this.colorVolumeBarFill!=null &&
+              this.colorVolumeBarFill.equals(other.getColorVolumeBarFill()))) &&
+            ((this.colorHigh==null && other.getColorHigh()==null) || 
+             (this.colorHigh!=null &&
+              this.colorHigh.equals(other.getColorHigh()))) &&
+            ((this.colorStickUp==null && other.getColorStickUp()==null) || 
+             (this.colorStickUp!=null &&
+              this.colorStickUp.equals(other.getColorStickUp()))) &&
+            ((this.colorStickLow==null && other.getColorStickLow()==null) || 
+             (this.colorStickLow!=null &&
+              this.colorStickLow.equals(other.getColorStickLow()))) &&
+            ((this.colorConstant==null && other.getColorConstant()==null) || 
+             (this.colorConstant!=null &&
+              this.colorConstant.equals(other.getColorConstant()))) &&
+            ((this.colorLow==null && other.getColorLow()==null) || 
+             (this.colorLow!=null &&
+              this.colorLow.equals(other.getColorLow()))) &&
+            ((this.colorPoint==null && other.getColorPoint()==null) || 
+             (this.colorPoint!=null &&
+              this.colorPoint.equals(other.getColorPoint()))) &&
+            ((this.colorTitle==null && other.getColorTitle()==null) || 
+             (this.colorTitle!=null &&
+              this.colorTitle.equals(other.getColorTitle()))) &&
+            ((this.colorFooter==null && other.getColorFooter()==null) || 
+             (this.colorFooter!=null &&
+              this.colorFooter.equals(other.getColorFooter()))) &&
+            ((this.colorHeader==null && other.getColorHeader()==null) || 
+             (this.colorHeader!=null &&
+              this.colorHeader.equals(other.getColorHeader()))) &&
+            ((this.colorAxis==null && other.getColorAxis()==null) || 
+             (this.colorAxis!=null &&
+              this.colorAxis.equals(other.getColorAxis()))) &&
+            ((this.colorGrid==null && other.getColorGrid()==null) || 
+             (this.colorGrid!=null &&
+              this.colorGrid.equals(other.getColorGrid()))) &&
+            ((this.colorFonts==null && other.getColorFonts()==null) || 
+             (this.colorFonts!=null &&
+              this.colorFonts.equals(other.getColorFonts()))) &&
+            ((this.colorStripe==null && other.getColorStripe()==null) || 
+             (this.colorStripe!=null &&
+              this.colorStripe.equals(other.getColorStripe()))) &&
+            ((this.colorOpen==null && other.getColorOpen()==null) || 
+             (this.colorOpen!=null &&
+              this.colorOpen.equals(other.getColorOpen()))) &&
+            ((this.colorClose==null && other.getColorClose()==null) || 
+             (this.colorClose!=null &&
+              this.colorClose.equals(other.getColorClose()))) &&
+            ((this.colorVerticalGrid==null && other.getColorVerticalGrid()==null) || 
+             (this.colorVerticalGrid!=null &&
+              this.colorVerticalGrid.equals(other.getColorVerticalGrid()))) &&
+            ((this.colorHorizontalGrid==null && other.getColorHorizontalGrid()==null) || 
+             (this.colorHorizontalGrid!=null &&
+              this.colorHorizontalGrid.equals(other.getColorHorizontalGrid()))) &&
+            ((this.colorUp==null && other.getColorUp()==null) || 
+             (this.colorUp!=null &&
+              this.colorUp.equals(other.getColorUp()))) &&
+            ((this.colorDown==null && other.getColorDown()==null) || 
+             (this.colorDown!=null &&
+              this.colorDown.equals(other.getColorDown()))) &&
+            ((this.colorHighLowLine==null && other.getColorHighLowLine()==null) || 
+             (this.colorHighLowLine!=null &&
+              this.colorHighLowLine.equals(other.getColorHighLowLine()))) &&
+            ((this.colorCollection==null && other.getColorCollection()==null) || 
+             (this.colorCollection!=null &&
+              this.colorCollection.equals(other.getColorCollection()))) &&
+            ((this.gridHorizontalStyle==null && other.getGridHorizontalStyle()==null) || 
+             (this.gridHorizontalStyle!=null &&
+              this.gridHorizontalStyle.equals(other.getGridHorizontalStyle()))) &&
+            ((this.gridVerticalStyle==null && other.getGridVerticalStyle()==null) || 
+             (this.gridVerticalStyle!=null &&
+              this.gridVerticalStyle.equals(other.getGridVerticalStyle()))) &&
+            this.gridHorizontalWidth == other.getGridHorizontalWidth() &&
+            this.gridVerticalWidth == other.getGridVerticalWidth() &&
+            ((this.colorFrame==null && other.getColorFrame()==null) || 
+             (this.colorFrame!=null &&
+              this.colorFrame.equals(other.getColorFrame()))) &&
+            ((this.frameBorder==null && other.getFrameBorder()==null) || 
+             (this.frameBorder!=null &&
+              this.frameBorder.equals(other.getFrameBorder()))) &&
+            ((this.formatPriceLine==null && other.getFormatPriceLine()==null) || 
+             (this.formatPriceLine!=null &&
+              this.formatPriceLine.equals(other.getFormatPriceLine()))) &&
+            ((this.formatVolume==null && other.getFormatVolume()==null) || 
+             (this.formatVolume!=null &&
+              this.formatVolume.equals(other.getFormatVolume()))) &&
+            ((this.formatDate==null && other.getFormatDate()==null) || 
+             (this.formatDate!=null &&
+              this.formatDate.equals(other.getFormatDate()))) &&
+            this.gradeBackground == other.isGradeBackground() &&
+            this.gradeBackwall == other.isGradeBackwall() &&
+            ((this.waterMark==null && other.getWaterMark()==null) || 
+             (this.waterMark!=null &&
+              this.waterMark.equals(other.getWaterMark()))) &&
+            this.waterMarkTopMargin == other.getWaterMarkTopMargin() &&
+            this.waterMarkLeftMargin == other.getWaterMarkLeftMargin() &&
+            this.waterMarkTransparency == other.getWaterMarkTransparency() &&
+            this.pointSize == other.getPointSize() &&
+            this.stackVariationLabels == other.isStackVariationLabels() &&
+            this.showAxisLabelInLegend == other.isShowAxisLabelInLegend() &&
+            this.lineWidth == other.getLineWidth() &&
+            this.splitPercent == other.getSplitPercent() &&
+            this.showHigh == other.isShowHigh() &&
+            this.showLow == other.isShowLow() &&
+            this.showOpen == other.isShowOpen() &&
+            this.showClose == other.isShowClose() &&
+            this.showVolume == other.isShowVolume() &&
+            this.showUpVariation == other.isShowUpVariation() &&
+            this.showDownVariation == other.isShowDownVariation() &&
+            this.showLegend == other.isShowLegend() &&
+            this.variationYear == other.getVariationYear() &&
+            this.volumeDivider == other.getVolumeDivider() &&
+            this.volumeTextOffset == other.getVolumeTextOffset() &&
+            this.priceTextOffset == other.getPriceTextOffset() &&
+            ((this.frameType==null && other.getFrameType()==null) || 
+             (this.frameType!=null &&
+              this.frameType.equals(other.getFrameType()))) &&
+            ((this.projection==null && other.getProjection()==null) || 
+             (this.projection!=null &&
+              this.projection.equals(other.getProjection()))) &&
+            this.marginTop == other.getMarginTop() &&
+            this.marginBottom == other.getMarginBottom() &&
+            this.marginLeft == other.getMarginLeft() &&
+            this.marginRight == other.getMarginRight() &&
+            ((this.fontFamily==null && other.getFontFamily()==null) || 
+             (this.fontFamily!=null &&
+              this.fontFamily.equals(other.getFontFamily()))) &&
+            this.fontSizeHeader == other.getFontSizeHeader() &&
+            this.fontSizeFooter == other.getFontSizeFooter() &&
+            this.height == other.getHeight() &&
+            this.width == other.getWidth() &&
+            this.zoomPercent == other.getZoomPercent() &&
+            this.legendBox == other.isLegendBox() &&
+            ((this.colorLegendBackground==null && other.getColorLegendBackground()==null) || 
+             (this.colorLegendBackground!=null &&
+              this.colorLegendBackground.equals(other.getColorLegendBackground()))) &&
+            ((this.colorLegendBorder==null && other.getColorLegendBorder()==null) || 
+             (this.colorLegendBorder!=null &&
+              this.colorLegendBorder.equals(other.getColorLegendBorder()))) &&
+            this.legendVerticalPosition == other.getLegendVerticalPosition() &&
+            this.legendHorizontalPosition == other.getLegendHorizontalPosition() &&
+            this.reload == other.isReload() &&
+            this.showPriceChartLabels == other.isShowPriceChartLabels() &&
+            ((this.tickPrecision==null && other.getTickPrecision()==null) || 
+             (this.tickPrecision!=null &&
+              this.tickPrecision.equals(other.getTickPrecision()))) &&
+            this.tickPeriods == other.getTickPeriods() &&
+            ((this.waterMarkHorizontalAlign==null && other.getWaterMarkHorizontalAlign()==null) || 
+             (this.waterMarkHorizontalAlign!=null &&
+              this.waterMarkHorizontalAlign.equals(other.getWaterMarkHorizontalAlign()))) &&
+            ((this.lightScheme==null && other.getLightScheme()==null) || 
+             (this.lightScheme!=null &&
+              this.lightScheme.equals(other.getLightScheme()))) &&
+            this.fontSizeLegend == other.getFontSizeLegend() &&
+            this.fontSizeAxes == other.getFontSizeAxes() &&
+            this.fontSizeTitle == other.getFontSizeTitle() &&
+            this.daysForHourDisplay == other.getDaysForHourDisplay() &&
+            this.daysForDayDisplay == other.getDaysForDayDisplay() &&
+            this.daysForWeekDisplay == other.getDaysForWeekDisplay() &&
+            this.daysForBiWeeklyDisplay == other.getDaysForBiWeeklyDisplay() &&
+            this.daysForMonthDisplay == other.getDaysForMonthDisplay() &&
+            this.daysForQuarterDisplay == other.getDaysForQuarterDisplay() &&
+            this.daysForSemiAnnualDisplay == other.getDaysForSemiAnnualDisplay() &&
+            this.daysForAnnualDisplay == other.getDaysForAnnualDisplay() &&
+            this.daysForBiAnnualDisplay == other.getDaysForBiAnnualDisplay() &&
+            this.daysForPentaAnnualDisplay == other.getDaysForPentaAnnualDisplay();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        _hashCode += (isSecure() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        if (getTextTitle() != null) {
+            _hashCode += getTextTitle().hashCode();
+        }
+        if (getTextHeader() != null) {
+            _hashCode += getTextHeader().hashCode();
+        }
+        if (getTextFooter() != null) {
+            _hashCode += getTextFooter().hashCode();
+        }
+        if (getTextPriceLine() != null) {
+            _hashCode += getTextPriceLine().hashCode();
+        }
+        if (getTextVolumeBar() != null) {
+            _hashCode += getTextVolumeBar().hashCode();
+        }
+        if (getTextHighest() != null) {
+            _hashCode += getTextHighest().hashCode();
+        }
+        if (getTextLowest() != null) {
+            _hashCode += getTextLowest().hashCode();
+        }
+        if (getTextOpen() != null) {
+            _hashCode += getTextOpen().hashCode();
+        }
+        if (getTextClose() != null) {
+            _hashCode += getTextClose().hashCode();
+        }
+        if (getTextUp() != null) {
+            _hashCode += getTextUp().hashCode();
+        }
+        if (getTextDown() != null) {
+            _hashCode += getTextDown().hashCode();
+        }
+        if (getColorBackground() != null) {
+            _hashCode += getColorBackground().hashCode();
+        }
+        if (getColorBackWall() != null) {
+            _hashCode += getColorBackWall().hashCode();
+        }
+        if (getColorVolumeBackWall() != null) {
+            _hashCode += getColorVolumeBackWall().hashCode();
+        }
+        _hashCode += (isShowVolumeBackWall() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        if (getColorHighlight() != null) {
+            _hashCode += getColorHighlight().hashCode();
+        }
+        if (getColorPriceLine() != null) {
+            _hashCode += getColorPriceLine().hashCode();
+        }
+        if (getColorVolumeBar() != null) {
+            _hashCode += getColorVolumeBar().hashCode();
+        }
+        if (getColorVolumeBarFill() != null) {
+            _hashCode += getColorVolumeBarFill().hashCode();
+        }
+        if (getColorHigh() != null) {
+            _hashCode += getColorHigh().hashCode();
+        }
+        if (getColorStickUp() != null) {
+            _hashCode += getColorStickUp().hashCode();
+        }
+        if (getColorStickLow() != null) {
+            _hashCode += getColorStickLow().hashCode();
+        }
+        if (getColorConstant() != null) {
+            _hashCode += getColorConstant().hashCode();
+        }
+        if (getColorLow() != null) {
+            _hashCode += getColorLow().hashCode();
+        }
+        if (getColorPoint() != null) {
+            _hashCode += getColorPoint().hashCode();
+        }
+        if (getColorTitle() != null) {
+            _hashCode += getColorTitle().hashCode();
+        }
+        if (getColorFooter() != null) {
+            _hashCode += getColorFooter().hashCode();
+        }
+        if (getColorHeader() != null) {
+            _hashCode += getColorHeader().hashCode();
+        }
+        if (getColorAxis() != null) {
+            _hashCode += getColorAxis().hashCode();
+        }
+        if (getColorGrid() != null) {
+            _hashCode += getColorGrid().hashCode();
+        }
+        if (getColorFonts() != null) {
+            _hashCode += getColorFonts().hashCode();
+        }
+        if (getColorStripe() != null) {
+            _hashCode += getColorStripe().hashCode();
+        }
+        if (getColorOpen() != null) {
+            _hashCode += getColorOpen().hashCode();
+        }
+        if (getColorClose() != null) {
+            _hashCode += getColorClose().hashCode();
+        }
+        if (getColorVerticalGrid() != null) {
+            _hashCode += getColorVerticalGrid().hashCode();
+        }
+        if (getColorHorizontalGrid() != null) {
+            _hashCode += getColorHorizontalGrid().hashCode();
+        }
+        if (getColorUp() != null) {
+            _hashCode += getColorUp().hashCode();
+        }
+        if (getColorDown() != null) {
+            _hashCode += getColorDown().hashCode();
+        }
+        if (getColorHighLowLine() != null) {
+            _hashCode += getColorHighLowLine().hashCode();
+        }
+        if (getColorCollection() != null) {
+            _hashCode += getColorCollection().hashCode();
+        }
+        if (getGridHorizontalStyle() != null) {
+            _hashCode += getGridHorizontalStyle().hashCode();
+        }
+        if (getGridVerticalStyle() != null) {
+            _hashCode += getGridVerticalStyle().hashCode();
+        }
+        _hashCode += getGridHorizontalWidth();
+        _hashCode += getGridVerticalWidth();
+        if (getColorFrame() != null) {
+            _hashCode += getColorFrame().hashCode();
+        }
+        if (getFrameBorder() != null) {
+            _hashCode += getFrameBorder().hashCode();
+        }
+        if (getFormatPriceLine() != null) {
+            _hashCode += getFormatPriceLine().hashCode();
+        }
+        if (getFormatVolume() != null) {
+            _hashCode += getFormatVolume().hashCode();
+        }
+        if (getFormatDate() != null) {
+            _hashCode += getFormatDate().hashCode();
+        }
+        _hashCode += (isGradeBackground() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isGradeBackwall() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        if (getWaterMark() != null) {
+            _hashCode += getWaterMark().hashCode();
+        }
+        _hashCode += getWaterMarkTopMargin();
+        _hashCode += getWaterMarkLeftMargin();
+        _hashCode += getWaterMarkTransparency();
+        _hashCode += new Float(getPointSize()).hashCode();
+        _hashCode += (isStackVariationLabels() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isShowAxisLabelInLegend() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += getLineWidth();
+        _hashCode += getSplitPercent();
+        _hashCode += (isShowHigh() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isShowLow() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isShowOpen() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isShowClose() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isShowVolume() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isShowUpVariation() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isShowDownVariation() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isShowLegend() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += getVariationYear();
+        _hashCode += getVolumeDivider();
+        _hashCode += getVolumeTextOffset();
+        _hashCode += getPriceTextOffset();
+        if (getFrameType() != null) {
+            _hashCode += getFrameType().hashCode();
+        }
+        if (getProjection() != null) {
+            _hashCode += getProjection().hashCode();
+        }
+        _hashCode += getMarginTop();
+        _hashCode += getMarginBottom();
+        _hashCode += getMarginLeft();
+        _hashCode += getMarginRight();
+        if (getFontFamily() != null) {
+            _hashCode += getFontFamily().hashCode();
+        }
+        _hashCode += getFontSizeHeader();
+        _hashCode += getFontSizeFooter();
+        _hashCode += new Double(getHeight()).hashCode();
+        _hashCode += new Double(getWidth()).hashCode();
+        _hashCode += getZoomPercent();
+        _hashCode += (isLegendBox() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        if (getColorLegendBackground() != null) {
+            _hashCode += getColorLegendBackground().hashCode();
+        }
+        if (getColorLegendBorder() != null) {
+            _hashCode += getColorLegendBorder().hashCode();
+        }
+        _hashCode += getLegendVerticalPosition();
+        _hashCode += getLegendHorizontalPosition();
+        _hashCode += (isReload() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        _hashCode += (isShowPriceChartLabels() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        if (getTickPrecision() != null) {
+            _hashCode += getTickPrecision().hashCode();
+        }
+        _hashCode += getTickPeriods();
+        if (getWaterMarkHorizontalAlign() != null) {
+            _hashCode += getWaterMarkHorizontalAlign().hashCode();
+        }
+        if (getLightScheme() != null) {
+            _hashCode += getLightScheme().hashCode();
+        }
+        _hashCode += getFontSizeLegend();
+        _hashCode += getFontSizeAxes();
+        _hashCode += getFontSizeTitle();
+        _hashCode += getDaysForHourDisplay();
+        _hashCode += getDaysForDayDisplay();
+        _hashCode += getDaysForWeekDisplay();
+        _hashCode += getDaysForBiWeeklyDisplay();
+        _hashCode += getDaysForMonthDisplay();
+        _hashCode += getDaysForQuarterDisplay();
+        _hashCode += getDaysForSemiAnnualDisplay();
+        _hashCode += getDaysForAnnualDisplay();
+        _hashCode += getDaysForBiAnnualDisplay();
+        _hashCode += getDaysForPentaAnnualDisplay();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(ChartDesign.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ChartDesign"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("secure");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Secure"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textTitle");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextTitle"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textHeader");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextHeader"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textFooter");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextFooter"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textPriceLine");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextPriceLine"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textVolumeBar");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextVolumeBar"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textHighest");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextHighest"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textLowest");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextLowest"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textOpen");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextOpen"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textClose");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextClose"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textUp");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextUp"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("textDown");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TextDown"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorBackground");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorBackground"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorBackWall");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorBackWall"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorVolumeBackWall");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorVolumeBackWall"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showVolumeBackWall");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowVolumeBackWall"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorHighlight");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorHighlight"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorPriceLine");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorPriceLine"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorVolumeBar");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorVolumeBar"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorVolumeBarFill");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorVolumeBarFill"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorHigh");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorHigh"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorStickUp");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorStickUp"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorStickLow");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorStickLow"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorConstant");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorConstant"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorLow");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorLow"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorPoint");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorPoint"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorTitle");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorTitle"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorFooter");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorFooter"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorHeader");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorHeader"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorAxis");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorAxis"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorGrid");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorGrid"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorFonts");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorFonts"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorStripe");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorStripe"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorOpen");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorOpen"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorClose");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorClose"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorVerticalGrid");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorVerticalGrid"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorHorizontalGrid");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorHorizontalGrid"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorUp");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorUp"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorDown");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorDown"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorHighLowLine");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorHighLowLine"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorCollection");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorCollection"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("gridHorizontalStyle");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GridHorizontalStyle"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LinePattern"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("gridVerticalStyle");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GridVerticalStyle"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LinePattern"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("gridHorizontalWidth");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GridHorizontalWidth"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("gridVerticalWidth");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GridVerticalWidth"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorFrame");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorFrame"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("frameBorder");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FrameBorder"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("formatPriceLine");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FormatPriceLine"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("formatVolume");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FormatVolume"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("formatDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FormatDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("gradeBackground");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GradeBackground"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("gradeBackwall");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GradeBackwall"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("waterMark");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "WaterMark"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("waterMarkTopMargin");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "WaterMarkTopMargin"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("waterMarkLeftMargin");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "WaterMarkLeftMargin"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("waterMarkTransparency");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "WaterMarkTransparency"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("pointSize");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PointSize"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "float"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("stackVariationLabels");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StackVariationLabels"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showAxisLabelInLegend");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowAxisLabelInLegend"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("lineWidth");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LineWidth"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("splitPercent");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SplitPercent"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showHigh");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowHigh"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showLow");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowLow"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showOpen");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowOpen"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showClose");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowClose"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showVolume");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowVolume"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showUpVariation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowUpVariation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showDownVariation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowDownVariation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showLegend");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowLegend"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("variationYear");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "VariationYear"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("volumeDivider");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "VolumeDivider"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("volumeTextOffset");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "VolumeTextOffset"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("priceTextOffset");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PriceTextOffset"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("frameType");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FrameType"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ImageFrameType"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("projection");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Projection"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PredefinedProjection"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("marginTop");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MarginTop"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("marginBottom");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MarginBottom"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("marginLeft");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MarginLeft"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("marginRight");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MarginRight"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fontFamily");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FontFamily"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fontSizeHeader");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FontSizeHeader"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fontSizeFooter");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FontSizeFooter"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("height");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Height"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("width");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Width"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("zoomPercent");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ZoomPercent"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("legendBox");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LegendBox"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorLegendBackground");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorLegendBackground"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("colorLegendBorder");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ColorLegendBorder"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("legendVerticalPosition");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LegendVerticalPosition"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("legendHorizontalPosition");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LegendHorizontalPosition"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("reload");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Reload"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("showPriceChartLabels");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShowPriceChartLabels"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tickPrecision");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TickPrecision"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TickPeriod"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tickPeriods");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TickPeriods"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("waterMarkHorizontalAlign");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "WaterMarkHorizontalAlign"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "HorzAlign"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("lightScheme");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LightScheme"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PredefinedLightModel"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fontSizeLegend");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FontSizeLegend"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fontSizeAxes");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FontSizeAxes"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fontSizeTitle");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FontSizeTitle"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForHourDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForHourDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForDayDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForDayDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForWeekDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForWeekDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForBiWeeklyDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForBiWeeklyDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForMonthDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForMonthDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForQuarterDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForQuarterDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForSemiAnnualDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForSemiAnnualDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForAnnualDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForAnnualDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForBiAnnualDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForBiAnnualDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("daysForPentaAnnualDisplay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DaysForPentaAnnualDisplay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

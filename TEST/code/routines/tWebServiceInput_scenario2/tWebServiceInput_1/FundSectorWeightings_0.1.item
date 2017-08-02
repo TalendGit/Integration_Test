@@ -1,0 +1,203 @@
+/**
+ * FundSectorWeightings.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class FundSectorWeightings  extends routines.Common  implements java.io.Serializable {
+    private routines.Fund fund;
+
+    private routines.StockSectorWeightings stockSectorWeightings;
+
+    private routines.BondSuperSectorWeightings bondSuperSectorWeightings;
+
+    public FundSectorWeightings() {
+    }
+
+    public FundSectorWeightings(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           routines.Fund fund,
+           routines.StockSectorWeightings stockSectorWeightings,
+           routines.BondSuperSectorWeightings bondSuperSectorWeightings) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.fund = fund;
+        this.stockSectorWeightings = stockSectorWeightings;
+        this.bondSuperSectorWeightings = bondSuperSectorWeightings;
+    }
+
+
+    /**
+     * Gets the fund value for this FundSectorWeightings.
+     * 
+     * @return fund
+     */
+    public routines.Fund getFund() {
+        return fund;
+    }
+
+
+    /**
+     * Sets the fund value for this FundSectorWeightings.
+     * 
+     * @param fund
+     */
+    public void setFund(routines.Fund fund) {
+        this.fund = fund;
+    }
+
+
+    /**
+     * Gets the stockSectorWeightings value for this FundSectorWeightings.
+     * 
+     * @return stockSectorWeightings
+     */
+    public routines.StockSectorWeightings getStockSectorWeightings() {
+        return stockSectorWeightings;
+    }
+
+
+    /**
+     * Sets the stockSectorWeightings value for this FundSectorWeightings.
+     * 
+     * @param stockSectorWeightings
+     */
+    public void setStockSectorWeightings(routines.StockSectorWeightings stockSectorWeightings) {
+        this.stockSectorWeightings = stockSectorWeightings;
+    }
+
+
+    /**
+     * Gets the bondSuperSectorWeightings value for this FundSectorWeightings.
+     * 
+     * @return bondSuperSectorWeightings
+     */
+    public routines.BondSuperSectorWeightings getBondSuperSectorWeightings() {
+        return bondSuperSectorWeightings;
+    }
+
+
+    /**
+     * Sets the bondSuperSectorWeightings value for this FundSectorWeightings.
+     * 
+     * @param bondSuperSectorWeightings
+     */
+    public void setBondSuperSectorWeightings(routines.BondSuperSectorWeightings bondSuperSectorWeightings) {
+        this.bondSuperSectorWeightings = bondSuperSectorWeightings;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof FundSectorWeightings)) return false;
+        FundSectorWeightings other = (FundSectorWeightings) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.fund==null && other.getFund()==null) || 
+             (this.fund!=null &&
+              this.fund.equals(other.getFund()))) &&
+            ((this.stockSectorWeightings==null && other.getStockSectorWeightings()==null) || 
+             (this.stockSectorWeightings!=null &&
+              this.stockSectorWeightings.equals(other.getStockSectorWeightings()))) &&
+            ((this.bondSuperSectorWeightings==null && other.getBondSuperSectorWeightings()==null) || 
+             (this.bondSuperSectorWeightings!=null &&
+              this.bondSuperSectorWeightings.equals(other.getBondSuperSectorWeightings())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getFund() != null) {
+            _hashCode += getFund().hashCode();
+        }
+        if (getStockSectorWeightings() != null) {
+            _hashCode += getStockSectorWeightings().hashCode();
+        }
+        if (getBondSuperSectorWeightings() != null) {
+            _hashCode += getBondSuperSectorWeightings().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(FundSectorWeightings.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSectorWeightings"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("stockSectorWeightings");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockSectorWeightings"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockSectorWeightings"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("bondSuperSectorWeightings");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "BondSuperSectorWeightings"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "BondSuperSectorWeightings"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

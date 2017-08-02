@@ -1,0 +1,226 @@
+/**
+ * TurnoverRatios.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class TurnoverRatios  implements java.io.Serializable {
+    private double turnoverRatio;
+
+    private java.lang.String turnoverRatioDate;
+
+    private java.lang.Double unannualizedTurnoverRatio;
+
+    private java.lang.String unannualizedTurnoverRatioDate;
+
+    public TurnoverRatios() {
+    }
+
+    public TurnoverRatios(
+           double turnoverRatio,
+           java.lang.String turnoverRatioDate,
+           java.lang.Double unannualizedTurnoverRatio,
+           java.lang.String unannualizedTurnoverRatioDate) {
+           this.turnoverRatio = turnoverRatio;
+           this.turnoverRatioDate = turnoverRatioDate;
+           this.unannualizedTurnoverRatio = unannualizedTurnoverRatio;
+           this.unannualizedTurnoverRatioDate = unannualizedTurnoverRatioDate;
+    }
+
+
+    /**
+     * Gets the turnoverRatio value for this TurnoverRatios.
+     * 
+     * @return turnoverRatio
+     */
+    public double getTurnoverRatio() {
+        return turnoverRatio;
+    }
+
+
+    /**
+     * Sets the turnoverRatio value for this TurnoverRatios.
+     * 
+     * @param turnoverRatio
+     */
+    public void setTurnoverRatio(double turnoverRatio) {
+        this.turnoverRatio = turnoverRatio;
+    }
+
+
+    /**
+     * Gets the turnoverRatioDate value for this TurnoverRatios.
+     * 
+     * @return turnoverRatioDate
+     */
+    public java.lang.String getTurnoverRatioDate() {
+        return turnoverRatioDate;
+    }
+
+
+    /**
+     * Sets the turnoverRatioDate value for this TurnoverRatios.
+     * 
+     * @param turnoverRatioDate
+     */
+    public void setTurnoverRatioDate(java.lang.String turnoverRatioDate) {
+        this.turnoverRatioDate = turnoverRatioDate;
+    }
+
+
+    /**
+     * Gets the unannualizedTurnoverRatio value for this TurnoverRatios.
+     * 
+     * @return unannualizedTurnoverRatio
+     */
+    public java.lang.Double getUnannualizedTurnoverRatio() {
+        return unannualizedTurnoverRatio;
+    }
+
+
+    /**
+     * Sets the unannualizedTurnoverRatio value for this TurnoverRatios.
+     * 
+     * @param unannualizedTurnoverRatio
+     */
+    public void setUnannualizedTurnoverRatio(java.lang.Double unannualizedTurnoverRatio) {
+        this.unannualizedTurnoverRatio = unannualizedTurnoverRatio;
+    }
+
+
+    /**
+     * Gets the unannualizedTurnoverRatioDate value for this TurnoverRatios.
+     * 
+     * @return unannualizedTurnoverRatioDate
+     */
+    public java.lang.String getUnannualizedTurnoverRatioDate() {
+        return unannualizedTurnoverRatioDate;
+    }
+
+
+    /**
+     * Sets the unannualizedTurnoverRatioDate value for this TurnoverRatios.
+     * 
+     * @param unannualizedTurnoverRatioDate
+     */
+    public void setUnannualizedTurnoverRatioDate(java.lang.String unannualizedTurnoverRatioDate) {
+        this.unannualizedTurnoverRatioDate = unannualizedTurnoverRatioDate;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof TurnoverRatios)) return false;
+        TurnoverRatios other = (TurnoverRatios) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.turnoverRatio == other.getTurnoverRatio() &&
+            ((this.turnoverRatioDate==null && other.getTurnoverRatioDate()==null) || 
+             (this.turnoverRatioDate!=null &&
+              this.turnoverRatioDate.equals(other.getTurnoverRatioDate()))) &&
+            ((this.unannualizedTurnoverRatio==null && other.getUnannualizedTurnoverRatio()==null) || 
+             (this.unannualizedTurnoverRatio!=null &&
+              this.unannualizedTurnoverRatio.equals(other.getUnannualizedTurnoverRatio()))) &&
+            ((this.unannualizedTurnoverRatioDate==null && other.getUnannualizedTurnoverRatioDate()==null) || 
+             (this.unannualizedTurnoverRatioDate!=null &&
+              this.unannualizedTurnoverRatioDate.equals(other.getUnannualizedTurnoverRatioDate())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += new Double(getTurnoverRatio()).hashCode();
+        if (getTurnoverRatioDate() != null) {
+            _hashCode += getTurnoverRatioDate().hashCode();
+        }
+        if (getUnannualizedTurnoverRatio() != null) {
+            _hashCode += getUnannualizedTurnoverRatio().hashCode();
+        }
+        if (getUnannualizedTurnoverRatioDate() != null) {
+            _hashCode += getUnannualizedTurnoverRatioDate().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(TurnoverRatios.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TurnoverRatios"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("turnoverRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TurnoverRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("turnoverRatioDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TurnoverRatioDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("unannualizedTurnoverRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UnannualizedTurnoverRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("unannualizedTurnoverRatioDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UnannualizedTurnoverRatioDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

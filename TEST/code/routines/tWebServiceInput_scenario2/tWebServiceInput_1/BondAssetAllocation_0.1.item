@@ -1,0 +1,275 @@
+/**
+ * BondAssetAllocation.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class BondAssetAllocation  implements java.io.Serializable {
+    private double USBondNetAllocation;
+
+    private double USBondLongAllocation;
+
+    private double USBondShortAllocation;
+
+    private double nonUSBondNetAllocation;
+
+    private double nonUSBondLongAllocation;
+
+    private double nonUSBondShortAllocation;
+
+    public BondAssetAllocation() {
+    }
+
+    public BondAssetAllocation(
+           double USBondNetAllocation,
+           double USBondLongAllocation,
+           double USBondShortAllocation,
+           double nonUSBondNetAllocation,
+           double nonUSBondLongAllocation,
+           double nonUSBondShortAllocation) {
+           this.USBondNetAllocation = USBondNetAllocation;
+           this.USBondLongAllocation = USBondLongAllocation;
+           this.USBondShortAllocation = USBondShortAllocation;
+           this.nonUSBondNetAllocation = nonUSBondNetAllocation;
+           this.nonUSBondLongAllocation = nonUSBondLongAllocation;
+           this.nonUSBondShortAllocation = nonUSBondShortAllocation;
+    }
+
+
+    /**
+     * Gets the USBondNetAllocation value for this BondAssetAllocation.
+     * 
+     * @return USBondNetAllocation
+     */
+    public double getUSBondNetAllocation() {
+        return USBondNetAllocation;
+    }
+
+
+    /**
+     * Sets the USBondNetAllocation value for this BondAssetAllocation.
+     * 
+     * @param USBondNetAllocation
+     */
+    public void setUSBondNetAllocation(double USBondNetAllocation) {
+        this.USBondNetAllocation = USBondNetAllocation;
+    }
+
+
+    /**
+     * Gets the USBondLongAllocation value for this BondAssetAllocation.
+     * 
+     * @return USBondLongAllocation
+     */
+    public double getUSBondLongAllocation() {
+        return USBondLongAllocation;
+    }
+
+
+    /**
+     * Sets the USBondLongAllocation value for this BondAssetAllocation.
+     * 
+     * @param USBondLongAllocation
+     */
+    public void setUSBondLongAllocation(double USBondLongAllocation) {
+        this.USBondLongAllocation = USBondLongAllocation;
+    }
+
+
+    /**
+     * Gets the USBondShortAllocation value for this BondAssetAllocation.
+     * 
+     * @return USBondShortAllocation
+     */
+    public double getUSBondShortAllocation() {
+        return USBondShortAllocation;
+    }
+
+
+    /**
+     * Sets the USBondShortAllocation value for this BondAssetAllocation.
+     * 
+     * @param USBondShortAllocation
+     */
+    public void setUSBondShortAllocation(double USBondShortAllocation) {
+        this.USBondShortAllocation = USBondShortAllocation;
+    }
+
+
+    /**
+     * Gets the nonUSBondNetAllocation value for this BondAssetAllocation.
+     * 
+     * @return nonUSBondNetAllocation
+     */
+    public double getNonUSBondNetAllocation() {
+        return nonUSBondNetAllocation;
+    }
+
+
+    /**
+     * Sets the nonUSBondNetAllocation value for this BondAssetAllocation.
+     * 
+     * @param nonUSBondNetAllocation
+     */
+    public void setNonUSBondNetAllocation(double nonUSBondNetAllocation) {
+        this.nonUSBondNetAllocation = nonUSBondNetAllocation;
+    }
+
+
+    /**
+     * Gets the nonUSBondLongAllocation value for this BondAssetAllocation.
+     * 
+     * @return nonUSBondLongAllocation
+     */
+    public double getNonUSBondLongAllocation() {
+        return nonUSBondLongAllocation;
+    }
+
+
+    /**
+     * Sets the nonUSBondLongAllocation value for this BondAssetAllocation.
+     * 
+     * @param nonUSBondLongAllocation
+     */
+    public void setNonUSBondLongAllocation(double nonUSBondLongAllocation) {
+        this.nonUSBondLongAllocation = nonUSBondLongAllocation;
+    }
+
+
+    /**
+     * Gets the nonUSBondShortAllocation value for this BondAssetAllocation.
+     * 
+     * @return nonUSBondShortAllocation
+     */
+    public double getNonUSBondShortAllocation() {
+        return nonUSBondShortAllocation;
+    }
+
+
+    /**
+     * Sets the nonUSBondShortAllocation value for this BondAssetAllocation.
+     * 
+     * @param nonUSBondShortAllocation
+     */
+    public void setNonUSBondShortAllocation(double nonUSBondShortAllocation) {
+        this.nonUSBondShortAllocation = nonUSBondShortAllocation;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof BondAssetAllocation)) return false;
+        BondAssetAllocation other = (BondAssetAllocation) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.USBondNetAllocation == other.getUSBondNetAllocation() &&
+            this.USBondLongAllocation == other.getUSBondLongAllocation() &&
+            this.USBondShortAllocation == other.getUSBondShortAllocation() &&
+            this.nonUSBondNetAllocation == other.getNonUSBondNetAllocation() &&
+            this.nonUSBondLongAllocation == other.getNonUSBondLongAllocation() &&
+            this.nonUSBondShortAllocation == other.getNonUSBondShortAllocation();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += new Double(getUSBondNetAllocation()).hashCode();
+        _hashCode += new Double(getUSBondLongAllocation()).hashCode();
+        _hashCode += new Double(getUSBondShortAllocation()).hashCode();
+        _hashCode += new Double(getNonUSBondNetAllocation()).hashCode();
+        _hashCode += new Double(getNonUSBondLongAllocation()).hashCode();
+        _hashCode += new Double(getNonUSBondShortAllocation()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(BondAssetAllocation.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "BondAssetAllocation"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("USBondNetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "USBondNetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("USBondLongAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "USBondLongAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("USBondShortAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "USBondShortAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nonUSBondNetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NonUSBondNetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nonUSBondLongAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NonUSBondLongAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nonUSBondShortAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NonUSBondShortAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

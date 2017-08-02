@@ -1,0 +1,790 @@
+/**
+ * Record.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class Record  extends routines.Common  implements java.io.Serializable {
+    private java.lang.String symbol;
+
+    private java.lang.String name;
+
+    private java.lang.String CUSIP;
+
+    private java.lang.String CIK;
+
+    private java.lang.String valoren;
+
+    private java.lang.String ISIN;
+
+    private java.lang.String SEDOL;
+
+    private java.lang.String CFICode;
+
+    private java.lang.String instrumentClass;
+
+    private java.lang.String exchangeName;
+
+    private java.lang.String sector;
+
+    private java.lang.String industry;
+
+    private java.lang.String exchange;
+
+    private java.lang.String currency;
+
+    private java.lang.String activeDate;
+
+    private java.lang.String inactiveDate;
+
+    private java.lang.String lastUpdateDate;
+
+    private boolean homeTradingPlace;
+
+    private java.lang.String companyIdentifier;
+
+    public Record() {
+    }
+
+    public Record(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           java.lang.String symbol,
+           java.lang.String name,
+           java.lang.String CUSIP,
+           java.lang.String CIK,
+           java.lang.String valoren,
+           java.lang.String ISIN,
+           java.lang.String SEDOL,
+           java.lang.String CFICode,
+           java.lang.String instrumentClass,
+           java.lang.String exchangeName,
+           java.lang.String sector,
+           java.lang.String industry,
+           java.lang.String exchange,
+           java.lang.String currency,
+           java.lang.String activeDate,
+           java.lang.String inactiveDate,
+           java.lang.String lastUpdateDate,
+           boolean homeTradingPlace,
+           java.lang.String companyIdentifier) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.symbol = symbol;
+        this.name = name;
+        this.CUSIP = CUSIP;
+        this.CIK = CIK;
+        this.valoren = valoren;
+        this.ISIN = ISIN;
+        this.SEDOL = SEDOL;
+        this.CFICode = CFICode;
+        this.instrumentClass = instrumentClass;
+        this.exchangeName = exchangeName;
+        this.sector = sector;
+        this.industry = industry;
+        this.exchange = exchange;
+        this.currency = currency;
+        this.activeDate = activeDate;
+        this.inactiveDate = inactiveDate;
+        this.lastUpdateDate = lastUpdateDate;
+        this.homeTradingPlace = homeTradingPlace;
+        this.companyIdentifier = companyIdentifier;
+    }
+
+
+    /**
+     * Gets the symbol value for this Record.
+     * 
+     * @return symbol
+     */
+    public java.lang.String getSymbol() {
+        return symbol;
+    }
+
+
+    /**
+     * Sets the symbol value for this Record.
+     * 
+     * @param symbol
+     */
+    public void setSymbol(java.lang.String symbol) {
+        this.symbol = symbol;
+    }
+
+
+    /**
+     * Gets the name value for this Record.
+     * 
+     * @return name
+     */
+    public java.lang.String getName() {
+        return name;
+    }
+
+
+    /**
+     * Sets the name value for this Record.
+     * 
+     * @param name
+     */
+    public void setName(java.lang.String name) {
+        this.name = name;
+    }
+
+
+    /**
+     * Gets the CUSIP value for this Record.
+     * 
+     * @return CUSIP
+     */
+    public java.lang.String getCUSIP() {
+        return CUSIP;
+    }
+
+
+    /**
+     * Sets the CUSIP value for this Record.
+     * 
+     * @param CUSIP
+     */
+    public void setCUSIP(java.lang.String CUSIP) {
+        this.CUSIP = CUSIP;
+    }
+
+
+    /**
+     * Gets the CIK value for this Record.
+     * 
+     * @return CIK
+     */
+    public java.lang.String getCIK() {
+        return CIK;
+    }
+
+
+    /**
+     * Sets the CIK value for this Record.
+     * 
+     * @param CIK
+     */
+    public void setCIK(java.lang.String CIK) {
+        this.CIK = CIK;
+    }
+
+
+    /**
+     * Gets the valoren value for this Record.
+     * 
+     * @return valoren
+     */
+    public java.lang.String getValoren() {
+        return valoren;
+    }
+
+
+    /**
+     * Sets the valoren value for this Record.
+     * 
+     * @param valoren
+     */
+    public void setValoren(java.lang.String valoren) {
+        this.valoren = valoren;
+    }
+
+
+    /**
+     * Gets the ISIN value for this Record.
+     * 
+     * @return ISIN
+     */
+    public java.lang.String getISIN() {
+        return ISIN;
+    }
+
+
+    /**
+     * Sets the ISIN value for this Record.
+     * 
+     * @param ISIN
+     */
+    public void setISIN(java.lang.String ISIN) {
+        this.ISIN = ISIN;
+    }
+
+
+    /**
+     * Gets the SEDOL value for this Record.
+     * 
+     * @return SEDOL
+     */
+    public java.lang.String getSEDOL() {
+        return SEDOL;
+    }
+
+
+    /**
+     * Sets the SEDOL value for this Record.
+     * 
+     * @param SEDOL
+     */
+    public void setSEDOL(java.lang.String SEDOL) {
+        this.SEDOL = SEDOL;
+    }
+
+
+    /**
+     * Gets the CFICode value for this Record.
+     * 
+     * @return CFICode
+     */
+    public java.lang.String getCFICode() {
+        return CFICode;
+    }
+
+
+    /**
+     * Sets the CFICode value for this Record.
+     * 
+     * @param CFICode
+     */
+    public void setCFICode(java.lang.String CFICode) {
+        this.CFICode = CFICode;
+    }
+
+
+    /**
+     * Gets the instrumentClass value for this Record.
+     * 
+     * @return instrumentClass
+     */
+    public java.lang.String getInstrumentClass() {
+        return instrumentClass;
+    }
+
+
+    /**
+     * Sets the instrumentClass value for this Record.
+     * 
+     * @param instrumentClass
+     */
+    public void setInstrumentClass(java.lang.String instrumentClass) {
+        this.instrumentClass = instrumentClass;
+    }
+
+
+    /**
+     * Gets the exchangeName value for this Record.
+     * 
+     * @return exchangeName
+     */
+    public java.lang.String getExchangeName() {
+        return exchangeName;
+    }
+
+
+    /**
+     * Sets the exchangeName value for this Record.
+     * 
+     * @param exchangeName
+     */
+    public void setExchangeName(java.lang.String exchangeName) {
+        this.exchangeName = exchangeName;
+    }
+
+
+    /**
+     * Gets the sector value for this Record.
+     * 
+     * @return sector
+     */
+    public java.lang.String getSector() {
+        return sector;
+    }
+
+
+    /**
+     * Sets the sector value for this Record.
+     * 
+     * @param sector
+     */
+    public void setSector(java.lang.String sector) {
+        this.sector = sector;
+    }
+
+
+    /**
+     * Gets the industry value for this Record.
+     * 
+     * @return industry
+     */
+    public java.lang.String getIndustry() {
+        return industry;
+    }
+
+
+    /**
+     * Sets the industry value for this Record.
+     * 
+     * @param industry
+     */
+    public void setIndustry(java.lang.String industry) {
+        this.industry = industry;
+    }
+
+
+    /**
+     * Gets the exchange value for this Record.
+     * 
+     * @return exchange
+     */
+    public java.lang.String getExchange() {
+        return exchange;
+    }
+
+
+    /**
+     * Sets the exchange value for this Record.
+     * 
+     * @param exchange
+     */
+    public void setExchange(java.lang.String exchange) {
+        this.exchange = exchange;
+    }
+
+
+    /**
+     * Gets the currency value for this Record.
+     * 
+     * @return currency
+     */
+    public java.lang.String getCurrency() {
+        return currency;
+    }
+
+
+    /**
+     * Sets the currency value for this Record.
+     * 
+     * @param currency
+     */
+    public void setCurrency(java.lang.String currency) {
+        this.currency = currency;
+    }
+
+
+    /**
+     * Gets the activeDate value for this Record.
+     * 
+     * @return activeDate
+     */
+    public java.lang.String getActiveDate() {
+        return activeDate;
+    }
+
+
+    /**
+     * Sets the activeDate value for this Record.
+     * 
+     * @param activeDate
+     */
+    public void setActiveDate(java.lang.String activeDate) {
+        this.activeDate = activeDate;
+    }
+
+
+    /**
+     * Gets the inactiveDate value for this Record.
+     * 
+     * @return inactiveDate
+     */
+    public java.lang.String getInactiveDate() {
+        return inactiveDate;
+    }
+
+
+    /**
+     * Sets the inactiveDate value for this Record.
+     * 
+     * @param inactiveDate
+     */
+    public void setInactiveDate(java.lang.String inactiveDate) {
+        this.inactiveDate = inactiveDate;
+    }
+
+
+    /**
+     * Gets the lastUpdateDate value for this Record.
+     * 
+     * @return lastUpdateDate
+     */
+    public java.lang.String getLastUpdateDate() {
+        return lastUpdateDate;
+    }
+
+
+    /**
+     * Sets the lastUpdateDate value for this Record.
+     * 
+     * @param lastUpdateDate
+     */
+    public void setLastUpdateDate(java.lang.String lastUpdateDate) {
+        this.lastUpdateDate = lastUpdateDate;
+    }
+
+
+    /**
+     * Gets the homeTradingPlace value for this Record.
+     * 
+     * @return homeTradingPlace
+     */
+    public boolean isHomeTradingPlace() {
+        return homeTradingPlace;
+    }
+
+
+    /**
+     * Sets the homeTradingPlace value for this Record.
+     * 
+     * @param homeTradingPlace
+     */
+    public void setHomeTradingPlace(boolean homeTradingPlace) {
+        this.homeTradingPlace = homeTradingPlace;
+    }
+
+
+    /**
+     * Gets the companyIdentifier value for this Record.
+     * 
+     * @return companyIdentifier
+     */
+    public java.lang.String getCompanyIdentifier() {
+        return companyIdentifier;
+    }
+
+
+    /**
+     * Sets the companyIdentifier value for this Record.
+     * 
+     * @param companyIdentifier
+     */
+    public void setCompanyIdentifier(java.lang.String companyIdentifier) {
+        this.companyIdentifier = companyIdentifier;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof Record)) return false;
+        Record other = (Record) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.symbol==null && other.getSymbol()==null) || 
+             (this.symbol!=null &&
+              this.symbol.equals(other.getSymbol()))) &&
+            ((this.name==null && other.getName()==null) || 
+             (this.name!=null &&
+              this.name.equals(other.getName()))) &&
+            ((this.CUSIP==null && other.getCUSIP()==null) || 
+             (this.CUSIP!=null &&
+              this.CUSIP.equals(other.getCUSIP()))) &&
+            ((this.CIK==null && other.getCIK()==null) || 
+             (this.CIK!=null &&
+              this.CIK.equals(other.getCIK()))) &&
+            ((this.valoren==null && other.getValoren()==null) || 
+             (this.valoren!=null &&
+              this.valoren.equals(other.getValoren()))) &&
+            ((this.ISIN==null && other.getISIN()==null) || 
+             (this.ISIN!=null &&
+              this.ISIN.equals(other.getISIN()))) &&
+            ((this.SEDOL==null && other.getSEDOL()==null) || 
+             (this.SEDOL!=null &&
+              this.SEDOL.equals(other.getSEDOL()))) &&
+            ((this.CFICode==null && other.getCFICode()==null) || 
+             (this.CFICode!=null &&
+              this.CFICode.equals(other.getCFICode()))) &&
+            ((this.instrumentClass==null && other.getInstrumentClass()==null) || 
+             (this.instrumentClass!=null &&
+              this.instrumentClass.equals(other.getInstrumentClass()))) &&
+            ((this.exchangeName==null && other.getExchangeName()==null) || 
+             (this.exchangeName!=null &&
+              this.exchangeName.equals(other.getExchangeName()))) &&
+            ((this.sector==null && other.getSector()==null) || 
+             (this.sector!=null &&
+              this.sector.equals(other.getSector()))) &&
+            ((this.industry==null && other.getIndustry()==null) || 
+             (this.industry!=null &&
+              this.industry.equals(other.getIndustry()))) &&
+            ((this.exchange==null && other.getExchange()==null) || 
+             (this.exchange!=null &&
+              this.exchange.equals(other.getExchange()))) &&
+            ((this.currency==null && other.getCurrency()==null) || 
+             (this.currency!=null &&
+              this.currency.equals(other.getCurrency()))) &&
+            ((this.activeDate==null && other.getActiveDate()==null) || 
+             (this.activeDate!=null &&
+              this.activeDate.equals(other.getActiveDate()))) &&
+            ((this.inactiveDate==null && other.getInactiveDate()==null) || 
+             (this.inactiveDate!=null &&
+              this.inactiveDate.equals(other.getInactiveDate()))) &&
+            ((this.lastUpdateDate==null && other.getLastUpdateDate()==null) || 
+             (this.lastUpdateDate!=null &&
+              this.lastUpdateDate.equals(other.getLastUpdateDate()))) &&
+            this.homeTradingPlace == other.isHomeTradingPlace() &&
+            ((this.companyIdentifier==null && other.getCompanyIdentifier()==null) || 
+             (this.companyIdentifier!=null &&
+              this.companyIdentifier.equals(other.getCompanyIdentifier())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getSymbol() != null) {
+            _hashCode += getSymbol().hashCode();
+        }
+        if (getName() != null) {
+            _hashCode += getName().hashCode();
+        }
+        if (getCUSIP() != null) {
+            _hashCode += getCUSIP().hashCode();
+        }
+        if (getCIK() != null) {
+            _hashCode += getCIK().hashCode();
+        }
+        if (getValoren() != null) {
+            _hashCode += getValoren().hashCode();
+        }
+        if (getISIN() != null) {
+            _hashCode += getISIN().hashCode();
+        }
+        if (getSEDOL() != null) {
+            _hashCode += getSEDOL().hashCode();
+        }
+        if (getCFICode() != null) {
+            _hashCode += getCFICode().hashCode();
+        }
+        if (getInstrumentClass() != null) {
+            _hashCode += getInstrumentClass().hashCode();
+        }
+        if (getExchangeName() != null) {
+            _hashCode += getExchangeName().hashCode();
+        }
+        if (getSector() != null) {
+            _hashCode += getSector().hashCode();
+        }
+        if (getIndustry() != null) {
+            _hashCode += getIndustry().hashCode();
+        }
+        if (getExchange() != null) {
+            _hashCode += getExchange().hashCode();
+        }
+        if (getCurrency() != null) {
+            _hashCode += getCurrency().hashCode();
+        }
+        if (getActiveDate() != null) {
+            _hashCode += getActiveDate().hashCode();
+        }
+        if (getInactiveDate() != null) {
+            _hashCode += getInactiveDate().hashCode();
+        }
+        if (getLastUpdateDate() != null) {
+            _hashCode += getLastUpdateDate().hashCode();
+        }
+        _hashCode += (isHomeTradingPlace() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        if (getCompanyIdentifier() != null) {
+            _hashCode += getCompanyIdentifier().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(Record.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Record"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("symbol");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Symbol"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("name");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Name"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("CUSIP");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CUSIP"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("CIK");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CIK"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("valoren");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Valoren"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("ISIN");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ISIN"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("SEDOL");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SEDOL"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("CFICode");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CFICode"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("instrumentClass");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "InstrumentClass"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("exchangeName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ExchangeName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("sector");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Sector"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("industry");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Industry"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("exchange");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Exchange"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("currency");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Currency"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("activeDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ActiveDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("inactiveDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "InactiveDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("lastUpdateDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LastUpdateDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("homeTradingPlace");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "HomeTradingPlace"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("companyIdentifier");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CompanyIdentifier"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

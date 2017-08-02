@@ -1,0 +1,411 @@
+/**
+ * Fund.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class Fund  implements java.io.Serializable {
+    private java.lang.String fundName;
+
+    private java.lang.String symbol;
+
+    private java.lang.String CUSIP;
+
+    private java.lang.String ISIN;
+
+    private java.lang.String CIK;
+
+    private java.lang.String valoren;
+
+    private java.lang.String market;
+
+    private java.lang.String marketIdentificationCode;
+
+    private boolean mostLiquidExchange;
+
+    public Fund() {
+    }
+
+    public Fund(
+           java.lang.String fundName,
+           java.lang.String symbol,
+           java.lang.String CUSIP,
+           java.lang.String ISIN,
+           java.lang.String CIK,
+           java.lang.String valoren,
+           java.lang.String market,
+           java.lang.String marketIdentificationCode,
+           boolean mostLiquidExchange) {
+           this.fundName = fundName;
+           this.symbol = symbol;
+           this.CUSIP = CUSIP;
+           this.ISIN = ISIN;
+           this.CIK = CIK;
+           this.valoren = valoren;
+           this.market = market;
+           this.marketIdentificationCode = marketIdentificationCode;
+           this.mostLiquidExchange = mostLiquidExchange;
+    }
+
+
+    /**
+     * Gets the fundName value for this Fund.
+     * 
+     * @return fundName
+     */
+    public java.lang.String getFundName() {
+        return fundName;
+    }
+
+
+    /**
+     * Sets the fundName value for this Fund.
+     * 
+     * @param fundName
+     */
+    public void setFundName(java.lang.String fundName) {
+        this.fundName = fundName;
+    }
+
+
+    /**
+     * Gets the symbol value for this Fund.
+     * 
+     * @return symbol
+     */
+    public java.lang.String getSymbol() {
+        return symbol;
+    }
+
+
+    /**
+     * Sets the symbol value for this Fund.
+     * 
+     * @param symbol
+     */
+    public void setSymbol(java.lang.String symbol) {
+        this.symbol = symbol;
+    }
+
+
+    /**
+     * Gets the CUSIP value for this Fund.
+     * 
+     * @return CUSIP
+     */
+    public java.lang.String getCUSIP() {
+        return CUSIP;
+    }
+
+
+    /**
+     * Sets the CUSIP value for this Fund.
+     * 
+     * @param CUSIP
+     */
+    public void setCUSIP(java.lang.String CUSIP) {
+        this.CUSIP = CUSIP;
+    }
+
+
+    /**
+     * Gets the ISIN value for this Fund.
+     * 
+     * @return ISIN
+     */
+    public java.lang.String getISIN() {
+        return ISIN;
+    }
+
+
+    /**
+     * Sets the ISIN value for this Fund.
+     * 
+     * @param ISIN
+     */
+    public void setISIN(java.lang.String ISIN) {
+        this.ISIN = ISIN;
+    }
+
+
+    /**
+     * Gets the CIK value for this Fund.
+     * 
+     * @return CIK
+     */
+    public java.lang.String getCIK() {
+        return CIK;
+    }
+
+
+    /**
+     * Sets the CIK value for this Fund.
+     * 
+     * @param CIK
+     */
+    public void setCIK(java.lang.String CIK) {
+        this.CIK = CIK;
+    }
+
+
+    /**
+     * Gets the valoren value for this Fund.
+     * 
+     * @return valoren
+     */
+    public java.lang.String getValoren() {
+        return valoren;
+    }
+
+
+    /**
+     * Sets the valoren value for this Fund.
+     * 
+     * @param valoren
+     */
+    public void setValoren(java.lang.String valoren) {
+        this.valoren = valoren;
+    }
+
+
+    /**
+     * Gets the market value for this Fund.
+     * 
+     * @return market
+     */
+    public java.lang.String getMarket() {
+        return market;
+    }
+
+
+    /**
+     * Sets the market value for this Fund.
+     * 
+     * @param market
+     */
+    public void setMarket(java.lang.String market) {
+        this.market = market;
+    }
+
+
+    /**
+     * Gets the marketIdentificationCode value for this Fund.
+     * 
+     * @return marketIdentificationCode
+     */
+    public java.lang.String getMarketIdentificationCode() {
+        return marketIdentificationCode;
+    }
+
+
+    /**
+     * Sets the marketIdentificationCode value for this Fund.
+     * 
+     * @param marketIdentificationCode
+     */
+    public void setMarketIdentificationCode(java.lang.String marketIdentificationCode) {
+        this.marketIdentificationCode = marketIdentificationCode;
+    }
+
+
+    /**
+     * Gets the mostLiquidExchange value for this Fund.
+     * 
+     * @return mostLiquidExchange
+     */
+    public boolean isMostLiquidExchange() {
+        return mostLiquidExchange;
+    }
+
+
+    /**
+     * Sets the mostLiquidExchange value for this Fund.
+     * 
+     * @param mostLiquidExchange
+     */
+    public void setMostLiquidExchange(boolean mostLiquidExchange) {
+        this.mostLiquidExchange = mostLiquidExchange;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof Fund)) return false;
+        Fund other = (Fund) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.fundName==null && other.getFundName()==null) || 
+             (this.fundName!=null &&
+              this.fundName.equals(other.getFundName()))) &&
+            ((this.symbol==null && other.getSymbol()==null) || 
+             (this.symbol!=null &&
+              this.symbol.equals(other.getSymbol()))) &&
+            ((this.CUSIP==null && other.getCUSIP()==null) || 
+             (this.CUSIP!=null &&
+              this.CUSIP.equals(other.getCUSIP()))) &&
+            ((this.ISIN==null && other.getISIN()==null) || 
+             (this.ISIN!=null &&
+              this.ISIN.equals(other.getISIN()))) &&
+            ((this.CIK==null && other.getCIK()==null) || 
+             (this.CIK!=null &&
+              this.CIK.equals(other.getCIK()))) &&
+            ((this.valoren==null && other.getValoren()==null) || 
+             (this.valoren!=null &&
+              this.valoren.equals(other.getValoren()))) &&
+            ((this.market==null && other.getMarket()==null) || 
+             (this.market!=null &&
+              this.market.equals(other.getMarket()))) &&
+            ((this.marketIdentificationCode==null && other.getMarketIdentificationCode()==null) || 
+             (this.marketIdentificationCode!=null &&
+              this.marketIdentificationCode.equals(other.getMarketIdentificationCode()))) &&
+            this.mostLiquidExchange == other.isMostLiquidExchange();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getFundName() != null) {
+            _hashCode += getFundName().hashCode();
+        }
+        if (getSymbol() != null) {
+            _hashCode += getSymbol().hashCode();
+        }
+        if (getCUSIP() != null) {
+            _hashCode += getCUSIP().hashCode();
+        }
+        if (getISIN() != null) {
+            _hashCode += getISIN().hashCode();
+        }
+        if (getCIK() != null) {
+            _hashCode += getCIK().hashCode();
+        }
+        if (getValoren() != null) {
+            _hashCode += getValoren().hashCode();
+        }
+        if (getMarket() != null) {
+            _hashCode += getMarket().hashCode();
+        }
+        if (getMarketIdentificationCode() != null) {
+            _hashCode += getMarketIdentificationCode().hashCode();
+        }
+        _hashCode += (isMostLiquidExchange() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(Fund.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fundName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("symbol");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Symbol"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("CUSIP");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CUSIP"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("ISIN");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ISIN"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("CIK");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CIK"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("valoren");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Valoren"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("market");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Market"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("marketIdentificationCode");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MarketIdentificationCode"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("mostLiquidExchange");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MostLiquidExchange"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

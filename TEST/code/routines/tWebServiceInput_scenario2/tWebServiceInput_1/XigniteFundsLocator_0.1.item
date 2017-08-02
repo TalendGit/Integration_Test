@@ -1,0 +1,146 @@
+/**
+ * XigniteFundsLocator.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class XigniteFundsLocator extends org.apache.axis.client.Service implements routines.XigniteFunds {
+
+/**
+ * This web service provides historical US mutual fund pricing.
+ */
+
+    public XigniteFundsLocator() {
+    }
+
+
+    public XigniteFundsLocator(org.apache.axis.EngineConfiguration config) {
+        super(config);
+    }
+
+    public XigniteFundsLocator(java.lang.String wsdlLoc, javax.xml.namespace.QName sName) throws javax.xml.rpc.ServiceException {
+        super(wsdlLoc, sName);
+    }
+
+    // Use to get a proxy class for XigniteFundsSoap
+    private java.lang.String XigniteFundsSoap_address = "http://www.xignite.com/xFunds.asmx";
+
+    public java.lang.String getXigniteFundsSoapAddress() {
+        return XigniteFundsSoap_address;
+    }
+
+    // The WSDD service name defaults to the port name.
+    private java.lang.String XigniteFundsSoapWSDDServiceName = "XigniteFundsSoap";
+
+    public java.lang.String getXigniteFundsSoapWSDDServiceName() {
+        return XigniteFundsSoapWSDDServiceName;
+    }
+
+    public void setXigniteFundsSoapWSDDServiceName(java.lang.String name) {
+        XigniteFundsSoapWSDDServiceName = name;
+    }
+
+    public routines.XigniteFundsSoap_PortType getXigniteFundsSoap() throws javax.xml.rpc.ServiceException {
+       java.net.URL endpoint;
+        try {
+            endpoint = new java.net.URL(XigniteFundsSoap_address);
+        }
+        catch (java.net.MalformedURLException e) {
+            throw new javax.xml.rpc.ServiceException(e);
+        }
+        return getXigniteFundsSoap(endpoint);
+    }
+
+    public routines.XigniteFundsSoap_PortType getXigniteFundsSoap(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+        try {
+            routines.XigniteFundsSoap_BindingStub _stub = new routines.XigniteFundsSoap_BindingStub(portAddress, this);
+            _stub.setPortName(getXigniteFundsSoapWSDDServiceName());
+            return _stub;
+        }
+        catch (org.apache.axis.AxisFault e) {
+            return null;
+        }
+    }
+
+    public void setXigniteFundsSoapEndpointAddress(java.lang.String address) {
+        XigniteFundsSoap_address = address;
+    }
+
+    /**
+     * For the given interface, get the stub implementation.
+     * If this service has no port for the given interface,
+     * then ServiceException is thrown.
+     */
+    public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
+        try {
+            if (routines.XigniteFundsSoap_PortType.class.isAssignableFrom(serviceEndpointInterface)) {
+                routines.XigniteFundsSoap_BindingStub _stub = new routines.XigniteFundsSoap_BindingStub(new java.net.URL(XigniteFundsSoap_address), this);
+                _stub.setPortName(getXigniteFundsSoapWSDDServiceName());
+                return _stub;
+            }
+        }
+        catch (java.lang.Throwable t) {
+            throw new javax.xml.rpc.ServiceException(t);
+        }
+        throw new javax.xml.rpc.ServiceException("There is no stub implementation for the interface:  " + (serviceEndpointInterface == null ? "null" : serviceEndpointInterface.getName()));
+    }
+
+    /**
+     * For the given interface, get the stub implementation.
+     * If this service has no port for the given interface,
+     * then ServiceException is thrown.
+     */
+    public java.rmi.Remote getPort(javax.xml.namespace.QName portName, Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
+        if (portName == null) {
+            return getPort(serviceEndpointInterface);
+        }
+        java.lang.String inputPortName = portName.getLocalPart();
+        if ("XigniteFundsSoap".equals(inputPortName)) {
+            return getXigniteFundsSoap();
+        }
+        else  {
+            java.rmi.Remote _stub = getPort(serviceEndpointInterface);
+            ((org.apache.axis.client.Stub) _stub).setPortName(portName);
+            return _stub;
+        }
+    }
+
+    public javax.xml.namespace.QName getServiceName() {
+        return new javax.xml.namespace.QName("http://www.xignite.com/services/", "XigniteFunds");
+    }
+
+    private java.util.HashSet ports = null;
+
+    public java.util.Iterator getPorts() {
+        if (ports == null) {
+            ports = new java.util.HashSet();
+            ports.add(new javax.xml.namespace.QName("http://www.xignite.com/services/", "XigniteFundsSoap"));
+        }
+        return ports.iterator();
+    }
+
+    /**
+    * Set the endpoint address for the specified port name.
+    */
+    public void setEndpointAddress(java.lang.String portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
+        
+if ("XigniteFundsSoap".equals(portName)) {
+            setXigniteFundsSoapEndpointAddress(address);
+        }
+        else 
+{ // Unknown Port Name
+            throw new javax.xml.rpc.ServiceException(" Cannot set Endpoint Address for Unknown Port" + portName);
+        }
+    }
+
+    /**
+    * Set the endpoint address for the specified port name.
+    */
+    public void setEndpointAddress(javax.xml.namespace.QName portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
+        setEndpointAddress(portName.getLocalPart(), address);
+    }
+
+}

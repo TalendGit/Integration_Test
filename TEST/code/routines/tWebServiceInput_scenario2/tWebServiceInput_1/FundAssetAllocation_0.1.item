@@ -1,0 +1,240 @@
+/**
+ * FundAssetAllocation.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class FundAssetAllocation  extends routines.Common  implements java.io.Serializable {
+    private routines.Fund fund;
+
+    private routines.StockAssetAllocation stockAssetAllocation;
+
+    private routines.BondAssetAllocation bondAssetAllocation;
+
+    private routines.OtherAssetAllocation otherAssetAllocation;
+
+    public FundAssetAllocation() {
+    }
+
+    public FundAssetAllocation(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           routines.Fund fund,
+           routines.StockAssetAllocation stockAssetAllocation,
+           routines.BondAssetAllocation bondAssetAllocation,
+           routines.OtherAssetAllocation otherAssetAllocation) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.fund = fund;
+        this.stockAssetAllocation = stockAssetAllocation;
+        this.bondAssetAllocation = bondAssetAllocation;
+        this.otherAssetAllocation = otherAssetAllocation;
+    }
+
+
+    /**
+     * Gets the fund value for this FundAssetAllocation.
+     * 
+     * @return fund
+     */
+    public routines.Fund getFund() {
+        return fund;
+    }
+
+
+    /**
+     * Sets the fund value for this FundAssetAllocation.
+     * 
+     * @param fund
+     */
+    public void setFund(routines.Fund fund) {
+        this.fund = fund;
+    }
+
+
+    /**
+     * Gets the stockAssetAllocation value for this FundAssetAllocation.
+     * 
+     * @return stockAssetAllocation
+     */
+    public routines.StockAssetAllocation getStockAssetAllocation() {
+        return stockAssetAllocation;
+    }
+
+
+    /**
+     * Sets the stockAssetAllocation value for this FundAssetAllocation.
+     * 
+     * @param stockAssetAllocation
+     */
+    public void setStockAssetAllocation(routines.StockAssetAllocation stockAssetAllocation) {
+        this.stockAssetAllocation = stockAssetAllocation;
+    }
+
+
+    /**
+     * Gets the bondAssetAllocation value for this FundAssetAllocation.
+     * 
+     * @return bondAssetAllocation
+     */
+    public routines.BondAssetAllocation getBondAssetAllocation() {
+        return bondAssetAllocation;
+    }
+
+
+    /**
+     * Sets the bondAssetAllocation value for this FundAssetAllocation.
+     * 
+     * @param bondAssetAllocation
+     */
+    public void setBondAssetAllocation(routines.BondAssetAllocation bondAssetAllocation) {
+        this.bondAssetAllocation = bondAssetAllocation;
+    }
+
+
+    /**
+     * Gets the otherAssetAllocation value for this FundAssetAllocation.
+     * 
+     * @return otherAssetAllocation
+     */
+    public routines.OtherAssetAllocation getOtherAssetAllocation() {
+        return otherAssetAllocation;
+    }
+
+
+    /**
+     * Sets the otherAssetAllocation value for this FundAssetAllocation.
+     * 
+     * @param otherAssetAllocation
+     */
+    public void setOtherAssetAllocation(routines.OtherAssetAllocation otherAssetAllocation) {
+        this.otherAssetAllocation = otherAssetAllocation;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof FundAssetAllocation)) return false;
+        FundAssetAllocation other = (FundAssetAllocation) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.fund==null && other.getFund()==null) || 
+             (this.fund!=null &&
+              this.fund.equals(other.getFund()))) &&
+            ((this.stockAssetAllocation==null && other.getStockAssetAllocation()==null) || 
+             (this.stockAssetAllocation!=null &&
+              this.stockAssetAllocation.equals(other.getStockAssetAllocation()))) &&
+            ((this.bondAssetAllocation==null && other.getBondAssetAllocation()==null) || 
+             (this.bondAssetAllocation!=null &&
+              this.bondAssetAllocation.equals(other.getBondAssetAllocation()))) &&
+            ((this.otherAssetAllocation==null && other.getOtherAssetAllocation()==null) || 
+             (this.otherAssetAllocation!=null &&
+              this.otherAssetAllocation.equals(other.getOtherAssetAllocation())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getFund() != null) {
+            _hashCode += getFund().hashCode();
+        }
+        if (getStockAssetAllocation() != null) {
+            _hashCode += getStockAssetAllocation().hashCode();
+        }
+        if (getBondAssetAllocation() != null) {
+            _hashCode += getBondAssetAllocation().hashCode();
+        }
+        if (getOtherAssetAllocation() != null) {
+            _hashCode += getOtherAssetAllocation().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(FundAssetAllocation.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAssetAllocation"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("stockAssetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockAssetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockAssetAllocation"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("bondAssetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "BondAssetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "BondAssetAllocation"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("otherAssetAllocation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OtherAssetAllocation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OtherAssetAllocation"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

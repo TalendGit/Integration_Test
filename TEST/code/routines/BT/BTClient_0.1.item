@@ -1,0 +1,68 @@
+package routines;
+
+import it.sauronsoftware.ftp4j.FTPClient;
+
+import java.io.File;
+import java.security.SecureRandom;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
+public class BTClient {
+
+	/**
+	 * 
+	 * @param fileLocal
+	 *            - file to transfer
+	 * @param folderLocal
+	 *            - local directory
+	 * @param fileRemote
+	 *            - file name after transfer
+	 * @param folderRemote
+	 *            - remote directory
+	 * @param hostName
+	 *            - ftps host
+	 * @param port
+	 *            - port
+	 * @param login
+	 *            - login
+	 * @param password
+	 *            - password
+	 * @throws Exception
+	 *             - if anything wrong
+	 */
+	public static void transferFile(String fileLocal, String folderLocal,
+			String fileRemote, String folderRemote, String hostName, int port,
+			String login, String password) throws Exception {
+		FTPClient client = new FTPClient();
+		// Accept any certificate.
+		// Should be changed to normal keystore.
+		TrustManager[] trustManager = new TrustManager[] { new X509TrustManager() {
+			public X509Certificate[] getAcceptedIssuers() {
+				return null;
+			}
+
+			public void checkClientTrusted(X509Certificate[] certs,
+					String authType) {
+			}
+
+			public void checkServerTrusted(X509Certificate[] certs,
+					String authType) {
+			}
+		} };
+		SSLContext sslContext = SSLContext.getInstance("SSL");
+		sslContext.init(null, trustManager, new SecureRandom());
+		SSLSocketFactory sslSocketFactory = sslContext.getSocketFactory();
+		client.setSSLSocketFactory(sslSocketFactory);
+		client.setSecurity(FTPClient.SECURITY_FTPS);
+		client.connect(hostName, port);
+		client.login(login, password);
+		client.changeDirectory(folderRemote);
+		File inFile = new File(folderLocal + fileLocal);
+		client.upload(inFile);
+		client.rename(folderRemote + fileLocal, folderRemote + fileRemote);
+	}
+}

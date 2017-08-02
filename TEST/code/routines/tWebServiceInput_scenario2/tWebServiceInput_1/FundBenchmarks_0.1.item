@@ -1,0 +1,175 @@
+/**
+ * FundBenchmarks.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class FundBenchmarks  extends routines.Common  implements java.io.Serializable {
+    private routines.Fund fund;
+
+    private routines.Benchmark[] benchmarks;
+
+    public FundBenchmarks() {
+    }
+
+    public FundBenchmarks(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           routines.Fund fund,
+           routines.Benchmark[] benchmarks) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.fund = fund;
+        this.benchmarks = benchmarks;
+    }
+
+
+    /**
+     * Gets the fund value for this FundBenchmarks.
+     * 
+     * @return fund
+     */
+    public routines.Fund getFund() {
+        return fund;
+    }
+
+
+    /**
+     * Sets the fund value for this FundBenchmarks.
+     * 
+     * @param fund
+     */
+    public void setFund(routines.Fund fund) {
+        this.fund = fund;
+    }
+
+
+    /**
+     * Gets the benchmarks value for this FundBenchmarks.
+     * 
+     * @return benchmarks
+     */
+    public routines.Benchmark[] getBenchmarks() {
+        return benchmarks;
+    }
+
+
+    /**
+     * Sets the benchmarks value for this FundBenchmarks.
+     * 
+     * @param benchmarks
+     */
+    public void setBenchmarks(routines.Benchmark[] benchmarks) {
+        this.benchmarks = benchmarks;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof FundBenchmarks)) return false;
+        FundBenchmarks other = (FundBenchmarks) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.fund==null && other.getFund()==null) || 
+             (this.fund!=null &&
+              this.fund.equals(other.getFund()))) &&
+            ((this.benchmarks==null && other.getBenchmarks()==null) || 
+             (this.benchmarks!=null &&
+              java.util.Arrays.equals(this.benchmarks, other.getBenchmarks())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getFund() != null) {
+            _hashCode += getFund().hashCode();
+        }
+        if (getBenchmarks() != null) {
+            for (int i=0;
+                 i<java.lang.reflect.Array.getLength(getBenchmarks());
+                 i++) {
+                java.lang.Object obj = java.lang.reflect.Array.get(getBenchmarks(), i);
+                if (obj != null &&
+                    !obj.getClass().isArray()) {
+                    _hashCode += obj.hashCode();
+                }
+            }
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(FundBenchmarks.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundBenchmarks"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("benchmarks");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Benchmarks"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Benchmark"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        elemField.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Benchmark"));
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

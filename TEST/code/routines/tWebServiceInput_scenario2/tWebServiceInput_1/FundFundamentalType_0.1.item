@@ -1,0 +1,366 @@
+/**
+ * FundFundamentalType.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class FundFundamentalType implements java.io.Serializable {
+    private java.lang.String _value_;
+    private static java.util.HashMap _table_ = new java.util.HashMap();
+
+    // Constructor
+    protected FundFundamentalType(java.lang.String value) {
+        _value_ = value;
+        _table_.put(_value_,this);
+    }
+
+    public static final java.lang.String _FundName = "FundName";
+    public static final java.lang.String _FundFamilyName = "FundFamilyName";
+    public static final java.lang.String _ShareClass = "ShareClass";
+    public static final java.lang.String _FundType = "FundType";
+    public static final java.lang.String _LegalName = "LegalName";
+    public static final java.lang.String _DomicileCountry = "DomicileCountry";
+    public static final java.lang.String _DomicileState = "DomicileState";
+    public static final java.lang.String _NetAssets = "NetAssets";
+    public static final java.lang.String _FundObjective = "FundObjective";
+    public static final java.lang.String _InvestmentSummary = "InvestmentSummary";
+    public static final java.lang.String _InceptionDate = "InceptionDate";
+    public static final java.lang.String _FundBenchmarks = "FundBenchmarks";
+    public static final java.lang.String _PassiveFund = "PassiveFund";
+    public static final java.lang.String _IndexFund = "IndexFund";
+    public static final java.lang.String _FundOfFunds = "FundOfFunds";
+    public static final java.lang.String _ExchangeTradedNote = "ExchangeTradedNote";
+    public static final java.lang.String _LeveragedFund = "LeveragedFund";
+    public static final java.lang.String _ClosedToNewInvestorsDate = "ClosedToNewInvestorsDate";
+    public static final java.lang.String _DividendYieldFund = "DividendYieldFund";
+    public static final java.lang.String _RedemptionDate = "RedemptionDate";
+    public static final java.lang.String _ProspectusGrossExpenseRatio = "ProspectusGrossExpenseRatio";
+    public static final java.lang.String _ProspectusNetExpenseRatio = "ProspectusNetExpenseRatio";
+    public static final java.lang.String _ProspectusAcquiredExpenseRatio = "ProspectusAcquiredExpenseRatio";
+    public static final java.lang.String _ShareClassAnnualReportDate = "ShareClassAnnualReportDate";
+    public static final java.lang.String _AnnualReportGrossExpenseRatio = "AnnualReportGrossExpenseRatio";
+    public static final java.lang.String _AnnualReportNetExpenseRatio = "AnnualReportNetExpenseRatio";
+    public static final java.lang.String _ManagementFee = "ManagementFee";
+    public static final java.lang.String _MaximumManagementFee = "MaximumManagementFee";
+    public static final java.lang.String _Actual12B1 = "Actual12B1";
+    public static final java.lang.String _AdministrativeFee = "AdministrativeFee";
+    public static final java.lang.String _FundRedemptionFees = "FundRedemptionFees";
+    public static final java.lang.String _FrontLoad = "FrontLoad";
+    public static final java.lang.String _MaxFrontLoad = "MaxFrontLoad";
+    public static final java.lang.String _MaxDeferredLoad = "MaxDeferredLoad";
+    public static final java.lang.String _SwitchingFee = "SwitchingFee";
+    public static final java.lang.String _MaxRedemptionFee = "MaxRedemptionFee";
+    public static final java.lang.String _ShortTermRedemptionPeriod = "ShortTermRedemptionPeriod";
+    public static final java.lang.String _ShortTermRedemptionPeriodUnit = "ShortTermRedemptionPeriodUnit";
+    public static final java.lang.String _RegistrationCompanyName = "RegistrationCompanyName";
+    public static final java.lang.String _RegistrationCompanyAddress = "RegistrationCompanyAddress";
+    public static final java.lang.String _RegistrationCompanyPhone = "RegistrationCompanyPhone";
+    public static final java.lang.String _FundManagersProfile = "FundManagersProfile";
+    public static final java.lang.String _USStockNetAllocation = "USStockNetAllocation";
+    public static final java.lang.String _USStockLongAllocation = "USStockLongAllocation";
+    public static final java.lang.String _USStockShortAllocation = "USStockShortAllocation";
+    public static final java.lang.String _NonUSStockNetAllocation = "NonUSStockNetAllocation";
+    public static final java.lang.String _NonUSStockLongAllocation = "NonUSStockLongAllocation";
+    public static final java.lang.String _NonUSStockShortAllocation = "NonUSStockShortAllocation";
+    public static final java.lang.String _USBondNetAllocation = "USBondNetAllocation";
+    public static final java.lang.String _USBondLongAllocation = "USBondLongAllocation";
+    public static final java.lang.String _USBondShortAllocation = "USBondShortAllocation";
+    public static final java.lang.String _NonUSBondNetAllocation = "NonUSBondNetAllocation";
+    public static final java.lang.String _NonUSBondLongAllocation = "NonUSBondLongAllocation";
+    public static final java.lang.String _NonUSBondShortAllocation = "NonUSBondShortAllocation";
+    public static final java.lang.String _PreferredNetAllocation = "PreferredNetAllocation";
+    public static final java.lang.String _PreferredLongAllocation = "PreferredLongAllocation";
+    public static final java.lang.String _PreferredShortAllocation = "PreferredShortAllocation";
+    public static final java.lang.String _ConvertibleNetAllocation = "ConvertibleNetAllocation";
+    public static final java.lang.String _ConvertibleLongAllocation = "ConvertibleLongAllocation";
+    public static final java.lang.String _ConvertibleShortAllocation = "ConvertibleShortAllocation";
+    public static final java.lang.String _CashNetAllocation = "CashNetAllocation";
+    public static final java.lang.String _CashLongAllocation = "CashLongAllocation";
+    public static final java.lang.String _CashShortAllocation = "CashShortAllocation";
+    public static final java.lang.String _OtherNetAllocation = "OtherNetAllocation";
+    public static final java.lang.String _OtherLongAllocation = "OtherLongAllocation";
+    public static final java.lang.String _OtherShortAllocation = "OtherShortAllocation";
+    public static final java.lang.String _BasicMaterials = "BasicMaterials";
+    public static final java.lang.String _ConsumerCyclical = "ConsumerCyclical";
+    public static final java.lang.String _FinancialServices = "FinancialServices";
+    public static final java.lang.String _RealEstate = "RealEstate";
+    public static final java.lang.String _ConsumerDefensive = "ConsumerDefensive";
+    public static final java.lang.String _Healthcare = "Healthcare";
+    public static final java.lang.String _Utilities = "Utilities";
+    public static final java.lang.String _CommunicationServices = "CommunicationServices";
+    public static final java.lang.String _Energy = "Energy";
+    public static final java.lang.String _Industrials = "Industrials";
+    public static final java.lang.String _Technology = "Technology";
+    public static final java.lang.String _GovernmentNet = "GovernmentNet";
+    public static final java.lang.String _MunicipalNet = "MunicipalNet";
+    public static final java.lang.String _CorporateNet = "CorporateNet";
+    public static final java.lang.String _SecuritizedNet = "SecuritizedNet";
+    public static final java.lang.String _CashAndEquivalentsNet = "CashAndEquivalentsNet";
+    public static final java.lang.String _DerivativeNet = "DerivativeNet";
+    public static final java.lang.String _TurnoverRatio = "TurnoverRatio";
+    public static final java.lang.String _TurnoverRatioDate = "TurnoverRatioDate";
+    public static final java.lang.String _UnannualizedTurnoverRatio = "UnannualizedTurnoverRatio";
+    public static final java.lang.String _UnannualizedTurnoverRatioDate = "UnannualizedTurnoverRatioDate";
+    public static final java.lang.String _FundAnnualReportDate = "FundAnnualReportDate";
+    public static final java.lang.String _NetIncomeRatio = "NetIncomeRatio";
+    public static final java.lang.String _AverageNetAssets = "AverageNetAssets";
+    public static final java.lang.String _AverageNetAssetsNumberOfMonthCovered = "AverageNetAssetsNumberOfMonthCovered";
+    public static final java.lang.String _GrossIncome = "GrossIncome";
+    public static final java.lang.String _UnrealizedCapitalGain = "UnrealizedCapitalGain";
+    public static final java.lang.String _RealizedCapitalGain = "RealizedCapitalGain";
+    public static final java.lang.String _Currency = "Currency";
+    public static final java.lang.String _InitialInvestment = "InitialInvestment";
+    public static final java.lang.String _SubsequentInvestment = "SubsequentInvestment";
+    public static final java.lang.String _MinimumRetirementInvestment = "MinimumRetirementInvestment";
+    public static final java.lang.String _YearToDateReturn = "YearToDateReturn";
+    public static final java.lang.String _OneMonthReturn = "OneMonthReturn";
+    public static final java.lang.String _TwoMonthReturn = "TwoMonthReturn";
+    public static final java.lang.String _ThreeMonthReturn = "ThreeMonthReturn";
+    public static final java.lang.String _SixMonthReturn = "SixMonthReturn";
+    public static final java.lang.String _NineMonthReturn = "NineMonthReturn";
+    public static final java.lang.String _OneYearReturn = "OneYearReturn";
+    public static final java.lang.String _TwoYearReturn = "TwoYearReturn";
+    public static final java.lang.String _ThreeYearReturn = "ThreeYearReturn";
+    public static final java.lang.String _FourYearReturn = "FourYearReturn";
+    public static final java.lang.String _FiveYearReturn = "FiveYearReturn";
+    public static final java.lang.String _TenYearReturn = "TenYearReturn";
+    public static final java.lang.String _FifteenYearReturn = "FifteenYearReturn";
+    public static final java.lang.String _TwentyYearReturn = "TwentyYearReturn";
+    public static final java.lang.String _YearToDateLoadAdjustedReturn = "YearToDateLoadAdjustedReturn";
+    public static final java.lang.String _OneMonthLoadAdjustedReturn = "OneMonthLoadAdjustedReturn";
+    public static final java.lang.String _TwoMonthLoadAdjustedReturn = "TwoMonthLoadAdjustedReturn";
+    public static final java.lang.String _ThreeMonthLoadAdjustedReturn = "ThreeMonthLoadAdjustedReturn";
+    public static final java.lang.String _SixMonthLoadAdjustedReturn = "SixMonthLoadAdjustedReturn";
+    public static final java.lang.String _NineMonthLoadAdjustedReturn = "NineMonthLoadAdjustedReturn";
+    public static final java.lang.String _OneYearLoadAdjustedReturn = "OneYearLoadAdjustedReturn";
+    public static final java.lang.String _TwoYearLoadAdjustedReturn = "TwoYearLoadAdjustedReturn";
+    public static final java.lang.String _ThreeYearLoadAdjustedReturn = "ThreeYearLoadAdjustedReturn";
+    public static final java.lang.String _FourYearLoadAdjustedReturn = "FourYearLoadAdjustedReturn";
+    public static final java.lang.String _FiveYearLoadAdjustedReturn = "FiveYearLoadAdjustedReturn";
+    public static final java.lang.String _TenYearLoadAdjustedReturn = "TenYearLoadAdjustedReturn";
+    public static final java.lang.String _FifteenYearLoadAdjustedReturn = "FifteenYearLoadAdjustedReturn";
+    public static final java.lang.String _TwentyYearLoadAdjustedReturn = "TwentyYearLoadAdjustedReturn";
+    public static final java.lang.String _AssetsInTopTenHoldings = "AssetsInTopTenHoldings";
+    public static final java.lang.String _WeightingTopTenHoldings = "WeightingTopTenHoldings";
+    public static final java.lang.String _NumberOfLongHoldings = "NumberOfLongHoldings";
+    public static final java.lang.String _NumberOfShortHoldings = "NumberOfShortHoldings";
+    public static final java.lang.String _TotalMarketValueLong = "TotalMarketValueLong";
+    public static final java.lang.String _TotalMarketValueShort = "TotalMarketValueShort";
+    public static final java.lang.String _TotalMarketValueNet = "TotalMarketValueNet";
+    public static final java.lang.String _HoldingsAsOfDate = "HoldingsAsOfDate";
+    public static final java.lang.String _FundHoldings = "FundHoldings";
+    public static final java.lang.String _InvestmentStyle = "InvestmentStyle";
+    public static final java.lang.String _ClosedToNewInvestors = "ClosedToNewInvestors";
+    public static final java.lang.String _DeclaresDailyDividend = "DeclaresDailyDividend";
+    public static final java.lang.String _DividendDistributionFrequency = "DividendDistributionFrequency";
+    public static final java.lang.String _CapitalGainDistributionFrequency = "CapitalGainDistributionFrequency";
+    public static final java.lang.String _SharesOutstanding = "SharesOutstanding";
+    public static final java.lang.String _NumberOfNetHoldings = "NumberOfNetHoldings";
+    public static final java.lang.String _RegistrationCompanyWebsite = "RegistrationCompanyWebsite";
+    public static final java.lang.String _ReturnsAsOfDate = "ReturnsAsOfDate";
+    public static final java.lang.String _MonthEndNAV = "MonthEndNAV";
+    public static final java.lang.String _MonthEndNAVDate = "MonthEndNAVDate";
+    public static final java.lang.String _TrueNoLoadFund = "TrueNoLoadFund";
+    public static final java.lang.String _NoLoadFund = "NoLoadFund";
+    public static final java.lang.String _RequiresMinimumInvestment = "RequiresMinimumInvestment";
+    public static final java.lang.String _FundShareClassNetAssets = "FundShareClassNetAssets";
+    public static final FundFundamentalType FundName = new FundFundamentalType(_FundName);
+    public static final FundFundamentalType FundFamilyName = new FundFundamentalType(_FundFamilyName);
+    public static final FundFundamentalType ShareClass = new FundFundamentalType(_ShareClass);
+    public static final FundFundamentalType FundType = new FundFundamentalType(_FundType);
+    public static final FundFundamentalType LegalName = new FundFundamentalType(_LegalName);
+    public static final FundFundamentalType DomicileCountry = new FundFundamentalType(_DomicileCountry);
+    public static final FundFundamentalType DomicileState = new FundFundamentalType(_DomicileState);
+    public static final FundFundamentalType NetAssets = new FundFundamentalType(_NetAssets);
+    public static final FundFundamentalType FundObjective = new FundFundamentalType(_FundObjective);
+    public static final FundFundamentalType InvestmentSummary = new FundFundamentalType(_InvestmentSummary);
+    public static final FundFundamentalType InceptionDate = new FundFundamentalType(_InceptionDate);
+    public static final FundFundamentalType FundBenchmarks = new FundFundamentalType(_FundBenchmarks);
+    public static final FundFundamentalType PassiveFund = new FundFundamentalType(_PassiveFund);
+    public static final FundFundamentalType IndexFund = new FundFundamentalType(_IndexFund);
+    public static final FundFundamentalType FundOfFunds = new FundFundamentalType(_FundOfFunds);
+    public static final FundFundamentalType ExchangeTradedNote = new FundFundamentalType(_ExchangeTradedNote);
+    public static final FundFundamentalType LeveragedFund = new FundFundamentalType(_LeveragedFund);
+    public static final FundFundamentalType ClosedToNewInvestorsDate = new FundFundamentalType(_ClosedToNewInvestorsDate);
+    public static final FundFundamentalType DividendYieldFund = new FundFundamentalType(_DividendYieldFund);
+    public static final FundFundamentalType RedemptionDate = new FundFundamentalType(_RedemptionDate);
+    public static final FundFundamentalType ProspectusGrossExpenseRatio = new FundFundamentalType(_ProspectusGrossExpenseRatio);
+    public static final FundFundamentalType ProspectusNetExpenseRatio = new FundFundamentalType(_ProspectusNetExpenseRatio);
+    public static final FundFundamentalType ProspectusAcquiredExpenseRatio = new FundFundamentalType(_ProspectusAcquiredExpenseRatio);
+    public static final FundFundamentalType ShareClassAnnualReportDate = new FundFundamentalType(_ShareClassAnnualReportDate);
+    public static final FundFundamentalType AnnualReportGrossExpenseRatio = new FundFundamentalType(_AnnualReportGrossExpenseRatio);
+    public static final FundFundamentalType AnnualReportNetExpenseRatio = new FundFundamentalType(_AnnualReportNetExpenseRatio);
+    public static final FundFundamentalType ManagementFee = new FundFundamentalType(_ManagementFee);
+    public static final FundFundamentalType MaximumManagementFee = new FundFundamentalType(_MaximumManagementFee);
+    public static final FundFundamentalType Actual12B1 = new FundFundamentalType(_Actual12B1);
+    public static final FundFundamentalType AdministrativeFee = new FundFundamentalType(_AdministrativeFee);
+    public static final FundFundamentalType FundRedemptionFees = new FundFundamentalType(_FundRedemptionFees);
+    public static final FundFundamentalType FrontLoad = new FundFundamentalType(_FrontLoad);
+    public static final FundFundamentalType MaxFrontLoad = new FundFundamentalType(_MaxFrontLoad);
+    public static final FundFundamentalType MaxDeferredLoad = new FundFundamentalType(_MaxDeferredLoad);
+    public static final FundFundamentalType SwitchingFee = new FundFundamentalType(_SwitchingFee);
+    public static final FundFundamentalType MaxRedemptionFee = new FundFundamentalType(_MaxRedemptionFee);
+    public static final FundFundamentalType ShortTermRedemptionPeriod = new FundFundamentalType(_ShortTermRedemptionPeriod);
+    public static final FundFundamentalType ShortTermRedemptionPeriodUnit = new FundFundamentalType(_ShortTermRedemptionPeriodUnit);
+    public static final FundFundamentalType RegistrationCompanyName = new FundFundamentalType(_RegistrationCompanyName);
+    public static final FundFundamentalType RegistrationCompanyAddress = new FundFundamentalType(_RegistrationCompanyAddress);
+    public static final FundFundamentalType RegistrationCompanyPhone = new FundFundamentalType(_RegistrationCompanyPhone);
+    public static final FundFundamentalType FundManagersProfile = new FundFundamentalType(_FundManagersProfile);
+    public static final FundFundamentalType USStockNetAllocation = new FundFundamentalType(_USStockNetAllocation);
+    public static final FundFundamentalType USStockLongAllocation = new FundFundamentalType(_USStockLongAllocation);
+    public static final FundFundamentalType USStockShortAllocation = new FundFundamentalType(_USStockShortAllocation);
+    public static final FundFundamentalType NonUSStockNetAllocation = new FundFundamentalType(_NonUSStockNetAllocation);
+    public static final FundFundamentalType NonUSStockLongAllocation = new FundFundamentalType(_NonUSStockLongAllocation);
+    public static final FundFundamentalType NonUSStockShortAllocation = new FundFundamentalType(_NonUSStockShortAllocation);
+    public static final FundFundamentalType USBondNetAllocation = new FundFundamentalType(_USBondNetAllocation);
+    public static final FundFundamentalType USBondLongAllocation = new FundFundamentalType(_USBondLongAllocation);
+    public static final FundFundamentalType USBondShortAllocation = new FundFundamentalType(_USBondShortAllocation);
+    public static final FundFundamentalType NonUSBondNetAllocation = new FundFundamentalType(_NonUSBondNetAllocation);
+    public static final FundFundamentalType NonUSBondLongAllocation = new FundFundamentalType(_NonUSBondLongAllocation);
+    public static final FundFundamentalType NonUSBondShortAllocation = new FundFundamentalType(_NonUSBondShortAllocation);
+    public static final FundFundamentalType PreferredNetAllocation = new FundFundamentalType(_PreferredNetAllocation);
+    public static final FundFundamentalType PreferredLongAllocation = new FundFundamentalType(_PreferredLongAllocation);
+    public static final FundFundamentalType PreferredShortAllocation = new FundFundamentalType(_PreferredShortAllocation);
+    public static final FundFundamentalType ConvertibleNetAllocation = new FundFundamentalType(_ConvertibleNetAllocation);
+    public static final FundFundamentalType ConvertibleLongAllocation = new FundFundamentalType(_ConvertibleLongAllocation);
+    public static final FundFundamentalType ConvertibleShortAllocation = new FundFundamentalType(_ConvertibleShortAllocation);
+    public static final FundFundamentalType CashNetAllocation = new FundFundamentalType(_CashNetAllocation);
+    public static final FundFundamentalType CashLongAllocation = new FundFundamentalType(_CashLongAllocation);
+    public static final FundFundamentalType CashShortAllocation = new FundFundamentalType(_CashShortAllocation);
+    public static final FundFundamentalType OtherNetAllocation = new FundFundamentalType(_OtherNetAllocation);
+    public static final FundFundamentalType OtherLongAllocation = new FundFundamentalType(_OtherLongAllocation);
+    public static final FundFundamentalType OtherShortAllocation = new FundFundamentalType(_OtherShortAllocation);
+    public static final FundFundamentalType BasicMaterials = new FundFundamentalType(_BasicMaterials);
+    public static final FundFundamentalType ConsumerCyclical = new FundFundamentalType(_ConsumerCyclical);
+    public static final FundFundamentalType FinancialServices = new FundFundamentalType(_FinancialServices);
+    public static final FundFundamentalType RealEstate = new FundFundamentalType(_RealEstate);
+    public static final FundFundamentalType ConsumerDefensive = new FundFundamentalType(_ConsumerDefensive);
+    public static final FundFundamentalType Healthcare = new FundFundamentalType(_Healthcare);
+    public static final FundFundamentalType Utilities = new FundFundamentalType(_Utilities);
+    public static final FundFundamentalType CommunicationServices = new FundFundamentalType(_CommunicationServices);
+    public static final FundFundamentalType Energy = new FundFundamentalType(_Energy);
+    public static final FundFundamentalType Industrials = new FundFundamentalType(_Industrials);
+    public static final FundFundamentalType Technology = new FundFundamentalType(_Technology);
+    public static final FundFundamentalType GovernmentNet = new FundFundamentalType(_GovernmentNet);
+    public static final FundFundamentalType MunicipalNet = new FundFundamentalType(_MunicipalNet);
+    public static final FundFundamentalType CorporateNet = new FundFundamentalType(_CorporateNet);
+    public static final FundFundamentalType SecuritizedNet = new FundFundamentalType(_SecuritizedNet);
+    public static final FundFundamentalType CashAndEquivalentsNet = new FundFundamentalType(_CashAndEquivalentsNet);
+    public static final FundFundamentalType DerivativeNet = new FundFundamentalType(_DerivativeNet);
+    public static final FundFundamentalType TurnoverRatio = new FundFundamentalType(_TurnoverRatio);
+    public static final FundFundamentalType TurnoverRatioDate = new FundFundamentalType(_TurnoverRatioDate);
+    public static final FundFundamentalType UnannualizedTurnoverRatio = new FundFundamentalType(_UnannualizedTurnoverRatio);
+    public static final FundFundamentalType UnannualizedTurnoverRatioDate = new FundFundamentalType(_UnannualizedTurnoverRatioDate);
+    public static final FundFundamentalType FundAnnualReportDate = new FundFundamentalType(_FundAnnualReportDate);
+    public static final FundFundamentalType NetIncomeRatio = new FundFundamentalType(_NetIncomeRatio);
+    public static final FundFundamentalType AverageNetAssets = new FundFundamentalType(_AverageNetAssets);
+    public static final FundFundamentalType AverageNetAssetsNumberOfMonthCovered = new FundFundamentalType(_AverageNetAssetsNumberOfMonthCovered);
+    public static final FundFundamentalType GrossIncome = new FundFundamentalType(_GrossIncome);
+    public static final FundFundamentalType UnrealizedCapitalGain = new FundFundamentalType(_UnrealizedCapitalGain);
+    public static final FundFundamentalType RealizedCapitalGain = new FundFundamentalType(_RealizedCapitalGain);
+    public static final FundFundamentalType Currency = new FundFundamentalType(_Currency);
+    public static final FundFundamentalType InitialInvestment = new FundFundamentalType(_InitialInvestment);
+    public static final FundFundamentalType SubsequentInvestment = new FundFundamentalType(_SubsequentInvestment);
+    public static final FundFundamentalType MinimumRetirementInvestment = new FundFundamentalType(_MinimumRetirementInvestment);
+    public static final FundFundamentalType YearToDateReturn = new FundFundamentalType(_YearToDateReturn);
+    public static final FundFundamentalType OneMonthReturn = new FundFundamentalType(_OneMonthReturn);
+    public static final FundFundamentalType TwoMonthReturn = new FundFundamentalType(_TwoMonthReturn);
+    public static final FundFundamentalType ThreeMonthReturn = new FundFundamentalType(_ThreeMonthReturn);
+    public static final FundFundamentalType SixMonthReturn = new FundFundamentalType(_SixMonthReturn);
+    public static final FundFundamentalType NineMonthReturn = new FundFundamentalType(_NineMonthReturn);
+    public static final FundFundamentalType OneYearReturn = new FundFundamentalType(_OneYearReturn);
+    public static final FundFundamentalType TwoYearReturn = new FundFundamentalType(_TwoYearReturn);
+    public static final FundFundamentalType ThreeYearReturn = new FundFundamentalType(_ThreeYearReturn);
+    public static final FundFundamentalType FourYearReturn = new FundFundamentalType(_FourYearReturn);
+    public static final FundFundamentalType FiveYearReturn = new FundFundamentalType(_FiveYearReturn);
+    public static final FundFundamentalType TenYearReturn = new FundFundamentalType(_TenYearReturn);
+    public static final FundFundamentalType FifteenYearReturn = new FundFundamentalType(_FifteenYearReturn);
+    public static final FundFundamentalType TwentyYearReturn = new FundFundamentalType(_TwentyYearReturn);
+    public static final FundFundamentalType YearToDateLoadAdjustedReturn = new FundFundamentalType(_YearToDateLoadAdjustedReturn);
+    public static final FundFundamentalType OneMonthLoadAdjustedReturn = new FundFundamentalType(_OneMonthLoadAdjustedReturn);
+    public static final FundFundamentalType TwoMonthLoadAdjustedReturn = new FundFundamentalType(_TwoMonthLoadAdjustedReturn);
+    public static final FundFundamentalType ThreeMonthLoadAdjustedReturn = new FundFundamentalType(_ThreeMonthLoadAdjustedReturn);
+    public static final FundFundamentalType SixMonthLoadAdjustedReturn = new FundFundamentalType(_SixMonthLoadAdjustedReturn);
+    public static final FundFundamentalType NineMonthLoadAdjustedReturn = new FundFundamentalType(_NineMonthLoadAdjustedReturn);
+    public static final FundFundamentalType OneYearLoadAdjustedReturn = new FundFundamentalType(_OneYearLoadAdjustedReturn);
+    public static final FundFundamentalType TwoYearLoadAdjustedReturn = new FundFundamentalType(_TwoYearLoadAdjustedReturn);
+    public static final FundFundamentalType ThreeYearLoadAdjustedReturn = new FundFundamentalType(_ThreeYearLoadAdjustedReturn);
+    public static final FundFundamentalType FourYearLoadAdjustedReturn = new FundFundamentalType(_FourYearLoadAdjustedReturn);
+    public static final FundFundamentalType FiveYearLoadAdjustedReturn = new FundFundamentalType(_FiveYearLoadAdjustedReturn);
+    public static final FundFundamentalType TenYearLoadAdjustedReturn = new FundFundamentalType(_TenYearLoadAdjustedReturn);
+    public static final FundFundamentalType FifteenYearLoadAdjustedReturn = new FundFundamentalType(_FifteenYearLoadAdjustedReturn);
+    public static final FundFundamentalType TwentyYearLoadAdjustedReturn = new FundFundamentalType(_TwentyYearLoadAdjustedReturn);
+    public static final FundFundamentalType AssetsInTopTenHoldings = new FundFundamentalType(_AssetsInTopTenHoldings);
+    public static final FundFundamentalType WeightingTopTenHoldings = new FundFundamentalType(_WeightingTopTenHoldings);
+    public static final FundFundamentalType NumberOfLongHoldings = new FundFundamentalType(_NumberOfLongHoldings);
+    public static final FundFundamentalType NumberOfShortHoldings = new FundFundamentalType(_NumberOfShortHoldings);
+    public static final FundFundamentalType TotalMarketValueLong = new FundFundamentalType(_TotalMarketValueLong);
+    public static final FundFundamentalType TotalMarketValueShort = new FundFundamentalType(_TotalMarketValueShort);
+    public static final FundFundamentalType TotalMarketValueNet = new FundFundamentalType(_TotalMarketValueNet);
+    public static final FundFundamentalType HoldingsAsOfDate = new FundFundamentalType(_HoldingsAsOfDate);
+    public static final FundFundamentalType FundHoldings = new FundFundamentalType(_FundHoldings);
+    public static final FundFundamentalType InvestmentStyle = new FundFundamentalType(_InvestmentStyle);
+    public static final FundFundamentalType ClosedToNewInvestors = new FundFundamentalType(_ClosedToNewInvestors);
+    public static final FundFundamentalType DeclaresDailyDividend = new FundFundamentalType(_DeclaresDailyDividend);
+    public static final FundFundamentalType DividendDistributionFrequency = new FundFundamentalType(_DividendDistributionFrequency);
+    public static final FundFundamentalType CapitalGainDistributionFrequency = new FundFundamentalType(_CapitalGainDistributionFrequency);
+    public static final FundFundamentalType SharesOutstanding = new FundFundamentalType(_SharesOutstanding);
+    public static final FundFundamentalType NumberOfNetHoldings = new FundFundamentalType(_NumberOfNetHoldings);
+    public static final FundFundamentalType RegistrationCompanyWebsite = new FundFundamentalType(_RegistrationCompanyWebsite);
+    public static final FundFundamentalType ReturnsAsOfDate = new FundFundamentalType(_ReturnsAsOfDate);
+    public static final FundFundamentalType MonthEndNAV = new FundFundamentalType(_MonthEndNAV);
+    public static final FundFundamentalType MonthEndNAVDate = new FundFundamentalType(_MonthEndNAVDate);
+    public static final FundFundamentalType TrueNoLoadFund = new FundFundamentalType(_TrueNoLoadFund);
+    public static final FundFundamentalType NoLoadFund = new FundFundamentalType(_NoLoadFund);
+    public static final FundFundamentalType RequiresMinimumInvestment = new FundFundamentalType(_RequiresMinimumInvestment);
+    public static final FundFundamentalType FundShareClassNetAssets = new FundFundamentalType(_FundShareClassNetAssets);
+    public java.lang.String getValue() { return _value_;}
+    public static FundFundamentalType fromValue(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
+        FundFundamentalType enumeration = (FundFundamentalType)
+            _table_.get(value);
+        if (enumeration==null) throw new java.lang.IllegalArgumentException();
+        return enumeration;
+    }
+    public static FundFundamentalType fromString(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
+        return fromValue(value);
+    }
+    public boolean equals(java.lang.Object obj) {return (obj == this);}
+    public int hashCode() { return toString().hashCode();}
+    public java.lang.String toString() { return _value_;}
+    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new org.apache.axis.encoding.ser.EnumSerializer(
+            _javaType, _xmlType);
+    }
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new org.apache.axis.encoding.ser.EnumDeserializer(
+            _javaType, _xmlType);
+    }
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(FundFundamentalType.class);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamentalType"));
+    }
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+}

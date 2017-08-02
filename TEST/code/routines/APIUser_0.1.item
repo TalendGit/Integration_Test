@@ -1,0 +1,86 @@
+package routines;
+
+import java.io.Serializable;
+
+/*
+ * Bean object to store API_USER information in Memcached server
+ */
+public class APIUser implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 001L;
+	
+	private String userID;
+	private String token;
+	private String email;
+	private String name;
+	
+	private int api_ID;
+	private int user_ID;
+	private int count;
+	
+	public APIUser() {
+	}
+	
+	public String getUserID() {
+		return userID;
+	}
+
+	public void setUserID(String userID) {
+		this.userID = userID;
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return "User ID: "+user_ID+", Name: "+name+", Count: "+count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setApi_ID(int api_ID) {
+		this.api_ID = api_ID;
+	}
+
+	public int getApi_ID() {
+		return api_ID;
+	}
+
+	public void setUser_ID(int user_ID) {
+		this.user_ID = user_ID;
+	}
+
+	public int getUser_ID() {
+		return user_ID;
+	}
+}

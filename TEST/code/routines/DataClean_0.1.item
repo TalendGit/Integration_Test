@@ -1,0 +1,271 @@
+package routines;
+import java.util.regex.*;
+
+public class DataClean {
+
+	public static String NumberToRange(int num) {
+		String range = null;
+		
+		if(num > 0){
+			if(num == 1)
+				range = "Just me";
+			else if(num <= 9)
+				range = "2-9";
+			else if(num <= 49)
+				range = "10-49";
+			else if(num <= 249)
+				range = "50-249";
+			else if(num <= 999)
+				range = "250-999";
+			else
+				range = "1000+";
+		}
+			
+		return range;
+		
+    }
+	
+	public static Integer RangeToNumber(String rangeIn){
+		Integer returnInt = null;
+		
+		if(rangeIn != null){
+			Pattern p1 = Pattern.compile("^([0-9]+)-([0-9]+)$");
+			Matcher m1 = p1.matcher(rangeIn);
+			
+			Pattern p2 = Pattern.compile("^([0-9]+)\\+$");
+			Matcher m2 = p2.matcher(rangeIn);
+			
+			if(rangeIn.equals("Just me"))
+				returnInt = 1;
+			else if(m1.find()){
+				Integer num1 = Integer.parseInt(m1.group(1));
+				Integer num2 = Integer.parseInt(m1.group(2));
+				returnInt = DataClean.NumberMerge(num1, num2);
+			}else if(m2.find()){
+				Integer num1 = Integer.parseInt(m2.group(1));
+				returnInt = num1;
+			}
+		}
+		
+		return returnInt;
+	}
+	
+	public static int NumberMerge(Integer num1, Integer num2){
+		int returnInt;
+		
+		returnInt = (num2 == null) ? num1 : (num1 + num2)/2;
+		
+		return returnInt;
+	}
+	
+	public static String Clean_NumberOfEmployees(String origIn){
+		String returnString = null;
+		
+		Integer num1 = null;
+		Integer num2 = null;
+		
+		//Filter out bad junk
+		if((origIn != null)&&(origIn.equals("99999999999999999")))
+			return returnString;
+		
+		if(origIn != null){
+			//Get rid of all comma's in string
+			String orig = origIn.replace(",", "");	
+			
+			//Replace > or < with words due to not being recognized in regex
+			if(orig.startsWith(">")){
+				orig = "More than" + orig.substring(1);
+			}
+			if(orig.startsWith("<")){
+				orig = "Less than" + orig.substring(1);
+			}
+			
+			//Get rid of trailing known names
+			Pattern pre1 = Pattern.compile("^(.*) (employees|Employees|Employee|Employ|Emplo|to less than|and above|phone)$");
+			Matcher mre1 = pre1.matcher(orig);
+			
+			if(mre1.find()){
+				orig = mre1.group(1);
+			}
+			
+			//Get rid of leading known names
+			Pattern pre2 = Pattern.compile("^(EMPS -|EMP NAT -|EMP SITE) (.*)$");
+			Matcher mre2 = pre2.matcher(orig);
+			
+			if(mre2.find()){
+				orig = mre2.group(2);
+			}
+			//Get rid of space 5 000 -> 5000
+			orig = orig.replaceAll("([0-9]+) 000", "$1"+"000");
+			
+			//Convert numbers like 10k into 10000
+			orig = orig.replaceAll("([0-9]+)(k|K)", "$1"+"000");
+			
+			/*# <NonNumeric,NonAlphabet> #*/
+			Pattern p1 = Pattern.compile("^[ ]*([0-9]+)[^0-9]*([0-9]*)[ ]*$");
+			Matcher m1 = p1.matcher(orig);
+			
+			/*# to (less than )?#*/
+			Pattern p2 = Pattern.compile("^([0-9]+) (to|to less than|or) ([0-9]+)$");
+			Matcher m2 = p2.matcher(orig);
+			
+			/*(Under|Less than) #*/
+			Pattern p3 = Pattern.compile("^(Under|Less than|LESS THAN|Up to) ([0-9]+)$");
+			Matcher m3 = p3.matcher(orig);
+			
+			/*(Over|More than) #*/
+			Pattern p4 = Pattern.compile("^(Over|More than) ([0-9]+)$");
+			Matcher m4 = p4.matcher(orig);
+			
+			/*#_or_more*/
+			Pattern p5 = Pattern.compile("^([0-9]+)(_or_more| OR MORE| or more)$");
+			Matcher m5 = p5.matcher(orig);
+			
+			/*Sales - ????# (Used to convert InContact Skill to Number)*/
+			Pattern p6 = Pattern.compile("^Sales - [^0-9]*([0-9]+$)");
+			Matcher m6 = p6.matcher(orig);
+			
+			/*If string does not have any letters*/
+			if(!orig.matches(".*[A-Za-z]+.*")){
+				if(m1.find()) {
+					//System.out.print("num1: " + m1.group(1) + "\tnum2: " + m1.group(2));
+					num1 = Integer.parseInt(m1.group(1));
+					if(m1.group(2).matches("[0-9]+"))
+						num2 = Integer.parseInt(m1.group(2));
+					returnString = DataClean.NumberToRange(DataClean.NumberMerge(num1, num2));
+					//System.out.println("\tFinal: " + returnString + "\torig: " + orig);
+				}
+			/*If string is of format num-month*/
+			}else if(orig.matches("[0-9]+-\\w\\w\\w")){
+				returnString = DataClean.Clean_NumberOfEmployees(TalendDate.formatDate("MM-d",TalendDate.parseDate("d-MMM", orig)));
+			/*If string is of format month-num*/
+			}else if(orig.matches("\\w\\w\\w-[0-9]+")){
+					returnString = DataClean.Clean_NumberOfEmployees(TalendDate.formatDate("MM-d",TalendDate.parseDate("MMM-d", orig)));
+			}else if(orig.equals("Just me") || orig.equals("Myself Only")){
+				returnString = "Just me";
+			/*# to (less than )?#*/
+			}else if(m2.find()){
+				num1 = Integer.parseInt(m2.group(1));
+				num2 = Integer.parseInt(m2.group(3));
+				returnString = DataClean.NumberToRange(DataClean.NumberMerge(num1, num2));
+			/*(Under|Less than) #*/
+			}else if(m3.find()){
+				num1 = Integer.parseInt(m3.group(2));
+				returnString = DataClean.NumberToRange(num1 - 1);
+			/*(Over|More than) #*/
+			}else if(m4.find()){
+				num1 = Integer.parseInt(m4.group(2));
+				returnString = DataClean.NumberToRange(num1 + 1);
+			/*#_or_more*/
+			}else if(m5.find()){
+				num1 = Integer.parseInt(m5.group(1));
+				returnString = DataClean.NumberToRange(num1);
+			/*Sales - ????# (Used to convert InContact Skill to Number)*/
+			}else if(m6.find()) {
+				num1 = Integer.parseInt(m6.group(1));
+				returnString = DataClean.NumberToRange(num1);
+			}
+			
+		}
+		return returnString;
+	}
+	
+	public static String getRanges(){
+		String returnString = null;
+		
+		returnString = "''"; //Null Value
+		//returnString += ",'2-4','5-9','10-19','20-49','50-99','100-249','250-499','500+'"; //Old Ranges
+		returnString += ",'Just me','2-9','10-49','50-249','250-999','1000+'"; //Current Ranges
+		
+		return returnString;
+	}
+	
+	public static String convertSkilltoNumber(String orig){
+		String returnString = null;
+		
+		Pattern p1 = Pattern.compile("^Sales - [^0-9]*([0-9]+$)");
+		Matcher m1 = p1.matcher(orig);
+		
+		if(m1.find()) {
+			int num = Integer.parseInt(m1.group(1));
+			returnString = DataClean.NumberToRange(num);
+		}		
+		
+		return returnString;
+	}
+	
+	public static String identifyValue(Integer NumberOfEmployees, String Employee_Size_History__c, String No_of_Employees_Range_Hidden__c, String Company_Size__c){
+		String returnString = null;
+		
+		Integer inEmpNum = ((NumberOfEmployees == null) || (NumberOfEmployees == 0))? null : NumberOfEmployees;
+		String inEmpHist = (Employee_Size_History__c == null)? null : (Employee_Size_History__c.equals("Please Select") 
+																	|| Employee_Size_History__c.equals("Unknown")
+																	|| Employee_Size_History__c.equals("Not Available")
+																	|| Employee_Size_History__c.equals("No Answer")
+																	|| Employee_Size_History__c.equals("0")
+																	|| Employee_Size_History__c.equals("How many employees do you have?")
+																	|| Employee_Size_History__c.equals("$employees")
+																	|| Employee_Size_History__c.equals("null")
+																	) ? null : Employee_Size_History__c;
+		String inEmpHide = (No_of_Employees_Range_Hidden__c == null)? null : (No_of_Employees_Range_Hidden__c.equals("Please Select") 
+																			|| No_of_Employees_Range_Hidden__c.equals("Unknown")
+																			|| No_of_Employees_Range_Hidden__c.equals("Not Available")
+																			|| No_of_Employees_Range_Hidden__c.equals("No Answer")
+																			|| No_of_Employees_Range_Hidden__c.equals("0")
+																			|| No_of_Employees_Range_Hidden__c.equals("How many employees do you have?")
+																			|| No_of_Employees_Range_Hidden__c.equals("$employees")
+																			|| No_of_Employees_Range_Hidden__c.equals("null")
+																			) ? null : No_of_Employees_Range_Hidden__c;
+		String inCompSize = Company_Size__c;
+		
+		if(inEmpHist != null){
+			returnString = inEmpHist;
+		} else if (inEmpNum != null) {
+			returnString = inEmpNum + "";
+		} else if (inCompSize != null) {
+			returnString = inCompSize;
+		} else if (inEmpHide != null) {
+			returnString = inEmpHide;
+		}
+		
+		return returnString;
+	}
+	
+	public static Double calculatePercent(Integer num1, Integer num2){
+		Double returnDouble = null;
+		
+		if(num1 != null && num2 != null && num1 != 0 && num2 != 0){
+			returnDouble = (num1 * 100.00) / num2;
+		}
+		
+		return returnDouble;
+	}
+	
+	public static String Clean_Phone(String origIn){
+		if(origIn == null)
+			return null;
+		
+		String returnString = origIn;
+		returnString = returnString.replaceAll("[^\\d]", "");
+		return returnString;
+	}
+	
+	public static boolean nestedContains(String origIn,String nestIn){
+		boolean returnBool = false;
+		
+		if(origIn == null || nestIn == null)
+			return false;
+		
+		/*Get rid of case dependency*/
+		origIn = origIn.toLowerCase();
+		nestIn = nestIn.toLowerCase();
+		
+		String[] conArray = nestIn.split(",");
+		
+		for(String con: conArray){
+			returnBool |= origIn.contains(con);
+		}
+		
+		return returnBool;
+	}
+}

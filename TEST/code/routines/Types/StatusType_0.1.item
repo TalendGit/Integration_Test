@@ -1,0 +1,18 @@
+package routines;
+
+public enum StatusType {
+	STARTED("STARTED"),
+	COMPLETED("COMPLETED"),
+	EXCEPTION("EXCEPTION"),
+	FAILED("FAILED");
+	
+	private String value;
+	
+	private StatusType(String value) {
+		this.value = value;
+	}
+	
+	public String getValue() {
+		return this.value;
+	}
+}

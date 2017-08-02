@@ -1,0 +1,445 @@
+/**
+ * AnnualReportSummary.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class AnnualReportSummary  implements java.io.Serializable {
+    private java.lang.String fundAnnualReportDate;
+
+    private double netIncomeRatio;
+
+    private double annualReportGrossExpenseRatio;
+
+    private double annualReportNetExpenseRatio;
+
+    private double averageNetAssets;
+
+    private double averageNetAssetsNumberOfMonthCovered;
+
+    private double grossIncome;
+
+    private double unrealizedCapitalGain;
+
+    private double realizedCapitalGain;
+
+    private double turnoverRatio;
+
+    private java.lang.String turnoverRatioDate;
+
+    public AnnualReportSummary() {
+    }
+
+    public AnnualReportSummary(
+           java.lang.String fundAnnualReportDate,
+           double netIncomeRatio,
+           double annualReportGrossExpenseRatio,
+           double annualReportNetExpenseRatio,
+           double averageNetAssets,
+           double averageNetAssetsNumberOfMonthCovered,
+           double grossIncome,
+           double unrealizedCapitalGain,
+           double realizedCapitalGain,
+           double turnoverRatio,
+           java.lang.String turnoverRatioDate) {
+           this.fundAnnualReportDate = fundAnnualReportDate;
+           this.netIncomeRatio = netIncomeRatio;
+           this.annualReportGrossExpenseRatio = annualReportGrossExpenseRatio;
+           this.annualReportNetExpenseRatio = annualReportNetExpenseRatio;
+           this.averageNetAssets = averageNetAssets;
+           this.averageNetAssetsNumberOfMonthCovered = averageNetAssetsNumberOfMonthCovered;
+           this.grossIncome = grossIncome;
+           this.unrealizedCapitalGain = unrealizedCapitalGain;
+           this.realizedCapitalGain = realizedCapitalGain;
+           this.turnoverRatio = turnoverRatio;
+           this.turnoverRatioDate = turnoverRatioDate;
+    }
+
+
+    /**
+     * Gets the fundAnnualReportDate value for this AnnualReportSummary.
+     * 
+     * @return fundAnnualReportDate
+     */
+    public java.lang.String getFundAnnualReportDate() {
+        return fundAnnualReportDate;
+    }
+
+
+    /**
+     * Sets the fundAnnualReportDate value for this AnnualReportSummary.
+     * 
+     * @param fundAnnualReportDate
+     */
+    public void setFundAnnualReportDate(java.lang.String fundAnnualReportDate) {
+        this.fundAnnualReportDate = fundAnnualReportDate;
+    }
+
+
+    /**
+     * Gets the netIncomeRatio value for this AnnualReportSummary.
+     * 
+     * @return netIncomeRatio
+     */
+    public double getNetIncomeRatio() {
+        return netIncomeRatio;
+    }
+
+
+    /**
+     * Sets the netIncomeRatio value for this AnnualReportSummary.
+     * 
+     * @param netIncomeRatio
+     */
+    public void setNetIncomeRatio(double netIncomeRatio) {
+        this.netIncomeRatio = netIncomeRatio;
+    }
+
+
+    /**
+     * Gets the annualReportGrossExpenseRatio value for this AnnualReportSummary.
+     * 
+     * @return annualReportGrossExpenseRatio
+     */
+    public double getAnnualReportGrossExpenseRatio() {
+        return annualReportGrossExpenseRatio;
+    }
+
+
+    /**
+     * Sets the annualReportGrossExpenseRatio value for this AnnualReportSummary.
+     * 
+     * @param annualReportGrossExpenseRatio
+     */
+    public void setAnnualReportGrossExpenseRatio(double annualReportGrossExpenseRatio) {
+        this.annualReportGrossExpenseRatio = annualReportGrossExpenseRatio;
+    }
+
+
+    /**
+     * Gets the annualReportNetExpenseRatio value for this AnnualReportSummary.
+     * 
+     * @return annualReportNetExpenseRatio
+     */
+    public double getAnnualReportNetExpenseRatio() {
+        return annualReportNetExpenseRatio;
+    }
+
+
+    /**
+     * Sets the annualReportNetExpenseRatio value for this AnnualReportSummary.
+     * 
+     * @param annualReportNetExpenseRatio
+     */
+    public void setAnnualReportNetExpenseRatio(double annualReportNetExpenseRatio) {
+        this.annualReportNetExpenseRatio = annualReportNetExpenseRatio;
+    }
+
+
+    /**
+     * Gets the averageNetAssets value for this AnnualReportSummary.
+     * 
+     * @return averageNetAssets
+     */
+    public double getAverageNetAssets() {
+        return averageNetAssets;
+    }
+
+
+    /**
+     * Sets the averageNetAssets value for this AnnualReportSummary.
+     * 
+     * @param averageNetAssets
+     */
+    public void setAverageNetAssets(double averageNetAssets) {
+        this.averageNetAssets = averageNetAssets;
+    }
+
+
+    /**
+     * Gets the averageNetAssetsNumberOfMonthCovered value for this AnnualReportSummary.
+     * 
+     * @return averageNetAssetsNumberOfMonthCovered
+     */
+    public double getAverageNetAssetsNumberOfMonthCovered() {
+        return averageNetAssetsNumberOfMonthCovered;
+    }
+
+
+    /**
+     * Sets the averageNetAssetsNumberOfMonthCovered value for this AnnualReportSummary.
+     * 
+     * @param averageNetAssetsNumberOfMonthCovered
+     */
+    public void setAverageNetAssetsNumberOfMonthCovered(double averageNetAssetsNumberOfMonthCovered) {
+        this.averageNetAssetsNumberOfMonthCovered = averageNetAssetsNumberOfMonthCovered;
+    }
+
+
+    /**
+     * Gets the grossIncome value for this AnnualReportSummary.
+     * 
+     * @return grossIncome
+     */
+    public double getGrossIncome() {
+        return grossIncome;
+    }
+
+
+    /**
+     * Sets the grossIncome value for this AnnualReportSummary.
+     * 
+     * @param grossIncome
+     */
+    public void setGrossIncome(double grossIncome) {
+        this.grossIncome = grossIncome;
+    }
+
+
+    /**
+     * Gets the unrealizedCapitalGain value for this AnnualReportSummary.
+     * 
+     * @return unrealizedCapitalGain
+     */
+    public double getUnrealizedCapitalGain() {
+        return unrealizedCapitalGain;
+    }
+
+
+    /**
+     * Sets the unrealizedCapitalGain value for this AnnualReportSummary.
+     * 
+     * @param unrealizedCapitalGain
+     */
+    public void setUnrealizedCapitalGain(double unrealizedCapitalGain) {
+        this.unrealizedCapitalGain = unrealizedCapitalGain;
+    }
+
+
+    /**
+     * Gets the realizedCapitalGain value for this AnnualReportSummary.
+     * 
+     * @return realizedCapitalGain
+     */
+    public double getRealizedCapitalGain() {
+        return realizedCapitalGain;
+    }
+
+
+    /**
+     * Sets the realizedCapitalGain value for this AnnualReportSummary.
+     * 
+     * @param realizedCapitalGain
+     */
+    public void setRealizedCapitalGain(double realizedCapitalGain) {
+        this.realizedCapitalGain = realizedCapitalGain;
+    }
+
+
+    /**
+     * Gets the turnoverRatio value for this AnnualReportSummary.
+     * 
+     * @return turnoverRatio
+     */
+    public double getTurnoverRatio() {
+        return turnoverRatio;
+    }
+
+
+    /**
+     * Sets the turnoverRatio value for this AnnualReportSummary.
+     * 
+     * @param turnoverRatio
+     */
+    public void setTurnoverRatio(double turnoverRatio) {
+        this.turnoverRatio = turnoverRatio;
+    }
+
+
+    /**
+     * Gets the turnoverRatioDate value for this AnnualReportSummary.
+     * 
+     * @return turnoverRatioDate
+     */
+    public java.lang.String getTurnoverRatioDate() {
+        return turnoverRatioDate;
+    }
+
+
+    /**
+     * Sets the turnoverRatioDate value for this AnnualReportSummary.
+     * 
+     * @param turnoverRatioDate
+     */
+    public void setTurnoverRatioDate(java.lang.String turnoverRatioDate) {
+        this.turnoverRatioDate = turnoverRatioDate;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof AnnualReportSummary)) return false;
+        AnnualReportSummary other = (AnnualReportSummary) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.fundAnnualReportDate==null && other.getFundAnnualReportDate()==null) || 
+             (this.fundAnnualReportDate!=null &&
+              this.fundAnnualReportDate.equals(other.getFundAnnualReportDate()))) &&
+            this.netIncomeRatio == other.getNetIncomeRatio() &&
+            this.annualReportGrossExpenseRatio == other.getAnnualReportGrossExpenseRatio() &&
+            this.annualReportNetExpenseRatio == other.getAnnualReportNetExpenseRatio() &&
+            this.averageNetAssets == other.getAverageNetAssets() &&
+            this.averageNetAssetsNumberOfMonthCovered == other.getAverageNetAssetsNumberOfMonthCovered() &&
+            this.grossIncome == other.getGrossIncome() &&
+            this.unrealizedCapitalGain == other.getUnrealizedCapitalGain() &&
+            this.realizedCapitalGain == other.getRealizedCapitalGain() &&
+            this.turnoverRatio == other.getTurnoverRatio() &&
+            ((this.turnoverRatioDate==null && other.getTurnoverRatioDate()==null) || 
+             (this.turnoverRatioDate!=null &&
+              this.turnoverRatioDate.equals(other.getTurnoverRatioDate())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getFundAnnualReportDate() != null) {
+            _hashCode += getFundAnnualReportDate().hashCode();
+        }
+        _hashCode += new Double(getNetIncomeRatio()).hashCode();
+        _hashCode += new Double(getAnnualReportGrossExpenseRatio()).hashCode();
+        _hashCode += new Double(getAnnualReportNetExpenseRatio()).hashCode();
+        _hashCode += new Double(getAverageNetAssets()).hashCode();
+        _hashCode += new Double(getAverageNetAssetsNumberOfMonthCovered()).hashCode();
+        _hashCode += new Double(getGrossIncome()).hashCode();
+        _hashCode += new Double(getUnrealizedCapitalGain()).hashCode();
+        _hashCode += new Double(getRealizedCapitalGain()).hashCode();
+        _hashCode += new Double(getTurnoverRatio()).hashCode();
+        if (getTurnoverRatioDate() != null) {
+            _hashCode += getTurnoverRatioDate().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(AnnualReportSummary.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AnnualReportSummary"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fundAnnualReportDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAnnualReportDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("netIncomeRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NetIncomeRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("annualReportGrossExpenseRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AnnualReportGrossExpenseRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("annualReportNetExpenseRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AnnualReportNetExpenseRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("averageNetAssets");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AverageNetAssets"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("averageNetAssetsNumberOfMonthCovered");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AverageNetAssetsNumberOfMonthCovered"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("grossIncome");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GrossIncome"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("unrealizedCapitalGain");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UnrealizedCapitalGain"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("realizedCapitalGain");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RealizedCapitalGain"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("turnoverRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TurnoverRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("turnoverRatioDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TurnoverRatioDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

@@ -1,0 +1,568 @@
+/**
+ * LoadAdjustedTrailingReturns.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class LoadAdjustedTrailingReturns  implements java.io.Serializable {
+    private java.lang.String returnsAsOfDate;
+
+    private double yearToDateLoadAdjustedReturn;
+
+    private double oneMonthLoadAdjustedReturn;
+
+    private double twoMonthLoadAdjustedReturn;
+
+    private double threeMonthLoadAdjustedReturn;
+
+    private double sixMonthLoadAdjustedReturn;
+
+    private double nineMonthLoadAdjustedReturn;
+
+    private double oneYearLoadAdjustedReturn;
+
+    private double twoYearLoadAdjustedReturn;
+
+    private double threeYearLoadAdjustedReturn;
+
+    private double fourYearLoadAdjustedReturn;
+
+    private double fiveYearLoadAdjustedReturn;
+
+    private double tenYearLoadAdjustedReturn;
+
+    private double fifteenYearLoadAdjustedReturn;
+
+    private double twentyYearLoadAdjustedReturn;
+
+    public LoadAdjustedTrailingReturns() {
+    }
+
+    public LoadAdjustedTrailingReturns(
+           java.lang.String returnsAsOfDate,
+           double yearToDateLoadAdjustedReturn,
+           double oneMonthLoadAdjustedReturn,
+           double twoMonthLoadAdjustedReturn,
+           double threeMonthLoadAdjustedReturn,
+           double sixMonthLoadAdjustedReturn,
+           double nineMonthLoadAdjustedReturn,
+           double oneYearLoadAdjustedReturn,
+           double twoYearLoadAdjustedReturn,
+           double threeYearLoadAdjustedReturn,
+           double fourYearLoadAdjustedReturn,
+           double fiveYearLoadAdjustedReturn,
+           double tenYearLoadAdjustedReturn,
+           double fifteenYearLoadAdjustedReturn,
+           double twentyYearLoadAdjustedReturn) {
+           this.returnsAsOfDate = returnsAsOfDate;
+           this.yearToDateLoadAdjustedReturn = yearToDateLoadAdjustedReturn;
+           this.oneMonthLoadAdjustedReturn = oneMonthLoadAdjustedReturn;
+           this.twoMonthLoadAdjustedReturn = twoMonthLoadAdjustedReturn;
+           this.threeMonthLoadAdjustedReturn = threeMonthLoadAdjustedReturn;
+           this.sixMonthLoadAdjustedReturn = sixMonthLoadAdjustedReturn;
+           this.nineMonthLoadAdjustedReturn = nineMonthLoadAdjustedReturn;
+           this.oneYearLoadAdjustedReturn = oneYearLoadAdjustedReturn;
+           this.twoYearLoadAdjustedReturn = twoYearLoadAdjustedReturn;
+           this.threeYearLoadAdjustedReturn = threeYearLoadAdjustedReturn;
+           this.fourYearLoadAdjustedReturn = fourYearLoadAdjustedReturn;
+           this.fiveYearLoadAdjustedReturn = fiveYearLoadAdjustedReturn;
+           this.tenYearLoadAdjustedReturn = tenYearLoadAdjustedReturn;
+           this.fifteenYearLoadAdjustedReturn = fifteenYearLoadAdjustedReturn;
+           this.twentyYearLoadAdjustedReturn = twentyYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the returnsAsOfDate value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return returnsAsOfDate
+     */
+    public java.lang.String getReturnsAsOfDate() {
+        return returnsAsOfDate;
+    }
+
+
+    /**
+     * Sets the returnsAsOfDate value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param returnsAsOfDate
+     */
+    public void setReturnsAsOfDate(java.lang.String returnsAsOfDate) {
+        this.returnsAsOfDate = returnsAsOfDate;
+    }
+
+
+    /**
+     * Gets the yearToDateLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return yearToDateLoadAdjustedReturn
+     */
+    public double getYearToDateLoadAdjustedReturn() {
+        return yearToDateLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the yearToDateLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param yearToDateLoadAdjustedReturn
+     */
+    public void setYearToDateLoadAdjustedReturn(double yearToDateLoadAdjustedReturn) {
+        this.yearToDateLoadAdjustedReturn = yearToDateLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the oneMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return oneMonthLoadAdjustedReturn
+     */
+    public double getOneMonthLoadAdjustedReturn() {
+        return oneMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the oneMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param oneMonthLoadAdjustedReturn
+     */
+    public void setOneMonthLoadAdjustedReturn(double oneMonthLoadAdjustedReturn) {
+        this.oneMonthLoadAdjustedReturn = oneMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the twoMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return twoMonthLoadAdjustedReturn
+     */
+    public double getTwoMonthLoadAdjustedReturn() {
+        return twoMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the twoMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param twoMonthLoadAdjustedReturn
+     */
+    public void setTwoMonthLoadAdjustedReturn(double twoMonthLoadAdjustedReturn) {
+        this.twoMonthLoadAdjustedReturn = twoMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the threeMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return threeMonthLoadAdjustedReturn
+     */
+    public double getThreeMonthLoadAdjustedReturn() {
+        return threeMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the threeMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param threeMonthLoadAdjustedReturn
+     */
+    public void setThreeMonthLoadAdjustedReturn(double threeMonthLoadAdjustedReturn) {
+        this.threeMonthLoadAdjustedReturn = threeMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the sixMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return sixMonthLoadAdjustedReturn
+     */
+    public double getSixMonthLoadAdjustedReturn() {
+        return sixMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the sixMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param sixMonthLoadAdjustedReturn
+     */
+    public void setSixMonthLoadAdjustedReturn(double sixMonthLoadAdjustedReturn) {
+        this.sixMonthLoadAdjustedReturn = sixMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the nineMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return nineMonthLoadAdjustedReturn
+     */
+    public double getNineMonthLoadAdjustedReturn() {
+        return nineMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the nineMonthLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param nineMonthLoadAdjustedReturn
+     */
+    public void setNineMonthLoadAdjustedReturn(double nineMonthLoadAdjustedReturn) {
+        this.nineMonthLoadAdjustedReturn = nineMonthLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the oneYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return oneYearLoadAdjustedReturn
+     */
+    public double getOneYearLoadAdjustedReturn() {
+        return oneYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the oneYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param oneYearLoadAdjustedReturn
+     */
+    public void setOneYearLoadAdjustedReturn(double oneYearLoadAdjustedReturn) {
+        this.oneYearLoadAdjustedReturn = oneYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the twoYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return twoYearLoadAdjustedReturn
+     */
+    public double getTwoYearLoadAdjustedReturn() {
+        return twoYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the twoYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param twoYearLoadAdjustedReturn
+     */
+    public void setTwoYearLoadAdjustedReturn(double twoYearLoadAdjustedReturn) {
+        this.twoYearLoadAdjustedReturn = twoYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the threeYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return threeYearLoadAdjustedReturn
+     */
+    public double getThreeYearLoadAdjustedReturn() {
+        return threeYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the threeYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param threeYearLoadAdjustedReturn
+     */
+    public void setThreeYearLoadAdjustedReturn(double threeYearLoadAdjustedReturn) {
+        this.threeYearLoadAdjustedReturn = threeYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the fourYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return fourYearLoadAdjustedReturn
+     */
+    public double getFourYearLoadAdjustedReturn() {
+        return fourYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the fourYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param fourYearLoadAdjustedReturn
+     */
+    public void setFourYearLoadAdjustedReturn(double fourYearLoadAdjustedReturn) {
+        this.fourYearLoadAdjustedReturn = fourYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the fiveYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return fiveYearLoadAdjustedReturn
+     */
+    public double getFiveYearLoadAdjustedReturn() {
+        return fiveYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the fiveYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param fiveYearLoadAdjustedReturn
+     */
+    public void setFiveYearLoadAdjustedReturn(double fiveYearLoadAdjustedReturn) {
+        this.fiveYearLoadAdjustedReturn = fiveYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the tenYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return tenYearLoadAdjustedReturn
+     */
+    public double getTenYearLoadAdjustedReturn() {
+        return tenYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the tenYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param tenYearLoadAdjustedReturn
+     */
+    public void setTenYearLoadAdjustedReturn(double tenYearLoadAdjustedReturn) {
+        this.tenYearLoadAdjustedReturn = tenYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the fifteenYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return fifteenYearLoadAdjustedReturn
+     */
+    public double getFifteenYearLoadAdjustedReturn() {
+        return fifteenYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the fifteenYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param fifteenYearLoadAdjustedReturn
+     */
+    public void setFifteenYearLoadAdjustedReturn(double fifteenYearLoadAdjustedReturn) {
+        this.fifteenYearLoadAdjustedReturn = fifteenYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Gets the twentyYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @return twentyYearLoadAdjustedReturn
+     */
+    public double getTwentyYearLoadAdjustedReturn() {
+        return twentyYearLoadAdjustedReturn;
+    }
+
+
+    /**
+     * Sets the twentyYearLoadAdjustedReturn value for this LoadAdjustedTrailingReturns.
+     * 
+     * @param twentyYearLoadAdjustedReturn
+     */
+    public void setTwentyYearLoadAdjustedReturn(double twentyYearLoadAdjustedReturn) {
+        this.twentyYearLoadAdjustedReturn = twentyYearLoadAdjustedReturn;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof LoadAdjustedTrailingReturns)) return false;
+        LoadAdjustedTrailingReturns other = (LoadAdjustedTrailingReturns) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.returnsAsOfDate==null && other.getReturnsAsOfDate()==null) || 
+             (this.returnsAsOfDate!=null &&
+              this.returnsAsOfDate.equals(other.getReturnsAsOfDate()))) &&
+            this.yearToDateLoadAdjustedReturn == other.getYearToDateLoadAdjustedReturn() &&
+            this.oneMonthLoadAdjustedReturn == other.getOneMonthLoadAdjustedReturn() &&
+            this.twoMonthLoadAdjustedReturn == other.getTwoMonthLoadAdjustedReturn() &&
+            this.threeMonthLoadAdjustedReturn == other.getThreeMonthLoadAdjustedReturn() &&
+            this.sixMonthLoadAdjustedReturn == other.getSixMonthLoadAdjustedReturn() &&
+            this.nineMonthLoadAdjustedReturn == other.getNineMonthLoadAdjustedReturn() &&
+            this.oneYearLoadAdjustedReturn == other.getOneYearLoadAdjustedReturn() &&
+            this.twoYearLoadAdjustedReturn == other.getTwoYearLoadAdjustedReturn() &&
+            this.threeYearLoadAdjustedReturn == other.getThreeYearLoadAdjustedReturn() &&
+            this.fourYearLoadAdjustedReturn == other.getFourYearLoadAdjustedReturn() &&
+            this.fiveYearLoadAdjustedReturn == other.getFiveYearLoadAdjustedReturn() &&
+            this.tenYearLoadAdjustedReturn == other.getTenYearLoadAdjustedReturn() &&
+            this.fifteenYearLoadAdjustedReturn == other.getFifteenYearLoadAdjustedReturn() &&
+            this.twentyYearLoadAdjustedReturn == other.getTwentyYearLoadAdjustedReturn();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getReturnsAsOfDate() != null) {
+            _hashCode += getReturnsAsOfDate().hashCode();
+        }
+        _hashCode += new Double(getYearToDateLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getOneMonthLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getTwoMonthLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getThreeMonthLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getSixMonthLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getNineMonthLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getOneYearLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getTwoYearLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getThreeYearLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getFourYearLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getFiveYearLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getTenYearLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getFifteenYearLoadAdjustedReturn()).hashCode();
+        _hashCode += new Double(getTwentyYearLoadAdjustedReturn()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(LoadAdjustedTrailingReturns.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LoadAdjustedTrailingReturns"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("returnsAsOfDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ReturnsAsOfDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("yearToDateLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "YearToDateLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("oneMonthLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OneMonthLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("twoMonthLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TwoMonthLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("threeMonthLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ThreeMonthLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("sixMonthLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SixMonthLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nineMonthLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NineMonthLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("oneYearLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OneYearLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("twoYearLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TwoYearLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("threeYearLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ThreeYearLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fourYearLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FourYearLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fiveYearLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FiveYearLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tenYearLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TenYearLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fifteenYearLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FifteenYearLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("twentyYearLoadAdjustedReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TwentyYearLoadAdjustedReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

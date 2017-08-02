@@ -1,0 +1,69 @@
+package routines;
+
+public class SFDC {
+    
+    public static String talendType(String type){
+    	String returnString = null;
+    	
+    	if(type.equals("id")
+    		||type.equals("reference")
+    		||type.equals("picklist")
+    		||type.equals("textarea")	
+    		||type.equals("phone")
+    		||type.equals("email")
+    		||type.equals("url")
+    		||type.equals("multipicklist")
+    		||type.equals("string"))
+    		returnString = "id_String";
+    	else if(type.equals("boolean"))
+    		returnString = "id_Boolean";
+    	else if(type.equals("currency")
+    		||type.equals("double"))
+    		returnString = "id_Double";
+    	else if(type.equals("date")
+    		||type.equals("datetime"))
+    		returnString = "id_Date";
+    	else if(type.equals("int"))
+    		returnString = "id_Integer";
+    	else
+    		returnString = type;
+    	
+    	return returnString;
+    }
+    
+    
+    public static String oracleType(String type, String sfdcType){
+    	String returnString = null;
+    	
+    	if(type.equals("id_String"))
+    		returnString = "VARCHAR";
+    	else if(type.equals("id_Boolean"))
+    		returnString = "VARCHAR2";
+    	else if(type.equals("id_Double"))
+    		returnString = "DOUBLE PRECISION";
+    	else if(type.equals("id_Date")&&sfdcType.equals("date"))
+    		returnString = "DATE";
+    	else if(type.equals("id_Date")&&sfdcType.equals("datetime"))
+    		returnString = "TIMESTAMP WITH TIME ZONE";
+    	else if(type.equals("id_Integer"))
+    		returnString = "INT";
+    	else
+    		returnString = "id_Unknown";
+    	
+    	return returnString;
+    }
+    
+    public static String oracleColumnName(String name){
+    	String returnString = null;
+    	
+    	if(name.length() > 30){
+    		returnString = name.substring(0, 27);
+    		String hash = "" + name.substring(27, name.length()).hashCode();
+    		hash = hash.substring(hash.length() - 3);
+    		returnString += hash;
+    	}
+    	else
+    		returnString = name;
+    	return returnString;
+    }
+}

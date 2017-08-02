@@ -1,0 +1,89 @@
+package routines;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.UUID;
+
+/*
+ * Util class used to generate JQL query for the given category
+ */
+public class Utils {
+
+	//Returns JQL query for the given category
+	//@category - category name in string e.g, Bussiness Services 
+    public static String getJQLQueryForCategory(String category){
+    	Date today = new Date();
+    	String previousMonthFomatter = "yyyy/MM/dd";
+    	SimpleDateFormat formatter =new SimpleDateFormat(previousMonthFomatter);
+    	System.out.println("category='Business Services' AND status='Resolved' AND updated <= '"+formatter.format(getEndDate())+"' AND updated >= '"+formatter.format(getStartDate())+"'");
+		return "category='Business Services' AND status='Resolved' AND updated <= '"+formatter.format(getEndDate())+"' AND updated >= '"+formatter.format(getStartDate())+"'";
+    }
+    
+    //Returns starting date of the month based on current date.
+    //If the current date is 1, this method will generate previous months starting date
+    public static Date getStartDate(){
+    	Date today = new Date();
+    	Calendar c=Calendar.getInstance();
+		if(today.getDate() == 1){
+			c.add(Calendar.MONTH, -1);
+		}
+		c.set(c.get(c.YEAR),c.get(c.MONTH),1);
+		c.set(Calendar.HOUR_OF_DAY, 0);
+		c.set(Calendar.MINUTE, 0);
+		c.set(Calendar.SECOND, 0);
+		return c.getTime();
+    }
+    
+    //Returns ending date of the month based on current date.
+    //If the current date is 1, this method will generate previous months ending date
+    public static Date getEndDate(){
+    	Date today = new Date();
+    	Calendar c=Calendar.getInstance();
+		
+		if(today.getDate() == 1){
+			c.set(c.get(c.YEAR),c.get(c.MONTH),1);
+			c.add(Calendar.MONTH, -1);
+			c.set(Calendar.DATE, c.getActualMaximum(Calendar.DATE));
+			c.set(Calendar.HOUR_OF_DAY, 23);
+			c.set(Calendar.MINUTE, 59);
+			c.set(Calendar.SECOND, 59);
+		}
+
+		return c.getTime();
+    }
+    
+    //Generates globally unique ID
+    public static String getNewGUID(){
+    	return UUID.randomUUID().toString();
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

@@ -1,0 +1,286 @@
+/**
+ * FundRedemptionFees.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class FundRedemptionFees  extends routines.Common  implements java.io.Serializable {
+    private routines.Fund fund;
+
+    private java.lang.Double maxRedemptionFee;
+
+    private java.lang.Double shortTermRedemptionPeriod;
+
+    private java.lang.String shortTermRedemptionPeriodUnit;
+
+    private routines.RedemptionFee[] redemptionFees;
+
+    public FundRedemptionFees() {
+    }
+
+    public FundRedemptionFees(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           routines.Fund fund,
+           java.lang.Double maxRedemptionFee,
+           java.lang.Double shortTermRedemptionPeriod,
+           java.lang.String shortTermRedemptionPeriodUnit,
+           routines.RedemptionFee[] redemptionFees) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.fund = fund;
+        this.maxRedemptionFee = maxRedemptionFee;
+        this.shortTermRedemptionPeriod = shortTermRedemptionPeriod;
+        this.shortTermRedemptionPeriodUnit = shortTermRedemptionPeriodUnit;
+        this.redemptionFees = redemptionFees;
+    }
+
+
+    /**
+     * Gets the fund value for this FundRedemptionFees.
+     * 
+     * @return fund
+     */
+    public routines.Fund getFund() {
+        return fund;
+    }
+
+
+    /**
+     * Sets the fund value for this FundRedemptionFees.
+     * 
+     * @param fund
+     */
+    public void setFund(routines.Fund fund) {
+        this.fund = fund;
+    }
+
+
+    /**
+     * Gets the maxRedemptionFee value for this FundRedemptionFees.
+     * 
+     * @return maxRedemptionFee
+     */
+    public java.lang.Double getMaxRedemptionFee() {
+        return maxRedemptionFee;
+    }
+
+
+    /**
+     * Sets the maxRedemptionFee value for this FundRedemptionFees.
+     * 
+     * @param maxRedemptionFee
+     */
+    public void setMaxRedemptionFee(java.lang.Double maxRedemptionFee) {
+        this.maxRedemptionFee = maxRedemptionFee;
+    }
+
+
+    /**
+     * Gets the shortTermRedemptionPeriod value for this FundRedemptionFees.
+     * 
+     * @return shortTermRedemptionPeriod
+     */
+    public java.lang.Double getShortTermRedemptionPeriod() {
+        return shortTermRedemptionPeriod;
+    }
+
+
+    /**
+     * Sets the shortTermRedemptionPeriod value for this FundRedemptionFees.
+     * 
+     * @param shortTermRedemptionPeriod
+     */
+    public void setShortTermRedemptionPeriod(java.lang.Double shortTermRedemptionPeriod) {
+        this.shortTermRedemptionPeriod = shortTermRedemptionPeriod;
+    }
+
+
+    /**
+     * Gets the shortTermRedemptionPeriodUnit value for this FundRedemptionFees.
+     * 
+     * @return shortTermRedemptionPeriodUnit
+     */
+    public java.lang.String getShortTermRedemptionPeriodUnit() {
+        return shortTermRedemptionPeriodUnit;
+    }
+
+
+    /**
+     * Sets the shortTermRedemptionPeriodUnit value for this FundRedemptionFees.
+     * 
+     * @param shortTermRedemptionPeriodUnit
+     */
+    public void setShortTermRedemptionPeriodUnit(java.lang.String shortTermRedemptionPeriodUnit) {
+        this.shortTermRedemptionPeriodUnit = shortTermRedemptionPeriodUnit;
+    }
+
+
+    /**
+     * Gets the redemptionFees value for this FundRedemptionFees.
+     * 
+     * @return redemptionFees
+     */
+    public routines.RedemptionFee[] getRedemptionFees() {
+        return redemptionFees;
+    }
+
+
+    /**
+     * Sets the redemptionFees value for this FundRedemptionFees.
+     * 
+     * @param redemptionFees
+     */
+    public void setRedemptionFees(routines.RedemptionFee[] redemptionFees) {
+        this.redemptionFees = redemptionFees;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof FundRedemptionFees)) return false;
+        FundRedemptionFees other = (FundRedemptionFees) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.fund==null && other.getFund()==null) || 
+             (this.fund!=null &&
+              this.fund.equals(other.getFund()))) &&
+            ((this.maxRedemptionFee==null && other.getMaxRedemptionFee()==null) || 
+             (this.maxRedemptionFee!=null &&
+              this.maxRedemptionFee.equals(other.getMaxRedemptionFee()))) &&
+            ((this.shortTermRedemptionPeriod==null && other.getShortTermRedemptionPeriod()==null) || 
+             (this.shortTermRedemptionPeriod!=null &&
+              this.shortTermRedemptionPeriod.equals(other.getShortTermRedemptionPeriod()))) &&
+            ((this.shortTermRedemptionPeriodUnit==null && other.getShortTermRedemptionPeriodUnit()==null) || 
+             (this.shortTermRedemptionPeriodUnit!=null &&
+              this.shortTermRedemptionPeriodUnit.equals(other.getShortTermRedemptionPeriodUnit()))) &&
+            ((this.redemptionFees==null && other.getRedemptionFees()==null) || 
+             (this.redemptionFees!=null &&
+              java.util.Arrays.equals(this.redemptionFees, other.getRedemptionFees())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getFund() != null) {
+            _hashCode += getFund().hashCode();
+        }
+        if (getMaxRedemptionFee() != null) {
+            _hashCode += getMaxRedemptionFee().hashCode();
+        }
+        if (getShortTermRedemptionPeriod() != null) {
+            _hashCode += getShortTermRedemptionPeriod().hashCode();
+        }
+        if (getShortTermRedemptionPeriodUnit() != null) {
+            _hashCode += getShortTermRedemptionPeriodUnit().hashCode();
+        }
+        if (getRedemptionFees() != null) {
+            for (int i=0;
+                 i<java.lang.reflect.Array.getLength(getRedemptionFees());
+                 i++) {
+                java.lang.Object obj = java.lang.reflect.Array.get(getRedemptionFees(), i);
+                if (obj != null &&
+                    !obj.getClass().isArray()) {
+                    _hashCode += obj.hashCode();
+                }
+            }
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(FundRedemptionFees.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundRedemptionFees"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("maxRedemptionFee");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MaxRedemptionFee"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("shortTermRedemptionPeriod");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShortTermRedemptionPeriod"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("shortTermRedemptionPeriodUnit");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShortTermRedemptionPeriodUnit"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("redemptionFees");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RedemptionFees"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RedemptionFee"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        elemField.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RedemptionFee"));
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

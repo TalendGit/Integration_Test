@@ -1,0 +1,231 @@
+/**
+ * CompanyProfile.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class CompanyProfile  implements java.io.Serializable {
+    private java.lang.String registrationCompanyName;
+
+    private java.lang.String registrationCompanyAddress;
+
+    private java.lang.String registrationCompanyPhone;
+
+    private java.lang.String registrationCompanyWebsite;
+
+    public CompanyProfile() {
+    }
+
+    public CompanyProfile(
+           java.lang.String registrationCompanyName,
+           java.lang.String registrationCompanyAddress,
+           java.lang.String registrationCompanyPhone,
+           java.lang.String registrationCompanyWebsite) {
+           this.registrationCompanyName = registrationCompanyName;
+           this.registrationCompanyAddress = registrationCompanyAddress;
+           this.registrationCompanyPhone = registrationCompanyPhone;
+           this.registrationCompanyWebsite = registrationCompanyWebsite;
+    }
+
+
+    /**
+     * Gets the registrationCompanyName value for this CompanyProfile.
+     * 
+     * @return registrationCompanyName
+     */
+    public java.lang.String getRegistrationCompanyName() {
+        return registrationCompanyName;
+    }
+
+
+    /**
+     * Sets the registrationCompanyName value for this CompanyProfile.
+     * 
+     * @param registrationCompanyName
+     */
+    public void setRegistrationCompanyName(java.lang.String registrationCompanyName) {
+        this.registrationCompanyName = registrationCompanyName;
+    }
+
+
+    /**
+     * Gets the registrationCompanyAddress value for this CompanyProfile.
+     * 
+     * @return registrationCompanyAddress
+     */
+    public java.lang.String getRegistrationCompanyAddress() {
+        return registrationCompanyAddress;
+    }
+
+
+    /**
+     * Sets the registrationCompanyAddress value for this CompanyProfile.
+     * 
+     * @param registrationCompanyAddress
+     */
+    public void setRegistrationCompanyAddress(java.lang.String registrationCompanyAddress) {
+        this.registrationCompanyAddress = registrationCompanyAddress;
+    }
+
+
+    /**
+     * Gets the registrationCompanyPhone value for this CompanyProfile.
+     * 
+     * @return registrationCompanyPhone
+     */
+    public java.lang.String getRegistrationCompanyPhone() {
+        return registrationCompanyPhone;
+    }
+
+
+    /**
+     * Sets the registrationCompanyPhone value for this CompanyProfile.
+     * 
+     * @param registrationCompanyPhone
+     */
+    public void setRegistrationCompanyPhone(java.lang.String registrationCompanyPhone) {
+        this.registrationCompanyPhone = registrationCompanyPhone;
+    }
+
+
+    /**
+     * Gets the registrationCompanyWebsite value for this CompanyProfile.
+     * 
+     * @return registrationCompanyWebsite
+     */
+    public java.lang.String getRegistrationCompanyWebsite() {
+        return registrationCompanyWebsite;
+    }
+
+
+    /**
+     * Sets the registrationCompanyWebsite value for this CompanyProfile.
+     * 
+     * @param registrationCompanyWebsite
+     */
+    public void setRegistrationCompanyWebsite(java.lang.String registrationCompanyWebsite) {
+        this.registrationCompanyWebsite = registrationCompanyWebsite;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof CompanyProfile)) return false;
+        CompanyProfile other = (CompanyProfile) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.registrationCompanyName==null && other.getRegistrationCompanyName()==null) || 
+             (this.registrationCompanyName!=null &&
+              this.registrationCompanyName.equals(other.getRegistrationCompanyName()))) &&
+            ((this.registrationCompanyAddress==null && other.getRegistrationCompanyAddress()==null) || 
+             (this.registrationCompanyAddress!=null &&
+              this.registrationCompanyAddress.equals(other.getRegistrationCompanyAddress()))) &&
+            ((this.registrationCompanyPhone==null && other.getRegistrationCompanyPhone()==null) || 
+             (this.registrationCompanyPhone!=null &&
+              this.registrationCompanyPhone.equals(other.getRegistrationCompanyPhone()))) &&
+            ((this.registrationCompanyWebsite==null && other.getRegistrationCompanyWebsite()==null) || 
+             (this.registrationCompanyWebsite!=null &&
+              this.registrationCompanyWebsite.equals(other.getRegistrationCompanyWebsite())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getRegistrationCompanyName() != null) {
+            _hashCode += getRegistrationCompanyName().hashCode();
+        }
+        if (getRegistrationCompanyAddress() != null) {
+            _hashCode += getRegistrationCompanyAddress().hashCode();
+        }
+        if (getRegistrationCompanyPhone() != null) {
+            _hashCode += getRegistrationCompanyPhone().hashCode();
+        }
+        if (getRegistrationCompanyWebsite() != null) {
+            _hashCode += getRegistrationCompanyWebsite().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(CompanyProfile.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CompanyProfile"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("registrationCompanyName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RegistrationCompanyName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("registrationCompanyAddress");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RegistrationCompanyAddress"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("registrationCompanyPhone");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RegistrationCompanyPhone"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("registrationCompanyWebsite");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "RegistrationCompanyWebsite"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

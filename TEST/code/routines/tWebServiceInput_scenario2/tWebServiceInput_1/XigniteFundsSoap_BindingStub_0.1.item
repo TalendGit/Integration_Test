@@ -1,0 +1,1718 @@
+/**
+ * XigniteFundsSoap_BindingStub.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class XigniteFundsSoap_BindingStub extends org.apache.axis.client.Stub implements routines.XigniteFundsSoap_PortType {
+    private java.util.Vector cachedSerClasses = new java.util.Vector();
+    private java.util.Vector cachedSerQNames = new java.util.Vector();
+    private java.util.Vector cachedSerFactories = new java.util.Vector();
+    private java.util.Vector cachedDeserFactories = new java.util.Vector();
+
+    static org.apache.axis.description.OperationDesc [] _operations;
+
+    static {
+        _operations = new org.apache.axis.description.OperationDesc[26];
+        _initOperationDesc1();
+        _initOperationDesc2();
+        _initOperationDesc3();
+    }
+
+    private static void _initOperationDesc1(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetSymbols");
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SymbolList"));
+        oper.setReturnClass(routines.SymbolList.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetSymbolsResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[0] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetSymbolsByCountry");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Country"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "MutualFundCountries"), routines.MutualFundCountries.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SymbolList"));
+        oper.setReturnClass(routines.SymbolList.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetSymbolsByCountryResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[1] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetLatestNAV");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setReturnClass(routines.FundNAV.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLatestNAVResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[2] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetLastNAV");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setReturnClass(routines.FundNAV.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLastNAVResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[3] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetLastNAVs");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundNAV"));
+        oper.setReturnClass(routines.FundNAV[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLastNAVsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[4] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetLatestNAVs");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundNAV"));
+        oper.setReturnClass(routines.FundNAV[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLatestNAVsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[5] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetHistoricalNAV");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AsOfDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setReturnClass(routines.FundNAV.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[6] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetHistoricalNAVs");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AsOfDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundNAV"));
+        oper.setReturnClass(routines.FundNAV[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[7] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetHistoricalNAVsAsOf");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "dateTime"), java.util.Calendar.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PeriodType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "PeriodTypes"), routines.PeriodTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Periods"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAVs"));
+        oper.setReturnClass(routines.FundNAVs.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsAsOfResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[8] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetHistoricalNAVsRange");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StartDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAVs"));
+        oper.setReturnClass(routines.FundNAVs.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsRangeResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[9] = oper;
+
+    }
+
+    private static void _initOperationDesc2(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetTopGainers");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FromDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ToDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Count"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfTop"));
+        oper.setReturnClass(routines.Top[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetTopGainersResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Top"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[10] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetTopLosers");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FromDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ToDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Count"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfTop"));
+        oper.setReturnClass(routines.Top[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetTopLosersResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Top"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[11] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("DrawFundChartCustom");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdditionalSymbols"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StartDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Style"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockChartStyles"), routines.StockChartStyles.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Width"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Height"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Design"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "ChartDesign"), routines.ChartDesign.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundChart"));
+        oper.setReturnClass(routines.FundChart.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DrawFundChartCustomResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[12] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("DrawFundChart");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdditionalSymbols"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StartDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Style"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockChartStyles"), routines.StockChartStyles.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Width"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Height"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundChart"));
+        oper.setReturnClass(routines.FundChart.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DrawFundChartResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[13] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("DrawFundChartPreset");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdditionalSymbols"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StartDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Style"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockChartStyles"), routines.StockChartStyles.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Width"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Height"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Preset"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundChart"));
+        oper.setReturnClass(routines.FundChart.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DrawFundChartPresetResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[14] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetChartDesign");
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ChartDesign"));
+        oper.setReturnClass(routines.ChartDesign.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetChartDesignResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[15] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetDividendHistory");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DividendHistory"));
+        oper.setReturnClass(routines.DividendHistory.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetDividendHistoryResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[16] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetNewSymbols");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FromDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ToDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfNewFund"));
+        oper.setReturnClass(routines.NewFund[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetNewSymbolsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NewFund"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[17] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetLastNAVAdjusted");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethod"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethods"), java.lang.String[].class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setReturnClass(routines.FundNAV.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLastNAVAdjustedResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[18] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetLastNAVsAdjusted");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethod"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethods"), java.lang.String[].class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundNAV"));
+        oper.setReturnClass(routines.FundNAV[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLastNAVsAdjustedResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[19] = oper;
+
+    }
+
+    private static void _initOperationDesc3(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetLatestNAVAdjusted");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethod"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethods"), java.lang.String[].class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setReturnClass(routines.FundNAV.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLatestNAVAdjustedResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[20] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetLatestNAVsAdjusted");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethod"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethods"), java.lang.String[].class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundNAV"));
+        oper.setReturnClass(routines.FundNAV[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLatestNAVsAdjustedResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[21] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetHistoricalNAVAdjusted");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AsOfDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethod"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethods"), java.lang.String[].class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setReturnClass(routines.FundNAV.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVAdjustedResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[22] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetHistoricalNAVsAdjusted");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AsOfDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethod"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethods"), java.lang.String[].class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundNAV"));
+        oper.setReturnClass(routines.FundNAV[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsAdjustedResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[23] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetHistoricalNAVsAsOfAdjusted");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "dateTime"), java.util.Calendar.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "PeriodType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "PeriodTypes"), routines.PeriodTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Periods"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethod"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethods"), java.lang.String[].class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAVs"));
+        oper.setReturnClass(routines.FundNAVs.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsAsOfAdjustedResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[24] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetHistoricalNAVsRangeAdjusted");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StartDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndDate"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethod"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethods"), java.lang.String[].class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAVs"));
+        oper.setReturnClass(routines.FundNAVs.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsRangeAdjustedResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[25] = oper;
+
+    }
+
+    public XigniteFundsSoap_BindingStub() throws org.apache.axis.AxisFault {
+         this(null);
+    }
+
+    public XigniteFundsSoap_BindingStub(java.net.URL endpointURL, javax.xml.rpc.Service service) throws org.apache.axis.AxisFault {
+         this(service);
+         super.cachedEndpoint = endpointURL;
+    }
+
+    public XigniteFundsSoap_BindingStub(javax.xml.rpc.Service service) throws org.apache.axis.AxisFault {
+        if (service == null) {
+            super.service = new org.apache.axis.client.Service();
+        } else {
+            super.service = service;
+        }
+        ((org.apache.axis.client.Service)super.service).setTypeMappingVersion("1.2");
+            java.lang.Class cls;
+            javax.xml.namespace.QName qName;
+            javax.xml.namespace.QName qName2;
+            java.lang.Class beansf = org.apache.axis.encoding.ser.BeanSerializerFactory.class;
+            java.lang.Class beandf = org.apache.axis.encoding.ser.BeanDeserializerFactory.class;
+            java.lang.Class enumsf = org.apache.axis.encoding.ser.EnumSerializerFactory.class;
+            java.lang.Class enumdf = org.apache.axis.encoding.ser.EnumDeserializerFactory.class;
+            java.lang.Class arraysf = org.apache.axis.encoding.ser.ArraySerializerFactory.class;
+            java.lang.Class arraydf = org.apache.axis.encoding.ser.ArrayDeserializerFactory.class;
+            java.lang.Class simplesf = org.apache.axis.encoding.ser.SimpleSerializerFactory.class;
+            java.lang.Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
+            java.lang.Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
+            java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "AdjustmentMethods");
+            cachedSerQNames.add(qName);
+            cls = java.lang.String[].class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(simplelistsf);
+            cachedDeserFactories.add(simplelistdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfDividend");
+            cachedSerQNames.add(qName);
+            cls = routines.Dividend[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Dividend");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Dividend");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundNAV");
+            cachedSerQNames.add(qName);
+            cls = routines.FundNAV[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfNewFund");
+            cachedSerQNames.add(qName);
+            cls = routines.NewFund[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "NewFund");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "NewFund");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfString");
+            cachedSerQNames.add(qName);
+            cls = java.lang.String[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "string");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfTop");
+            cachedSerQNames.add(qName);
+            cls = routines.Top[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Top");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Top");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ChartDesign");
+            cachedSerQNames.add(qName);
+            cls = routines.ChartDesign.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Common");
+            cachedSerQNames.add(qName);
+            cls = routines.Common.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Dividend");
+            cachedSerQNames.add(qName);
+            cls = routines.Dividend.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "DividendHistory");
+            cachedSerQNames.add(qName);
+            cls = routines.DividendHistory.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundChart");
+            cachedSerQNames.add(qName);
+            cls = routines.FundChart.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAV");
+            cachedSerQNames.add(qName);
+            cls = routines.FundNAV.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundNAVs");
+            cachedSerQNames.add(qName);
+            cls = routines.FundNAVs.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "HorzAlign");
+            cachedSerQNames.add(qName);
+            cls = routines.HorzAlign.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes");
+            cachedSerQNames.add(qName);
+            cls = routines.IdentifierTypes.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ImageFrameType");
+            cachedSerQNames.add(qName);
+            cls = routines.ImageFrameType.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "LinePattern");
+            cachedSerQNames.add(qName);
+            cls = routines.LinePattern.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "MutualFundCountries");
+            cachedSerQNames.add(qName);
+            cls = routines.MutualFundCountries.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "NewFund");
+            cachedSerQNames.add(qName);
+            cls = routines.NewFund.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "OutcomeTypes");
+            cachedSerQNames.add(qName);
+            cls = routines.OutcomeTypes.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "PeriodTypes");
+            cachedSerQNames.add(qName);
+            cls = routines.PeriodTypes.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "PredefinedLightModel");
+            cachedSerQNames.add(qName);
+            cls = routines.PredefinedLightModel.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "PredefinedProjection");
+            cachedSerQNames.add(qName);
+            cls = routines.PredefinedProjection.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Security");
+            cachedSerQNames.add(qName);
+            cls = routines.Security.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockChart");
+            cachedSerQNames.add(qName);
+            cls = routines.StockChart.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockChartStyles");
+            cachedSerQNames.add(qName);
+            cls = routines.StockChartStyles.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "SymbolList");
+            cachedSerQNames.add(qName);
+            cls = routines.SymbolList.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "TickPeriod");
+            cachedSerQNames.add(qName);
+            cls = routines.TickPeriod.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Top");
+            cachedSerQNames.add(qName);
+            cls = routines.Top.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "TopTypes");
+            cachedSerQNames.add(qName);
+            cls = routines.TopTypes.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+    }
+
+    protected org.apache.axis.client.Call createCall() throws java.rmi.RemoteException {
+        try {
+            org.apache.axis.client.Call _call = super._createCall();
+            if (super.maintainSessionSet) {
+                _call.setMaintainSession(super.maintainSession);
+            }
+            if (super.cachedUsername != null) {
+                _call.setUsername(super.cachedUsername);
+            }
+            if (super.cachedPassword != null) {
+                _call.setPassword(super.cachedPassword);
+            }
+            if (super.cachedEndpoint != null) {
+                _call.setTargetEndpointAddress(super.cachedEndpoint);
+            }
+            if (super.cachedTimeout != null) {
+                _call.setTimeout(super.cachedTimeout);
+            }
+            if (super.cachedPortName != null) {
+                _call.setPortName(super.cachedPortName);
+            }
+            java.util.Enumeration keys = super.cachedProperties.keys();
+            while (keys.hasMoreElements()) {
+                java.lang.String key = (java.lang.String) keys.nextElement();
+                _call.setProperty(key, super.cachedProperties.get(key));
+            }
+            // All the type mapping information is registered
+            // when the first call is made.
+            // The type mapping information is actually registered in
+            // the TypeMappingRegistry of the service, which
+            // is the reason why registration is only needed for the first call.
+            synchronized (this) {
+                if (firstCall()) {
+                    // must set encoding style before registering serializers
+                    _call.setEncodingStyle(null);
+                    for (int i = 0; i < cachedSerFactories.size(); ++i) {
+                        java.lang.Class cls = (java.lang.Class) cachedSerClasses.get(i);
+                        javax.xml.namespace.QName qName =
+                                (javax.xml.namespace.QName) cachedSerQNames.get(i);
+                        java.lang.Object x = cachedSerFactories.get(i);
+                        if (x instanceof Class) {
+                            java.lang.Class sf = (java.lang.Class)
+                                 cachedSerFactories.get(i);
+                            java.lang.Class df = (java.lang.Class)
+                                 cachedDeserFactories.get(i);
+                            _call.registerTypeMapping(cls, qName, sf, df, false);
+                        }
+                        else if (x instanceof javax.xml.rpc.encoding.SerializerFactory) {
+                            org.apache.axis.encoding.SerializerFactory sf = (org.apache.axis.encoding.SerializerFactory)
+                                 cachedSerFactories.get(i);
+                            org.apache.axis.encoding.DeserializerFactory df = (org.apache.axis.encoding.DeserializerFactory)
+                                 cachedDeserFactories.get(i);
+                            _call.registerTypeMapping(cls, qName, sf, df, false);
+                        }
+                    }
+                }
+            }
+            return _call;
+        }
+        catch (java.lang.Throwable _t) {
+            throw new org.apache.axis.AxisFault("Failure trying to get the Call object", _t);
+        }
+    }
+
+    public routines.SymbolList getSymbols() throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[0]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetSymbols");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetSymbols"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.SymbolList) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.SymbolList) org.apache.axis.utils.JavaUtils.convert(_resp, routines.SymbolList.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.SymbolList getSymbolsByCountry(routines.MutualFundCountries country) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[1]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetSymbolsByCountry");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetSymbolsByCountry"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {country});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.SymbolList) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.SymbolList) org.apache.axis.utils.JavaUtils.convert(_resp, routines.SymbolList.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV getLatestNAV(java.lang.String identifier, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[2]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetLatestNAV");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLatestNAV"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV getLastNAV(java.lang.String identifier, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[3]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetLastNAV");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLastNAV"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV[] getLastNAVs(java.lang.String identifiers, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[4]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetLastNAVs");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLastNAVs"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV[] getLatestNAVs(java.lang.String identifiers, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[5]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetLatestNAVs");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLatestNAVs"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV getHistoricalNAV(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String asOfDate) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[6]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetHistoricalNAV");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAV"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, asOfDate});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV[] getHistoricalNAVs(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String asOfDate) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[7]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetHistoricalNAVs");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVs"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, asOfDate});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAVs getHistoricalNAVsAsOf(java.lang.String identifier, routines.IdentifierTypes identifierType, java.util.Calendar endDate, routines.PeriodTypes periodType, int periods) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[8]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetHistoricalNAVsAsOf");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsAsOf"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, endDate, periodType, new java.lang.Integer(periods)});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAVs) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAVs) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAVs.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAVs getHistoricalNAVsRange(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String startDate, java.lang.String endDate) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[9]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetHistoricalNAVsRange");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsRange"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, startDate, endDate});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAVs) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAVs) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAVs.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.Top[] getTopGainers(java.lang.String fromDate, java.lang.String toDate, int count) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[10]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetTopGainers");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetTopGainers"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {fromDate, toDate, new java.lang.Integer(count)});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.Top[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.Top[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.Top[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.Top[] getTopLosers(java.lang.String fromDate, java.lang.String toDate, int count) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[11]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetTopLosers");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetTopLosers"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {fromDate, toDate, new java.lang.Integer(count)});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.Top[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.Top[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.Top[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundChart drawFundChartCustom(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String additionalSymbols, java.lang.String startDate, java.lang.String endDate, routines.StockChartStyles style, int width, int height, routines.ChartDesign design) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[12]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/DrawFundChartCustom");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DrawFundChartCustom"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, additionalSymbols, startDate, endDate, style, new java.lang.Integer(width), new java.lang.Integer(height), design});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundChart) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundChart) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundChart.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundChart drawFundChart(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String additionalSymbols, java.lang.String startDate, java.lang.String endDate, routines.StockChartStyles style, int width, int height) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[13]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/DrawFundChart");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DrawFundChart"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, additionalSymbols, startDate, endDate, style, new java.lang.Integer(width), new java.lang.Integer(height)});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundChart) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundChart) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundChart.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundChart drawFundChartPreset(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String additionalSymbols, java.lang.String startDate, java.lang.String endDate, routines.StockChartStyles style, int width, int height, java.lang.String preset) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[14]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/DrawFundChartPreset");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DrawFundChartPreset"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, additionalSymbols, startDate, endDate, style, new java.lang.Integer(width), new java.lang.Integer(height), preset});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundChart) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundChart) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundChart.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.ChartDesign getChartDesign() throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[15]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetChartDesign");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetChartDesign"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.ChartDesign) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.ChartDesign) org.apache.axis.utils.JavaUtils.convert(_resp, routines.ChartDesign.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.DividendHistory getDividendHistory(java.lang.String identifier, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[16]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetDividendHistory");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetDividendHistory"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.DividendHistory) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.DividendHistory) org.apache.axis.utils.JavaUtils.convert(_resp, routines.DividendHistory.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.NewFund[] getNewSymbols(java.lang.String fromDate, java.lang.String toDate) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[17]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetNewSymbols");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetNewSymbols"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {fromDate, toDate});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.NewFund[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.NewFund[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.NewFund[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV getLastNAVAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[18]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetLastNAVAdjusted");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLastNAVAdjusted"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, adjustmentMethod});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV[] getLastNAVsAdjusted(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[19]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetLastNAVsAdjusted");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLastNAVsAdjusted"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, adjustmentMethod});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV getLatestNAVAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[20]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetLatestNAVAdjusted");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLatestNAVAdjusted"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, adjustmentMethod});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV[] getLatestNAVsAdjusted(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[21]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetLatestNAVsAdjusted");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetLatestNAVsAdjusted"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, adjustmentMethod});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV getHistoricalNAVAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String asOfDate, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[22]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetHistoricalNAVAdjusted");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVAdjusted"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, asOfDate, adjustmentMethod});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAV[] getHistoricalNAVsAdjusted(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String asOfDate, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[23]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetHistoricalNAVsAdjusted");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsAdjusted"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, asOfDate, adjustmentMethod});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAV[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAV[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAV[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAVs getHistoricalNAVsAsOfAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.util.Calendar endDate, routines.PeriodTypes periodType, int periods, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[24]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetHistoricalNAVsAsOfAdjusted");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsAsOfAdjusted"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, endDate, periodType, new java.lang.Integer(periods), adjustmentMethod});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAVs) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAVs) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAVs.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundNAVs getHistoricalNAVsRangeAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String startDate, java.lang.String endDate, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[25]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetHistoricalNAVsRangeAdjusted");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetHistoricalNAVsRangeAdjusted"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, startDate, endDate, adjustmentMethod});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundNAVs) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundNAVs) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundNAVs.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+}

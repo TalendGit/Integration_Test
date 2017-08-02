@@ -1,0 +1,54 @@
+/**
+ * XigniteFundFundamentalsSoap_PortType.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public interface XigniteFundFundamentalsSoap_PortType extends java.rmi.Remote {
+    public routines.FundList listFundsBySymbol(java.lang.String startSymbol, java.lang.String endSymbol) throws java.rmi.RemoteException;
+    public routines.FundList listFundsByCIK(java.lang.String CIK) throws java.rmi.RemoteException;
+    public routines.FundFundamental getFundFundamental(java.lang.String identifier, routines.IdentifierTypes identifierType, routines.FundFundamentalType fundamentalType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundList searchFundsByName(java.lang.String fundName) throws java.rmi.RemoteException;
+    public routines.FundFundamental[] getFundsFundamental(java.lang.String identifiers, routines.IdentifierTypes identifierType, routines.FundFundamentalType fundamentalType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundFundamentalList getFundFundamentalList(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String fundamentalTypes, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundFundamentalList[] getFundsFundamentalList(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String fundamentalTypes, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundamentalDescriptionList listFundFundamentals() throws java.rmi.RemoteException;
+    public routines.FundProfile getFundProfile(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundProfile[] getFundsProfile(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundCompanyProfile getFundCompanyProfile(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundCompanyProfile[] getFundsCompanyProfile(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundRedemptionFees getFundRedemptionFees(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundRedemptionFees[] getFundsRedemptionFees(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundSalesFees getFundSalesFees(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundSalesFees[] getFundsSalesFees(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundManagementFees getFundManagementFees(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundManagementFees[] getFundsManagementFees(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundDividendDistributionDetails getFundDividendDistributionDetails(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundDividendDistributionDetails[] getFundsDividendDistributionDetails(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundManagers getFundManagers(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundManagers[] getFundsManagers(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundAssetAllocation getFundAssetAllocation(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundAssetAllocation[] getFundsAssetAllocation(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundSectorWeightings getFundSectorWeightings(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundSectorWeightings[] getFundsSectorWeightings(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundHoldings getFundHoldings(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundHoldings[] getFundsHoldings(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundHoldingsSummary getFundHoldingsSummary(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundHoldingsSummary[] getFundsHoldingsSummary(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundTurnoverRatios getFundTurnoverRatios(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundTurnoverRatios[] getFundsTurnoverRatios(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundExpenseRatios getFundExpenseRatios(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundExpenseRatios[] getFundsExpenseRatios(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundMinimumInvestments getFundMinimumInvestments(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundMinimumInvestments[] getFundsMinimumInvestments(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundAnnualReportSummary getFundAnnualReportSummary(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundAnnualReportSummary[] getFundsAnnualReportSummary(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundReturns getFundReturns(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundReturns[] getFundsReturns(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundBenchmarks getFundBenchmarks(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.FundBenchmarks[] getFundsBenchmarks(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException;
+    public routines.Record[] listActiveETFs(java.lang.String exchange, java.lang.String startSymbol, java.lang.String endSymbol) throws java.rmi.RemoteException;
+}

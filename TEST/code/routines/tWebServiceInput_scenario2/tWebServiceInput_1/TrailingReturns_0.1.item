@@ -1,0 +1,568 @@
+/**
+ * TrailingReturns.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class TrailingReturns  implements java.io.Serializable {
+    private java.lang.String returnsAsOfDate;
+
+    private double yearToDateReturn;
+
+    private double oneMonthReturn;
+
+    private double twoMonthReturn;
+
+    private double threeMonthReturn;
+
+    private double sixMonthReturn;
+
+    private double nineMonthReturn;
+
+    private double oneYearReturn;
+
+    private double twoYearReturn;
+
+    private double threeYearReturn;
+
+    private double fourYearReturn;
+
+    private double fiveYearReturn;
+
+    private double tenYearReturn;
+
+    private double fifteenYearReturn;
+
+    private double twentyYearReturn;
+
+    public TrailingReturns() {
+    }
+
+    public TrailingReturns(
+           java.lang.String returnsAsOfDate,
+           double yearToDateReturn,
+           double oneMonthReturn,
+           double twoMonthReturn,
+           double threeMonthReturn,
+           double sixMonthReturn,
+           double nineMonthReturn,
+           double oneYearReturn,
+           double twoYearReturn,
+           double threeYearReturn,
+           double fourYearReturn,
+           double fiveYearReturn,
+           double tenYearReturn,
+           double fifteenYearReturn,
+           double twentyYearReturn) {
+           this.returnsAsOfDate = returnsAsOfDate;
+           this.yearToDateReturn = yearToDateReturn;
+           this.oneMonthReturn = oneMonthReturn;
+           this.twoMonthReturn = twoMonthReturn;
+           this.threeMonthReturn = threeMonthReturn;
+           this.sixMonthReturn = sixMonthReturn;
+           this.nineMonthReturn = nineMonthReturn;
+           this.oneYearReturn = oneYearReturn;
+           this.twoYearReturn = twoYearReturn;
+           this.threeYearReturn = threeYearReturn;
+           this.fourYearReturn = fourYearReturn;
+           this.fiveYearReturn = fiveYearReturn;
+           this.tenYearReturn = tenYearReturn;
+           this.fifteenYearReturn = fifteenYearReturn;
+           this.twentyYearReturn = twentyYearReturn;
+    }
+
+
+    /**
+     * Gets the returnsAsOfDate value for this TrailingReturns.
+     * 
+     * @return returnsAsOfDate
+     */
+    public java.lang.String getReturnsAsOfDate() {
+        return returnsAsOfDate;
+    }
+
+
+    /**
+     * Sets the returnsAsOfDate value for this TrailingReturns.
+     * 
+     * @param returnsAsOfDate
+     */
+    public void setReturnsAsOfDate(java.lang.String returnsAsOfDate) {
+        this.returnsAsOfDate = returnsAsOfDate;
+    }
+
+
+    /**
+     * Gets the yearToDateReturn value for this TrailingReturns.
+     * 
+     * @return yearToDateReturn
+     */
+    public double getYearToDateReturn() {
+        return yearToDateReturn;
+    }
+
+
+    /**
+     * Sets the yearToDateReturn value for this TrailingReturns.
+     * 
+     * @param yearToDateReturn
+     */
+    public void setYearToDateReturn(double yearToDateReturn) {
+        this.yearToDateReturn = yearToDateReturn;
+    }
+
+
+    /**
+     * Gets the oneMonthReturn value for this TrailingReturns.
+     * 
+     * @return oneMonthReturn
+     */
+    public double getOneMonthReturn() {
+        return oneMonthReturn;
+    }
+
+
+    /**
+     * Sets the oneMonthReturn value for this TrailingReturns.
+     * 
+     * @param oneMonthReturn
+     */
+    public void setOneMonthReturn(double oneMonthReturn) {
+        this.oneMonthReturn = oneMonthReturn;
+    }
+
+
+    /**
+     * Gets the twoMonthReturn value for this TrailingReturns.
+     * 
+     * @return twoMonthReturn
+     */
+    public double getTwoMonthReturn() {
+        return twoMonthReturn;
+    }
+
+
+    /**
+     * Sets the twoMonthReturn value for this TrailingReturns.
+     * 
+     * @param twoMonthReturn
+     */
+    public void setTwoMonthReturn(double twoMonthReturn) {
+        this.twoMonthReturn = twoMonthReturn;
+    }
+
+
+    /**
+     * Gets the threeMonthReturn value for this TrailingReturns.
+     * 
+     * @return threeMonthReturn
+     */
+    public double getThreeMonthReturn() {
+        return threeMonthReturn;
+    }
+
+
+    /**
+     * Sets the threeMonthReturn value for this TrailingReturns.
+     * 
+     * @param threeMonthReturn
+     */
+    public void setThreeMonthReturn(double threeMonthReturn) {
+        this.threeMonthReturn = threeMonthReturn;
+    }
+
+
+    /**
+     * Gets the sixMonthReturn value for this TrailingReturns.
+     * 
+     * @return sixMonthReturn
+     */
+    public double getSixMonthReturn() {
+        return sixMonthReturn;
+    }
+
+
+    /**
+     * Sets the sixMonthReturn value for this TrailingReturns.
+     * 
+     * @param sixMonthReturn
+     */
+    public void setSixMonthReturn(double sixMonthReturn) {
+        this.sixMonthReturn = sixMonthReturn;
+    }
+
+
+    /**
+     * Gets the nineMonthReturn value for this TrailingReturns.
+     * 
+     * @return nineMonthReturn
+     */
+    public double getNineMonthReturn() {
+        return nineMonthReturn;
+    }
+
+
+    /**
+     * Sets the nineMonthReturn value for this TrailingReturns.
+     * 
+     * @param nineMonthReturn
+     */
+    public void setNineMonthReturn(double nineMonthReturn) {
+        this.nineMonthReturn = nineMonthReturn;
+    }
+
+
+    /**
+     * Gets the oneYearReturn value for this TrailingReturns.
+     * 
+     * @return oneYearReturn
+     */
+    public double getOneYearReturn() {
+        return oneYearReturn;
+    }
+
+
+    /**
+     * Sets the oneYearReturn value for this TrailingReturns.
+     * 
+     * @param oneYearReturn
+     */
+    public void setOneYearReturn(double oneYearReturn) {
+        this.oneYearReturn = oneYearReturn;
+    }
+
+
+    /**
+     * Gets the twoYearReturn value for this TrailingReturns.
+     * 
+     * @return twoYearReturn
+     */
+    public double getTwoYearReturn() {
+        return twoYearReturn;
+    }
+
+
+    /**
+     * Sets the twoYearReturn value for this TrailingReturns.
+     * 
+     * @param twoYearReturn
+     */
+    public void setTwoYearReturn(double twoYearReturn) {
+        this.twoYearReturn = twoYearReturn;
+    }
+
+
+    /**
+     * Gets the threeYearReturn value for this TrailingReturns.
+     * 
+     * @return threeYearReturn
+     */
+    public double getThreeYearReturn() {
+        return threeYearReturn;
+    }
+
+
+    /**
+     * Sets the threeYearReturn value for this TrailingReturns.
+     * 
+     * @param threeYearReturn
+     */
+    public void setThreeYearReturn(double threeYearReturn) {
+        this.threeYearReturn = threeYearReturn;
+    }
+
+
+    /**
+     * Gets the fourYearReturn value for this TrailingReturns.
+     * 
+     * @return fourYearReturn
+     */
+    public double getFourYearReturn() {
+        return fourYearReturn;
+    }
+
+
+    /**
+     * Sets the fourYearReturn value for this TrailingReturns.
+     * 
+     * @param fourYearReturn
+     */
+    public void setFourYearReturn(double fourYearReturn) {
+        this.fourYearReturn = fourYearReturn;
+    }
+
+
+    /**
+     * Gets the fiveYearReturn value for this TrailingReturns.
+     * 
+     * @return fiveYearReturn
+     */
+    public double getFiveYearReturn() {
+        return fiveYearReturn;
+    }
+
+
+    /**
+     * Sets the fiveYearReturn value for this TrailingReturns.
+     * 
+     * @param fiveYearReturn
+     */
+    public void setFiveYearReturn(double fiveYearReturn) {
+        this.fiveYearReturn = fiveYearReturn;
+    }
+
+
+    /**
+     * Gets the tenYearReturn value for this TrailingReturns.
+     * 
+     * @return tenYearReturn
+     */
+    public double getTenYearReturn() {
+        return tenYearReturn;
+    }
+
+
+    /**
+     * Sets the tenYearReturn value for this TrailingReturns.
+     * 
+     * @param tenYearReturn
+     */
+    public void setTenYearReturn(double tenYearReturn) {
+        this.tenYearReturn = tenYearReturn;
+    }
+
+
+    /**
+     * Gets the fifteenYearReturn value for this TrailingReturns.
+     * 
+     * @return fifteenYearReturn
+     */
+    public double getFifteenYearReturn() {
+        return fifteenYearReturn;
+    }
+
+
+    /**
+     * Sets the fifteenYearReturn value for this TrailingReturns.
+     * 
+     * @param fifteenYearReturn
+     */
+    public void setFifteenYearReturn(double fifteenYearReturn) {
+        this.fifteenYearReturn = fifteenYearReturn;
+    }
+
+
+    /**
+     * Gets the twentyYearReturn value for this TrailingReturns.
+     * 
+     * @return twentyYearReturn
+     */
+    public double getTwentyYearReturn() {
+        return twentyYearReturn;
+    }
+
+
+    /**
+     * Sets the twentyYearReturn value for this TrailingReturns.
+     * 
+     * @param twentyYearReturn
+     */
+    public void setTwentyYearReturn(double twentyYearReturn) {
+        this.twentyYearReturn = twentyYearReturn;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof TrailingReturns)) return false;
+        TrailingReturns other = (TrailingReturns) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.returnsAsOfDate==null && other.getReturnsAsOfDate()==null) || 
+             (this.returnsAsOfDate!=null &&
+              this.returnsAsOfDate.equals(other.getReturnsAsOfDate()))) &&
+            this.yearToDateReturn == other.getYearToDateReturn() &&
+            this.oneMonthReturn == other.getOneMonthReturn() &&
+            this.twoMonthReturn == other.getTwoMonthReturn() &&
+            this.threeMonthReturn == other.getThreeMonthReturn() &&
+            this.sixMonthReturn == other.getSixMonthReturn() &&
+            this.nineMonthReturn == other.getNineMonthReturn() &&
+            this.oneYearReturn == other.getOneYearReturn() &&
+            this.twoYearReturn == other.getTwoYearReturn() &&
+            this.threeYearReturn == other.getThreeYearReturn() &&
+            this.fourYearReturn == other.getFourYearReturn() &&
+            this.fiveYearReturn == other.getFiveYearReturn() &&
+            this.tenYearReturn == other.getTenYearReturn() &&
+            this.fifteenYearReturn == other.getFifteenYearReturn() &&
+            this.twentyYearReturn == other.getTwentyYearReturn();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getReturnsAsOfDate() != null) {
+            _hashCode += getReturnsAsOfDate().hashCode();
+        }
+        _hashCode += new Double(getYearToDateReturn()).hashCode();
+        _hashCode += new Double(getOneMonthReturn()).hashCode();
+        _hashCode += new Double(getTwoMonthReturn()).hashCode();
+        _hashCode += new Double(getThreeMonthReturn()).hashCode();
+        _hashCode += new Double(getSixMonthReturn()).hashCode();
+        _hashCode += new Double(getNineMonthReturn()).hashCode();
+        _hashCode += new Double(getOneYearReturn()).hashCode();
+        _hashCode += new Double(getTwoYearReturn()).hashCode();
+        _hashCode += new Double(getThreeYearReturn()).hashCode();
+        _hashCode += new Double(getFourYearReturn()).hashCode();
+        _hashCode += new Double(getFiveYearReturn()).hashCode();
+        _hashCode += new Double(getTenYearReturn()).hashCode();
+        _hashCode += new Double(getFifteenYearReturn()).hashCode();
+        _hashCode += new Double(getTwentyYearReturn()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(TrailingReturns.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TrailingReturns"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("returnsAsOfDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ReturnsAsOfDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("yearToDateReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "YearToDateReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("oneMonthReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OneMonthReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("twoMonthReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TwoMonthReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("threeMonthReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ThreeMonthReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("sixMonthReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SixMonthReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nineMonthReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "NineMonthReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("oneYearReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OneYearReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("twoYearReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TwoYearReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("threeYearReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ThreeYearReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fourYearReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FourYearReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fiveYearReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FiveYearReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tenYearReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TenYearReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fifteenYearReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FifteenYearReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("twentyYearReturn");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TwentyYearReturn"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

@@ -1,0 +1,225 @@
+/**
+ * Common.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class Common  implements java.io.Serializable {
+    private routines.OutcomeTypes outcome;
+
+    private java.lang.String message;
+
+    private java.lang.String identity;
+
+    private double delay;
+
+    public Common() {
+    }
+
+    public Common(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay) {
+           this.outcome = outcome;
+           this.message = message;
+           this.identity = identity;
+           this.delay = delay;
+    }
+
+
+    /**
+     * Gets the outcome value for this Common.
+     * 
+     * @return outcome
+     */
+    public routines.OutcomeTypes getOutcome() {
+        return outcome;
+    }
+
+
+    /**
+     * Sets the outcome value for this Common.
+     * 
+     * @param outcome
+     */
+    public void setOutcome(routines.OutcomeTypes outcome) {
+        this.outcome = outcome;
+    }
+
+
+    /**
+     * Gets the message value for this Common.
+     * 
+     * @return message
+     */
+    public java.lang.String getMessage() {
+        return message;
+    }
+
+
+    /**
+     * Sets the message value for this Common.
+     * 
+     * @param message
+     */
+    public void setMessage(java.lang.String message) {
+        this.message = message;
+    }
+
+
+    /**
+     * Gets the identity value for this Common.
+     * 
+     * @return identity
+     */
+    public java.lang.String getIdentity() {
+        return identity;
+    }
+
+
+    /**
+     * Sets the identity value for this Common.
+     * 
+     * @param identity
+     */
+    public void setIdentity(java.lang.String identity) {
+        this.identity = identity;
+    }
+
+
+    /**
+     * Gets the delay value for this Common.
+     * 
+     * @return delay
+     */
+    public double getDelay() {
+        return delay;
+    }
+
+
+    /**
+     * Sets the delay value for this Common.
+     * 
+     * @param delay
+     */
+    public void setDelay(double delay) {
+        this.delay = delay;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof Common)) return false;
+        Common other = (Common) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.outcome==null && other.getOutcome()==null) || 
+             (this.outcome!=null &&
+              this.outcome.equals(other.getOutcome()))) &&
+            ((this.message==null && other.getMessage()==null) || 
+             (this.message!=null &&
+              this.message.equals(other.getMessage()))) &&
+            ((this.identity==null && other.getIdentity()==null) || 
+             (this.identity!=null &&
+              this.identity.equals(other.getIdentity()))) &&
+            this.delay == other.getDelay();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getOutcome() != null) {
+            _hashCode += getOutcome().hashCode();
+        }
+        if (getMessage() != null) {
+            _hashCode += getMessage().hashCode();
+        }
+        if (getIdentity() != null) {
+            _hashCode += getIdentity().hashCode();
+        }
+        _hashCode += new Double(getDelay()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(Common.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Common"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("outcome");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Outcome"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "OutcomeTypes"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("message");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Message"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("identity");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identity"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("delay");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Delay"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

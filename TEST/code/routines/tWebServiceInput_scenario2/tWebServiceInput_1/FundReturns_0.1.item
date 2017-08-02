@@ -1,0 +1,203 @@
+/**
+ * FundReturns.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class FundReturns  extends routines.Common  implements java.io.Serializable {
+    private routines.Fund fund;
+
+    private routines.TrailingReturns trailingReturns;
+
+    private routines.LoadAdjustedTrailingReturns loadAdjustedTrailingReturns;
+
+    public FundReturns() {
+    }
+
+    public FundReturns(
+           routines.OutcomeTypes outcome,
+           java.lang.String message,
+           java.lang.String identity,
+           double delay,
+           routines.Fund fund,
+           routines.TrailingReturns trailingReturns,
+           routines.LoadAdjustedTrailingReturns loadAdjustedTrailingReturns) {
+        super(
+            outcome,
+            message,
+            identity,
+            delay);
+        this.fund = fund;
+        this.trailingReturns = trailingReturns;
+        this.loadAdjustedTrailingReturns = loadAdjustedTrailingReturns;
+    }
+
+
+    /**
+     * Gets the fund value for this FundReturns.
+     * 
+     * @return fund
+     */
+    public routines.Fund getFund() {
+        return fund;
+    }
+
+
+    /**
+     * Sets the fund value for this FundReturns.
+     * 
+     * @param fund
+     */
+    public void setFund(routines.Fund fund) {
+        this.fund = fund;
+    }
+
+
+    /**
+     * Gets the trailingReturns value for this FundReturns.
+     * 
+     * @return trailingReturns
+     */
+    public routines.TrailingReturns getTrailingReturns() {
+        return trailingReturns;
+    }
+
+
+    /**
+     * Sets the trailingReturns value for this FundReturns.
+     * 
+     * @param trailingReturns
+     */
+    public void setTrailingReturns(routines.TrailingReturns trailingReturns) {
+        this.trailingReturns = trailingReturns;
+    }
+
+
+    /**
+     * Gets the loadAdjustedTrailingReturns value for this FundReturns.
+     * 
+     * @return loadAdjustedTrailingReturns
+     */
+    public routines.LoadAdjustedTrailingReturns getLoadAdjustedTrailingReturns() {
+        return loadAdjustedTrailingReturns;
+    }
+
+
+    /**
+     * Sets the loadAdjustedTrailingReturns value for this FundReturns.
+     * 
+     * @param loadAdjustedTrailingReturns
+     */
+    public void setLoadAdjustedTrailingReturns(routines.LoadAdjustedTrailingReturns loadAdjustedTrailingReturns) {
+        this.loadAdjustedTrailingReturns = loadAdjustedTrailingReturns;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof FundReturns)) return false;
+        FundReturns other = (FundReturns) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = super.equals(obj) && 
+            ((this.fund==null && other.getFund()==null) || 
+             (this.fund!=null &&
+              this.fund.equals(other.getFund()))) &&
+            ((this.trailingReturns==null && other.getTrailingReturns()==null) || 
+             (this.trailingReturns!=null &&
+              this.trailingReturns.equals(other.getTrailingReturns()))) &&
+            ((this.loadAdjustedTrailingReturns==null && other.getLoadAdjustedTrailingReturns()==null) || 
+             (this.loadAdjustedTrailingReturns!=null &&
+              this.loadAdjustedTrailingReturns.equals(other.getLoadAdjustedTrailingReturns())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = super.hashCode();
+        if (getFund() != null) {
+            _hashCode += getFund().hashCode();
+        }
+        if (getTrailingReturns() != null) {
+            _hashCode += getTrailingReturns().hashCode();
+        }
+        if (getLoadAdjustedTrailingReturns() != null) {
+            _hashCode += getLoadAdjustedTrailingReturns().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(FundReturns.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundReturns"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fund");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("trailingReturns");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TrailingReturns"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "TrailingReturns"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("loadAdjustedTrailingReturns");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LoadAdjustedTrailingReturns"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "LoadAdjustedTrailingReturns"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

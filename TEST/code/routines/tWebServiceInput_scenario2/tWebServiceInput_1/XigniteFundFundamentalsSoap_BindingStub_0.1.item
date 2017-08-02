@@ -1,0 +1,2964 @@
+/**
+ * XigniteFundFundamentalsSoap_BindingStub.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class XigniteFundFundamentalsSoap_BindingStub extends org.apache.axis.client.Stub implements routines.XigniteFundFundamentalsSoap_PortType {
+    private java.util.Vector cachedSerClasses = new java.util.Vector();
+    private java.util.Vector cachedSerQNames = new java.util.Vector();
+    private java.util.Vector cachedSerFactories = new java.util.Vector();
+    private java.util.Vector cachedDeserFactories = new java.util.Vector();
+
+    static org.apache.axis.description.OperationDesc [] _operations;
+
+    static {
+        _operations = new org.apache.axis.description.OperationDesc[43];
+        _initOperationDesc1();
+        _initOperationDesc2();
+        _initOperationDesc3();
+        _initOperationDesc4();
+        _initOperationDesc5();
+    }
+
+    private static void _initOperationDesc1(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("ListFundsBySymbol");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StartSymbol"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndSymbol"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundList"));
+        oper.setReturnClass(routines.FundList.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ListFundsBySymbolResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[0] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("ListFundsByCIK");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CIK"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundList"));
+        oper.setReturnClass(routines.FundList.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ListFundsByCIKResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[1] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundFundamental");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundamentalType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamentalType"), routines.FundFundamentalType.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamental"));
+        oper.setReturnClass(routines.FundFundamental.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundFundamentalResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[2] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("SearchFundsByName");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundName"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundList"));
+        oper.setReturnClass(routines.FundList.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SearchFundsByNameResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[3] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsFundamental");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundamentalType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamentalType"), routines.FundFundamentalType.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundFundamental"));
+        oper.setReturnClass(routines.FundFundamental[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsFundamentalResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamental"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[4] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundFundamentalList");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundamentalTypes"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamentalList"));
+        oper.setReturnClass(routines.FundFundamentalList.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundFundamentalListResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[5] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsFundamentalList");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundamentalTypes"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundFundamentalList"));
+        oper.setReturnClass(routines.FundFundamentalList[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsFundamentalListResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamentalList"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[6] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("ListFundFundamentals");
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundamentalDescriptionList"));
+        oper.setReturnClass(routines.FundamentalDescriptionList.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ListFundFundamentalsResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[7] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundProfile");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundProfile"));
+        oper.setReturnClass(routines.FundProfile.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundProfileResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[8] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsProfile");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundProfile"));
+        oper.setReturnClass(routines.FundProfile[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsProfileResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundProfile"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[9] = oper;
+
+    }
+
+    private static void _initOperationDesc2(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundCompanyProfile");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundCompanyProfile"));
+        oper.setReturnClass(routines.FundCompanyProfile.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundCompanyProfileResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[10] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsCompanyProfile");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundCompanyProfile"));
+        oper.setReturnClass(routines.FundCompanyProfile[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsCompanyProfileResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundCompanyProfile"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[11] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundRedemptionFees");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundRedemptionFees"));
+        oper.setReturnClass(routines.FundRedemptionFees.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundRedemptionFeesResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[12] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsRedemptionFees");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundRedemptionFees"));
+        oper.setReturnClass(routines.FundRedemptionFees[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsRedemptionFeesResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundRedemptionFees"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[13] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundSalesFees");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSalesFees"));
+        oper.setReturnClass(routines.FundSalesFees.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundSalesFeesResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[14] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsSalesFees");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundSalesFees"));
+        oper.setReturnClass(routines.FundSalesFees[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsSalesFeesResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSalesFees"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[15] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundManagementFees");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagementFees"));
+        oper.setReturnClass(routines.FundManagementFees.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundManagementFeesResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[16] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsManagementFees");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundManagementFees"));
+        oper.setReturnClass(routines.FundManagementFees[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsManagementFeesResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagementFees"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[17] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundDividendDistributionDetails");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundDividendDistributionDetails"));
+        oper.setReturnClass(routines.FundDividendDistributionDetails.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundDividendDistributionDetailsResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[18] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsDividendDistributionDetails");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundDividendDistributionDetails"));
+        oper.setReturnClass(routines.FundDividendDistributionDetails[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsDividendDistributionDetailsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundDividendDistributionDetails"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[19] = oper;
+
+    }
+
+    private static void _initOperationDesc3(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundManagers");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagers"));
+        oper.setReturnClass(routines.FundManagers.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundManagersResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[20] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsManagers");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundManagers"));
+        oper.setReturnClass(routines.FundManagers[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsManagersResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagers"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[21] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundAssetAllocation");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAssetAllocation"));
+        oper.setReturnClass(routines.FundAssetAllocation.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundAssetAllocationResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[22] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsAssetAllocation");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundAssetAllocation"));
+        oper.setReturnClass(routines.FundAssetAllocation[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsAssetAllocationResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAssetAllocation"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[23] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundSectorWeightings");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSectorWeightings"));
+        oper.setReturnClass(routines.FundSectorWeightings.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundSectorWeightingsResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[24] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsSectorWeightings");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundSectorWeightings"));
+        oper.setReturnClass(routines.FundSectorWeightings[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsSectorWeightingsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSectorWeightings"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[25] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundHoldings");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldings"));
+        oper.setReturnClass(routines.FundHoldings.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundHoldingsResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[26] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsHoldings");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundHoldings"));
+        oper.setReturnClass(routines.FundHoldings[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsHoldingsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldings"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[27] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundHoldingsSummary");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldingsSummary"));
+        oper.setReturnClass(routines.FundHoldingsSummary.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundHoldingsSummaryResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[28] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsHoldingsSummary");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundHoldingsSummary"));
+        oper.setReturnClass(routines.FundHoldingsSummary[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsHoldingsSummaryResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldingsSummary"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[29] = oper;
+
+    }
+
+    private static void _initOperationDesc4(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundTurnoverRatios");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundTurnoverRatios"));
+        oper.setReturnClass(routines.FundTurnoverRatios.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundTurnoverRatiosResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[30] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsTurnoverRatios");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundTurnoverRatios"));
+        oper.setReturnClass(routines.FundTurnoverRatios[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsTurnoverRatiosResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundTurnoverRatios"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[31] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundExpenseRatios");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundExpenseRatios"));
+        oper.setReturnClass(routines.FundExpenseRatios.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundExpenseRatiosResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[32] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsExpenseRatios");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundExpenseRatios"));
+        oper.setReturnClass(routines.FundExpenseRatios[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsExpenseRatiosResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundExpenseRatios"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[33] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundMinimumInvestments");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundMinimumInvestments"));
+        oper.setReturnClass(routines.FundMinimumInvestments.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundMinimumInvestmentsResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[34] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsMinimumInvestments");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundMinimumInvestments"));
+        oper.setReturnClass(routines.FundMinimumInvestments[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsMinimumInvestmentsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundMinimumInvestments"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[35] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundAnnualReportSummary");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAnnualReportSummary"));
+        oper.setReturnClass(routines.FundAnnualReportSummary.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundAnnualReportSummaryResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[36] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsAnnualReportSummary");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundAnnualReportSummary"));
+        oper.setReturnClass(routines.FundAnnualReportSummary[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsAnnualReportSummaryResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAnnualReportSummary"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[37] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundReturns");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundReturns"));
+        oper.setReturnClass(routines.FundReturns.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundReturnsResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[38] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsReturns");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundReturns"));
+        oper.setReturnClass(routines.FundReturns[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsReturnsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundReturns"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[39] = oper;
+
+    }
+
+    private static void _initOperationDesc5(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundBenchmarks");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifier"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundBenchmarks"));
+        oper.setReturnClass(routines.FundBenchmarks.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundBenchmarksResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[40] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetFundsBenchmarks");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Identifiers"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierType"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes"), routines.IdentifierTypes.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "UpdatedSince"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundBenchmarks"));
+        oper.setReturnClass(routines.FundBenchmarks[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsBenchmarksResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundBenchmarks"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[41] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("ListActiveETFs");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Exchange"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "StartSymbol"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.xignite.com/services/", "EndSymbol"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfRecord"));
+        oper.setReturnClass(routines.Record[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ListActiveETFsResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "Record"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[42] = oper;
+
+    }
+
+    public XigniteFundFundamentalsSoap_BindingStub() throws org.apache.axis.AxisFault {
+         this(null);
+    }
+
+    public XigniteFundFundamentalsSoap_BindingStub(java.net.URL endpointURL, javax.xml.rpc.Service service) throws org.apache.axis.AxisFault {
+         this(service);
+         super.cachedEndpoint = endpointURL;
+    }
+
+    public XigniteFundFundamentalsSoap_BindingStub(javax.xml.rpc.Service service) throws org.apache.axis.AxisFault {
+        if (service == null) {
+            super.service = new org.apache.axis.client.Service();
+        } else {
+            super.service = service;
+        }
+        ((org.apache.axis.client.Service)super.service).setTypeMappingVersion("1.2");
+            java.lang.Class cls;
+            javax.xml.namespace.QName qName;
+            javax.xml.namespace.QName qName2;
+            java.lang.Class beansf = org.apache.axis.encoding.ser.BeanSerializerFactory.class;
+            java.lang.Class beandf = org.apache.axis.encoding.ser.BeanDeserializerFactory.class;
+            java.lang.Class enumsf = org.apache.axis.encoding.ser.EnumSerializerFactory.class;
+            java.lang.Class enumdf = org.apache.axis.encoding.ser.EnumDeserializerFactory.class;
+            java.lang.Class arraysf = org.apache.axis.encoding.ser.ArraySerializerFactory.class;
+            java.lang.Class arraydf = org.apache.axis.encoding.ser.ArrayDeserializerFactory.class;
+            java.lang.Class simplesf = org.apache.axis.encoding.ser.SimpleSerializerFactory.class;
+            java.lang.Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
+            java.lang.Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
+            java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "AnnualReportSummary");
+            cachedSerQNames.add(qName);
+            cls = routines.AnnualReportSummary.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfBenchmark");
+            cachedSerQNames.add(qName);
+            cls = routines.Benchmark[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Benchmark");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Benchmark");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFund");
+            cachedSerQNames.add(qName);
+            cls = routines.Fund[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundamental");
+            cachedSerQNames.add(qName);
+            cls = routines.Fundamental[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fundamental");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fundamental");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundamentalDescription");
+            cachedSerQNames.add(qName);
+            cls = routines.FundamentalDescription[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundamentalDescription");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundamentalDescription");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundAnnualReportSummary");
+            cachedSerQNames.add(qName);
+            cls = routines.FundAnnualReportSummary[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAnnualReportSummary");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAnnualReportSummary");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundAssetAllocation");
+            cachedSerQNames.add(qName);
+            cls = routines.FundAssetAllocation[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAssetAllocation");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAssetAllocation");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundBenchmarks");
+            cachedSerQNames.add(qName);
+            cls = routines.FundBenchmarks[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundBenchmarks");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundBenchmarks");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundCompanyProfile");
+            cachedSerQNames.add(qName);
+            cls = routines.FundCompanyProfile[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundCompanyProfile");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundCompanyProfile");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundDividendDistributionDetails");
+            cachedSerQNames.add(qName);
+            cls = routines.FundDividendDistributionDetails[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundDividendDistributionDetails");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundDividendDistributionDetails");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundExpenseRatios");
+            cachedSerQNames.add(qName);
+            cls = routines.FundExpenseRatios[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundExpenseRatios");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundExpenseRatios");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundFundamental");
+            cachedSerQNames.add(qName);
+            cls = routines.FundFundamental[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamental");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamental");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundFundamentalList");
+            cachedSerQNames.add(qName);
+            cls = routines.FundFundamentalList[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamentalList");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamentalList");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundHoldings");
+            cachedSerQNames.add(qName);
+            cls = routines.FundHoldings[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldings");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldings");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundHoldingsSummary");
+            cachedSerQNames.add(qName);
+            cls = routines.FundHoldingsSummary[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldingsSummary");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldingsSummary");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundManagementFees");
+            cachedSerQNames.add(qName);
+            cls = routines.FundManagementFees[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagementFees");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagementFees");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundManagers");
+            cachedSerQNames.add(qName);
+            cls = routines.FundManagers[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagers");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagers");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundMinimumInvestments");
+            cachedSerQNames.add(qName);
+            cls = routines.FundMinimumInvestments[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundMinimumInvestments");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundMinimumInvestments");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundProfile");
+            cachedSerQNames.add(qName);
+            cls = routines.FundProfile[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundProfile");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundProfile");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundRedemptionFees");
+            cachedSerQNames.add(qName);
+            cls = routines.FundRedemptionFees[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundRedemptionFees");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundRedemptionFees");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundReturns");
+            cachedSerQNames.add(qName);
+            cls = routines.FundReturns[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundReturns");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundReturns");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundSalesFees");
+            cachedSerQNames.add(qName);
+            cls = routines.FundSalesFees[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSalesFees");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSalesFees");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundSectorWeightings");
+            cachedSerQNames.add(qName);
+            cls = routines.FundSectorWeightings[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSectorWeightings");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSectorWeightings");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfFundTurnoverRatios");
+            cachedSerQNames.add(qName);
+            cls = routines.FundTurnoverRatios[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundTurnoverRatios");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundTurnoverRatios");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfHolding");
+            cachedSerQNames.add(qName);
+            cls = routines.Holding[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Holding");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Holding");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfManagerProfile");
+            cachedSerQNames.add(qName);
+            cls = routines.ManagerProfile[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ManagerProfile");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ManagerProfile");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfRecord");
+            cachedSerQNames.add(qName);
+            cls = routines.Record[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Record");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Record");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ArrayOfRedemptionFee");
+            cachedSerQNames.add(qName);
+            cls = routines.RedemptionFee[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "RedemptionFee");
+            qName2 = new javax.xml.namespace.QName("http://www.xignite.com/services/", "RedemptionFee");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Benchmark");
+            cachedSerQNames.add(qName);
+            cls = routines.Benchmark.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "BondAssetAllocation");
+            cachedSerQNames.add(qName);
+            cls = routines.BondAssetAllocation.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "BondSuperSectorWeightings");
+            cachedSerQNames.add(qName);
+            cls = routines.BondSuperSectorWeightings.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Common");
+            cachedSerQNames.add(qName);
+            cls = routines.Common.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "CompanyProfile");
+            cachedSerQNames.add(qName);
+            cls = routines.CompanyProfile.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "DividendDistributionDetails");
+            cachedSerQNames.add(qName);
+            cls = routines.DividendDistributionDetails.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ExpenseRatios");
+            cachedSerQNames.add(qName);
+            cls = routines.ExpenseRatios.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fund");
+            cachedSerQNames.add(qName);
+            cls = routines.Fund.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Fundamental");
+            cachedSerQNames.add(qName);
+            cls = routines.Fundamental.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundamentalDescription");
+            cachedSerQNames.add(qName);
+            cls = routines.FundamentalDescription.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundamentalDescriptionList");
+            cachedSerQNames.add(qName);
+            cls = routines.FundamentalDescriptionList.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAnnualReportSummary");
+            cachedSerQNames.add(qName);
+            cls = routines.FundAnnualReportSummary.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundAssetAllocation");
+            cachedSerQNames.add(qName);
+            cls = routines.FundAssetAllocation.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundBenchmarks");
+            cachedSerQNames.add(qName);
+            cls = routines.FundBenchmarks.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundCompanyProfile");
+            cachedSerQNames.add(qName);
+            cls = routines.FundCompanyProfile.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundDividendDistributionDetails");
+            cachedSerQNames.add(qName);
+            cls = routines.FundDividendDistributionDetails.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundExpenseRatios");
+            cachedSerQNames.add(qName);
+            cls = routines.FundExpenseRatios.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamental");
+            cachedSerQNames.add(qName);
+            cls = routines.FundFundamental.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamentalList");
+            cachedSerQNames.add(qName);
+            cls = routines.FundFundamentalList.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundFundamentalType");
+            cachedSerQNames.add(qName);
+            cls = routines.FundFundamentalType.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldings");
+            cachedSerQNames.add(qName);
+            cls = routines.FundHoldings.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundHoldingsSummary");
+            cachedSerQNames.add(qName);
+            cls = routines.FundHoldingsSummary.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundList");
+            cachedSerQNames.add(qName);
+            cls = routines.FundList.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagementFees");
+            cachedSerQNames.add(qName);
+            cls = routines.FundManagementFees.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundManagers");
+            cachedSerQNames.add(qName);
+            cls = routines.FundManagers.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundMinimumInvestments");
+            cachedSerQNames.add(qName);
+            cls = routines.FundMinimumInvestments.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundProfile");
+            cachedSerQNames.add(qName);
+            cls = routines.FundProfile.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundRedemptionFees");
+            cachedSerQNames.add(qName);
+            cls = routines.FundRedemptionFees.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundReturns");
+            cachedSerQNames.add(qName);
+            cls = routines.FundReturns.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSalesFees");
+            cachedSerQNames.add(qName);
+            cls = routines.FundSalesFees.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundSectorWeightings");
+            cachedSerQNames.add(qName);
+            cls = routines.FundSectorWeightings.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "FundTurnoverRatios");
+            cachedSerQNames.add(qName);
+            cls = routines.FundTurnoverRatios.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Holding");
+            cachedSerQNames.add(qName);
+            cls = routines.Holding.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "HoldingsSummary");
+            cachedSerQNames.add(qName);
+            cls = routines.HoldingsSummary.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "IdentifierTypes");
+            cachedSerQNames.add(qName);
+            cls = routines.IdentifierTypes.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "LoadAdjustedTrailingReturns");
+            cachedSerQNames.add(qName);
+            cls = routines.LoadAdjustedTrailingReturns.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ManagementFees");
+            cachedSerQNames.add(qName);
+            cls = routines.ManagementFees.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "ManagerProfile");
+            cachedSerQNames.add(qName);
+            cls = routines.ManagerProfile.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "MinimumInvestments");
+            cachedSerQNames.add(qName);
+            cls = routines.MinimumInvestments.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "OtherAssetAllocation");
+            cachedSerQNames.add(qName);
+            cls = routines.OtherAssetAllocation.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "OutcomeTypes");
+            cachedSerQNames.add(qName);
+            cls = routines.OutcomeTypes.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Profile");
+            cachedSerQNames.add(qName);
+            cls = routines.Profile.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "Record");
+            cachedSerQNames.add(qName);
+            cls = routines.Record.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "RedemptionFee");
+            cachedSerQNames.add(qName);
+            cls = routines.RedemptionFee.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "SalesFees");
+            cachedSerQNames.add(qName);
+            cls = routines.SalesFees.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockAssetAllocation");
+            cachedSerQNames.add(qName);
+            cls = routines.StockAssetAllocation.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "StockSectorWeightings");
+            cachedSerQNames.add(qName);
+            cls = routines.StockSectorWeightings.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "TrailingReturns");
+            cachedSerQNames.add(qName);
+            cls = routines.TrailingReturns.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.xignite.com/services/", "TurnoverRatios");
+            cachedSerQNames.add(qName);
+            cls = routines.TurnoverRatios.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+    }
+
+    protected org.apache.axis.client.Call createCall() throws java.rmi.RemoteException {
+        try {
+            org.apache.axis.client.Call _call = super._createCall();
+            if (super.maintainSessionSet) {
+                _call.setMaintainSession(super.maintainSession);
+            }
+            if (super.cachedUsername != null) {
+                _call.setUsername(super.cachedUsername);
+            }
+            if (super.cachedPassword != null) {
+                _call.setPassword(super.cachedPassword);
+            }
+            if (super.cachedEndpoint != null) {
+                _call.setTargetEndpointAddress(super.cachedEndpoint);
+            }
+            if (super.cachedTimeout != null) {
+                _call.setTimeout(super.cachedTimeout);
+            }
+            if (super.cachedPortName != null) {
+                _call.setPortName(super.cachedPortName);
+            }
+            java.util.Enumeration keys = super.cachedProperties.keys();
+            while (keys.hasMoreElements()) {
+                java.lang.String key = (java.lang.String) keys.nextElement();
+                _call.setProperty(key, super.cachedProperties.get(key));
+            }
+            // All the type mapping information is registered
+            // when the first call is made.
+            // The type mapping information is actually registered in
+            // the TypeMappingRegistry of the service, which
+            // is the reason why registration is only needed for the first call.
+            synchronized (this) {
+                if (firstCall()) {
+                    // must set encoding style before registering serializers
+                    _call.setEncodingStyle(null);
+                    for (int i = 0; i < cachedSerFactories.size(); ++i) {
+                        java.lang.Class cls = (java.lang.Class) cachedSerClasses.get(i);
+                        javax.xml.namespace.QName qName =
+                                (javax.xml.namespace.QName) cachedSerQNames.get(i);
+                        java.lang.Object x = cachedSerFactories.get(i);
+                        if (x instanceof Class) {
+                            java.lang.Class sf = (java.lang.Class)
+                                 cachedSerFactories.get(i);
+                            java.lang.Class df = (java.lang.Class)
+                                 cachedDeserFactories.get(i);
+                            _call.registerTypeMapping(cls, qName, sf, df, false);
+                        }
+                        else if (x instanceof javax.xml.rpc.encoding.SerializerFactory) {
+                            org.apache.axis.encoding.SerializerFactory sf = (org.apache.axis.encoding.SerializerFactory)
+                                 cachedSerFactories.get(i);
+                            org.apache.axis.encoding.DeserializerFactory df = (org.apache.axis.encoding.DeserializerFactory)
+                                 cachedDeserFactories.get(i);
+                            _call.registerTypeMapping(cls, qName, sf, df, false);
+                        }
+                    }
+                }
+            }
+            return _call;
+        }
+        catch (java.lang.Throwable _t) {
+            throw new org.apache.axis.AxisFault("Failure trying to get the Call object", _t);
+        }
+    }
+
+    public routines.FundList listFundsBySymbol(java.lang.String startSymbol, java.lang.String endSymbol) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[0]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/ListFundsBySymbol");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ListFundsBySymbol"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {startSymbol, endSymbol});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundList) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundList) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundList.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundList listFundsByCIK(java.lang.String CIK) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[1]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/ListFundsByCIK");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ListFundsByCIK"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {CIK});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundList) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundList) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundList.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundFundamental getFundFundamental(java.lang.String identifier, routines.IdentifierTypes identifierType, routines.FundFundamentalType fundamentalType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[2]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundFundamental");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundFundamental"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, fundamentalType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundFundamental) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundFundamental) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundFundamental.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundList searchFundsByName(java.lang.String fundName) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[3]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/SearchFundsByName");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SearchFundsByName"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {fundName});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundList) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundList) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundList.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundFundamental[] getFundsFundamental(java.lang.String identifiers, routines.IdentifierTypes identifierType, routines.FundFundamentalType fundamentalType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[4]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsFundamental");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsFundamental"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, fundamentalType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundFundamental[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundFundamental[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundFundamental[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundFundamentalList getFundFundamentalList(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String fundamentalTypes, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[5]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundFundamentalList");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundFundamentalList"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, fundamentalTypes, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundFundamentalList) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundFundamentalList) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundFundamentalList.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundFundamentalList[] getFundsFundamentalList(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String fundamentalTypes, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[6]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsFundamentalList");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsFundamentalList"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, fundamentalTypes, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundFundamentalList[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundFundamentalList[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundFundamentalList[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundamentalDescriptionList listFundFundamentals() throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[7]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/ListFundFundamentals");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ListFundFundamentals"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundamentalDescriptionList) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundamentalDescriptionList) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundamentalDescriptionList.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundProfile getFundProfile(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[8]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundProfile");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundProfile"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundProfile) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundProfile) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundProfile.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundProfile[] getFundsProfile(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[9]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsProfile");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsProfile"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundProfile[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundProfile[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundProfile[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundCompanyProfile getFundCompanyProfile(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[10]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundCompanyProfile");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundCompanyProfile"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundCompanyProfile) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundCompanyProfile) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundCompanyProfile.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundCompanyProfile[] getFundsCompanyProfile(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[11]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsCompanyProfile");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsCompanyProfile"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundCompanyProfile[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundCompanyProfile[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundCompanyProfile[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundRedemptionFees getFundRedemptionFees(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[12]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundRedemptionFees");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundRedemptionFees"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundRedemptionFees) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundRedemptionFees) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundRedemptionFees.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundRedemptionFees[] getFundsRedemptionFees(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[13]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsRedemptionFees");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsRedemptionFees"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundRedemptionFees[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundRedemptionFees[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundRedemptionFees[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundSalesFees getFundSalesFees(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[14]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundSalesFees");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundSalesFees"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundSalesFees) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundSalesFees) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundSalesFees.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundSalesFees[] getFundsSalesFees(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[15]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsSalesFees");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsSalesFees"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundSalesFees[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundSalesFees[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundSalesFees[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundManagementFees getFundManagementFees(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[16]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundManagementFees");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundManagementFees"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundManagementFees) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundManagementFees) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundManagementFees.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundManagementFees[] getFundsManagementFees(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[17]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsManagementFees");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsManagementFees"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundManagementFees[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundManagementFees[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundManagementFees[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundDividendDistributionDetails getFundDividendDistributionDetails(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[18]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundDividendDistributionDetails");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundDividendDistributionDetails"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundDividendDistributionDetails) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundDividendDistributionDetails) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundDividendDistributionDetails.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundDividendDistributionDetails[] getFundsDividendDistributionDetails(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[19]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsDividendDistributionDetails");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsDividendDistributionDetails"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundDividendDistributionDetails[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundDividendDistributionDetails[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundDividendDistributionDetails[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundManagers getFundManagers(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[20]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundManagers");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundManagers"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundManagers) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundManagers) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundManagers.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundManagers[] getFundsManagers(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[21]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsManagers");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsManagers"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundManagers[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundManagers[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundManagers[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundAssetAllocation getFundAssetAllocation(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[22]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundAssetAllocation");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundAssetAllocation"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundAssetAllocation) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundAssetAllocation) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundAssetAllocation.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundAssetAllocation[] getFundsAssetAllocation(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[23]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsAssetAllocation");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsAssetAllocation"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundAssetAllocation[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundAssetAllocation[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundAssetAllocation[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundSectorWeightings getFundSectorWeightings(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[24]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundSectorWeightings");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundSectorWeightings"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundSectorWeightings) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundSectorWeightings) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundSectorWeightings.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundSectorWeightings[] getFundsSectorWeightings(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[25]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsSectorWeightings");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsSectorWeightings"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundSectorWeightings[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundSectorWeightings[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundSectorWeightings[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundHoldings getFundHoldings(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[26]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundHoldings");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundHoldings"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundHoldings) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundHoldings) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundHoldings.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundHoldings[] getFundsHoldings(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[27]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsHoldings");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsHoldings"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundHoldings[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundHoldings[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundHoldings[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundHoldingsSummary getFundHoldingsSummary(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[28]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundHoldingsSummary");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundHoldingsSummary"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundHoldingsSummary) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundHoldingsSummary) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundHoldingsSummary.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundHoldingsSummary[] getFundsHoldingsSummary(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[29]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsHoldingsSummary");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsHoldingsSummary"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundHoldingsSummary[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundHoldingsSummary[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundHoldingsSummary[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundTurnoverRatios getFundTurnoverRatios(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[30]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundTurnoverRatios");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundTurnoverRatios"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundTurnoverRatios) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundTurnoverRatios) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundTurnoverRatios.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundTurnoverRatios[] getFundsTurnoverRatios(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[31]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsTurnoverRatios");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsTurnoverRatios"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundTurnoverRatios[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundTurnoverRatios[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundTurnoverRatios[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundExpenseRatios getFundExpenseRatios(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[32]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundExpenseRatios");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundExpenseRatios"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundExpenseRatios) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundExpenseRatios) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundExpenseRatios.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundExpenseRatios[] getFundsExpenseRatios(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[33]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsExpenseRatios");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsExpenseRatios"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundExpenseRatios[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundExpenseRatios[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundExpenseRatios[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundMinimumInvestments getFundMinimumInvestments(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[34]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundMinimumInvestments");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundMinimumInvestments"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundMinimumInvestments) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundMinimumInvestments) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundMinimumInvestments.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundMinimumInvestments[] getFundsMinimumInvestments(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[35]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsMinimumInvestments");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsMinimumInvestments"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundMinimumInvestments[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundMinimumInvestments[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundMinimumInvestments[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundAnnualReportSummary getFundAnnualReportSummary(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[36]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundAnnualReportSummary");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundAnnualReportSummary"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundAnnualReportSummary) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundAnnualReportSummary) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundAnnualReportSummary.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundAnnualReportSummary[] getFundsAnnualReportSummary(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[37]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsAnnualReportSummary");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsAnnualReportSummary"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundAnnualReportSummary[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundAnnualReportSummary[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundAnnualReportSummary[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundReturns getFundReturns(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[38]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundReturns");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundReturns"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundReturns) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundReturns) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundReturns.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundReturns[] getFundsReturns(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[39]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsReturns");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsReturns"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundReturns[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundReturns[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundReturns[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundBenchmarks getFundBenchmarks(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[40]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundBenchmarks");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundBenchmarks"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifier, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundBenchmarks) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundBenchmarks) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundBenchmarks.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.FundBenchmarks[] getFundsBenchmarks(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String updatedSince) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[41]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/GetFundsBenchmarks");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GetFundsBenchmarks"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {identifiers, identifierType, updatedSince});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.FundBenchmarks[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.FundBenchmarks[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.FundBenchmarks[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public routines.Record[] listActiveETFs(java.lang.String exchange, java.lang.String startSymbol, java.lang.String endSymbol) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[42]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://www.xignite.com/services/ListActiveETFs");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ListActiveETFs"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {exchange, startSymbol, endSymbol});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (routines.Record[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (routines.Record[]) org.apache.axis.utils.JavaUtils.convert(_resp, routines.Record[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+}

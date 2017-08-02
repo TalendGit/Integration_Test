@@ -1,0 +1,275 @@
+/**
+ * BondSuperSectorWeightings.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class BondSuperSectorWeightings  implements java.io.Serializable {
+    private double governmentNet;
+
+    private double municipalNet;
+
+    private double corporateNet;
+
+    private double securitizedNet;
+
+    private double cashAndEquivalentsNet;
+
+    private double derivativeNet;
+
+    public BondSuperSectorWeightings() {
+    }
+
+    public BondSuperSectorWeightings(
+           double governmentNet,
+           double municipalNet,
+           double corporateNet,
+           double securitizedNet,
+           double cashAndEquivalentsNet,
+           double derivativeNet) {
+           this.governmentNet = governmentNet;
+           this.municipalNet = municipalNet;
+           this.corporateNet = corporateNet;
+           this.securitizedNet = securitizedNet;
+           this.cashAndEquivalentsNet = cashAndEquivalentsNet;
+           this.derivativeNet = derivativeNet;
+    }
+
+
+    /**
+     * Gets the governmentNet value for this BondSuperSectorWeightings.
+     * 
+     * @return governmentNet
+     */
+    public double getGovernmentNet() {
+        return governmentNet;
+    }
+
+
+    /**
+     * Sets the governmentNet value for this BondSuperSectorWeightings.
+     * 
+     * @param governmentNet
+     */
+    public void setGovernmentNet(double governmentNet) {
+        this.governmentNet = governmentNet;
+    }
+
+
+    /**
+     * Gets the municipalNet value for this BondSuperSectorWeightings.
+     * 
+     * @return municipalNet
+     */
+    public double getMunicipalNet() {
+        return municipalNet;
+    }
+
+
+    /**
+     * Sets the municipalNet value for this BondSuperSectorWeightings.
+     * 
+     * @param municipalNet
+     */
+    public void setMunicipalNet(double municipalNet) {
+        this.municipalNet = municipalNet;
+    }
+
+
+    /**
+     * Gets the corporateNet value for this BondSuperSectorWeightings.
+     * 
+     * @return corporateNet
+     */
+    public double getCorporateNet() {
+        return corporateNet;
+    }
+
+
+    /**
+     * Sets the corporateNet value for this BondSuperSectorWeightings.
+     * 
+     * @param corporateNet
+     */
+    public void setCorporateNet(double corporateNet) {
+        this.corporateNet = corporateNet;
+    }
+
+
+    /**
+     * Gets the securitizedNet value for this BondSuperSectorWeightings.
+     * 
+     * @return securitizedNet
+     */
+    public double getSecuritizedNet() {
+        return securitizedNet;
+    }
+
+
+    /**
+     * Sets the securitizedNet value for this BondSuperSectorWeightings.
+     * 
+     * @param securitizedNet
+     */
+    public void setSecuritizedNet(double securitizedNet) {
+        this.securitizedNet = securitizedNet;
+    }
+
+
+    /**
+     * Gets the cashAndEquivalentsNet value for this BondSuperSectorWeightings.
+     * 
+     * @return cashAndEquivalentsNet
+     */
+    public double getCashAndEquivalentsNet() {
+        return cashAndEquivalentsNet;
+    }
+
+
+    /**
+     * Sets the cashAndEquivalentsNet value for this BondSuperSectorWeightings.
+     * 
+     * @param cashAndEquivalentsNet
+     */
+    public void setCashAndEquivalentsNet(double cashAndEquivalentsNet) {
+        this.cashAndEquivalentsNet = cashAndEquivalentsNet;
+    }
+
+
+    /**
+     * Gets the derivativeNet value for this BondSuperSectorWeightings.
+     * 
+     * @return derivativeNet
+     */
+    public double getDerivativeNet() {
+        return derivativeNet;
+    }
+
+
+    /**
+     * Sets the derivativeNet value for this BondSuperSectorWeightings.
+     * 
+     * @param derivativeNet
+     */
+    public void setDerivativeNet(double derivativeNet) {
+        this.derivativeNet = derivativeNet;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof BondSuperSectorWeightings)) return false;
+        BondSuperSectorWeightings other = (BondSuperSectorWeightings) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.governmentNet == other.getGovernmentNet() &&
+            this.municipalNet == other.getMunicipalNet() &&
+            this.corporateNet == other.getCorporateNet() &&
+            this.securitizedNet == other.getSecuritizedNet() &&
+            this.cashAndEquivalentsNet == other.getCashAndEquivalentsNet() &&
+            this.derivativeNet == other.getDerivativeNet();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += new Double(getGovernmentNet()).hashCode();
+        _hashCode += new Double(getMunicipalNet()).hashCode();
+        _hashCode += new Double(getCorporateNet()).hashCode();
+        _hashCode += new Double(getSecuritizedNet()).hashCode();
+        _hashCode += new Double(getCashAndEquivalentsNet()).hashCode();
+        _hashCode += new Double(getDerivativeNet()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(BondSuperSectorWeightings.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "BondSuperSectorWeightings"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("governmentNet");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "GovernmentNet"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("municipalNet");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "MunicipalNet"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("corporateNet");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CorporateNet"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("securitizedNet");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "SecuritizedNet"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("cashAndEquivalentsNet");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "CashAndEquivalentsNet"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("derivativeNet");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "DerivativeNet"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

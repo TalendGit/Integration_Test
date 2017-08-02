@@ -1,0 +1,19 @@
+package routines;
+
+public enum PlatformType {
+	TALEND("Talend"),
+	DWH("DWH"),
+	ESB("ESB"),
+	CPP("CPP"),
+	;
+		
+	private String value;
+	
+	private PlatformType(String value) {
+		this.value = value;
+	}
+	
+	public String getValue() {
+		return this.value;
+	}
+}

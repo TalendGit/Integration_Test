@@ -1,0 +1,144 @@
+/**
+ * XigniteFundsSoap_PortType.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public interface XigniteFundsSoap_PortType extends java.rmi.Remote {
+
+    /**
+     * Returns a list of symbols available in the historical database.
+     */
+    public routines.SymbolList getSymbols() throws java.rmi.RemoteException;
+
+    /**
+     * Returns a list of symbols available in the historical database
+     * by country.
+     */
+    public routines.SymbolList getSymbolsByCountry(routines.MutualFundCountries country) throws java.rmi.RemoteException;
+
+    /**
+     * Returns last closing NAV for a fund.
+     */
+    public routines.FundNAV getLatestNAV(java.lang.String identifier, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException;
+
+    /**
+     * Returns the most recent NAV for a fund.
+     */
+    public routines.FundNAV getLastNAV(java.lang.String identifier, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException;
+
+    /**
+     * Returns last closing price for a collection of funds.
+     */
+    public routines.FundNAV[] getLastNAVs(java.lang.String identifiers, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException;
+
+    /**
+     * Returns today's closing price for a collection of funds.
+     */
+    public routines.FundNAV[] getLatestNAVs(java.lang.String identifiers, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException;
+
+    /**
+     * Returns a fund quote as of a historical NAV.
+     */
+    public routines.FundNAV getHistoricalNAV(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String asOfDate) throws java.rmi.RemoteException;
+
+    /**
+     * Returns a fund NAV as of a historical date.
+     */
+    public routines.FundNAV[] getHistoricalNAVs(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String asOfDate) throws java.rmi.RemoteException;
+
+    /**
+     * This operation returns a range of fund NAVs for a security.
+     */
+    public routines.FundNAVs getHistoricalNAVsAsOf(java.lang.String identifier, routines.IdentifierTypes identifierType, java.util.Calendar endDate, routines.PeriodTypes periodType, int periods) throws java.rmi.RemoteException;
+
+    /**
+     * This operation returns a range of NAVs for a fund.
+     */
+    public routines.FundNAVs getHistoricalNAVsRange(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String startDate, java.lang.String endDate) throws java.rmi.RemoteException;
+
+    /**
+     * This operation returns quote information about the top gaining
+     * funds for a date.
+     */
+    public routines.Top[] getTopGainers(java.lang.String fromDate, java.lang.String toDate, int count) throws java.rmi.RemoteException;
+
+    /**
+     * This operation returns quote information about the top losing
+     * equities from NYSE, NASDAQ and AMEX.
+     */
+    public routines.Top[] getTopLosers(java.lang.String fromDate, java.lang.String toDate, int count) throws java.rmi.RemoteException;
+
+    /**
+     * Draw a custom historical fund chart for a date range.
+     */
+    public routines.FundChart drawFundChartCustom(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String additionalSymbols, java.lang.String startDate, java.lang.String endDate, routines.StockChartStyles style, int width, int height, routines.ChartDesign design) throws java.rmi.RemoteException;
+
+    /**
+     * Draw a standard historical fund chart for a date range.
+     */
+    public routines.FundChart drawFundChart(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String additionalSymbols, java.lang.String startDate, java.lang.String endDate, routines.StockChartStyles style, int width, int height) throws java.rmi.RemoteException;
+
+    /**
+     * Draw a preset historical fund chart for a date range.
+     */
+    public routines.FundChart drawFundChartPreset(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String additionalSymbols, java.lang.String startDate, java.lang.String endDate, routines.StockChartStyles style, int width, int height, java.lang.String preset) throws java.rmi.RemoteException;
+
+    /**
+     * Returns the default design class for the fund Chart.
+     */
+    public routines.ChartDesign getChartDesign() throws java.rmi.RemoteException;
+
+    /**
+     * Get dividend history for a fund.
+     */
+    public routines.DividendHistory getDividendHistory(java.lang.String identifier, routines.IdentifierTypes identifierType) throws java.rmi.RemoteException;
+
+    /**
+     * Returns a list of mutual funds added between two dates.
+     */
+    public routines.NewFund[] getNewSymbols(java.lang.String fromDate, java.lang.String toDate) throws java.rmi.RemoteException;
+
+    /**
+     * Returns the most recent NAV for a fund.
+     */
+    public routines.FundNAV getLastNAVAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException;
+
+    /**
+     * Returns last closing price for a collection of funds.
+     */
+    public routines.FundNAV[] getLastNAVsAdjusted(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException;
+
+    /**
+     * Returns the most recent NAV for a fund.
+     */
+    public routines.FundNAV getLatestNAVAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException;
+
+    /**
+     * Returns last closing price for a collection of funds.
+     */
+    public routines.FundNAV[] getLatestNAVsAdjusted(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException;
+
+    /**
+     * Returns a fund quote as of a historical NAV.
+     */
+    public routines.FundNAV getHistoricalNAVAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String asOfDate, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException;
+
+    /**
+     * Returns a fund NAV as of a historical date.
+     */
+    public routines.FundNAV[] getHistoricalNAVsAdjusted(java.lang.String identifiers, routines.IdentifierTypes identifierType, java.lang.String asOfDate, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException;
+
+    /**
+     * This operation returns a range of fund NAVs for a security.
+     */
+    public routines.FundNAVs getHistoricalNAVsAsOfAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.util.Calendar endDate, routines.PeriodTypes periodType, int periods, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException;
+
+    /**
+     * This operation returns a range of NAVs for a fund.
+     */
+    public routines.FundNAVs getHistoricalNAVsRangeAdjusted(java.lang.String identifier, routines.IdentifierTypes identifierType, java.lang.String startDate, java.lang.String endDate, java.lang.String[] adjustmentMethod) throws java.rmi.RemoteException;
+}

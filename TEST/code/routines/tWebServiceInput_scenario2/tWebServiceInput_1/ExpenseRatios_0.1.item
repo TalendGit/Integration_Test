@@ -1,0 +1,280 @@
+/**
+ * ExpenseRatios.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class ExpenseRatios  implements java.io.Serializable {
+    private double prospectusNetExpenseRatio;
+
+    private double prospectusGrossExpenseRatio;
+
+    private double prospectusAcquiredExpenseRatio;
+
+    private java.lang.String shareClassAnnualReportDate;
+
+    private double annualReportGrossExpenseRatio;
+
+    private double annualReportNetExpenseRatio;
+
+    public ExpenseRatios() {
+    }
+
+    public ExpenseRatios(
+           double prospectusNetExpenseRatio,
+           double prospectusGrossExpenseRatio,
+           double prospectusAcquiredExpenseRatio,
+           java.lang.String shareClassAnnualReportDate,
+           double annualReportGrossExpenseRatio,
+           double annualReportNetExpenseRatio) {
+           this.prospectusNetExpenseRatio = prospectusNetExpenseRatio;
+           this.prospectusGrossExpenseRatio = prospectusGrossExpenseRatio;
+           this.prospectusAcquiredExpenseRatio = prospectusAcquiredExpenseRatio;
+           this.shareClassAnnualReportDate = shareClassAnnualReportDate;
+           this.annualReportGrossExpenseRatio = annualReportGrossExpenseRatio;
+           this.annualReportNetExpenseRatio = annualReportNetExpenseRatio;
+    }
+
+
+    /**
+     * Gets the prospectusNetExpenseRatio value for this ExpenseRatios.
+     * 
+     * @return prospectusNetExpenseRatio
+     */
+    public double getProspectusNetExpenseRatio() {
+        return prospectusNetExpenseRatio;
+    }
+
+
+    /**
+     * Sets the prospectusNetExpenseRatio value for this ExpenseRatios.
+     * 
+     * @param prospectusNetExpenseRatio
+     */
+    public void setProspectusNetExpenseRatio(double prospectusNetExpenseRatio) {
+        this.prospectusNetExpenseRatio = prospectusNetExpenseRatio;
+    }
+
+
+    /**
+     * Gets the prospectusGrossExpenseRatio value for this ExpenseRatios.
+     * 
+     * @return prospectusGrossExpenseRatio
+     */
+    public double getProspectusGrossExpenseRatio() {
+        return prospectusGrossExpenseRatio;
+    }
+
+
+    /**
+     * Sets the prospectusGrossExpenseRatio value for this ExpenseRatios.
+     * 
+     * @param prospectusGrossExpenseRatio
+     */
+    public void setProspectusGrossExpenseRatio(double prospectusGrossExpenseRatio) {
+        this.prospectusGrossExpenseRatio = prospectusGrossExpenseRatio;
+    }
+
+
+    /**
+     * Gets the prospectusAcquiredExpenseRatio value for this ExpenseRatios.
+     * 
+     * @return prospectusAcquiredExpenseRatio
+     */
+    public double getProspectusAcquiredExpenseRatio() {
+        return prospectusAcquiredExpenseRatio;
+    }
+
+
+    /**
+     * Sets the prospectusAcquiredExpenseRatio value for this ExpenseRatios.
+     * 
+     * @param prospectusAcquiredExpenseRatio
+     */
+    public void setProspectusAcquiredExpenseRatio(double prospectusAcquiredExpenseRatio) {
+        this.prospectusAcquiredExpenseRatio = prospectusAcquiredExpenseRatio;
+    }
+
+
+    /**
+     * Gets the shareClassAnnualReportDate value for this ExpenseRatios.
+     * 
+     * @return shareClassAnnualReportDate
+     */
+    public java.lang.String getShareClassAnnualReportDate() {
+        return shareClassAnnualReportDate;
+    }
+
+
+    /**
+     * Sets the shareClassAnnualReportDate value for this ExpenseRatios.
+     * 
+     * @param shareClassAnnualReportDate
+     */
+    public void setShareClassAnnualReportDate(java.lang.String shareClassAnnualReportDate) {
+        this.shareClassAnnualReportDate = shareClassAnnualReportDate;
+    }
+
+
+    /**
+     * Gets the annualReportGrossExpenseRatio value for this ExpenseRatios.
+     * 
+     * @return annualReportGrossExpenseRatio
+     */
+    public double getAnnualReportGrossExpenseRatio() {
+        return annualReportGrossExpenseRatio;
+    }
+
+
+    /**
+     * Sets the annualReportGrossExpenseRatio value for this ExpenseRatios.
+     * 
+     * @param annualReportGrossExpenseRatio
+     */
+    public void setAnnualReportGrossExpenseRatio(double annualReportGrossExpenseRatio) {
+        this.annualReportGrossExpenseRatio = annualReportGrossExpenseRatio;
+    }
+
+
+    /**
+     * Gets the annualReportNetExpenseRatio value for this ExpenseRatios.
+     * 
+     * @return annualReportNetExpenseRatio
+     */
+    public double getAnnualReportNetExpenseRatio() {
+        return annualReportNetExpenseRatio;
+    }
+
+
+    /**
+     * Sets the annualReportNetExpenseRatio value for this ExpenseRatios.
+     * 
+     * @param annualReportNetExpenseRatio
+     */
+    public void setAnnualReportNetExpenseRatio(double annualReportNetExpenseRatio) {
+        this.annualReportNetExpenseRatio = annualReportNetExpenseRatio;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof ExpenseRatios)) return false;
+        ExpenseRatios other = (ExpenseRatios) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.prospectusNetExpenseRatio == other.getProspectusNetExpenseRatio() &&
+            this.prospectusGrossExpenseRatio == other.getProspectusGrossExpenseRatio() &&
+            this.prospectusAcquiredExpenseRatio == other.getProspectusAcquiredExpenseRatio() &&
+            ((this.shareClassAnnualReportDate==null && other.getShareClassAnnualReportDate()==null) || 
+             (this.shareClassAnnualReportDate!=null &&
+              this.shareClassAnnualReportDate.equals(other.getShareClassAnnualReportDate()))) &&
+            this.annualReportGrossExpenseRatio == other.getAnnualReportGrossExpenseRatio() &&
+            this.annualReportNetExpenseRatio == other.getAnnualReportNetExpenseRatio();
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += new Double(getProspectusNetExpenseRatio()).hashCode();
+        _hashCode += new Double(getProspectusGrossExpenseRatio()).hashCode();
+        _hashCode += new Double(getProspectusAcquiredExpenseRatio()).hashCode();
+        if (getShareClassAnnualReportDate() != null) {
+            _hashCode += getShareClassAnnualReportDate().hashCode();
+        }
+        _hashCode += new Double(getAnnualReportGrossExpenseRatio()).hashCode();
+        _hashCode += new Double(getAnnualReportNetExpenseRatio()).hashCode();
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(ExpenseRatios.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ExpenseRatios"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("prospectusNetExpenseRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ProspectusNetExpenseRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("prospectusGrossExpenseRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ProspectusGrossExpenseRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("prospectusAcquiredExpenseRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ProspectusAcquiredExpenseRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("shareClassAnnualReportDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "ShareClassAnnualReportDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("annualReportGrossExpenseRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AnnualReportGrossExpenseRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("annualReportNetExpenseRatio");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.xignite.com/services/", "AnnualReportNetExpenseRatio"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}
