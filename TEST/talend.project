@@ -7,6 +7,249 @@
     <documentationStatus xmi:id="_muILQHdKEeeYsY5LKSa0yA" label="unchecked" code="UCK"/>
     <documentationStatus xmi:id="_muILQXdKEeeYsY5LKSa0yA" label="checked" code="CHK"/>
     <documentationStatus xmi:id="_muILQndKEeeYsY5LKSa0yA" label="validated" code="VAL"/>
+    <statAndLogsSettings xmi:id="_7kWuEHdcEee4GIRRTKENyw">
+      <parameters xmi:id="_7kWuEXdcEee4GIRRTKENyw">
+        <elementParameter xmi:id="_7kssUHdcEee4GIRRTKENyw" field="CHECK" name="UPDATE_COMPONENTS" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kssUXdcEee4GIRRTKENyw" field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true" contextMode="false"/>
+        <elementParameter xmi:id="_7kssUndcEee4GIRRTKENyw" field="CHECK" name="ON_STATCATCHER_FLAG" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kssU3dcEee4GIRRTKENyw" field="CHECK" name="ON_LOGCATCHER_FLAG" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kssVHdcEee4GIRRTKENyw" field="CHECK" name="ON_METERCATCHER_FLAG" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kssVXdcEee4GIRRTKENyw" field="CHECK" name="ON_CONSOLE_FLAG" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kssVndcEee4GIRRTKENyw" field="CHECK" name="ON_FILES_FLAG" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kssV3dcEee4GIRRTKENyw" field="DIRECTORY" name="FILE_PATH" value="&quot;D:/TalendPrepWorkSpace/.metadata&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssWHdcEee4GIRRTKENyw" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssWXdcEee4GIRRTKENyw" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssWndcEee4GIRRTKENyw" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssW3dcEee4GIRRTKENyw" field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" contextMode="false"/>
+        <elementParameter xmi:id="_7kssXHdcEee4GIRRTKENyw" field="CHECK" name="ON_DATABASE_FLAG" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kssXXdcEee4GIRRTKENyw" field="PROPERTY_TYPE" name="PROPERTY_TYPE" value="" contextMode="false"/>
+        <elementParameter xmi:id="_7kssXndcEee4GIRRTKENyw" field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" contextMode="false"/>
+        <elementParameter xmi:id="_7kssX3dcEee4GIRRTKENyw" field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" contextMode="false"/>
+        <elementParameter xmi:id="_7kssYHdcEee4GIRRTKENyw" field="TEXT" name="URL" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssYXdcEee4GIRRTKENyw" field="TABLE" name="DRIVER_JAR" contextMode="false"/>
+        <elementParameter xmi:id="_7kssYndcEee4GIRRTKENyw" field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssY3dcEee4GIRRTKENyw" field="TEXT" name="HOST" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssZHdcEee4GIRRTKENyw" field="TEXT" name="PORT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssZXdcEee4GIRRTKENyw" field="TEXT" name="DBNAME" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssZndcEee4GIRRTKENyw" field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssZ3dcEee4GIRRTKENyw" field="TEXT" name="PROPERTIES" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssaHdcEee4GIRRTKENyw" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssaXdcEee4GIRRTKENyw" field="TEXT" name="USER" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssandcEee4GIRRTKENyw" field="PASSWORD" name="PASS" value="0RMsyjmybrE=" contextMode="false"/>
+        <elementParameter xmi:id="_7kssa3dcEee4GIRRTKENyw" field="FILE" name="DBFILE" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssbHdcEee4GIRRTKENyw" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssbXdcEee4GIRRTKENyw" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssbndcEee4GIRRTKENyw" field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kssb3dcEee4GIRRTKENyw" field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" contextMode="false"/>
+        <elementParameter xmi:id="_7ksscHdcEee4GIRRTKENyw" field="CHECK" name="CATCH_USER_ERRORS" value="true" contextMode="false"/>
+        <elementParameter xmi:id="_7ksscXdcEee4GIRRTKENyw" field="CHECK" name="CATCH_USER_WARNING" value="true" contextMode="false"/>
+        <elementParameter xmi:id="_7ksscndcEee4GIRRTKENyw" field="CHECK" name="CATCH_REALTIME_STATS" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kssc3dcEee4GIRRTKENyw" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" contextMode="false"/>
+        <elementParameter xmi:id="_7kssdHdcEee4GIRRTKENyw" field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN" contextMode="false"/>
+        <elementParameter xmi:id="_7kssdXdcEee4GIRRTKENyw" field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="" contextMode="false"/>
+      </parameters>
+    </statAndLogsSettings>
+    <implicitContextSettings xmi:id="_7ktTYHdcEee4GIRRTKENyw">
+      <parameters xmi:id="_7ktTYXdcEee4GIRRTKENyw">
+        <elementParameter xmi:id="_7ktTYndcEee4GIRRTKENyw" field="CHECK" name="UPDATE_COMPONENTS" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTY3dcEee4GIRRTKENyw" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTZHdcEee4GIRRTKENyw" field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTZXdcEee4GIRRTKENyw" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTZndcEee4GIRRTKENyw" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTZ3dcEee4GIRRTKENyw" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTaHdcEee4GIRRTKENyw" field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTaXdcEee4GIRRTKENyw" field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value="" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTandcEee4GIRRTKENyw" field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTa3dcEee4GIRRTKENyw" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTbHdcEee4GIRRTKENyw" field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTbXdcEee4GIRRTKENyw" field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTbndcEee4GIRRTKENyw" field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTb3dcEee4GIRRTKENyw" field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTcHdcEee4GIRRTKENyw" field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTcXdcEee4GIRRTKENyw" field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTcndcEee4GIRRTKENyw" field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTc3dcEee4GIRRTKENyw" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTdHdcEee4GIRRTKENyw" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7ktTdXdcEee4GIRRTKENyw" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6cHdcEee4GIRRTKENyw" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6cXdcEee4GIRRTKENyw" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6cndcEee4GIRRTKENyw" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6c3dcEee4GIRRTKENyw" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6dHdcEee4GIRRTKENyw" field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6dXdcEee4GIRRTKENyw" field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6dndcEee4GIRRTKENyw" field="CHECK" name="PRINT_OPERATIONS" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6d3dcEee4GIRRTKENyw" field="CHECK" name="DISABLE_ERROR" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6eHdcEee4GIRRTKENyw" field="CHECK" name="DISABLE_WARNINGS" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6eXdcEee4GIRRTKENyw" field="CHECK" name="DISABLE_INFO" value="false" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6endcEee4GIRRTKENyw" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" contextMode="false"/>
+        <elementParameter xmi:id="_7kt6e3dcEee4GIRRTKENyw" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" contextMode="false"/>
+      </parameters>
+    </implicitContextSettings>
+    <ItemsRelations xmi:id="_7ows8HdcEee4GIRRTKENyw">
+      <baseItem xmi:id="_7ows8XdcEee4GIRRTKENyw" id="_Cvgz0NBpEeWvTZBHT06ebQ" version="0.2" type="job"/>
+      <relatedItems xmi:id="_7ows8ndcEee4GIRRTKENyw" id="_OUe0IIfhEeWIsf9cG3OEYg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_7ows83dcEee4GIRRTKENyw" id="_Brc6wGvMEeWVZaxaZ3Dt7Q" version="Latest" type="job"/>
+      <relatedItems xmi:id="_7ows9HdcEee4GIRRTKENyw" id="_3klgoGknEeWD1fkBgMAUfA" version="Latest" type="job"/>
+      <relatedItems xmi:id="_7ows9XdcEee4GIRRTKENyw" id="StatusType" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows9ndcEee4GIRRTKENyw" id="FundamentalDescription" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows93dcEee4GIRRTKENyw" id="OtherAssetAllocation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows-HdcEee4GIRRTKENyw" id="IdentifierTypes" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows-XdcEee4GIRRTKENyw" id="LoadAdjustedTrailingReturns" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows-ndcEee4GIRRTKENyw" id="Security" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows-3dcEee4GIRRTKENyw" id="HoldingsSummary" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows_HdcEee4GIRRTKENyw" id="FundDividendDistributionDetails" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows_XdcEee4GIRRTKENyw" id="FundBenchmarks" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows_ndcEee4GIRRTKENyw" id="XigniteFundsSoap_PortType" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7ows_3dcEee4GIRRTKENyw" id="FundRedemptionFees" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtAHdcEee4GIRRTKENyw" id="Profile" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtAXdcEee4GIRRTKENyw" id="DividendHistory" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtAndcEee4GIRRTKENyw" id="FundManagers" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtA3dcEee4GIRRTKENyw" id="FundReturns" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtBHdcEee4GIRRTKENyw" id="RedemptionFee" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtBXdcEee4GIRRTKENyw" id="FundChart" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtBndcEee4GIRRTKENyw" id="StockChart" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtB3dcEee4GIRRTKENyw" id="GetRandomPhoneNum" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtCHdcEee4GIRRTKENyw" id="CompanyProfile" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtCXdcEee4GIRRTKENyw" id="Record" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtCndcEee4GIRRTKENyw" id="TopTypes" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtC3dcEee4GIRRTKENyw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtDHdcEee4GIRRTKENyw" id="ExpenseRatios" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtDXdcEee4GIRRTKENyw" id="TickPeriod" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtDndcEee4GIRRTKENyw" id="MemCached" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtD3dcEee4GIRRTKENyw" id="DemoRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtEHdcEee4GIRRTKENyw" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtEXdcEee4GIRRTKENyw" id="PeriodTypes" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtEndcEee4GIRRTKENyw" id="Benchmark" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtE3dcEee4GIRRTKENyw" id="FundSectorWeightings" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtFHdcEee4GIRRTKENyw" id="XigniteFunds" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtFXdcEee4GIRRTKENyw" id="DocuSignRequestSignature" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtFndcEee4GIRRTKENyw" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtF3dcEee4GIRRTKENyw" id="Test" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtGHdcEee4GIRRTKENyw" id="PlatformType" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtGXdcEee4GIRRTKENyw" id="StockSectorWeightings" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtGndcEee4GIRRTKENyw" id="XigniteFundFundamentalsSoap_PortType" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtG3dcEee4GIRRTKENyw" id="DataClean" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtHHdcEee4GIRRTKENyw" id="FundAssetAllocation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtHXdcEee4GIRRTKENyw" id="FundList" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtHndcEee4GIRRTKENyw" id="ManagerProfile" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtH3dcEee4GIRRTKENyw" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtIHdcEee4GIRRTKENyw" id="TurnoverRatios" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtIXdcEee4GIRRTKENyw" id="FundNAV" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtIndcEee4GIRRTKENyw" id="OutcomeTypes" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtI3dcEee4GIRRTKENyw" id="ContextType" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtJHdcEee4GIRRTKENyw" id="XigniteFundFundamentals" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtJXdcEee4GIRRTKENyw" id="MutualFundCountries" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtJndcEee4GIRRTKENyw" id="FundAnnualReportSummary" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtJ3dcEee4GIRRTKENyw" id="SFDC" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtKHdcEee4GIRRTKENyw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtKXdcEee4GIRRTKENyw" id="FundExpenseRatios" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtKndcEee4GIRRTKENyw" id="Common" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtK3dcEee4GIRRTKENyw" id="NewFund" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtLHdcEee4GIRRTKENyw" id="StockAssetAllocation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtLXdcEee4GIRRTKENyw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtLndcEee4GIRRTKENyw" id="ImageFrameType" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtL3dcEee4GIRRTKENyw" id="Holding" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtMHdcEee4GIRRTKENyw" id="XigniteFundsSoap_BindingStub" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtMXdcEee4GIRRTKENyw" id="XigniteFundFundamentalsLocator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtMndcEee4GIRRTKENyw" id="DocuSignEmbeddedSending" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtM3dcEee4GIRRTKENyw" id="SymbolList" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtNHdcEee4GIRRTKENyw" id="General" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtNXdcEee4GIRRTKENyw" id="BillingMapper" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtNndcEee4GIRRTKENyw" id="UserAccess" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtN3dcEee4GIRRTKENyw" id="FundFundamental" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtOHdcEee4GIRRTKENyw" id="ChartDesign" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtOXdcEee4GIRRTKENyw" id="FundTurnoverRatios" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtOndcEee4GIRRTKENyw" id="MinimumInvestments" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtO3dcEee4GIRRTKENyw" id="StockChartStyles" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtPHdcEee4GIRRTKENyw" id="FundManagementFees" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtPXdcEee4GIRRTKENyw" id="FundCompanyProfile" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtPndcEee4GIRRTKENyw" id="ManagementFees" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtP3dcEee4GIRRTKENyw" id="AnnualReportSummary" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtQHdcEee4GIRRTKENyw" id="DNAssetMapper" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtQXdcEee4GIRRTKENyw" id="BondSuperSectorWeightings" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtQndcEee4GIRRTKENyw" id="FundNAVs" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtQ3dcEee4GIRRTKENyw" id="DividendDistributionDetails" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtRHdcEee4GIRRTKENyw" id="FundMinimumInvestments" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtRXdcEee4GIRRTKENyw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtRndcEee4GIRRTKENyw" id="Marketo" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtR3dcEee4GIRRTKENyw" id="BTClient" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtSHdcEee4GIRRTKENyw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtSXdcEee4GIRRTKENyw" id="PredefinedLightModel" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtSndcEee4GIRRTKENyw" id="LinePattern" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtS3dcEee4GIRRTKENyw" id="Fund" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtTHdcEee4GIRRTKENyw" id="XigniteFundsLocator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtTXdcEee4GIRRTKENyw" id="Top" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtTndcEee4GIRRTKENyw" id="Fundamental" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtT3dcEee4GIRRTKENyw" id="FundamentalDescriptionList" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtUHdcEee4GIRRTKENyw" id="FundProfile" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtUXdcEee4GIRRTKENyw" id="Dividend" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtUndcEee4GIRRTKENyw" id="PredefinedProjection" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtU3dcEee4GIRRTKENyw" id="FundSalesFees" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtVHdcEee4GIRRTKENyw" id="FundHoldingsSummary" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtVXdcEee4GIRRTKENyw" id="SalesFees" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtVndcEee4GIRRTKENyw" id="XigniteFundFundamentalsSoap_BindingStub" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtV3dcEee4GIRRTKENyw" id="APIUser" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtWHdcEee4GIRRTKENyw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtWXdcEee4GIRRTKENyw" id="TrailingReturns" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtWndcEee4GIRRTKENyw" id="Utils" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtW3dcEee4GIRRTKENyw" id="FundHoldings" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtXHdcEee4GIRRTKENyw" id="HorzAlign" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtXXdcEee4GIRRTKENyw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtXndcEee4GIRRTKENyw" id="FundFundamentalList" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtX3dcEee4GIRRTKENyw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtYHdcEee4GIRRTKENyw" id="FundFundamentalType" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtYXdcEee4GIRRTKENyw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtYndcEee4GIRRTKENyw" id="AdhocDataClean" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtY3dcEee4GIRRTKENyw" id="BondAssetAllocation" version="Latest" type="routine"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_7owtZHdcEee4GIRRTKENyw">
+      <baseItem xmi:id="_7owtZXdcEee4GIRRTKENyw" id="_Brc6wGvMEeWVZaxaZ3Dt7Q" version="0.2" type="job"/>
+      <relatedItems xmi:id="_7owtZndcEee4GIRRTKENyw" id="_OUe0IIfhEeWIsf9cG3OEYg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_7owtZ3dcEee4GIRRTKENyw" id="_s_ckEGC6EeWL1qoYEp8yog" version="Latest" type="context"/>
+      <relatedItems xmi:id="_7owtaHdcEee4GIRRTKENyw" id="_rkoL4GC6EeWL1qoYEp8yog" version="Latest" type="context"/>
+      <relatedItems xmi:id="_7owtaXdcEee4GIRRTKENyw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtandcEee4GIRRTKENyw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owta3dcEee4GIRRTKENyw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtbHdcEee4GIRRTKENyw" id="DataClean" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtbXdcEee4GIRRTKENyw" id="DemoRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtbndcEee4GIRRTKENyw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtb3dcEee4GIRRTKENyw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtcHdcEee4GIRRTKENyw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtcXdcEee4GIRRTKENyw" id="Marketo" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtcndcEee4GIRRTKENyw" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtc3dcEee4GIRRTKENyw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtdHdcEee4GIRRTKENyw" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtdXdcEee4GIRRTKENyw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtdndcEee4GIRRTKENyw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtd3dcEee4GIRRTKENyw" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owteHdcEee4GIRRTKENyw" id="General" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owteXdcEee4GIRRTKENyw" id="AdhocDataClean" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtendcEee4GIRRTKENyw" id="GetRandomPhoneNum" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owte3dcEee4GIRRTKENyw" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtfHdcEee4GIRRTKENyw" id="SFDC" version="Latest" type="routine"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_7owtfXdcEee4GIRRTKENyw">
+      <baseItem xmi:id="_7owtfndcEee4GIRRTKENyw" id="_3klgoGknEeWD1fkBgMAUfA" version="0.3" type="job"/>
+      <relatedItems xmi:id="_7owtf3dcEee4GIRRTKENyw" id="_s_ckEGC6EeWL1qoYEp8yog" version="Latest" type="context"/>
+      <relatedItems xmi:id="_7owtgHdcEee4GIRRTKENyw" id="_rkoL4GC6EeWL1qoYEp8yog" version="Latest" type="context"/>
+      <relatedItems xmi:id="_7owtgXdcEee4GIRRTKENyw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtgndcEee4GIRRTKENyw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtg3dcEee4GIRRTKENyw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owthHdcEee4GIRRTKENyw" id="DemoRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owthXdcEee4GIRRTKENyw" id="Example" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owthndcEee4GIRRTKENyw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owth3dcEee4GIRRTKENyw" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtiHdcEee4GIRRTKENyw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtiXdcEee4GIRRTKENyw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtindcEee4GIRRTKENyw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owti3dcEee4GIRRTKENyw" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtjHdcEee4GIRRTKENyw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtjXdcEee4GIRRTKENyw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtjndcEee4GIRRTKENyw" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtj3dcEee4GIRRTKENyw" id="GetRandomPhoneNum" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtkHdcEee4GIRRTKENyw" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7owtkXdcEee4GIRRTKENyw" id="Department" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_mtXWQHdKEeeYsY5LKSa0yA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_mtXWQXdKEeeYsY5LKSa0yA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_mtXWQndKEeeYsY5LKSa0yA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
