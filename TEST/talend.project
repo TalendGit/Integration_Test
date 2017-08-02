@@ -201,6 +201,9 @@
       <relatedItems xmi:id="_7owtYXdcEee4GIRRTKENyw" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_7owtYndcEee4GIRRTKENyw" id="AdhocDataClean" version="Latest" type="routine"/>
       <relatedItems xmi:id="_7owtY3dcEee4GIRRTKENyw" id="BondAssetAllocation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ydQC0HdgEee4GIRRTKENyw" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ydQC0XdgEee4GIRRTKENyw" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ydQp4HdgEee4GIRRTKENyw" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_7owtZHdcEee4GIRRTKENyw">
       <baseItem xmi:id="_7owtZXdcEee4GIRRTKENyw" id="_Brc6wGvMEeWVZaxaZ3Dt7Q" version="0.2" type="job"/>
