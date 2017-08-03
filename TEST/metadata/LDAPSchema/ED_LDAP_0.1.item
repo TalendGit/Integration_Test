@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:LDAPSchemaConnection xmi:id="_JGOVwBYCEeWwHPpllz4B5w" name="repository.metadataLDAPSchema" dataPackage="_JGOVwRYCEeWwHPpllz4B5w" Host="10.13.64.42" Port="389" Protocol="Simple Authentication" Filter="(&amp;(objectClass=*))" UseAuthen="true" BindPrincipal="cn=Directory manager" BindPassword="6IRjUvM+bbB4xwJnp1evew==" EncryptionMethodName="LDAP" SavePassword="true" Aliases="always" Referrals="ignore" CountLimit="100" TimeOutLimit="0" SelectedDN="dc=rcoffice,dc=ringcentral,dc=com">
+    <BaseDNs></BaseDNs>
+    <BaseDNs>dc=ringcentral,dc=local</BaseDNs>
+    <BaseDNs>dc=rcoffice,dc=ringcentral,dc=com</BaseDNs>
+    <BaseDNs>o=netscaperoot</BaseDNs>
+  </TalendMetadata:LDAPSchemaConnection>
+  <TalendMetadata:GenericPackage xmi:id="_JGOVwRYCEeWwHPpllz4B5w" name="repository.metadataLDAPSchema" dataManager="_JGOVwBYCEeWwHPpllz4B5w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_JGOVwhYCEeWwHPpllz4B5w" id="_qlpIUBYBEeWwHPpllz4B5w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JGOVwxYCEeWwHPpllz4B5w" label="dn" length="52" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

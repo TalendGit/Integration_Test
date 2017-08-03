@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_gier0HgPEeefT-8Ziz-jHw" confirmationNeeded="false" name="Beta1">
+    <contextParameter xmi:id="_gier0XgPEeefT-8Ziz-jHw" comment="" name="ED_hostname" prompt="ED_hostname?" promptNeeded="false" type="id_String" value="10.13.64.42"/>
+    <contextParameter xmi:id="_gier0ngPEeefT-8Ziz-jHw" comment="" name="ED_port" prompt="ED_port?" promptNeeded="false" type="id_String" value="389"/>
+    <contextParameter xmi:id="_gier03gPEeefT-8Ziz-jHw" comment="" name="ED_username" prompt="ED_username?" promptNeeded="false" type="id_String" value="cn=Directory manager"/>
+    <contextParameter xmi:id="_gier1HgPEeefT-8Ziz-jHw" comment="" name="ED_password" prompt="ED_password?" promptNeeded="false" type="id_Password" value="e7icCWFCNXW/tGb4PQVKc7TXmqzT/xtYHQSGKBl5iV4="/>
+    <contextParameter xmi:id="_gier1XgPEeefT-8Ziz-jHw" comment="" name="ED_basedn" prompt="ED_basedn?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_gier1ngPEeefT-8Ziz-jHw" confirmationNeeded="false" name="Production1">
+    <contextParameter xmi:id="_gier13gPEeefT-8Ziz-jHw" comment="" name="ED_hostname" prompt="ED_hostname?" promptNeeded="false" type="id_String" value="10.13.64.37"/>
+    <contextParameter xmi:id="_gier2HgPEeefT-8Ziz-jHw" comment="" name="ED_port" prompt="ED_port?" promptNeeded="false" type="id_String" value="389"/>
+    <contextParameter xmi:id="_gier2XgPEeefT-8Ziz-jHw" comment="" name="ED_username" prompt="ED_username?" promptNeeded="false" type="id_String" value="cn=Directory manager"/>
+    <contextParameter xmi:id="_gier2ngPEeefT-8Ziz-jHw" comment="" name="ED_password" prompt="ED_password?" promptNeeded="false" type="id_Password" value="e7icCWFCNXW/tGb4PQVKc7TXmqzT/xtYHQSGKBl5iV4="/>
+    <contextParameter xmi:id="_gier23gPEeefT-8Ziz-jHw" comment="" name="ED_basedn" prompt="ED_basedn?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_gier3HgPEeefT-8Ziz-jHw" confirmationNeeded="false" name="Production2">
+    <contextParameter xmi:id="_gier3XgPEeefT-8Ziz-jHw" comment="" name="ED_hostname" prompt="ED_hostname?" promptNeeded="false" type="id_String" value="10.13.64.38"/>
+    <contextParameter xmi:id="_gier3ngPEeefT-8Ziz-jHw" comment="" name="ED_port" prompt="ED_port?" promptNeeded="false" type="id_String" value="389"/>
+    <contextParameter xmi:id="_gier33gPEeefT-8Ziz-jHw" comment="" name="ED_username" prompt="ED_username?" promptNeeded="false" type="id_String" value="cn=Directory manager"/>
+    <contextParameter xmi:id="_gier4HgPEeefT-8Ziz-jHw" comment="" name="ED_password" prompt="ED_password?" promptNeeded="false" type="id_Password" value="e7icCWFCNXW/tGb4PQVKc7TXmqzT/xtYHQSGKBl5iV4="/>
+    <contextParameter xmi:id="_gier4XgPEeefT-8Ziz-jHw" comment="" name="ED_basedn" prompt="ED_basedn?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_gier4ngPEeefT-8Ziz-jHw" confirmationNeeded="false" name="Sandbox1">
+    <contextParameter xmi:id="_gier43gPEeefT-8Ziz-jHw" comment="" name="ED_hostname" prompt="ED_hostname?" promptNeeded="false" type="id_String" value="10.13.32.46"/>
+    <contextParameter xmi:id="_gier5HgPEeefT-8Ziz-jHw" comment="" name="ED_port" prompt="ED_port?" promptNeeded="false" type="id_String" value="389"/>
+    <contextParameter xmi:id="_gier5XgPEeefT-8Ziz-jHw" comment="" name="ED_username" prompt="ED_username?" promptNeeded="false" type="id_String" value="cn=Directory manager"/>
+    <contextParameter xmi:id="_gier5ngPEeefT-8Ziz-jHw" comment="" name="ED_password" prompt="ED_password?" promptNeeded="false" type="id_Password" value="e7icCWFCNXW/tGb4PQVKc7TXmqzT/xtYHQSGKBl5iV4="/>
+    <contextParameter xmi:id="_gier53gPEeefT-8Ziz-jHw" comment="" name="ED_basedn" prompt="ED_basedn?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_gier6HgPEeefT-8Ziz-jHw" confirmationNeeded="false" name="Sandbox2">
+    <contextParameter xmi:id="_gier6XgPEeefT-8Ziz-jHw" comment="" name="ED_hostname" prompt="ED_hostname?" promptNeeded="false" type="id_String" value="10.13.32.47"/>
+    <contextParameter xmi:id="_gier6ngPEeefT-8Ziz-jHw" comment="" name="ED_port" prompt="ED_port?" promptNeeded="false" type="id_String" value="389"/>
+    <contextParameter xmi:id="_gier63gPEeefT-8Ziz-jHw" comment="" name="ED_username" prompt="ED_username?" promptNeeded="false" type="id_String" value="cn=Directory manager"/>
+    <contextParameter xmi:id="_gier7HgPEeefT-8Ziz-jHw" comment="" name="ED_password" prompt="ED_password?" promptNeeded="false" type="id_Password" value="e7icCWFCNXW/tGb4PQVKc7TXmqzT/xtYHQSGKBl5iV4="/>
+    <contextParameter xmi:id="_gier7XgPEeefT-8Ziz-jHw" comment="" name="ED_basedn" prompt="ED_basedn?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
