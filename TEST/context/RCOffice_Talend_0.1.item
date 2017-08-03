@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_iPxCIHgREeefT-8Ziz-jHw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_iPxCIXgREeefT-8Ziz-jHw" comment="" name="rc_office_username" prompt="rc_office_username?" promptNeeded="false" type="id_String" value="michael.chiosi"/>
+  <contextParameter xmi:id="_iPxCIngREeefT-8Ziz-jHw" comment="" name="rc_office_password" prompt="rc_office_password?" promptNeeded="false" type="id_Password" value="/yzoJ5TEQeHFzyM2EElV3A=="/>
+  <contextParameter xmi:id="_iPxCI3gREeefT-8Ziz-jHw" comment="" name="rc_office_domain" prompt="rc_office_domain?" promptNeeded="false" type="id_String" value="rcoffice"/>
+</talendfile:ContextType>
